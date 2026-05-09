@@ -253,16 +253,14 @@
         .social-links a:hover::after { width: 100%; }
 
         /* Cinematic Video Presentation */
-        .video-showcase {
+        .video-showcase video {
             width: 100%;
-            margin-bottom: 4rem;
-            position: relative;
-            border-radius: 4px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            background: var(--bg-medium);
-            box-shadow: 0 20px 50px rgba(0, 243, 255, 0.08);
-            transition: border-color 0.4s ease, box-shadow 0.4s ease;
+            display: block;
+            aspect-ratio: 21/9; 
+            object-fit: contain; /* Scales video to fit entirely within the box */
+            background-color: #000; /* Ensures letterbox bars are pure black */
+            opacity: 0.85;
+            transition: opacity 0.5s ease;
         }
         .video-showcase::before {
             content: 'REC •';
@@ -505,8 +503,8 @@
             <div class="video-showcase">
                 <video src="showcase.mov" autoplay loop muted playsinline poster="editor.png"></video>
                 <div class="video-overlay-bar">
-                    <span>SYS.RENDER_PIPELINE // ACTIVE</span>
-                    <span>V.1.0.4</span>
+                    <span>SHOWCASE // ACTIVE</span>
+                    <span>Pre-realease content (subject to change)</span>
                 </div>
             </div>
 
