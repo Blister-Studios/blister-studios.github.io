@@ -6,12 +6,15 @@
     <title>Blister Studios | Engram Engine</title>
     <style>
         :root {
-            --bg-dark: #090a0f;
-            --accent-cyan: #00e5ff;
-            --accent-magenta: #ff0055;
-            --text-main: #f0f4f8;
-            --text-muted: #8b9bb4;
-            --card-bg: rgba(15, 18, 25, 0.7);
+            /* Deeper, more saturated palette inspired by technical interfaces */
+            --bg-dark: #030406;
+            --bg-medium: #0c0e14;
+            --accent-cyan: #00f3ff;
+            --accent-magenta: #ff0073;
+            --text-main: #f0f7ff;
+            --text-muted: #94a3b8;
+            --card-bg: rgba(12, 14, 20, 0.85);
+            --border-color: #1a1c24;
         }
 
         * {
@@ -21,7 +24,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-main);
             min-height: 100vh;
@@ -29,27 +32,32 @@
             position: relative;
         }
 
-        /* 3D Animated Grid Background */
+        /* Technical Grid Background with More Depth */
         body::before {
             content: '';
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
             background-image: 
-                linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
+                linear-gradient(rgba(0, 243, 255, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 243, 255, 0.08) 1px, transparent 1px);
+            background-size: 60px 60px;
             background-position: center center;
             z-index: -2;
-            transform: perspective(500px) rotateX(60deg) translateY(-100px) translateZ(-200px) scale(3);
-            animation: gridMove 5s linear infinite;
+            transform: perspective(1000px) rotateX(60deg) translateY(-200px) scale(3);
+            animation: gridMove 8s linear infinite;
         }
 
+        /* Screen-space grain and depth of field */
         body::after {
             content: '';
             position: fixed;
             width: 100vw;
             height: 100vh;
-            background: radial-gradient(circle at center, rgba(0, 229, 255, 0.1) 0%, rgba(9, 10, 15, 1) 60%);
+            background: 
+                radial-gradient(circle at center, var(--accent-cyan) 0%, rgba(9, 10, 15, 0.8) 50%, var(--bg-dark) 80%),
+                url('data:image/svg+xml,%3Csvg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3%3Cfilter id="noiseFilter"%3%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3%3C/filter%3%3Crect width="100%" height="100%" filter="url(%23noiseFilter)"/%3%3C/svg%3E');
+            opacity: 0.12;
+            mix-blend-mode: soft-light;
             z-index: -1;
             top: 0; left: 0;
             pointer-events: none;
@@ -57,7 +65,18 @@
 
         @keyframes gridMove {
             0% { background-position: 0 0; }
-            100% { background-position: 0 40px; }
+            100% { background-position: 0 60px; }
+        }
+
+        /* Dynamic Cursor Follow Spotlight */
+        #cursor-spotlight {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 400px);
+            pointer-events: none;
+            z-index: 100;
+            mix-blend-mode: screen;
         }
 
         /* Single Page App View Logic */
@@ -70,7 +89,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
         .container {
@@ -81,58 +100,80 @@
         }
 
         .home-container {
-            max-width: 800px;
+            max-width: 900px;
             text-align: center;
             justify-content: center;
             min-height: 100vh;
         }
 
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(30px); }
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         /* Typography & Shared Styles */
-        h1 {
+        .studio-logo {
+            max-width: 500px;
+            width: 90%;
+            margin-bottom: 2rem;
+            fill: var(--text-main);
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+        }
+
+        /* Technical serif alternative for titles */
+        h1, .engine-title {
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, var(--text-main), var(--accent-cyan));
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, var(--text-main) 50%, var(--accent-cyan) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0px 0px 20px rgba(0, 229, 255, 0.2);
+            text-shadow: 0px 0px 20px rgba(0, 243, 255, 0.2);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
         .engine-title {
-            background: linear-gradient(to right, var(--text-main), var(--accent-magenta));
+            background: linear-gradient(135deg, #fff 0%, var(--text-main) 50%, var(--accent-magenta) 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0px 0px 20px rgba(255, 0, 85, 0.2);
+            text-shadow: 0px 0px 20px rgba(255, 0, 115, 0.2);
             text-align: center;
         }
 
         p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            line-height: 1.8;
             color: var(--text-muted);
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             font-weight: 300;
+            max-width: 70ch;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        p strong { color: var(--accent-cyan); font-weight: 700; }
+        p strong { color: var(--accent-cyan); font-weight: 600; }
+        
         .engram-text { 
             color: var(--accent-magenta); 
-            font-weight: 700;
-            text-shadow: 0 0 8px rgba(255, 0, 85, 0.5); 
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(255, 0, 115, 0.4); 
             cursor: pointer;
             transition: all 0.3s ease;
+            position: relative;
+        }
+        .engram-text::after {
+            content: ' [ENGINE_LINK]';
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
         }
         .engram-text:hover {
             color: #fff;
             text-shadow: 0 0 15px var(--accent-magenta);
         }
+        .engram-text:hover::after { opacity: 1; }
 
         /* Nav & Buttons */
         .back-link {
@@ -141,45 +182,58 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             cursor: pointer;
             transition: color 0.3s ease;
-            display: inline-block;
-            margin-bottom: 3rem;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 4rem;
+            opacity: 0.8;
         }
-        .back-link:hover { color: var(--accent-magenta); }
+        .back-link:hover { color: var(--accent-cyan); opacity: 1; }
+        .back-link span { margin-right: 0.5rem; transition: transform 0.3s ease; }
+        .back-link:hover span { transform: translateX(-4px); }
 
         .cta-button {
             position: relative;
             display: inline-block;
-            padding: 16px 40px;
-            background: rgba(0, 229, 255, 0.05);
+            padding: 18px 45px;
+            background: rgba(0, 243, 255, 0.04);
             color: var(--accent-cyan);
             text-transform: uppercase;
             text-decoration: none;
-            font-weight: 800;
-            font-size: 1.2rem;
-            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 3px;
             border: 2px solid var(--accent-cyan);
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
-            margin: 1rem 0;
+            border-radius: 4px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+            margin: 1.5rem 0;
         }
-
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: left 0.5s ease;
+        }
         .cta-button:hover {
             background: var(--accent-cyan);
             color: var(--bg-dark);
-            box-shadow: 0 0 30px rgba(0, 229, 255, 0.6);
-            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.5);
+            transform: translateY(-2px);
         }
+        .cta-button:hover::after { left: 100%; }
 
         /* Social Links */
         .social-links {
-            margin-top: 3rem;
+            margin-top: 4rem;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 2.5rem;
+            opacity: 0.8;
         }
 
         .social-links a {
@@ -187,88 +241,146 @@
             text-decoration: none;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
             position: relative;
+            transition: color 0.3s ease;
         }
-
         .social-links a::after {
             content: '';
             position: absolute;
             bottom: -6px; left: 0; width: 0%; height: 2px;
-            background-color: var(--accent-cyan);
+            background-color: var(--accent-magenta);
             transition: width 0.3s ease;
         }
-
         .social-links a:hover { color: var(--text-main); }
         .social-links a:hover::after { width: 100%; }
 
         /* Engine Gallery & Features Grid */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
         }
 
         .screenshot-card {
             background: var(--card-bg);
-            border: 1px solid rgba(255, 0, 85, 0.2);
-            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
             overflow: hidden;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+        .screenshot-card::before {
+            content: '';
+            position: absolute;
+            top: 1rem; right: 1rem;
+            width: 1rem; height: 1rem;
+            border-top: 2px solid var(--accent-magenta);
+            border-right: 2px solid var(--accent-magenta);
+            opacity: 0; transition: opacity 0.3s ease;
         }
 
         .screenshot-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-5px) scale(1.02);
             border-color: var(--accent-magenta);
-            box-shadow: 0 10px 30px rgba(255, 0, 85, 0.15);
+            box-shadow: 0 15px 40px rgba(255, 0, 115, 0.1);
         }
+        .screenshot-card:hover::before { opacity: 1; }
 
         .screenshot-card img {
             width: 100%;
             height: auto;
             aspect-ratio: 16/9;
             object-fit: cover;
-            background: linear-gradient(45deg, #12141c, #1a1c26); /* Fallback block */
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            background: var(--bg-medium);
+            border-bottom: 1px solid var(--border-color);
             color: var(--text-muted);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            transition: filter 0.3s ease;
         }
+        .screenshot-card:hover img { filter: contrast(1.1); }
 
-        .screenshot-info { padding: 1.5rem; }
-        .screenshot-info h3 { color: var(--text-main); margin-bottom: 0.5rem; }
-        .screenshot-info p { margin-bottom: 0; font-size: 0.95rem; }
+        .screenshot-info { padding: 2rem; position: relative; }
+        .screenshot-info h3 { 
+            color: var(--accent-cyan); 
+            margin-bottom: 0.75rem; 
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .screenshot-info p { margin-bottom: 0; font-size: 1rem; line-height: 1.6; color: var(--text-muted); }
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
 
         .feature-item {
-            background: rgba(255, 255, 255, 0.02);
-            border-left: 3px solid var(--accent-magenta);
-            padding: 1.5rem;
-            border-radius: 0 8px 8px 0;
-            transition: background 0.3s ease;
+            background: rgba(255, 255, 255, 0.015);
+            border: 1px solid transparent;
+            border-left: 4px solid var(--accent-magenta);
+            padding: 1.75rem;
+            border-radius: 0 4px 4px 0;
+            transition: all 0.3s ease;
+            font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
         }
         
-        .feature-item:hover { background: rgba(255, 0, 85, 0.05); }
-        .feature-item h4 { color: var(--accent-magenta); margin-bottom: 0.5rem; text-transform: uppercase; }
-        .feature-item p { margin-bottom: 0; font-size: 0.9rem; }
+        .feature-item:hover { 
+            background: rgba(255, 0, 115, 0.05); 
+            border-color: var(--accent-magenta);
+            transform: translateX(3px);
+        }
+        .feature-item h4 { 
+            color: var(--accent-magenta); 
+            margin-bottom: 0.75rem; 
+            text-transform: uppercase; 
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255,0,115,0.3);
+        }
+        .feature-item p { margin-bottom: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-main); opacity: 0.9; }
+
+        /* Responsive spacing and logo size adjustments */
+        @media (max-width: 768px) {
+            .container { padding: 2rem 1rem; }
+            h1, .engine-title { font-size: clamp(2rem, 6vw, 3rem); }
+            p { font-size: 1rem; }
+            .cta-button { padding: 15px 35px; font-size: 0.9rem; }
+            .social-links { gap: 1.5rem; }
+        }
     </style>
 </head>
 <body>
+
+    <div id="cursor-spotlight"></div>
 
     <!-- ==============================================
          VIEW 1: STUDIO HOME PAGE 
          ============================================== -->
     <div id="view-home" class="view active home-container container">
-        <h1>Blister Studios</h1>
+        
+        <!-- Blister Studios Technical Logo (SVG) -->
+        <svg class="studio-logo" viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: #fff; stop-opacity: 1" />
+                    <stop offset="50%" style="stop-color: #fff; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: var(--accent-cyan); stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+            <text x="0" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="80" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="-1.5">B</text>
+            <text x="50" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="80" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="-1.5">LISTER</text>
+            <text x="0" y="115" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="22" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="12">S T U D I O S</text>
+            <!-- technical line graphic -->
+            <path d="M 50 115 H 480 M 350 115 V 105" stroke="var(--accent-magenta)" stroke-width="1" opacity="0.6"/>
+        </svg>
+
         <p>
             Independent game development studio and creators of the 
             <!-- Clicking this span switches the view -->
@@ -290,17 +402,17 @@
          ============================================== -->
     <div id="view-engine" class="view container">
         <div style="width: 100%;">
-            <a onclick="switchView('view-home')" class="back-link">← Return to Studio</a>
+            <a onclick="switchView('view-home')" class="back-link"><span>←</span> Return to Studio</a>
             
-            <header style="margin-bottom: 4rem;">
+            <header style="margin-bottom: 5rem;">
                 <h1 class="engine-title">Engram Engine</h1>
-                <p style="text-align: center; max-width: 600px; margin: 0 auto;">A lightweight, highly-extensible C framework built for raw performance and rapid iteration.</p>
+                <p style="text-align: center; max-width: 600px; margin: 0 auto; line-height: 1.6;">A lightweight, highly-extensible C framework built for raw performance and rapid iteration.</p>
             </header>
 
             <section class="gallery">
                 <div class="screenshot-card">
                     <!-- Images will gracefully fall back to a dark box if the path is wrong -->
-                    <img src="editor.png" alt="[Image Not Found: Editor Viewport]">
+                    <img src="assets/editor.png" alt="[Image Not Found: Editor Viewport]">
                     <div class="screenshot-info">
                         <h3>Integrated Editor</h3>
                         <p>Real-time scene manipulation, entity inspection, and direct feedback through the custom viewport.</p>
@@ -308,7 +420,7 @@
                 </div>
 
                 <div class="screenshot-card">
-                    <img src="lua.png" alt="[Image Not Found: Scripting Console]">
+                    <img src="assets/lua.png" alt="[Image Not Found: Scripting Console]">
                     <div class="screenshot-info">
                         <h3>Lua Virtual Machine</h3>
                         <p>Hot-reloadable Lua scripting bindings injected directly into the C core for fast gameplay logic iteration.</p>
@@ -351,6 +463,14 @@
             // Scroll to the top smoothly
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        // Mouse Spotlight Effect
+        const spotlight = document.getElementById('cursor-spotlight');
+        document.addEventListener('mousemove', e => {
+            requestAnimationFrame(() => {
+                spotlight.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255, 255, 255, 0.04) 0%, transparent 450px)`;
+            });
+        });
     </script>
 
 </body>
