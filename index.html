@@ -112,16 +112,19 @@
         }
 
         /* Typography & Shared Styles */
-        .studio-logo {
+        .studio-logo, .engram-logo {
             max-width: 500px;
             width: 90%;
             margin-bottom: 2rem;
             fill: var(--text-main);
             filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* Technical serif alternative for titles */
-        h1, .engine-title {
+        h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             text-transform: uppercase;
@@ -132,13 +135,6 @@
             -webkit-text-fill-color: transparent;
             text-shadow: 0px 0px 20px rgba(0, 243, 255, 0.2);
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        .engine-title {
-            background: linear-gradient(135deg, #fff 0%, var(--text-main) 50%, var(--accent-magenta) 100%);
-            -webkit-background-clip: text;
-            text-shadow: 0px 0px 20px rgba(255, 0, 115, 0.2);
-            text-align: center;
         }
 
         p {
@@ -256,6 +252,68 @@
         .social-links a:hover { color: var(--text-main); }
         .social-links a:hover::after { width: 100%; }
 
+        /* Cinematic Video Presentation */
+        .video-showcase {
+            width: 100%;
+            margin-bottom: 4rem;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: var(--bg-medium);
+            box-shadow: 0 20px 50px rgba(0, 243, 255, 0.08);
+            transition: border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        .video-showcase::before {
+            content: 'REC •';
+            position: absolute;
+            top: 1.5rem; right: 1.5rem;
+            color: var(--accent-magenta);
+            font-family: ui-monospace, monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            z-index: 10;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        .video-showcase:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 20px 60px rgba(0, 243, 255, 0.15);
+        }
+        .video-showcase video {
+            width: 100%;
+            display: block;
+            aspect-ratio: 21/9; /* Cinematic Ultrawide Ratio */
+            object-fit: cover;
+            opacity: 0.85;
+            transition: opacity 0.5s ease;
+        }
+        .video-showcase:hover video {
+            opacity: 1;
+        }
+        .video-overlay-bar {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(to top, rgba(3, 4, 6, 0.9), transparent);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .video-overlay-bar span {
+            font-family: ui-monospace, monospace;
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
         /* Engine Gallery & Features Grid */
         .gallery {
             display: grid;
@@ -349,10 +407,11 @@
         /* Responsive spacing and logo size adjustments */
         @media (max-width: 768px) {
             .container { padding: 2rem 1rem; }
-            h1, .engine-title { font-size: clamp(2rem, 6vw, 3rem); }
+            h1 { font-size: clamp(2rem, 6vw, 3rem); }
             p { font-size: 1rem; }
             .cta-button { padding: 15px 35px; font-size: 0.9rem; }
             .social-links { gap: 1.5rem; }
+            .video-showcase video { aspect-ratio: 16/9; }
         }
     </style>
 </head>
@@ -377,13 +436,11 @@
             <text x="0" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="80" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="-1.5">B</text>
             <text x="50" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="80" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="-1.5">LISTER</text>
             <text x="0" y="115" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="22" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="12">S T U D I O S</text>
-            <!-- technical line graphic -->
             <path d="M 50 115 H 480 M 350 115 V 105" stroke="var(--accent-magenta)" stroke-width="1" opacity="0.6"/>
         </svg>
 
         <p>
             Independent game development studio and creators of the 
-            <!-- Clicking this span switches the view -->
             <span class="engram-text" onclick="switchView('view-engine')">Engram Engine</span>.<br><br>
             Currently building <strong>RiftRunner</strong>, a high-speed, dimension-shifting platformer powered by our custom C-based framework.
         </p>
@@ -405,13 +462,57 @@
             <a onclick="switchView('view-home')" class="back-link"><span>←</span> Return to Studio</a>
             
             <header style="margin-bottom: 5rem;">
-                <h1 class="engine-title">Engram Engine</h1>
+                <!-- NEW Engram Engine Technical Logo -->
+                <svg class="engram-logo" viewBox="0 0 550 140" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="engram-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color: #fff; stop-opacity: 1" />
+                            <stop offset="60%" style="stop-color: #fff; stop-opacity: 1" />
+                            <stop offset="100%" style="stop-color: var(--accent-magenta); stop-opacity: 1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    
+                    <!-- Geometric Emblem -->
+                    <g transform="translate(10, 25)">
+                        <polygon points="40,0 80,20 80,60 40,80 0,60 0,20" fill="none" stroke="var(--accent-cyan)" stroke-width="2" filter="url(#glow)" opacity="0.8"/>
+                        <polygon points="40,15 65,30 65,55 40,70 15,55 15,30" fill="none" stroke="var(--accent-magenta)" stroke-width="1.5" />
+                        <circle cx="40" cy="42" r="8" fill="var(--accent-cyan)"/>
+                        <line x1="40" y1="42" x2="80" y2="20" stroke="var(--accent-cyan)" stroke-width="1"/>
+                        <line x1="40" y1="42" x2="0" y2="60" stroke="var(--accent-cyan)" stroke-width="1"/>
+                        <line x1="40" y1="42" x2="40" y2="80" stroke="var(--accent-cyan)" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Text -->
+                    <text x="110" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="64" fill="url(#engram-grad)" text-transform="uppercase" letter-spacing="6">ENGRAM</text>
+                    <text x="115" y="115" font-family="ui-monospace, monospace" font-weight="600" font-size="16" fill="var(--text-muted)" text-transform="uppercase" letter-spacing="14">F r a m e w o r k</text>
+                    
+                    <!-- Tech acccents -->
+                    <rect x="115" y="125" width="40" height="2" fill="var(--accent-cyan)" />
+                    <rect x="160" y="125" width="8" height="2" fill="var(--accent-cyan)" />
+                </svg>
+                
                 <p style="text-align: center; max-width: 600px; margin: 0 auto; line-height: 1.6;">A lightweight, highly-extensible C framework built for raw performance and rapid iteration.</p>
             </header>
 
+            <!-- NEW Cinematic Video Showcase -->
+            <div class="video-showcase">
+                <video src="showcase.mov" autoplay loop muted playsinline poster="editor.png"></video>
+                <div class="video-overlay-bar">
+                    <span>SYS.RENDER_PIPELINE // ACTIVE</span>
+                    <span>V.1.0.4</span>
+                </div>
+            </div>
+
             <section class="gallery">
                 <div class="screenshot-card">
-                    <!-- Images will gracefully fall back to a dark box if the path is wrong -->
+                    <!-- Image paths updated to root -->
                     <img src="editor.png" alt="[Image Not Found: Editor Viewport]">
                     <div class="screenshot-info">
                         <h3>Integrated Editor</h3>
@@ -420,6 +521,7 @@
                 </div>
 
                 <div class="screenshot-card">
+                    <!-- Image paths updated to root -->
                     <img src="lua.png" alt="[Image Not Found: Scripting Console]">
                     <div class="screenshot-info">
                         <h3>Lua Virtual Machine</h3>
