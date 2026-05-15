@@ -123,6 +123,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="642,125,697,164,694,169,639,129"/>
 <area shape="poly" title=" " alt="" coords="677,119,909,171,908,177,676,124"/>
 <area shape="poly" title=" " alt="" coords="713,116,1086,164,1097,166,1096,171,1085,169,713,121"/>
+<area shape="rect" href="EditorConsole_8c.html" title="Implementation of the Editor Console UI element." alt="" coords="181,328,347,353"/>
+<area shape="poly" title=" " alt="" coords="267,294,267,328,261,328,261,294"/>
 <area shape="poly" title=" " alt="" coords="483,206,304,257,303,252,481,201"/>
 </map>
 </div>
@@ -255,7 +257,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference-counted pointer to the asset, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference-counted pointer to the asset, or NULL on failure.</dd></dl>
+<p>Loads a resource from a virtual path. </p>
 
 </div>
 </div>
@@ -278,10 +281,11 @@ Functions</h2></td></tr>
 <p>Cleans up the resource cache and unregisters all loaders. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
+    <tr><td class="paramname">ctx</td><td>The engine context.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Cleans up the resource cache and unregisters all loaders. </p>
 
 </div>
 </div>
@@ -356,10 +360,11 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
     <tr><td class="paramname">ext</td><td>The file extension string including the dot. </td></tr>
     <tr><td class="paramname">load</td><td>Pointer to the loading function. </td></tr>
-    <tr><td class="paramname">unload</td><td>Pointer to the unloading function. </td></tr>
+    <tr><td class="paramname">unload</td><td>Pointer to the unloading function.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Registers a new loader for a specific file type. </p>
 
 </div>
 </div>
@@ -393,10 +398,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
-    <tr><td class="paramname">resource</td><td>The pointer to the resource to release. </td></tr>
+    <tr><td class="paramname">resource</td><td>The pointer to the resource to release.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Decrements the reference count or releases a resource from the manager. </p>
 
 </div>
 </div>

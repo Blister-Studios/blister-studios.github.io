@@ -205,16 +205,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0b02eefc00053dbd2228b085fa47f116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the resource manager within the engine context.  <br /></td></tr>
 <tr class="separator:a0b02eefc00053dbd2228b085fa47f116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade099ba13f3bd21dc4dd8f52809b50b2" id="r_ade099ba13f3bd21dc4dd8f52809b50b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ResourceManager_8c.html#ade099ba13f3bd21dc4dd8f52809b50b2">resource_manager_register_loader</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, const char *ext, <a class="el" href="ResourceManager_8h.html#a2fab02c17b9665b7ae8a0f55b8455414">ResourceLoadFn</a> load, <a class="el" href="ResourceManager_8h.html#a49ceb71321f30130a286e813e6459061">ResourceUnloadFn</a> unload)</td></tr>
-<tr class="memdesc:ade099ba13f3bd21dc4dd8f52809b50b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new loader for a specific file type.  <br /></td></tr>
+<tr class="memdesc:ade099ba13f3bd21dc4dd8f52809b50b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a loader to a resource manager.  <br /></td></tr>
 <tr class="separator:ade099ba13f3bd21dc4dd8f52809b50b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee7173098cc625ae4d0062f0b2bc8c2" id="r_a9ee7173098cc625ae4d0062f0b2bc8c2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ResourceManager_8c.html#a9ee7173098cc625ae4d0062f0b2bc8c2">resource_load</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, const char *v_path)</td></tr>
-<tr class="memdesc:a9ee7173098cc625ae4d0062f0b2bc8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a resource from a virtual path.  <br /></td></tr>
+<tr class="memdesc:a9ee7173098cc625ae4d0062f0b2bc8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a resource.  <br /></td></tr>
 <tr class="separator:a9ee7173098cc625ae4d0062f0b2bc8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c7c8049e616f3986b67200e0fada398" id="r_a2c7c8049e616f3986b67200e0fada398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ResourceManager_8c.html#a2c7c8049e616f3986b67200e0fada398">resource_release</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, void *resource)</td></tr>
-<tr class="memdesc:a2c7c8049e616f3986b67200e0fada398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the reference count or releases a resource from the manager.  <br /></td></tr>
+<tr class="memdesc:a2c7c8049e616f3986b67200e0fada398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a resource.  <br /></td></tr>
 <tr class="separator:a2c7c8049e616f3986b67200e0fada398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8905afcbc2d66a67fe1ab032f2254db" id="r_aa8905afcbc2d66a67fe1ab032f2254db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ResourceManager_8c.html#aa8905afcbc2d66a67fe1ab032f2254db">resource_manager_cleanup</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
-<tr class="memdesc:aa8905afcbc2d66a67fe1ab032f2254db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the resource cache and unregisters all loaders.  <br /></td></tr>
+<tr class="memdesc:aa8905afcbc2d66a67fe1ab032f2254db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the resource manager.  <br /></td></tr>
 <tr class="separator:aa8905afcbc2d66a67fe1ab032f2254db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -246,16 +246,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Loads a resource. </p>
 <p>Loads a resource from a virtual path. </p>
-<p>This function resolves the path via the <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a>, checks if the resource is already in the cache, and if not, uses the appropriate loader.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
-    <tr><td class="paramname">v_path</td><td>The virtual path to the asset (e.g., "res://hero.png"). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference-counted pointer to the asset, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -275,13 +267,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Cleans up the resource manager. </p>
 <p>Cleans up the resource cache and unregisters all loaders. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -349,17 +336,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Registers a loader to a resource manager. </p>
 <p>Registers a new loader for a specific file type. </p>
-<p>Example: resource_manager_register_loader(ctx, ".png", load_png, unload_png);</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
-    <tr><td class="paramname">ext</td><td>The file extension string including the dot. </td></tr>
-    <tr><td class="paramname">load</td><td>Pointer to the loading function. </td></tr>
-    <tr><td class="paramname">unload</td><td>Pointer to the unloading function. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -389,14 +367,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Releases a resource. </p>
 <p>Decrements the reference count or releases a resource from the manager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
-    <tr><td class="paramname">resource</td><td>The pointer to the resource to release. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

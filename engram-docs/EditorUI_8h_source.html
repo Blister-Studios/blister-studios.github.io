@@ -87,10 +87,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Engram_8h.html">Core/Engram.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="GameObject_8h.html">Hierarchy/GameObject.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keywordtype">void</span> draw_editor_ui(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keywordtype">void</span> editor_log_push(<span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span> draw_editor_ui(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> <a class="code hl_function" href="EditorConsole_8c.html#aa289d765da87802efa1cd71ca1de8e0d">editor_log_push</a>(<span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aEditorConsole_8c_html_aa289d765da87802efa1cd71ca1de8e0d"><div class="ttname"><a href="EditorConsole_8c.html#aa289d765da87802efa1cd71ca1de8e0d">editor_log_push</a></div><div class="ttdeci">void editor_log_push(int level, const char *fmt,...)</div><div class="ttdoc">Pushes a log entry of a specified level and format to the editor console.</div><div class="ttdef"><b>Definition</b> EditorConsole.c:28</div></div>
 <div class="ttc" id="aEngram_8h_html"><div class="ttname"><a href="Engram_8h.html">Engram.h</a></div><div class="ttdoc">The central entry point and context management for the Engram Engine.</div></div>
 <div class="ttc" id="aGameObject_8h_html"><div class="ttname"><a href="GameObject_8h.html">GameObject.h</a></div><div class="ttdoc">The fundamental entity container in the Engram Engine's ECS architecture.</div></div>
 <div class="ttc" id="astructEngramContext_html"><div class="ttname"><a href="structEngramContext.html">EngramContext</a></div><div class="ttdoc">The heart of the engine state, encapsulating all sub-systems.</div><div class="ttdef"><b>Definition</b> Engram.h:49</div></div>

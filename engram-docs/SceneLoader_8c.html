@@ -244,16 +244,17 @@ Include dependency graph for SceneLoader.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a368667b7d78946c9c83ddcae1b4d767a" id="r_a368667b7d78946c9c83ddcae1b4d767a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SceneLoader_8c.html#a368667b7d78946c9c83ddcae1b4d767a">scene_load</a> (const char *vfs_path)</td></tr>
-<tr class="memdesc:a368667b7d78946c9c83ddcae1b4d767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy.  <br /></td></tr>
+<tr class="memdesc:a368667b7d78946c9c83ddcae1b4d767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a scene.  <br /></td></tr>
 <tr class="separator:a368667b7d78946c9c83ddcae1b4d767a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1182f8f9a52ee623d2162422f158c2" id="r_a0a1182f8f9a52ee623d2162422f158c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SceneLoader_8c.html#a0a1182f8f9a52ee623d2162422f158c2">scene_save</a> (const char *vfs_path, <a class="el" href="structScene.html">Scene</a> *scene)</td></tr>
-<tr class="memdesc:a0a1182f8f9a52ee623d2162422f158c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the current active scene into a JSON file.  <br /></td></tr>
+<tr class="memdesc:a0a1182f8f9a52ee623d2162422f158c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a scene.  <br /></td></tr>
 <tr class="separator:a0a1182f8f9a52ee623d2162422f158c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a890990c04af8c74311cbbeb4da5f7fc0" id="r_a890990c04af8c74311cbbeb4da5f7fc0"><td class="memItemLeft" align="right" valign="top"><a id="a890990c04af8c74311cbbeb4da5f7fc0" name="a890990c04af8c74311cbbeb4da5f7fc0"></a>
 <a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>g_engram_ctx</b></td></tr>
+<tr class="memdesc:a890990c04af8c74311cbbeb4da5f7fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global Engram context. <br /></td></tr>
 <tr class="separator:a890990c04af8c74311cbbeb4da5f7fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -275,17 +276,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Loads a scene. </p>
 <p>Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy. </p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vfs_path</td><td>The virtual file system path to the .json scene file. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Scene* A pointer to the populated <a class="el" href="structScene.html">Scene</a>, or NULL on failure. </dd></dl>
-</li>
-</ul>
 
 </div>
 </div>
@@ -315,18 +307,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Saves a scene. </p>
 <p>Serializes the current active scene into a JSON file. </p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vfs_path</td><td>The destination path. </td></tr>
-    <tr><td class="paramname">scene</td><td>The scene instance to save. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd></dl>
-</li>
-</ul>
 
 </div>
 </div>

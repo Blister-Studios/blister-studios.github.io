@@ -149,6 +149,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="1678,256,1430,309,1429,303,1677,251"/>
 <area shape="rect" href="ScriptingInternal_8h_source.html" title=" " alt="" coords="1041,299,1236,339"/>
 <area shape="poly" title=" " alt="" coords="1633,254,1250,301,1237,303,1236,298,1249,296,1632,249"/>
+<area shape="rect" href="EditorConsole_8c.html" title="Implementation of the Editor Console UI element." alt="" coords="2235,548,2400,573"/>
+<area shape="poly" title=" " alt="" coords="2320,514,2320,548,2315,548,2315,514"/>
 <area shape="poly" title=" " alt="" coords="1858,341,1767,396,1764,391,1855,336"/>
 <area shape="poly" title=" " alt="" coords="2388,337,2414,357,2434,385,2441,407,2434,428,2421,445,2403,459,2365,477,2363,472,2400,454,2417,441,2430,425,2436,407,2430,388,2410,361,2385,341"/>
 <area shape="poly" title=" " alt="" coords="2288,337,2021,397,2020,391,2287,332"/>
@@ -223,6 +225,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac3b56939ad6087dbb022825f83d8a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7fb2184aacd5f6448ad37587701a8a" id="r_a0d7fb2184aacd5f6448ad37587701a8a"><td class="memItemLeft" align="right" valign="top"><a id="a0d7fb2184aacd5f6448ad37587701a8a" name="a0d7fb2184aacd5f6448ad37587701a8a"></a>
 <a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mat4_inverse_trs</b> (<a class="el" href="structMat4.html">Mat4</a> m)</td></tr>
+<tr class="memdesc:a0d7fb2184aacd5f6448ad37587701a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the translation, rotation and scale matrix. <br /></td></tr>
 <tr class="separator:a0d7fb2184aacd5f6448ad37587701a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -246,7 +249,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates and returns an identity matrix. </p>
-<dl class="section return"><dt>Returns</dt><dd>An identity matrix where diagonal elements are 1.0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An identity matrix where diagonal elements are 1.0.</dd></dl>
+<p>Creates and returns an identity matrix. </p>
 
 </div>
 </div>
@@ -322,7 +326,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of (a * b). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of (a * b).</dd></dl>
+<p>Multiplies two 4x4 matrices. </p>
 
 </div>
 </div>
@@ -389,7 +394,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The orthographic projection matrix. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The orthographic projection matrix.</dd></dl>
+<p>Creates an orthographic projection matrix. </p>
 
 </div>
 </div>
@@ -435,7 +441,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A combined TRS transformation matrix. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A combined TRS transformation matrix.</dd></dl>
+<p>Creates a transformation matrix from position, rotation, and scale. </p>
 
 </div>
 </div>

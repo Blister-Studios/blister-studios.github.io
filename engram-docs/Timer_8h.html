@@ -115,9 +115,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a2ac7fa418606a0ecd63f4a6d93264ff7" id="r_a2ac7fa418606a0ecd63f4a6d93264ff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Timer_8h.html#a2ac7fa418606a0ecd63f4a6d93264ff7">timer_invoke</a> (struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, float delay, <a class="el" href="Timer_8h.html#a8d286a745d1db1199380df6752bf959b">TimerCallback</a> cb, void *data)</td></tr>
 <tr class="memdesc:a2ac7fa418606a0ecd63f4a6d93264ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a function to run after a specific delay.  <br /></td></tr>
 <tr class="separator:a2ac7fa418606a0ecd63f4a6d93264ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfeb315c459b58e21cf84c674b30e5e5" id="r_abfeb315c459b58e21cf84c674b30e5e5"><td class="memItemLeft" align="right" valign="top"><a id="abfeb315c459b58e21cf84c674b30e5e5" name="abfeb315c459b58e21cf84c674b30e5e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>timer_update_system</b> (struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, float dt)</td></tr>
-<tr class="memdesc:abfeb315c459b58e21cf84c674b30e5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all pending timers. Called internally by the engine. <br /></td></tr>
+<tr class="memitem:abfeb315c459b58e21cf84c674b30e5e5" id="r_abfeb315c459b58e21cf84c674b30e5e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Timer_8h.html#abfeb315c459b58e21cf84c674b30e5e5">timer_update_system</a> (struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, float dt)</td></tr>
+<tr class="memdesc:abfeb315c459b58e21cf84c674b30e5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all pending timers. Called internally by the engine.  <br /></td></tr>
 <tr class="separator:abfeb315c459b58e21cf84c674b30e5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -167,10 +166,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>timer_update_system</
     <tr><td class="paramname">ctx</td><td>The engine context. </td></tr>
     <tr><td class="paramname">delay</td><td>Seconds to wait. </td></tr>
     <tr><td class="paramname">cb</td><td>The function to execute. </td></tr>
-    <tr><td class="paramname">data</td><td>User data passed to the function. </td></tr>
+    <tr><td class="paramname">data</td><td>User data passed to the function.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Schedules a function to run after a specific delay. </p>
+
+</div>
+</div>
+<a id="abfeb315c459b58e21cf84c674b30e5e5" name="abfeb315c459b58e21cf84c674b30e5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfeb315c459b58e21cf84c674b30e5e5">&#9670;&#160;</a></span>timer_update_system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer_update_system </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates all pending timers. Called internally by the engine. </p>
+<p>Updates all pending timers. Called internally by the engine. </p>
 
 </div>
 </div>

@@ -121,54 +121,221 @@ Include dependency graph for Input.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a28ec42e6ed636c1414c974f2d2a4a202" id="r_a28ec42e6ed636c1414c974f2d2a4a202"><td class="memItemLeft" align="right" valign="top"><a id="a28ec42e6ed636c1414c974f2d2a4a202" name="a28ec42e6ed636c1414c974f2d2a4a202"></a>
-<a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>input_create</b> (void)</td></tr>
-<tr class="memdesc:a28ec42e6ed636c1414c974f2d2a4a202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes the input system. <br /></td></tr>
+<tr class="memitem:a28ec42e6ed636c1414c974f2d2a4a202" id="r_a28ec42e6ed636c1414c974f2d2a4a202"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a28ec42e6ed636c1414c974f2d2a4a202">input_create</a> (void)</td></tr>
+<tr class="memdesc:a28ec42e6ed636c1414c974f2d2a4a202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an input system.  <br /></td></tr>
 <tr class="separator:a28ec42e6ed636c1414c974f2d2a4a202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1554b7f1a4ca4852b1eb8ba8b3a1e586" id="r_a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="memItemLeft" align="right" valign="top"><a id="a1554b7f1a4ca4852b1eb8ba8b3a1e586" name="a1554b7f1a4ca4852b1eb8ba8b3a1e586"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_destroy</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory associated with the input system. <br /></td></tr>
+<tr class="memitem:a1554b7f1a4ca4852b1eb8ba8b3a1e586" id="r_a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a1554b7f1a4ca4852b1eb8ba8b3a1e586">input_destroy</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
+<tr class="memdesc:a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an input system.  <br /></td></tr>
 <tr class="separator:a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a349eafbaa3983ea74bb668651f6ec" id="r_af6a349eafbaa3983ea74bb668651f6ec"><td class="memItemLeft" align="right" valign="top"><a id="af6a349eafbaa3983ea74bb668651f6ec" name="af6a349eafbaa3983ea74bb668651f6ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_purge_all</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:af6a349eafbaa3983ea74bb668651f6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces a total reset of all input states. <br /></td></tr>
+<tr class="memitem:af6a349eafbaa3983ea74bb668651f6ec" id="r_af6a349eafbaa3983ea74bb668651f6ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#af6a349eafbaa3983ea74bb668651f6ec">input_purge_all</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
+<tr class="memdesc:af6a349eafbaa3983ea74bb668651f6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purges all events in an input system.  <br /></td></tr>
 <tr class="separator:af6a349eafbaa3983ea74bb668651f6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26cd6b4757d938c63c4f42c6ffb92f86" id="r_a26cd6b4757d938c63c4f42c6ffb92f86"><td class="memItemLeft" align="right" valign="top"><a id="a26cd6b4757d938c63c4f42c6ffb92f86" name="a26cd6b4757d938c63c4f42c6ffb92f86"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_map_action</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id, int sapp_keycode)</td></tr>
-<tr class="memdesc:a26cd6b4757d938c63c4f42c6ffb92f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a physical Sokol key to an abstract action ID. <br /></td></tr>
+<tr class="memitem:a26cd6b4757d938c63c4f42c6ffb92f86" id="r_a26cd6b4757d938c63c4f42c6ffb92f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a26cd6b4757d938c63c4f42c6ffb92f86">input_map_action</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id, int sapp_keycode)</td></tr>
+<tr class="memdesc:a26cd6b4757d938c63c4f42c6ffb92f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps an action in an input system.  <br /></td></tr>
 <tr class="separator:a26cd6b4757d938c63c4f42c6ffb92f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95c81e7cda4b0eec08e7ca19a824bee" id="r_ac95c81e7cda4b0eec08e7ca19a824bee"><td class="memItemLeft" align="right" valign="top"><a id="ac95c81e7cda4b0eec08e7ca19a824bee" name="ac95c81e7cda4b0eec08e7ca19a824bee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_handle_sokol_event</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, const sapp_event *e)</td></tr>
-<tr class="memdesc:ac95c81e7cda4b0eec08e7ca19a824bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the raw 'keys' buffer with hardware events. <br /></td></tr>
+<tr class="memitem:ac95c81e7cda4b0eec08e7ca19a824bee" id="r_ac95c81e7cda4b0eec08e7ca19a824bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#ac95c81e7cda4b0eec08e7ca19a824bee">input_handle_sokol_event</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, const sapp_event *e)</td></tr>
+<tr class="memdesc:ac95c81e7cda4b0eec08e7ca19a824bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles input in a Sokol event.  <br /></td></tr>
 <tr class="separator:ac95c81e7cda4b0eec08e7ca19a824bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b687ae0f9c197a8fa8e8dd7816a165" id="r_ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memItemLeft" align="right" valign="top"><a id="ad0b687ae0f9c197a8fa8e8dd7816a165" name="ad0b687ae0f9c197a8fa8e8dd7816a165"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_update</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes raw key data into high-level Actions. Call this at the START of engram_update. <br /></td></tr>
+<tr class="memitem:ad0b687ae0f9c197a8fa8e8dd7816a165" id="r_ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#ad0b687ae0f9c197a8fa8e8dd7816a165">input_update</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
+<tr class="memdesc:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an input system.  <br /></td></tr>
 <tr class="separator:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b814fda7324b11826d9d5654f32a5d" id="r_a91b814fda7324b11826d9d5654f32a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a91b814fda7324b11826d9d5654f32a5d">input_post_update</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:a91b814fda7324b11826d9d5654f32a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame.  <br /></td></tr>
+<tr class="memdesc:a91b814fda7324b11826d9d5654f32a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-updates an input system.  <br /></td></tr>
 <tr class="separator:a91b814fda7324b11826d9d5654f32a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55221b674f82821df41238f6fc5dead3" id="r_a55221b674f82821df41238f6fc5dead3"><td class="memItemLeft" align="right" valign="top"><a id="a55221b674f82821df41238f6fc5dead3" name="a55221b674f82821df41238f6fc5dead3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_action</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
+<tr class="memdesc:a55221b674f82821df41238f6fc5dead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action from an input system. <br /></td></tr>
 <tr class="separator:a55221b674f82821df41238f6fc5dead3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53c181cb6d1b03da4cbc88582172bc8" id="r_ad53c181cb6d1b03da4cbc88582172bc8"><td class="memItemLeft" align="right" valign="top"><a id="ad53c181cb6d1b03da4cbc88582172bc8" name="ad53c181cb6d1b03da4cbc88582172bc8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_action_down</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
+<tr class="memdesc:ad53c181cb6d1b03da4cbc88582172bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action down from an input system. <br /></td></tr>
 <tr class="separator:ad53c181cb6d1b03da4cbc88582172bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf0dd28abd96f9a44453e8031c59653" id="r_aadf0dd28abd96f9a44453e8031c59653"><td class="memItemLeft" align="right" valign="top"><a id="aadf0dd28abd96f9a44453e8031c59653" name="aadf0dd28abd96f9a44453e8031c59653"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_key</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
-<tr class="memdesc:aadf0dd28abd96f9a44453e8031c59653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true while the key is held. <br /></td></tr>
+<tr class="memitem:aadf0dd28abd96f9a44453e8031c59653" id="r_aadf0dd28abd96f9a44453e8031c59653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#aadf0dd28abd96f9a44453e8031c59653">input_get_key</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
+<tr class="memdesc:aadf0dd28abd96f9a44453e8031c59653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a key from an input system.  <br /></td></tr>
 <tr class="separator:aadf0dd28abd96f9a44453e8031c59653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af05e9a32452f692e8f464fd3f82c3203" id="r_af05e9a32452f692e8f464fd3f82c3203"><td class="memItemLeft" align="right" valign="top"><a id="af05e9a32452f692e8f464fd3f82c3203" name="af05e9a32452f692e8f464fd3f82c3203"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_key_down</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
-<tr class="memdesc:af05e9a32452f692e8f464fd3f82c3203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true only on the frame the key was first pressed. <br /></td></tr>
+<tr class="memitem:af05e9a32452f692e8f464fd3f82c3203" id="r_af05e9a32452f692e8f464fd3f82c3203"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#af05e9a32452f692e8f464fd3f82c3203">input_get_key_down</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
+<tr class="memdesc:af05e9a32452f692e8f464fd3f82c3203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a key down from an input system.  <br /></td></tr>
 <tr class="separator:af05e9a32452f692e8f464fd3f82c3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469cba1197821574a132c21256c27529" id="r_a469cba1197821574a132c21256c27529"><td class="memItemLeft" align="right" valign="top"><a id="a469cba1197821574a132c21256c27529" name="a469cba1197821574a132c21256c27529"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
+<tr class="memdesc:a469cba1197821574a132c21256c27529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets analogue input from an input system. <br /></td></tr>
 <tr class="separator:a469cba1197821574a132c21256c27529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the action-based input system. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a28ec42e6ed636c1414c974f2d2a4a202" name="a28ec42e6ed636c1414c974f2d2a4a202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ec42e6ed636c1414c974f2d2a4a202">&#9670;&#160;</a></span>input_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structInputSystem.html">InputSystem</a> * input_create </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an input system. </p>
+<p>Allocates and initializes the input system. </p>
+
+</div>
+</div>
+<a id="a1554b7f1a4ca4852b1eb8ba8b3a1e586" name="a1554b7f1a4ca4852b1eb8ba8b3a1e586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1554b7f1a4ca4852b1eb8ba8b3a1e586">&#9670;&#160;</a></span>input_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys an input system. </p>
+<p>Frees memory associated with the input system. </p>
+
+</div>
+</div>
+<a id="aadf0dd28abd96f9a44453e8031c59653" name="aadf0dd28abd96f9a44453e8031c59653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf0dd28abd96f9a44453e8031c59653">&#9670;&#160;</a></span>input_get_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool input_get_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sapp_keycode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a key from an input system. </p>
+<p>Returns true while the key is held. </p>
+
+</div>
+</div>
+<a id="af05e9a32452f692e8f464fd3f82c3203" name="af05e9a32452f692e8f464fd3f82c3203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05e9a32452f692e8f464fd3f82c3203">&#9670;&#160;</a></span>input_get_key_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool input_get_key_down </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sapp_keycode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a key down from an input system. </p>
+<p>Returns true only on the frame the key was first pressed. </p>
+
+</div>
+</div>
+<a id="ac95c81e7cda4b0eec08e7ca19a824bee" name="ac95c81e7cda4b0eec08e7ca19a824bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95c81e7cda4b0eec08e7ca19a824bee">&#9670;&#160;</a></span>input_handle_sokol_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_handle_sokol_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sapp_event *&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles input in a Sokol event. </p>
+<p>Updates the raw 'keys' buffer with hardware events. </p>
+
+</div>
+</div>
+<a id="a26cd6b4757d938c63c4f42c6ffb92f86" name="a26cd6b4757d938c63c4f42c6ffb92f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26cd6b4757d938c63c4f42c6ffb92f86">&#9670;&#160;</a></span>input_map_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_map_action </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>action_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sapp_keycode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps an action in an input system. </p>
+<p>Maps a physical Sokol key to an abstract action ID. </p>
+
+</div>
+</div>
 <a id="a91b814fda7324b11826d9d5654f32a5d" name="a91b814fda7324b11826d9d5654f32a5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91b814fda7324b11826d9d5654f32a5d">&#9670;&#160;</a></span>input_post_update()</h2>
 
@@ -185,8 +352,51 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
+<p>Post-updates an input system. </p>
+<p>Processes raw key data into high-level Actions and syncs frame states.</p>
 <p>Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame. </p>
-<p>Processes raw key data into high-level Actions and syncs frame states. </p>
+
+</div>
+</div>
+<a id="af6a349eafbaa3983ea74bb668651f6ec" name="af6a349eafbaa3983ea74bb668651f6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a349eafbaa3983ea74bb668651f6ec">&#9670;&#160;</a></span>input_purge_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_purge_all </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Purges all events in an input system. </p>
+<p>Forces a total reset of all input states. </p>
+
+</div>
+</div>
+<a id="ad0b687ae0f9c197a8fa8e8dd7816a165" name="ad0b687ae0f9c197a8fa8e8dd7816a165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b687ae0f9c197a8fa8e8dd7816a165">&#9670;&#160;</a></span>input_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates an input system. </p>
+<p>Processes raw key data into high-level Actions. Call this at the START of engram_update. </p>
 
 </div>
 </div>

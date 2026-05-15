@@ -88,13 +88,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Time_8h__dep__incl.png" border="0" usemap="#aengram_2Core_2Time_8hdep" alt=""/></div>
 <map name="aengram_2Core_2Time_8hdep" id="aengram_2Core_2Time_8hdep">
-<area shape="rect" title="Global engine timing state and frame delta calculations." alt="" coords="179,5,334,31"/>
-<area shape="rect" href="EditorState_8h_source.html" title=" " alt="" coords="5,79,153,104"/>
-<area shape="poly" title=" " alt="" coords="216,38,109,81,107,76,214,33"/>
-<area shape="rect" href="Audio_8c.html" title="Logic for spatial mixing, pitch shifting, and time&#45;scaled playback." alt="" coords="177,79,336,104"/>
-<area shape="poly" title=" " alt="" coords="259,44,259,79,254,79,254,44"/>
-<area shape="rect" href="Time_8c.html" title="Implementation of the engine time system using sokol_time." alt="" coords="361,79,515,104"/>
-<area shape="poly" title=" " alt="" coords="299,33,409,76,407,81,297,38"/>
+<area shape="rect" title="Global engine timing state and frame delta calculations." alt="" coords="188,5,343,31"/>
+<area shape="rect" href="EditorState_8h_source.html" title=" " alt="" coords="14,79,162,104"/>
+<area shape="poly" title=" " alt="" coords="225,38,118,81,116,76,223,33"/>
+<area shape="rect" href="Audio_8c.html" title="Logic for spatial mixing, pitch shifting, and time&#45;scaled playback." alt="" coords="186,79,345,104"/>
+<area shape="poly" title=" " alt="" coords="268,44,268,79,263,79,263,44"/>
+<area shape="rect" href="Time_8c.html" title="Implementation of the engine time system using sokol_time." alt="" coords="369,79,524,104"/>
+<area shape="poly" title=" " alt="" coords="308,33,418,76,416,81,306,38"/>
+<area shape="rect" href="EditorConsole_8c.html" title="Implementation of the Editor Console UI element." alt="" coords="5,152,171,177"/>
+<area shape="poly" title=" " alt="" coords="91,118,91,152,85,152,85,118"/>
 </map>
 </div>
 </div>
@@ -108,9 +110,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acf5c8bb89727a653a3320edfa8fc4e69" id="r_acf5c8bb89727a653a3320edfa8fc4e69"><td class="memItemLeft" align="right" valign="top"><a id="acf5c8bb89727a653a3320edfa8fc4e69" name="acf5c8bb89727a653a3320edfa8fc4e69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>time_init</b> (void)</td></tr>
-<tr class="memdesc:acf5c8bb89727a653a3320edfa8fc4e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the high-resolution timer. <br /></td></tr>
+<tr class="memitem:acf5c8bb89727a653a3320edfa8fc4e69" id="r_acf5c8bb89727a653a3320edfa8fc4e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Time_8h.html#acf5c8bb89727a653a3320edfa8fc4e69">time_init</a> (void)</td></tr>
+<tr class="memdesc:acf5c8bb89727a653a3320edfa8fc4e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the high-resolution timer.  <br /></td></tr>
 <tr class="separator:acf5c8bb89727a653a3320edfa8fc4e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb10cdc11478cdc02f7eba2e4f0c7b69" id="r_acb10cdc11478cdc02f7eba2e4f0c7b69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Time_8h.html#acb10cdc11478cdc02f7eba2e4f0c7b69">time_update</a> (void)</td></tr>
 <tr class="memdesc:acb10cdc11478cdc02f7eba2e4f0c7b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the delta time since the last frame.  <br /></td></tr>
@@ -118,14 +119,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>time_init</b> (void)<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a430105d70f15c8187015577c21275ca4" id="r_a430105d70f15c8187015577c21275ca4"><td class="memItemLeft" align="right" valign="top"><a id="a430105d70f15c8187015577c21275ca4" name="a430105d70f15c8187015577c21275ca4"></a>
-<a class="el" href="structEngineTime.html">EngineTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Time</b></td></tr>
-<tr class="memdesc:a430105d70f15c8187015577c21275ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The globally accessible Time state. <br /></td></tr>
+<tr class="memitem:a430105d70f15c8187015577c21275ca4" id="r_a430105d70f15c8187015577c21275ca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEngineTime.html">EngineTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Time_8h.html#a430105d70f15c8187015577c21275ca4">Time</a></td></tr>
+<tr class="memdesc:a430105d70f15c8187015577c21275ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The globally accessible Time state.  <br /></td></tr>
 <tr class="separator:a430105d70f15c8187015577c21275ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Global engine timing state and frame delta calculations. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="acf5c8bb89727a653a3320edfa8fc4e69" name="acf5c8bb89727a653a3320edfa8fc4e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5c8bb89727a653a3320edfa8fc4e69">&#9670;&#160;</a></span>time_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void time_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the high-resolution timer. </p>
+<p>Initializes the high-resolution timer. </p>
+
+</div>
+</div>
 <a id="acb10cdc11478cdc02f7eba2e4f0c7b69" name="acb10cdc11478cdc02f7eba2e4f0c7b69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb10cdc11478cdc02f7eba2e4f0c7b69">&#9670;&#160;</a></span>time_update()</h2>
 
@@ -144,8 +165,35 @@ Variables</h2></td></tr>
 
 <p>Calculates the delta time since the last frame. </p>
 <ul>
-<li>Must be called exactly once at the very beginning of the main game loop. </li>
+<li>Must be called exactly once at the very beginning of the main game loop.</li>
 </ul>
+<p>Calculates the delta time since the last frame. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a430105d70f15c8187015577c21275ca4" name="a430105d70f15c8187015577c21275ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430105d70f15c8187015577c21275ca4">&#9670;&#160;</a></span>Time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structEngineTime.html">EngineTime</a> Time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The globally accessible Time state. </p>
+<p>The globally accessible Time state. </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_0',['z',['../structQuat.html#a611fbb79f7b802da4f1c65a31c2c5fea',1,'Quat::z'],['../structVec3.html#a64f3f00cd2dd9076999eeb2f05210388',1,'Vec3::z'],['../structVec4.html#a60d0b599c7104dd0c6e2ae0cc4cd0310',1,'Vec4::z']]]
+  ['y_0',['y',['../structQuat.html#ac6045ee4149a978a4ce429c132e46fa2',1,'Quat::y'],['../structVec2.html#a30543787e62f6d915543cf1dfb04c094',1,'Vec2::y'],['../structVec3.html#abc1d241232cb04aa98217a942402ae68',1,'Vec3::y'],['../structVec4.html#a21c69aa0ef01a4ea985966c5527bbd69',1,'Vec4::y']]]
 ];

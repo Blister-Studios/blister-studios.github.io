@@ -14,7 +14,8 @@ var searchData=
   ['destroy_11',['destroy',['../structComponent.html#ab76fc77bd5f97b8c665421094995cd12',1,'Component']]],
   ['direction_12',['direction',['../structLight.html#ac916acd4b38f3688690ebf6fe5e1b73e',1,'Light']]],
   ['dr_5fwav_5fimplementation_13',['DR_WAV_IMPLEMENTATION',['../AudioClip_8c.html#a3247bf780f78dc4be31f7035ea1506ea',1,'AudioClip.c']]],
-  ['dynamic_5farray_5fdefault_5fcapacity_14',['DYNAMIC_ARRAY_DEFAULT_CAPACITY',['../DynamicArray_8c.html#ada61628874e4d6b91eca99d411f9f561',1,'DynamicArray.c']]],
-  ['dynamicarray_2ec_15',['DynamicArray.c',['../DynamicArray_8c.html',1,'']]],
-  ['dynamicarray_2eh_16',['DynamicArray.h',['../DynamicArray_8h.html',1,'']]]
+  ['draw_5fconsole_14',['draw_console',['../EditorConsole_8c.html#af5a4b2ea36096606c71b0a2c717a5d2e',1,'EditorConsole.c']]],
+  ['dynamic_5farray_5fdefault_5fcapacity_15',['DYNAMIC_ARRAY_DEFAULT_CAPACITY',['../DynamicArray_8c.html#ada61628874e4d6b91eca99d411f9f561',1,'DynamicArray.c']]],
+  ['dynamicarray_2ec_16',['DynamicArray.c',['../DynamicArray_8c.html',1,'']]],
+  ['dynamicarray_2eh_17',['DynamicArray.h',['../DynamicArray_8h.html',1,'']]]
 ];

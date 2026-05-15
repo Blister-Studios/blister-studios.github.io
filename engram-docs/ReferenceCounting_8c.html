@@ -130,13 +130,13 @@ typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>rc_count
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a61d6d02948166a2632f8fe2d78a60ca8" id="r_a61d6d02948166a2632f8fe2d78a60ca8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReferenceCounting_8c.html#a61d6d02948166a2632f8fe2d78a60ca8">rc_alloc</a> (size_t size, void(*destroy)(void *data))</td></tr>
-<tr class="memdesc:a61d6d02948166a2632f8fe2d78a60ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a block of memory managed by a reference counter.  <br /></td></tr>
+<tr class="memdesc:a61d6d02948166a2632f8fe2d78a60ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates an RC header.  <br /></td></tr>
 <tr class="separator:a61d6d02948166a2632f8fe2d78a60ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad953c7f8ee60589fc6d05d3b88cab608" id="r_ad953c7f8ee60589fc6d05d3b88cab608"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReferenceCounting_8c.html#ad953c7f8ee60589fc6d05d3b88cab608">rc_acquire</a> (void *data)</td></tr>
-<tr class="memdesc:ad953c7f8ee60589fc6d05d3b88cab608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the reference count of the data.  <br /></td></tr>
+<tr class="memdesc:ad953c7f8ee60589fc6d05d3b88cab608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a resource.  <br /></td></tr>
 <tr class="separator:ad953c7f8ee60589fc6d05d3b88cab608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ee73bb696145c71c8b2cda5f55b787" id="r_a47ee73bb696145c71c8b2cda5f55b787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReferenceCounting_8c.html#a47ee73bb696145c71c8b2cda5f55b787">rc_release</a> (void *data)</td></tr>
-<tr class="memdesc:a47ee73bb696145c71c8b2cda5f55b787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the reference count of the data.  <br /></td></tr>
+<tr class="memdesc:a47ee73bb696145c71c8b2cda5f55b787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a resource.  <br /></td></tr>
 <tr class="separator:a47ee73bb696145c71c8b2cda5f55b787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fea4c17a75d3658e39cef867ec8f80b" id="r_a5fea4c17a75d3658e39cef867ec8f80b"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReferenceCounting_8c.html#a5fea4c17a75d3658e39cef867ec8f80b">rc_count</a> (const void *data)</td></tr>
 <tr class="memdesc:a5fea4c17a75d3658e39cef867ec8f80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current number of owners for a resource.  <br /></td></tr>
@@ -161,15 +161,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Acquires a resource. </p>
 <p>Increments the reference count of the data. </p>
-<p>Use this when storing a pointer to a shared resource.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Pointer to the reference-counted user data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The same pointer passed in, for convenience (chaining). </dd></dl>
 
 </div>
 </div>
@@ -199,16 +192,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Allocates an RC header. </p>
 <p>Allocates a block of memory managed by a reference counter. </p>
-<p>The returned pointer points to the user data, not the internal control block. Initial reference count is 1.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>The size of the user data to allocate. </td></tr>
-    <tr><td class="paramname">destroy</td><td>Optional callback invoked when the reference count reaches zero. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the allocated user data, or NULL if allocation fails. </dd></dl>
 
 </div>
 </div>
@@ -256,14 +241,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Releases a resource. </p>
 <p>Decrements the reference count of the data. </p>
-<p>If the count reaches zero, the destroy callback is invoked and the internal memory is freed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Pointer to the reference-counted user data. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

@@ -191,22 +191,24 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Engram_8h__dep__incl.png" border="0" usemap="#aengram_2Core_2Engram_8hdep" alt=""/></div>
 <map name="aengram_2Core_2Engram_8hdep" id="aengram_2Core_2Engram_8hdep">
-<area shape="rect" title="The central entry point and context management for the Engram Engine." alt="" coords="472,5,644,31"/>
-<area shape="rect" href="EditorState_8h_source.html" title=" " alt="" coords="5,167,153,192"/>
-<area shape="poly" title=" " alt="" coords="458,27,340,34,214,46,109,61,74,71,56,81,50,90,48,100,51,124,61,147,73,165,68,168,57,149,46,125,42,100,45,88,52,77,72,66,108,56,213,40,340,29,458,21"/>
-<area shape="rect" href="EditorUI_8h_source.html" title=" " alt="" coords="66,86,194,111"/>
-<area shape="poly" title=" " alt="" coords="469,35,208,81,175,89,174,83,207,76,468,30"/>
-<area shape="rect" href="Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="219,86,457,111"/>
-<area shape="poly" title=" " alt="" coords="514,38,371,88,369,83,512,33"/>
-<area shape="rect" href="Core_8h.html" title="Umbrella header for central engine systems." alt="" coords="482,86,634,111"/>
-<area shape="poly" title=" " alt="" coords="561,44,561,86,555,86,555,44"/>
-<area shape="rect" href="ResourceManager_8c.html" title="Implementation of the resource loading, caching, and unloading logic." alt="" coords="659,79,855,119"/>
-<area shape="poly" title=" " alt="" coords="600,33,710,76,708,81,598,38"/>
-<area shape="rect" href="SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="879,86,1109,111"/>
-<area shape="poly" title=" " alt="" coords="635,30,931,83,930,89,634,36"/>
-<area shape="rect" href="RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend for Modern Sokol." alt="" coords="1133,79,1338,119"/>
-<area shape="poly" title=" " alt="" coords="658,25,871,47,1121,76,1133,78,1132,83,1120,81,871,52,658,31"/>
-<area shape="poly" title=" " alt="" coords="117,124,89,168,85,165,113,121"/>
+<area shape="rect" title="The central entry point and context management for the Engram Engine." alt="" coords="481,5,653,31"/>
+<area shape="rect" href="EditorState_8h_source.html" title=" " alt="" coords="14,167,162,192"/>
+<area shape="poly" title=" " alt="" coords="467,27,349,34,223,46,118,61,83,71,65,81,59,90,56,100,60,124,70,147,82,165,77,168,65,149,55,125,51,100,54,88,61,77,81,66,117,56,222,40,348,29,467,21"/>
+<area shape="rect" href="EditorUI_8h_source.html" title=" " alt="" coords="75,86,203,111"/>
+<area shape="poly" title=" " alt="" coords="478,35,217,81,184,89,183,83,215,76,477,30"/>
+<area shape="rect" href="Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="227,86,466,111"/>
+<area shape="poly" title=" " alt="" coords="523,38,380,88,378,83,521,33"/>
+<area shape="rect" href="Core_8h.html" title="Umbrella header for central engine systems." alt="" coords="491,86,643,111"/>
+<area shape="poly" title=" " alt="" coords="569,44,569,86,564,86,564,44"/>
+<area shape="rect" href="ResourceManager_8c.html" title="Implementation of the resource loading, caching, and unloading logic." alt="" coords="667,79,863,119"/>
+<area shape="poly" title=" " alt="" coords="609,33,719,76,717,81,607,38"/>
+<area shape="rect" href="SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="888,86,1117,111"/>
+<area shape="poly" title=" " alt="" coords="644,30,940,83,939,89,643,36"/>
+<area shape="rect" href="RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend for Modern Sokol." alt="" coords="1141,79,1347,119"/>
+<area shape="poly" title=" " alt="" coords="667,25,880,47,1130,76,1141,78,1141,83,1129,81,879,52,666,31"/>
+<area shape="rect" href="EditorConsole_8c.html" title="Implementation of the Editor Console UI element." alt="" coords="5,240,171,265"/>
+<area shape="poly" title=" " alt="" coords="91,206,91,240,85,240,85,206"/>
+<area shape="poly" title=" " alt="" coords="126,124,98,168,93,165,122,121"/>
 </map>
 </div>
 </div>
@@ -233,38 +235,189 @@ Functions</h2></td></tr>
 <a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>engram_create</b> (void)</td></tr>
 <tr class="memdesc:ab42638100a337e50b1ba93ab45bda91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes a new <a class="el" href="structEngramContext.html" title="The heart of the engine state, encapsulating all sub-systems.">EngramContext</a>. <br /></td></tr>
 <tr class="separator:ab42638100a337e50b1ba93ab45bda91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3edbe48daf943a7bd9ed2009a592e873" id="r_a3edbe48daf943a7bd9ed2009a592e873"><td class="memItemLeft" align="right" valign="top"><a id="a3edbe48daf943a7bd9ed2009a592e873" name="a3edbe48daf943a7bd9ed2009a592e873"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>engram_update</b> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, float dt)</td></tr>
-<tr class="memdesc:a3edbe48daf943a7bd9ed2009a592e873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs one iteration of the engine's internal update logic. <br /></td></tr>
+<tr class="memitem:a3edbe48daf943a7bd9ed2009a592e873" id="r_a3edbe48daf943a7bd9ed2009a592e873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engram_8h.html#a3edbe48daf943a7bd9ed2009a592e873">engram_update</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, float dt)</td></tr>
+<tr class="memdesc:a3edbe48daf943a7bd9ed2009a592e873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs one iteration of the engine's internal update logic.  <br /></td></tr>
 <tr class="separator:a3edbe48daf943a7bd9ed2009a592e873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb663bb65f33d4f394d88d37f1977b10" id="r_acb663bb65f33d4f394d88d37f1977b10"><td class="memItemLeft" align="right" valign="top"><a id="acb663bb65f33d4f394d88d37f1977b10" name="acb663bb65f33d4f394d88d37f1977b10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>engram_run</b> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, const <a class="el" href="structEngramConfig.html">EngramConfig</a> *config)</td></tr>
-<tr class="memdesc:acb663bb65f33d4f394d88d37f1977b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the application main loop. <br /></td></tr>
+<tr class="memitem:acb663bb65f33d4f394d88d37f1977b10" id="r_acb663bb65f33d4f394d88d37f1977b10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engram_8h.html#acb663bb65f33d4f394d88d37f1977b10">engram_run</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, const <a class="el" href="structEngramConfig.html">EngramConfig</a> *config)</td></tr>
+<tr class="memdesc:acb663bb65f33d4f394d88d37f1977b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the application main loop.  <br /></td></tr>
 <tr class="separator:acb663bb65f33d4f394d88d37f1977b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b38096e45de6ac3356e1afe21ef12c" id="r_ad5b38096e45de6ac3356e1afe21ef12c"><td class="memItemLeft" align="right" valign="top"><a id="ad5b38096e45de6ac3356e1afe21ef12c" name="ad5b38096e45de6ac3356e1afe21ef12c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>engram_load_scene</b> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, <a class="el" href="structScene.html">Scene</a> *new_scene)</td></tr>
-<tr class="memdesc:ad5b38096e45de6ac3356e1afe21ef12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues a new scene to be loaded. <br /></td></tr>
+<tr class="memitem:ad5b38096e45de6ac3356e1afe21ef12c" id="r_ad5b38096e45de6ac3356e1afe21ef12c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engram_8h.html#ad5b38096e45de6ac3356e1afe21ef12c">engram_load_scene</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, <a class="el" href="structScene.html">Scene</a> *new_scene)</td></tr>
+<tr class="memdesc:ad5b38096e45de6ac3356e1afe21ef12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues a new scene to be loaded.  <br /></td></tr>
 <tr class="separator:ad5b38096e45de6ac3356e1afe21ef12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62cce561c0931123aa510c5e7dd1aa1e" id="r_a62cce561c0931123aa510c5e7dd1aa1e"><td class="memItemLeft" align="right" valign="top"><a id="a62cce561c0931123aa510c5e7dd1aa1e" name="a62cce561c0931123aa510c5e7dd1aa1e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>engram_quit</b> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
 <tr class="memdesc:a62cce561c0931123aa510c5e7dd1aa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals the engine to stop the main loop. <br /></td></tr>
 <tr class="separator:a62cce561c0931123aa510c5e7dd1aa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae20f4a0d1745edeebc9979f72f166eb0" id="r_ae20f4a0d1745edeebc9979f72f166eb0"><td class="memItemLeft" align="right" valign="top"><a id="ae20f4a0d1745edeebc9979f72f166eb0" name="ae20f4a0d1745edeebc9979f72f166eb0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>engram_destroy</b> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
-<tr class="memdesc:ae20f4a0d1745edeebc9979f72f166eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down all sub-systems and frees the engine context. <br /></td></tr>
+<tr class="memitem:ae20f4a0d1745edeebc9979f72f166eb0" id="r_ae20f4a0d1745edeebc9979f72f166eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engram_8h.html#ae20f4a0d1745edeebc9979f72f166eb0">engram_destroy</a> (<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:ae20f4a0d1745edeebc9979f72f166eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down all sub-systems and frees the engine context.  <br /></td></tr>
 <tr class="separator:ae20f4a0d1745edeebc9979f72f166eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b687ae0f9c197a8fa8e8dd7816a165" id="r_ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memItemLeft" align="right" valign="top"><a id="ad0b687ae0f9c197a8fa8e8dd7816a165" name="ad0b687ae0f9c197a8fa8e8dd7816a165"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_update</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes raw key data into high-level Actions. Call this at the START of engram_update. <br /></td></tr>
+<tr class="memitem:ad0b687ae0f9c197a8fa8e8dd7816a165" id="r_ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engram_8h.html#ad0b687ae0f9c197a8fa8e8dd7816a165">input_update</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
+<tr class="memdesc:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes raw key data into high-level Actions. Call this at the START of engram_update.  <br /></td></tr>
 <tr class="separator:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91b814fda7324b11826d9d5654f32a5d" id="r_a91b814fda7324b11826d9d5654f32a5d"><td class="memItemLeft" align="right" valign="top"><a id="a91b814fda7324b11826d9d5654f32a5d" name="a91b814fda7324b11826d9d5654f32a5d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>input_post_update</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:a91b814fda7324b11826d9d5654f32a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame. <br /></td></tr>
+<tr class="memitem:a91b814fda7324b11826d9d5654f32a5d" id="r_a91b814fda7324b11826d9d5654f32a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engram_8h.html#a91b814fda7324b11826d9d5654f32a5d">input_post_update</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
+<tr class="memdesc:a91b814fda7324b11826d9d5654f32a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame.  <br /></td></tr>
 <tr class="separator:a91b814fda7324b11826d9d5654f32a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The central entry point and context management for the Engram Engine. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae20f4a0d1745edeebc9979f72f166eb0" name="ae20f4a0d1745edeebc9979f72f166eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20f4a0d1745edeebc9979f72f166eb0">&#9670;&#160;</a></span>engram_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engram_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shuts down all sub-systems and frees the engine context. </p>
+<p>Shuts down all sub-systems and frees the engine context. </p>
+
+</div>
+</div>
+<a id="ad5b38096e45de6ac3356e1afe21ef12c" name="ad5b38096e45de6ac3356e1afe21ef12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5b38096e45de6ac3356e1afe21ef12c">&#9670;&#160;</a></span>engram_load_scene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engram_load_scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structScene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queues a new scene to be loaded. </p>
+<p>Queues a new scene to be loaded. </p>
+
+</div>
+</div>
+<a id="acb663bb65f33d4f394d88d37f1977b10" name="acb663bb65f33d4f394d88d37f1977b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb663bb65f33d4f394d88d37f1977b10">&#9670;&#160;</a></span>engram_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engram_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structEngramConfig.html">EngramConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts the application main loop. </p>
+<p>Starts the application main loop. </p>
+
+</div>
+</div>
+<a id="a3edbe48daf943a7bd9ed2009a592e873" name="a3edbe48daf943a7bd9ed2009a592e873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edbe48daf943a7bd9ed2009a592e873">&#9670;&#160;</a></span>engram_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engram_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs one iteration of the engine's internal update logic. </p>
+<p>Performs one iteration of the engine's internal update logic. </p>
+
+</div>
+</div>
+<a id="a91b814fda7324b11826d9d5654f32a5d" name="a91b814fda7324b11826d9d5654f32a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b814fda7324b11826d9d5654f32a5d">&#9670;&#160;</a></span>input_post_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_post_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame. </p>
+<p>Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame. </p>
+
+</div>
+</div>
+<a id="ad0b687ae0f9c197a8fa8e8dd7816a165" name="ad0b687ae0f9c197a8fa8e8dd7816a165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b687ae0f9c197a8fa8e8dd7816a165">&#9670;&#160;</a></span>input_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes raw key data into high-level Actions. Call this at the START of engram_update. </p>
+<p>Processes raw key data into high-level Actions. Call this at the START of engram_update. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8

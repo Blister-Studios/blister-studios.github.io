@@ -129,6 +129,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="830,177,1122,230,1121,235,830,182"/>
 <area shape="rect" href="RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend for Modern Sokol." alt="" coords="466,225,672,265"/>
 <area shape="poly" title=" " alt="" coords="716,185,614,228,612,223,714,180"/>
+<area shape="rect" href="EditorConsole_8c.html" title="Implementation of the Editor Console UI element." alt="" coords="292,387,457,412"/>
+<area shape="poly" title=" " alt="" coords="377,352,377,387,372,387,372,352"/>
 <area shape="poly" title=" " alt="" coords="702,264,684,268,439,316,438,311,683,263,701,259"/>
 <area shape="poly" title=" " alt="" coords="757,118,757,152,752,152,752,118"/>
 </map>
@@ -192,7 +194,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
 </div><div class="memdoc">
 
 <p>Allocates and initializes a new Virtual File System instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a>.</dd></dl>
+<p>Allocates and initializes a new Virtual File System instance. </p>
 
 </div>
 </div>
@@ -215,10 +218,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
 <p>Shuts down the <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a> and frees all internal mounting data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vfs</td><td>The <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a> instance to destroy. </td></tr>
+    <tr><td class="paramname">vfs</td><td>The <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a> instance to destroy.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Shuts down the <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a> and frees all internal mounting data. </p>
 
 </div>
 </div>
@@ -249,7 +253,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
 </div><div class="memdoc">
 
 <p>Checks if a virtual path exists on the physical disk. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the file/directory exists, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file/directory exists, false otherwise.</dd></dl>
+<p>Checks if a virtual path exists on the physical disk. </p>
 
 </div>
 </div>
@@ -293,7 +298,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A DynamicArray of strings (physical or virtual paths). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A DynamicArray of strings (physical or virtual paths).</dd></dl>
+<p>Lists files in a virtual directory. </p>
 
 </div>
 </div>
@@ -335,10 +341,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
   <table class="params">
     <tr><td class="paramname">vfs</td><td>The <a class="el" href="structVFS.html" title="Opaque structure representing the Virtual File System context.">VFS</a> instance. </td></tr>
     <tr><td class="paramname">p_base</td><td>The actual directory path on the host OS. </td></tr>
-    <tr><td class="paramname">v_prefix</td><td>The virtual prefix (e.g., "res://"). </td></tr>
+    <tr><td class="paramname">v_prefix</td><td>The virtual prefix (e.g., "res://").</td></tr>
   </table>
   </dd>
 </dl>
+<p>Mounts a physical directory to a virtual prefix. </p>
 
 </div>
 </div>
@@ -383,7 +390,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the allocated buffer, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the allocated buffer, or NULL on failure.</dd></dl>
+<p>Reads the entire contents of a virtual file into a newly allocated buffer. </p>
 
 </div>
 </div>
@@ -436,7 +444,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_is_dir</b> (<a cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the path was successfully resolved, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the path was successfully resolved, false otherwise.</dd></dl>
+<p>Translates a virtual path into an absolute physical disk path. </p>
 
 </div>
 </div>
