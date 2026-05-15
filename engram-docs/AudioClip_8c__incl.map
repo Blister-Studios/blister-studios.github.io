@@ -1,0 +1,15 @@
+<map id="engram/Platform/AudioClip.c" name="engram/Platform/AudioClip.c">
+<area shape="rect" id="Node000001" title="Implementation of WAV decoding and audio asset management." alt="" coords="111,5,321,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,33,87,76,85,71,188,28"/>
+<area shape="rect" id="Node000003" href="$AudioClip_8h.html" title="Asset container for raw PCM audio data." alt="" coords="109,79,205,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,33,177,70,173,67,204,29"/>
+<area shape="rect" id="Node000006" href="$Log_8h.html" title="Centralized logging system for the Engram Engine." alt="" coords="229,79,320,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="228,29,259,67,255,70,224,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="345,79,415,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="243,28,342,71,340,76,241,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="71,152,145,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="151,106,126,142,122,139,147,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="170,152,241,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="167,103,192,139,188,142,163,106"/>
+</map>

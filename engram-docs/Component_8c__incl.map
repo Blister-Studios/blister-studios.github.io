@@ -1,0 +1,8 @@
+<map id="engram/Components/Component.c" name="engram/Components/Component.c">
+<area shape="rect" id="Node000001" title="Implementation of the base component initialization." alt="" coords="5,5,253,31"/>
+<area shape="rect" id="Node000002" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="29,79,139,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,32,101,69,96,66,120,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,152,167,177"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="137,30,153,78,152,111,143,140,138,139,147,110,148,79,132,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,103,117,139,112,142,89,106"/>
+</map>

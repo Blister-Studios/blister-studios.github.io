@@ -1,0 +1,14 @@
+<map id="engram/Containers/ReferenceCounting.c" name="engram/Containers/ReferenceCounting.c">
+<area shape="rect" id="Node000001" title="Thread&#45;safe (where C11 atomics exist) reference counting implementation." alt="" coords="240,5,456,45"/>
+<area shape="rect" id="Node000002" href="$ReferenceCounting_8h.html" title="Thread&#45;safe (if implemented with atomics) manual memory management." alt="" coords="5,93,237,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,48,168,91,167,86,293,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="160,167,235,192"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="331,48,221,158,217,155,327,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="313,93,383,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="351,46,351,79,345,79,345,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="408,93,483,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="373,43,422,82,419,87,370,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="507,93,578,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="396,43,502,86,500,91,394,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,117,177,155,173,159,132,121"/>
+</map>

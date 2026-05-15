@@ -1,0 +1,18 @@
+<map id="engram/Core/Engram.h" name="engram/Core/Engram.h">
+<area shape="rect" id="Node000001" title="The central entry point and context management for the Engram Engine." alt="" coords="472,5,644,31"/>
+<area shape="rect" id="Node000002" href="$EditorState_8h_source.html" title=" " alt="" coords="5,167,153,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,27,340,34,214,46,109,61,74,71,56,81,50,90,48,100,51,124,61,147,73,165,68,168,57,149,46,125,42,100,45,88,52,77,72,66,108,56,213,40,340,29,458,21"/>
+<area shape="rect" id="Node000003" href="$EditorUI_8h_source.html" title=" " alt="" coords="66,86,194,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="469,35,208,81,175,89,174,83,207,76,468,30"/>
+<area shape="rect" id="Node000004" href="$Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="219,86,457,111"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="514,38,371,88,369,83,512,33"/>
+<area shape="rect" id="Node000005" href="$Core_8h.html" title="Umbrella header for central engine systems." alt="" coords="482,86,634,111"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="561,44,561,86,555,86,555,44"/>
+<area shape="rect" id="Node000006" href="$ResourceManager_8c.html" title="Implementation of the resource loading, caching, and unloading logic." alt="" coords="659,79,855,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="600,33,710,76,708,81,598,38"/>
+<area shape="rect" id="Node000007" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="879,86,1109,111"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="635,30,931,83,930,89,634,36"/>
+<area shape="rect" id="Node000008" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend for Modern Sokol." alt="" coords="1133,79,1338,119"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="658,25,871,47,1121,76,1133,78,1132,83,1120,81,871,52,658,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="117,124,89,168,85,165,113,121"/>
+</map>

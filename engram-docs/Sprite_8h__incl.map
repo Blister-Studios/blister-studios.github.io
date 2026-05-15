@@ -1,0 +1,31 @@
+<map id="engram/Components/Sprite.h" name="engram/Components/Sprite.h">
+<area shape="rect" id="Node000001" title="Component for 2D visual representation of GameObjects." alt="" coords="153,5,365,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,33,95,77,93,72,224,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="221,152,296,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,31,261,138,256,138,256,31"/>
+<area shape="rect" id="Node000004" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="112,79,221,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,33,194,72,191,68,242,29"/>
+<area shape="rect" id="Node000005" href="$Math_8h.html" title="Central header for the Engram Math library." alt="" coords="521,79,625,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="310,28,510,73,509,78,309,33"/>
+<area shape="rect" id="Node000011" href="$Texture_8h.html" title="Resource container for GPU&#45;resident textures." alt="" coords="297,79,439,104"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="278,28,340,69,337,73,275,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="183,102,235,141,231,146,180,106"/>
+<area shape="rect" id="Node000006" href="$Vector2_8h.html" title="2&#45;component vector math for 2D coordinate systems." alt="" coords="651,152,733,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="594,102,662,142,659,147,591,106"/>
+<area shape="rect" id="Node000007" href="$Vector3_8h.html" title="3&#45;component vector math for 3D coordinate systems." alt="" coords="583,299,665,324"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="626,93,658,98,691,109,722,126,748,150,757,171,756,192,748,212,735,232,697,267,658,294,655,289,694,262,731,228,744,210,751,191,751,172,743,154,719,130,689,114,657,103,625,98"/>
+<area shape="rect" id="Node000008" href="$Vector4_8h.html" title="4&#45;component vector math for homogenous coordinates and colors." alt="" coords="413,225,496,251"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="545,106,511,126,481,154,466,182,460,212,454,211,461,181,477,150,508,121,543,102"/>
+<area shape="rect" id="Node000009" href="$Quaternion_8h.html" title="Quaternion math for rotation representation in 3D space." alt="" coords="571,225,677,251"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="580,104,618,212,613,213,575,105"/>
+<area shape="rect" id="Node000010" href="$Matrix4_8h.html" title="4x4 Matrix operations for 3D transformations and projections." alt="" coords="491,152,575,177"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="569,106,549,141,544,139,564,103"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="627,251,627,285,621,285,621,251"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="537,177,545,211,561,249,578,270,598,288,594,292,574,274,556,252,540,213,532,178"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="522,179,479,218,476,214,519,175"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="550,175,600,214,597,219,546,179"/>
+<area shape="poly" id="edge17_Node000011_Node000003" title=" " alt="" coords="352,106,290,147,287,142,349,102"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="320,152,416,177"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="371,104,371,138,365,138,365,104"/>
+</map>

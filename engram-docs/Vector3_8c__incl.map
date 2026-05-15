@@ -1,0 +1,7 @@
+<map id="engram/Math/Vector3.c" name="engram/Math/Vector3.c">
+<area shape="rect" id="Node000001" title="Implementation of 3&#45;component vector mathematical operations." alt="" coords="9,5,183,31"/>
+<area shape="rect" id="Node000002" href="$Vector3_8h.html" title="3&#45;component vector math for 3D coordinate systems." alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,33,65,69,60,66,86,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,79,181,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,29,133,66,128,69,102,33"/>
+</map>

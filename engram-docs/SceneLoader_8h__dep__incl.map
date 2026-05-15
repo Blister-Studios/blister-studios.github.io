@@ -1,0 +1,5 @@
+<map id="engram/Platform/SceneLoader.h" name="engram/Platform/SceneLoader.h">
+<area shape="rect" id="Node000001" title="Logic for loading and saving full Scene hierarchies." alt="" coords="5,5,236,31"/>
+<area shape="rect" id="Node000002" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="6,79,235,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,44,123,79,118,79,118,44"/>
+</map>

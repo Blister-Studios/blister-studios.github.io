@@ -1,0 +1,14 @@
+<map id="editor/EditorUtils.c" name="editor/EditorUtils.c">
+<area shape="rect" id="Node000001" title="Implementation of editor&#45;specific math and UI styling." alt="" coords="109,5,251,31"/>
+<area shape="rect" id="Node000002" href="$EditorUtils_8h_source.html" title=" " alt="" coords="14,79,117,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,33,97,74,94,69,160,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="141,79,219,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="183,31,183,65,177,65,177,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="243,79,311,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="197,29,252,68,249,72,194,33"/>
+<area shape="rect" id="Node000003" href="$Vector3_8h.html" title="3&#45;component vector math for 3D coordinate systems." alt="" coords="5,225,125,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,106,49,127,40,153,39,168,41,183,53,212,48,214,36,185,33,168,35,151,44,125,56,103"/>
+<area shape="rect" id="Node000004" href="$Quaternion_8h.html" title="Quaternion math for rotation representation in 3D space." alt="" coords="49,152,191,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="76,103,105,140,101,143,72,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="113,179,85,216,80,213,109,176"/>
+</map>

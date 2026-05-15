@@ -1,0 +1,5 @@
+<map id="engram/Platform/AudioClip.h" name="engram/Platform/AudioClip.h">
+<area shape="rect" id="Node000001" title="Asset container for raw PCM audio data." alt="" coords="5,5,216,31"/>
+<area shape="rect" id="Node000002" href="$AudioClip_8c.html" title="Implementation of WAV decoding and audio asset management." alt="" coords="6,79,215,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,44,113,79,108,79,108,44"/>
+</map>
