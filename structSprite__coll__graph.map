@@ -1,0 +1,14 @@
+<map id="Sprite" name="Sprite">
+<area shape="rect" id="Node000001" title="Data structure for rendering a 2D texture." alt="" coords="165,299,225,324"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title="The base structure for all components." alt="" coords="8,196,105,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,227,181,296,178,301,82,232"/>
+<area shape="rect" id="Node000003" href="$structGameObject.html" title="Represents an entity within a scene." alt="" coords="5,108,108,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="59,147,59,195,54,195,54,147"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="123,112,135,120,126,129,108,131,108,126,124,124,129,121,120,116"/>
+<area shape="rect" id="Node000004" href="$structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="23,5,90,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,45,59,108,54,108,54,45"/>
+<area shape="rect" id="Node000005" href="$structTextureResource.html" title="Represents a texture asset loaded into GPU memory." alt="" coords="130,196,261,221"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="198,235,198,299,193,299,193,235"/>
+<area shape="rect" id="Node000006" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="285,196,338,221"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="296,234,254,277,218,301,216,296,251,273,292,230"/>
+</map>

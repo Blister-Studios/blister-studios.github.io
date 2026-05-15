@@ -1,0 +1,35 @@
+<map id="Scene" name="Scene">
+<area shape="rect" id="Node000001" title=" " alt="" coords="470,271,531,297"/>
+<area shape="rect" id="Node000003" href="$structEngramContext.html" title="The heart of the engine state, encapsulating all sub&#45;systems." alt="" coords="398,376,521,401"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="500,311,488,353,472,377,468,374,484,351,495,310"/>
+<area shape="rect" id="Node000002" href="$structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="181,181,247,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,197,329,208,402,228,427,243,478,269,476,274,425,248,400,233,327,213,261,202"/>
+<area shape="poly" id="edge13_Node000003_Node000002" title=" " alt="" coords="167,204,107,216,48,236,26,248,12,263,9,278,17,297,42,317,80,334,128,348,183,359,298,374,398,382,398,387,298,379,182,364,127,353,78,339,39,321,13,300,3,279,8,260,23,244,46,231,106,211,166,199"/>
+<area shape="rect" id="Node000004" href="$structAssetRegistry.html" title="Container for all cached assets using a dynamic array of records." alt="" coords="139,271,251,297"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="169,207,149,217,134,232,131,243,137,252,164,269,161,273,133,256,126,243,129,229,146,213,166,202"/>
+<area shape="rect" id="Node000005" href="$structEventBus.html" title="The central hub for event subscription and dispatch." alt="" coords="275,271,358,297"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="212,220,213,233,217,244,240,258,276,270,274,275,238,263,213,247,208,234,207,220"/>
+<area shape="rect" id="Node000006" href="$structVFS.html" title="Opaque structure representing the Virtual File System context." alt="" coords="383,271,429,297"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="247,211,308,243,383,271,381,276,306,248,244,216"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="453,362,453,342,458,322,468,307,481,295,484,299,472,310,463,324,458,343,458,362"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="219,304,249,328,286,350,342,368,398,379,397,384,341,374,284,354,246,332,215,308"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="329,308,343,330,361,350,383,364,408,373,406,378,381,368,358,354,338,333,325,311"/>
+<area shape="poly" id="edge8_Node000003_Node000006" title=" " alt="" coords="412,309,418,330,427,351,447,374,443,378,422,353,413,332,407,311"/>
+<area shape="rect" id="Node000007" href="$structInputSystem.html" title="Container for the state of all registered input actions and raw keys." alt="" coords="583,271,687,297"/>
+<area shape="poly" id="edge10_Node000003_Node000007" title=" " alt="" coords="627,311,612,334,592,354,558,372,522,382,520,377,556,367,588,350,608,330,622,308"/>
+<area shape="rect" id="Node000008" href="$structInputAction.html" title="Internal state tracking for a single input action." alt="" coords="569,181,665,207"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="618,221,621,245,631,270,626,272,615,246,613,221"/>
+<area shape="rect" id="Node000009" href="$structRawKeyState.html" title="Internal state tracking for raw hardware keys." alt="" coords="689,181,797,207"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="720,218,651,273,648,269,717,213"/>
+<area shape="rect" id="Node000010" href="$structRenderBackend.html" title=" " alt="" coords="827,181,950,207"/>
+<area shape="poly" id="edge14_Node000003_Node000010" title=" " alt="" coords="858,216,769,272,739,295,716,316,693,336,659,354,589,376,521,386,521,381,588,371,657,350,690,331,713,312,735,291,766,267,855,211"/>
+<area shape="rect" id="Node000011" href="$structEngramConfig.html" title="Startup configuration and lifecycle callbacks for the engine." alt="" coords="839,271,952,297"/>
+<area shape="poly" id="edge16_Node000011_Node000010" title=" " alt="" coords="893,220,897,271,892,271,888,221"/>
+<area shape="poly" id="edge15_Node000003_Node000011" title=" " alt="" coords="869,307,825,332,773,355,707,371,639,382,521,390,521,385,639,376,706,366,772,349,823,327,866,302"/>
+<area shape="rect" id="Node000012" href="$structBVH.html" title=" " alt="" coords="494,181,545,207"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="530,220,530,246,514,273,509,270,525,245,525,220"/>
+<area shape="rect" id="Node000013" href="$structBVHNode.html" title=" " alt="" coords="477,93,561,119"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="522,133,522,181,517,181,517,133"/>
+<area shape="rect" id="Node000014" href="$structAABB.html" title=" " alt="" coords="490,5,549,31"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="522,45,522,93,517,93,517,45"/>
+</map>

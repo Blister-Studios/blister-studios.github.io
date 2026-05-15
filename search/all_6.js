@@ -1,0 +1,15 @@
+var searchData=
+[
+  ['gameobject_0',['GameObject',['../structGameObject.html',1,'']]],
+  ['gameobject_2ec_1',['GameObject.c',['../GameObject_8c.html',1,'']]],
+  ['gameobject_2eh_2',['GameObject.h',['../GameObject_8h.html',1,'']]],
+  ['go_5fadd_5fcomponent_3',['go_add_component',['../GameObject_8c.html#a47407abf9e675a9736632c3e7f90ff15',1,'go_add_component(GameObject *go, Component *comp):&#160;GameObject.c'],['../GameObject_8h.html#a47407abf9e675a9736632c3e7f90ff15',1,'go_add_component(GameObject *go, Component *comp):&#160;GameObject.c']]],
+  ['go_5fawake_4',['go_awake',['../GameObject_8c.html#ada941ab7df5a86d019087a68a7590770',1,'go_awake(GameObject *go):&#160;GameObject.c'],['../GameObject_8h.html#ada941ab7df5a86d019087a68a7590770',1,'go_awake(GameObject *go):&#160;GameObject.c']]],
+  ['go_5fcreate_5',['go_create',['../GameObject_8c.html#ac6285e009faaf46e467542094cbe22ca',1,'go_create(unsigned int id, const char *name):&#160;GameObject.c'],['../GameObject_8h.html#ac6285e009faaf46e467542094cbe22ca',1,'go_create(unsigned int id, const char *name):&#160;GameObject.c']]],
+  ['go_5fdestroy_6',['go_destroy',['../GameObject_8h.html#a325d4be7b1bc4823b4e1cd020ed7a690',1,'go_destroy(GameObject *go):&#160;GameObject.c'],['../GameObject_8c.html#a325d4be7b1bc4823b4e1cd020ed7a690',1,'go_destroy(GameObject *go):&#160;GameObject.c']]],
+  ['go_5fget_5fcomponent_7',['go_get_component',['../GameObject_8c.html#af1bf5fecfda504818807f24400531e5a',1,'go_get_component(GameObject *go, ComponentTypeID type):&#160;GameObject.c'],['../GameObject_8h.html#af1bf5fecfda504818807f24400531e5a',1,'go_get_component(GameObject *go, ComponentTypeID type):&#160;GameObject.c']]],
+  ['go_5fget_5fparent_8',['go_get_parent',['../GameObject_8c.html#a04156f1e19563288cfff3c4cd3e0afc4',1,'go_get_parent(GameObject *go):&#160;GameObject.c'],['../GameObject_8h.html#a04156f1e19563288cfff3c4cd3e0afc4',1,'go_get_parent(GameObject *go):&#160;GameObject.c']]],
+  ['go_5fmark_5ffor_5fdestruction_9',['go_mark_for_destruction',['../GameObject_8c.html#abaa2335a2e00696ccb7f86c3942635e4',1,'go_mark_for_destruction(GameObject *go):&#160;GameObject.c'],['../GameObject_8h.html#abaa2335a2e00696ccb7f86c3942635e4',1,'go_mark_for_destruction(GameObject *go):&#160;GameObject.c']]],
+  ['go_5fset_5fparent_10',['go_set_parent',['../GameObject_8c.html#a4d1dbc3af42841f3aae5a09e8cf93ed7',1,'go_set_parent(GameObject *go, GameObject *new_parent):&#160;GameObject.c'],['../GameObject_8h.html#a4d1dbc3af42841f3aae5a09e8cf93ed7',1,'go_set_parent(GameObject *go, GameObject *new_parent):&#160;GameObject.c']]],
+  ['go_5fupdate_11',['go_update',['../GameObject_8c.html#a765905560a509d03c9383f36087eec19',1,'go_update(GameObject *go, float delta_time):&#160;GameObject.c'],['../GameObject_8h.html#a765905560a509d03c9383f36087eec19',1,'go_update(GameObject *go, float delta_time):&#160;GameObject.c']]]
+];

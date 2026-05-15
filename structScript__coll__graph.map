@@ -1,0 +1,11 @@
+<map id="Script" name="Script">
+<area shape="rect" id="Node000001" title="Component that binds a Lua script file to a GameObject." alt="" coords="29,284,88,309"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title="The base structure for all components." alt="" coords="94,196,191,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,233,72,285,68,282,120,229"/>
+<area shape="rect" id="Node000003" href="$structGameObject.html" title="Represents an entity within a scene." alt="" coords="93,108,195,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,146,155,172,149,196,144,195,149,172,148,147"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="210,112,222,120,214,129,196,131,195,126,211,124,217,121,208,116"/>
+<area shape="rect" id="Node000004" href="$structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="5,5,72,31"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="32,44,17,103,14,137,16,172,35,235,55,283,50,285,30,237,11,172,8,137,12,102,27,43"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="62,38,134,106,130,110,59,42"/>
+</map>

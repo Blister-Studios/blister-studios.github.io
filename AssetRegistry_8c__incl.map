@@ -1,0 +1,16 @@
+<map id="engram/Platform/AssetRegistry.c" name="engram/Platform/AssetRegistry.c">
+<area shape="rect" id="Node000001" title="Implementation of the asset caching and retrieval system." alt="" coords="229,5,463,31"/>
+<area shape="rect" id="Node000002" href="$AssetRegistry_8h.html" title="Internal caching system for reference&#45;counted assets." alt="" coords="163,79,286,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,33,257,74,255,69,325,28"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="311,79,381,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="349,31,349,65,343,65,343,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="405,79,476,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="363,29,416,68,413,72,360,33"/>
+<area shape="rect" id="Node000003" href="$DynamicArray_8h.html" title="A generic, growable array of void pointers." alt="" coords="5,152,204,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,106,138,147,135,142,204,102"/>
+<area shape="rect" id="Node000005" href="$ReferenceCounting_8h.html" title="Thread&#45;safe (if implemented with atomics) manual memory management." alt="" coords="229,152,461,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="245,102,314,142,312,147,243,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="187,225,262,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,175,194,216,192,220,123,180"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="327,180,258,220,255,216,324,175"/>
+</map>

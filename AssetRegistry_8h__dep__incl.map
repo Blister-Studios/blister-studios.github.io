@@ -1,0 +1,24 @@
+<map id="engram/Platform/AssetRegistry.h" name="engram/Platform/AssetRegistry.h">
+<area shape="rect" id="Node000001" title="Internal caching system for reference&#45;counted assets." alt="" coords="668,5,904,31"/>
+<area shape="rect" id="Node000002" href="$Engram_8h.html" title="The central entry point and context management for the Engram Engine." alt="" coords="472,79,644,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="737,37,596,81,594,76,735,32"/>
+<area shape="rect" id="Node000010" href="$AssetRegistry_8c.html" title="Implementation of the asset caching and retrieval system." alt="" coords="669,79,903,104"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="789,44,789,79,783,79,783,44"/>
+<area shape="rect" id="Node000011" href="$Platform_8h.html" title="Umbrella header for platform&#45;specific abstractions and asset management." alt="" coords="928,79,1132,104"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="839,32,991,76,990,81,837,37"/>
+<area shape="rect" id="Node000003" href="$EditorState_8h_source.html" title=" " alt="" coords="5,240,153,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="458,100,340,108,214,119,109,135,74,144,56,154,50,163,48,174,51,197,61,220,73,239,68,241,57,222,46,199,42,173,45,161,52,150,72,139,108,129,213,114,340,102,458,95"/>
+<area shape="rect" id="Node000004" href="$EditorUI_8h_source.html" title=" " alt="" coords="66,159,194,185"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="469,109,208,155,175,162,174,157,207,149,468,103"/>
+<area shape="rect" id="Node000005" href="$Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="219,159,457,185"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="514,111,371,162,369,157,512,106"/>
+<area shape="rect" id="Node000006" href="$Core_8h.html" title="Umbrella header for central engine systems." alt="" coords="482,159,634,185"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="561,118,561,159,555,159,555,118"/>
+<area shape="rect" id="Node000007" href="$ResourceManager_8c.html" title="Implementation of the resource loading, caching, and unloading logic." alt="" coords="659,152,855,192"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="600,106,710,149,708,154,598,111"/>
+<area shape="rect" id="Node000008" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="879,159,1109,185"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="635,104,931,157,930,162,634,109"/>
+<area shape="rect" id="Node000009" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend for Modern Sokol." alt="" coords="1133,152,1338,192"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="658,101,892,124,1121,149,1133,151,1132,156,1120,155,891,129,658,107"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="117,198,89,241,85,238,113,195"/>
+</map>
