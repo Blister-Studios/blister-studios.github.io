@@ -337,6 +337,8 @@
             overflow: hidden;
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.4s ease;
             position: relative;
+            text-decoration: none; /* Safely handles cards used as links */
+            display: block;
         }
         .screenshot-card::before {
             content: '';
@@ -356,7 +358,7 @@
         }
         .screenshot-card:hover::before { opacity: 1; }
 
-        .screenshot-card img, .screenshot-card video {
+        .screenshot-card img, .screenshot-card video, .docs-placeholder-visual {
             width: 100%;
             height: auto;
             aspect-ratio: 16/9;
@@ -368,9 +370,32 @@
             align-items: center;
             justify-content: center;
             font-size: 0.85rem;
-            transition: filter 0.3s ease;
+            transition: filter 0.3s ease, background 0.3s ease;
         }
         .screenshot-card:hover img, .screenshot-card:hover video { filter: contrast(1.1); }
+        
+        /* Dedicated Docs Blueprint Grid Styling */
+        .docs-placeholder-visual {
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.1) 0%, transparent 80%),
+                linear-gradient(rgba(255, 0, 115, 0.15) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 0, 115, 0.15) 1px, transparent 1px);
+            background-size: 100% 100%, 20px 20px, 20px 20px;
+            position: relative;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .docs-placeholder-visual span.bracket-text {
+            font-family: ui-monospace, monospace;
+            color: var(--accent-cyan);
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+        }
+        .screenshot-card:hover .docs-placeholder-visual {
+            background-color: rgba(255, 0, 115, 0.03);
+        }
 
         .screenshot-info { padding: 2rem; position: relative; }
         .screenshot-info h3 { 
@@ -508,6 +533,17 @@
             </div>
 
             <section class="gallery">
+                <!-- NEW ENTRY: API Documentation Portal Card -->
+                <a href="./engram-docs/index.html" class="screenshot-card" target="_blank">
+                    <div class="docs-placeholder-visual">
+                        <span class="bracket-text">&lt; DOCS / &gt;</span>
+                    </div>
+                    <div class="screenshot-info">
+                        <h3>API Documentation</h3>
+                        <p>Explore full architectural references, Doxygen module graphs, and core C framework execution lifecycles.</p>
+                    </div>
+                </a>
+
                 <div class="screenshot-card">
                     <img src="editor.png" alt="[Image Not Found: Editor Viewport]">
                     <div class="screenshot-info">
