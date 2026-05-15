@@ -1,5 +1,0 @@
-<map id="engram/Components/Component.h" name="engram/Components/Component.h">
-<area shape="rect" id="Node000001" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="5,5,255,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="93,79,167,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,31,133,65,127,65,127,31"/>
-</map>

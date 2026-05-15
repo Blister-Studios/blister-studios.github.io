@@ -1,9 +1,0 @@
-<map id="engram/Components/Sprite.h" name="engram/Components/Sprite.h">
-<area shape="rect" id="Node000001" title="Component for 2D visual representation of GameObjects." alt="" coords="285,5,497,31"/>
-<area shape="rect" id="Node000002" href="$Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="5,79,261,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,37,176,81,174,76,336,32"/>
-<area shape="rect" id="Node000003" href="$Sprite_8c.html" title="Implementation of the Sprite component lifecycle and serialization." alt="" coords="285,79,496,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="393,44,393,79,388,79,388,44"/>
-<area shape="rect" id="Node000004" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="520,79,749,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="444,32,596,76,594,81,442,37"/>
-</map>

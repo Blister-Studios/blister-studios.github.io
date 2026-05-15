@@ -1,81 +1,595 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Engram: Main Page</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blister Studios | Engram Engine</title>
+    <style>
+        :root {
+            /* Deeper, more saturated palette inspired by technical interfaces */
+            --bg-dark: #030406;
+            --bg-medium: #0c0e14;
+            --accent-cyan: #00f3ff;
+            --accent-magenta: #ff0073;
+            --text-main: #f0f7ff;
+            --text-muted: #94a3b8;
+            --card-bg: rgba(12, 14, 20, 0.85);
+            --border-color: #1a1c24;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Technical Grid Background with More Depth */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(rgba(0, 243, 255, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 243, 255, 0.08) 1px, transparent 1px);
+            background-size: 60px 60px;
+            background-position: center center;
+            z-index: -2;
+            transform: perspective(1000px) rotateX(60deg) translateY(-200px) scale(3);
+            animation: gridMove 8s linear infinite;
+        }
+
+        /* Screen-space grain and depth of field */
+        body::after {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: 
+                radial-gradient(circle at center, var(--accent-cyan) 0%, rgba(9, 10, 15, 0.8) 50%, var(--bg-dark) 80%),
+                url('data:image/svg+xml,%3Csvg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3%3Cfilter id="noiseFilter"%3%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3%3C/filter%3%3Crect width="100%" height="100%" filter="url(%23noiseFilter)"/%3%3C/svg%3E');
+            opacity: 0.12;
+            mix-blend-mode: soft-light;
+            z-index: -1;
+            top: 0; left: 0;
+            pointer-events: none;
+        }
+
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 60px; }
+        }
+
+        /* Dynamic Cursor Follow Spotlight */
+        #cursor-spotlight {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 400px);
+            pointer-events: none;
+            z-index: 100;
+            mix-blend-mode: screen;
+        }
+
+        /* Single Page App View Logic */
+        .view {
+            display: none;
+            opacity: 0;
+        }
+
+        .view.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            width: 100%;
+        }
+
+        .home-container {
+            max-width: 900px;
+            text-align: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Typography & Shared Styles */
+        .studio-logo, .engram-logo {
+            max-width: 500px;
+            width: 90%;
+            margin-bottom: 2rem;
+            fill: var(--text-main);
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Technical serif alternative for titles */
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, var(--text-main) 50%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 0px 20px rgba(0, 243, 255, 0.2);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            max-width: 70ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p strong { color: var(--accent-cyan); font-weight: 600; }
+        
+        .engram-text { 
+            color: var(--accent-magenta); 
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(255, 0, 115, 0.4); 
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .engram-text::after {
+            content: ' [ENGINE_LINK]';
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+        .engram-text:hover {
+            color: #fff;
+            text-shadow: 0 0 15px var(--accent-magenta);
+        }
+        .engram-text:hover::after { opacity: 1; }
+
+        /* Nav & Buttons */
+        .back-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 4rem;
+            opacity: 0.8;
+        }
+        .back-link:hover { color: var(--accent-cyan); opacity: 1; }
+        .back-link span { margin-right: 0.5rem; transition: transform 0.3s ease; }
+        .back-link:hover span { transform: translateX(-4px); }
+
+        .cta-button {
+            position: relative;
+            display: inline-block;
+            padding: 18px 45px;
+            background: rgba(0, 243, 255, 0.04);
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            border: 2px solid var(--accent-cyan);
+            border-radius: 4px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+            margin: 1.5rem 0;
+        }
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: left 0.5s ease;
+        }
+        .cta-button:hover {
+            background: var(--accent-cyan);
+            color: var(--bg-dark);
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        .cta-button:hover::after { left: 100%; }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            opacity: 0.8;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .social-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px; left: 0; width: 0%; height: 2px;
+            background-color: var(--accent-magenta);
+            transition: width 0.3s ease;
+        }
+        .social-links a:hover { color: var(--text-main); }
+        .social-links a:hover::after { width: 100%; }
+
+        /* Cinematic Video Presentation */
+        .video-showcase {
+            width: 100%;
+            margin-bottom: 4rem;
+            position: relative; /* Fixes text overlay position */
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: var(--bg-medium);
+            box-shadow: 0 20px 50px rgba(0, 243, 255, 0.08);
+            transition: border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .video-showcase::before {
+            content: 'REC •';
+            position: absolute;
+            top: 1.5rem; right: 1.5rem;
+            color: var(--accent-magenta);
+            font-family: ui-monospace, monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            z-index: 10;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        .video-showcase:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 20px 60px rgba(0, 243, 255, 0.15);
+        }
+
+        .video-showcase video {
+            width: 100%;
+            display: block;
+            aspect-ratio: 16/9; /* Matches standard video format */
+            object-fit: cover; /* Fills the box cleanly */
+            opacity: 0.85;
+            transition: opacity 0.5s ease;
+        }
+
+        .video-showcase:hover video {
+            opacity: 1;
+        }
+
+        .video-overlay-bar {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(to top, rgba(3, 4, 6, 0.9), transparent);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 5; /* Ensures the text stays above the video */
+        }
+
+        .video-overlay-bar span {
+            font-family: ui-monospace, monospace;
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Engine Gallery & Features Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .screenshot-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+        .screenshot-card::before {
+            content: '';
+            position: absolute;
+            top: 1rem; right: 1rem;
+            width: 1rem; height: 1rem;
+            border-top: 2px solid var(--accent-magenta);
+            border-right: 2px solid var(--accent-magenta);
+            opacity: 0; transition: opacity 0.3s ease;
+            z-index: 2;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: var(--accent-magenta);
+            box-shadow: 0 15px 40px rgba(255, 0, 115, 0.1);
+        }
+        .screenshot-card:hover::before { opacity: 1; }
+
+        .screenshot-card img, .screenshot-card video {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background: var(--bg-medium);
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            transition: filter 0.3s ease;
+        }
+        .screenshot-card:hover img, .screenshot-card:hover video { filter: contrast(1.1); }
+
+        .screenshot-info { padding: 2rem; position: relative; }
+        .screenshot-info h3 { 
+            color: var(--accent-cyan); 
+            margin-bottom: 0.75rem; 
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .screenshot-info p { margin-bottom: 0; font-size: 1rem; line-height: 1.6; color: var(--text-muted); }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.015);
+            border: 1px solid transparent;
+            border-left: 4px solid var(--accent-magenta);
+            padding: 1.75rem;
+            border-radius: 0 4px 4px 0;
+            transition: all 0.3s ease;
+            font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+        }
+        
+        .feature-item:hover { 
+            background: rgba(255, 0, 115, 0.05); 
+            border-color: var(--accent-magenta);
+            transform: translateX(3px);
+        }
+        .feature-item h4 { 
+            color: var(--accent-magenta); 
+            margin-bottom: 0.75rem; 
+            text-transform: uppercase; 
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255,0,115,0.3);
+        }
+        .feature-item p { margin-bottom: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-main); opacity: 0.9; }
+
+        /* Responsive spacing and logo size adjustments */
+        @media (max-width: 768px) {
+            .container { padding: 2rem 1rem; }
+            h1 { font-size: clamp(2rem, 6vw, 3rem); }
+            p { font-size: 1rem; }
+            .cta-button { padding: 15px 35px; font-size: 0.9rem; }
+            .social-links { gap: 1.5rem; }
+            .video-showcase video { aspect-ratio: 16/9; }
+        }
+    </style>
 </head>
 <body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<div id="titlearea">
-<table cellspacing="0" cellpadding="0">
- <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
-   <div id="projectname">Engram<span id="projectnumber">&#160;0.1.0</span>
-   </div>
-  </td>
- </tr>
- </tbody>
-</table>
-</div>
-<!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
-</script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
-</div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
 
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">Loading...</div>
-<div class="SRStatus" id="Searching">Searching...</div>
-<div class="SRStatus" id="NoMatches">No Matches</div>
-</div>
-</div>
-</div>
-</div>
+    <div id="cursor-spotlight"></div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Engram Documentation</div></div>
-</div><!--header-->
-<div class="contents">
-</div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+    <div id="view-home" class="view active home-container container">
+        
+        <svg class="studio-logo" viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: #fff; stop-opacity: 1" />
+                    <stop offset="50%" style="stop-color: #fff; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: var(--accent-cyan); stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+            <text x="0" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="80" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="-1.5">B</text>
+            <text x="50" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="80" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="-1.5">LISTER</text>
+            <text x="0" y="115" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="22" fill="url(#logo-grad)" text-transform="uppercase" letter-spacing="12">S T U D I O S</text>
+            <path d="M 50 115 H 480 M 350 115 V 105" stroke="var(--accent-magenta)" stroke-width="1" opacity="0.6"/>
+        </svg>
+
+        <p>
+            Independent game development studio and creators of the 
+            <span class="engram-text" onclick="switchView('view-engine')">Engram Engine</span>.<br><br>
+            Currently building <strong>RiftRunner</strong>, a high-speed, dimension-shifting platformer powered by our custom C-based framework.
+        </p>
+        
+        <a href="https://discord.gg/fK9suABr" target="_blank" class="cta-button">Join the Discord</a>
+        
+        <div class="social-links">
+            <a href="https://blisterstudios.itch.io" target="_blank">Itch/X</a>
+            <a href="https://www.patreon.com/c/BlisterStudios" target="_blank">Patreon</a>
+            <a href="https://github.com/Blister-Studios/" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div id="view-engine" class="view container">
+        <div style="width: 100%;">
+            <a onclick="switchView('view-home')" class="back-link"><span>←</span> Return to Studio</a>
+            
+            <header style="margin-bottom: 5rem;">
+                <svg class="engram-logo" viewBox="0 0 550 140" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="engram-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color: #fff; stop-opacity: 1" />
+                            <stop offset="60%" style="stop-color: #fff; stop-opacity: 1" />
+                            <stop offset="100%" style="stop-color: var(--accent-magenta); stop-opacity: 1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    
+                    <g transform="translate(10, 25)">
+                        <polygon points="40,0 80,20 80,60 40,80 0,60 0,20" fill="none" stroke="var(--accent-cyan)" stroke-width="2" filter="url(#glow)" opacity="0.8"/>
+                        <polygon points="40,15 65,30 65,55 40,70 15,55 15,30" fill="none" stroke="var(--accent-magenta)" stroke-width="1.5" />
+                        <circle cx="40" cy="42" r="8" fill="var(--accent-cyan)"/>
+                        <line x1="40" y1="42" x2="80" y2="20" stroke="var(--accent-cyan)" stroke-width="1"/>
+                        <line x1="40" y1="42" x2="0" y2="60" stroke="var(--accent-cyan)" stroke-width="1"/>
+                        <line x1="40" y1="42" x2="40" y2="80" stroke="var(--accent-cyan)" stroke-width="1"/>
+                    </g>
+                    
+                    <text x="110" y="85" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="64" fill="url(#engram-grad)" text-transform="uppercase" letter-spacing="6">ENGRAM</text>
+                    <text x="115" y="115" font-family="ui-monospace, monospace" font-weight="600" font-size="16" fill="var(--text-muted)" text-transform="uppercase" letter-spacing="14">F r a m e w o r k</text>
+                    
+                    <rect x="115" y="125" width="40" height="2" fill="var(--accent-cyan)" />
+                    <rect x="160" y="125" width="8" height="2" fill="var(--accent-cyan)" />
+                </svg>
+                
+                <p style="text-align: center; max-width: 600px; margin: 0 auto; line-height: 1.6;">A lightweight, highly-extensible C framework built for raw performance and rapid iteration.</p>
+            </header>
+
+            <div class="video-showcase">
+                <video src="showcase.mov" autoplay loop muted playsinline poster="editor.png"></video>
+                <div class="video-overlay-bar">
+                    <span>SHOWCASE // ACTIVE</span>
+                    <span>Pre-release content (subject to change)</span>
+                </div>
+            </div>
+
+            <section class="gallery">
+                <div class="screenshot-card">
+                    <img src="editor.png" alt="[Image Not Found: Editor Viewport]">
+                    <div class="screenshot-info">
+                        <h3>Integrated Editor</h3>
+                        <p>Real-time scene manipulation, entity inspection, and direct feedback through the custom viewport.</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="lua.png" alt="[Image Not Found: Scripting Console]">
+                    <div class="screenshot-info">
+                        <h3>Lua Virtual Machine</h3>
+                        <p>Hot-reloadable Lua scripting bindings injected directly into the C core for fast gameplay logic iteration.</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-card">
+                    <video src="properties.mov" autoplay loop muted playsinline></video>
+                    <div class="screenshot-info">
+                        <h3>Script Properties</h3>
+                        <p>LUA properties dynamically exposed and editable in the editor for scripts, providing real-time tweaks without reloading.</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-card">
+                    <video src="hierarchy.mov" autoplay loop muted playsinline></video>
+                    <div class="screenshot-info">
+                        <h3>Scene Hierarchy</h3>
+                        <p>Complete GameObject and Transform parenting system fully functional directly within the Editor's Hierarchy view.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="feature-item">
+                    <h4>Component Architecture</h4>
+                    <p>Strict data-driven GameObject and Component hierarchy (Transform, Sprite, Script, Camera, Light).</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Custom VFS</h4>
+                    <p>A robust Virtual File System handling path resolution, physical mapping, and secure asset loading.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Data Serialization</h4>
+                    <p>Full JSON serialization for Scenes and Prefabs, allowing the engine state to be saved and loaded instantly.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Cross-platform Philosophy</h4>
+                    <p>Engineered to minimize dependencies and operate on Windows, Mac and Linux alike for both the Engine and the Editor.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Rich Audio</h4>
+                    <p>Includes 3D audio support integrated into the ECS (AudioSource, AudioListener).</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Backend-agnostic Renderer</h4>
+                    <p>Rendering is backend-angnostic supporting OpenGL/Metal/DirectX/Vulkan targets alike for blazing fast graphics.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function switchView(viewId) {
+            // Hide all views
+            document.querySelectorAll('.view').forEach(el => {
+                el.classList.remove('active');
+            });
+            // Show the target view
+            document.getElementById(viewId).classList.add('active');
+            // Scroll to the top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Mouse Spotlight Effect
+        const spotlight = document.getElementById('cursor-spotlight');
+        document.addEventListener('mousemove', e => {
+            requestAnimationFrame(() => {
+                spotlight.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(255, 255, 255, 0.04) 0%, transparent 450px)`;
+            });
+        });
+    </script>
+
 </body>
 </html>

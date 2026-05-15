@@ -1,9 +1,0 @@
-<map id="engram/Components/AudioSource.h" name="engram/Components/AudioSource.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="285,5,540,31"/>
-<area shape="rect" id="Node000002" href="$AudioSource_8c.html" title="Implementation of the AudioSource component." alt="" coords="5,79,260,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="355,37,179,81,177,76,354,31"/>
-<area shape="rect" id="Node000003" href="$Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="285,79,541,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="415,44,415,79,410,79,410,44"/>
-<area shape="rect" id="Node000004" href="$Audio_8c.html" title="Logic for spatial mixing, pitch shifting, and time&#45;scaled playback." alt="" coords="565,79,724,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="464,32,608,76,606,81,462,37"/>
-</map>

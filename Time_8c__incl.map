@@ -1,9 +1,0 @@
-<map id="engram/Core/Time.c" name="engram/Core/Time.c">
-<area shape="rect" id="Node000001" title="Implementation of the engine time system using sokol_time." alt="" coords="72,5,227,31"/>
-<area shape="rect" id="Node000002" href="$Time_8h.html" title="Global engine timing state and frame delta calculations." alt="" coords="5,79,72,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,33,70,73,67,69,130,28"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="97,79,202,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,31,152,65,147,65,147,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="227,79,293,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,28,232,69,229,73,166,33"/>
-</map>

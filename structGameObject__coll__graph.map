@@ -1,6 +1,0 @@
-<map id="GameObject" name="GameObject">
-<area shape="rect" id="Node000001" title="Represents an entity within a scene." alt="" coords="5,108,108,133"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="123,110,131,114,135,121,126,130,108,133,108,127,124,125,129,120,127,118,121,115"/>
-<area shape="rect" id="Node000002" href="$structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="23,5,90,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,45,59,108,54,108,54,45"/>
-</map>
