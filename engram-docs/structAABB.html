@@ -75,16 +75,55 @@ $(function() {
   <div class="headertitle"><div class="title">AABB Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>An Axis-Aligned Bounding Box representing a 3D rectangular volume.  
+ <a href="structAABB.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BVH_8h_source.html">BVH.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a092c9bc5d33566252643136bc10d2913" id="r_a092c9bc5d33566252643136bc10d2913"><td class="memItemLeft" align="right" valign="top"><a id="a092c9bc5d33566252643136bc10d2913" name="a092c9bc5d33566252643136bc10d2913"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> [3]</td></tr>
+<tr class="memitem:a092c9bc5d33566252643136bc10d2913" id="r_a092c9bc5d33566252643136bc10d2913"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAABB.html#a092c9bc5d33566252643136bc10d2913">min</a> [3]</td></tr>
 <tr class="separator:a092c9bc5d33566252643136bc10d2913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71aaefbd282ecd6de338e7460ee815ba" id="r_a71aaefbd282ecd6de338e7460ee815ba"><td class="memItemLeft" align="right" valign="top"><a id="a71aaefbd282ecd6de338e7460ee815ba" name="a71aaefbd282ecd6de338e7460ee815ba"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> [3]</td></tr>
+<tr class="memitem:a71aaefbd282ecd6de338e7460ee815ba" id="r_a71aaefbd282ecd6de338e7460ee815ba"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAABB.html#a71aaefbd282ecd6de338e7460ee815ba">max</a> [3]</td></tr>
 <tr class="separator:a71aaefbd282ecd6de338e7460ee815ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An Axis-Aligned Bounding Box representing a 3D rectangular volume. </p>
+<ul>
+<li>Used to define the spatial limits of a <a class="el" href="structCollider.html" title="Represents a physical volume used for collision detection.">Collider</a> or a bounding volume node within the <a class="el" href="structBVH.html" title="The top-level Bounding Volume Hierarchy tree manager.">BVH</a> tree. It is defined by its two extreme diagonal coordinate points. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a71aaefbd282ecd6de338e7460ee815ba" name="a71aaefbd282ecd6de338e7460ee815ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71aaefbd282ecd6de338e7460ee815ba">&#9670;&#160;</a></span>max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AABB::max[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The maximum spatial coordinates (top-right-front). </p>
+
+</div>
+</div>
+<a id="a092c9bc5d33566252643136bc10d2913" name="a092c9bc5d33566252643136bc10d2913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092c9bc5d33566252643136bc10d2913">&#9670;&#160;</a></span>min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AABB::min[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The minimum spatial coordinates (bottom-left-back). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Hierarchy/<a class="el" href="BVH_8h_source.html">BVH.h</a></li>
 </ul>

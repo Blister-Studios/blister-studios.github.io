@@ -85,30 +85,38 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef TEXTURE_H_</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define TEXTURE_H_</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;sokol_gfx.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span>ResourceManager;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structTextureResource.html">   20</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    sg_image handle;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    sg_view view;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">int</span> width;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">int</span> height;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">int</span> channels;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <a class="code hl_struct" href="structTextureResource.html">TextureResource</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Engram_8h.html">Core/Engram.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;sokol_gfx.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>ResourceManager;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structTextureResource.html">   23</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structTextureResource.html#a8efd6e7205fa281451189aef2b0d4d1a">   25</a></span>    sg_image <a class="code hl_variable" href="structTextureResource.html#a8efd6e7205fa281451189aef2b0d4d1a">handle</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structTextureResource.html#a79dff087028f70848a0056cb42cc7f55">   26</a></span>    sg_view <a class="code hl_variable" href="structTextureResource.html#a79dff087028f70848a0056cb42cc7f55">view</a>;    </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structTextureResource.html#a28ac4b2137d5297317be5dbaf42380dd">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTextureResource.html#a28ac4b2137d5297317be5dbaf42380dd">width</a>;       </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structTextureResource.html#a7932420f7a6bc2df85ee8d7fe68f46f3">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTextureResource.html#a7932420f7a6bc2df85ee8d7fe68f46f3">height</a>;      </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structTextureResource.html#a7cf86adbfd7c48d870d9c80dabbe4441">   29</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTextureResource.html#a7cf86adbfd7c48d870d9c80dabbe4441">channels</a>;    </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <a class="code hl_struct" href="structTextureResource.html">TextureResource</a>;</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> *<a class="code hl_function" href="Texture_8h.html#ad9aac92ffdb7de7d6cb8f617256ef182">texture_loader_load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *physical_path, <span class="keyword">const</span> <span class="keywordtype">char</span> *vfs_path, <span class="keywordtype">size_t</span> *out_size);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="Texture_8h.html#ade2a11e5f43302f2be2c85cd4e3aa3a3">texture_loader_unload</a>(<span class="keywordtype">void</span> *raw_resource);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">// TEXTURE_H_</span></div>
-<div class="ttc" id="aTexture_8h_html_ad9aac92ffdb7de7d6cb8f617256ef182"><div class="ttname"><a href="Texture_8h.html#ad9aac92ffdb7de7d6cb8f617256ef182">texture_loader_load</a></div><div class="ttdeci">void * texture_loader_load(const char *physical_path, const char *vfs_path, size_t *out_size)</div><div class="ttdoc">Loader callback for the Resource Manager.</div><div class="ttdef"><b>Definition</b> Texture.c:33</div></div>
-<div class="ttc" id="aTexture_8h_html_ade2a11e5f43302f2be2c85cd4e3aa3a3"><div class="ttname"><a href="Texture_8h.html#ade2a11e5f43302f2be2c85cd4e3aa3a3">texture_loader_unload</a></div><div class="ttdeci">void texture_loader_unload(void *raw_resource)</div><div class="ttdoc">Unloader callback for the Resource Manager.</div><div class="ttdef"><b>Definition</b> Texture.c:81</div></div>
-<div class="ttc" id="astructTextureResource_html"><div class="ttname"><a href="structTextureResource.html">TextureResource</a></div><div class="ttdoc">Represents a texture asset loaded into GPU memory.</div><div class="ttdef"><b>Definition</b> Texture.h:21</div></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> *<a class="code hl_function" href="Texture_8h.html#a6ebaf751f80f4e6e0a15ac9359b4d358">texture_loader_load</a>(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <span class="keyword">const</span> <span class="keywordtype">char</span> *physical_path, <span class="keyword">const</span> <span class="keywordtype">char</span> *vfs_path, <span class="keywordtype">size_t</span> *out_size);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> <a class="code hl_function" href="Texture_8h.html#ade2a11e5f43302f2be2c85cd4e3aa3a3">texture_loader_unload</a>(<span class="keywordtype">void</span> *raw_resource);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// TEXTURE_H_</span></div>
+<div class="ttc" id="aEngram_8h_html"><div class="ttname"><a href="Engram_8h.html">Engram.h</a></div><div class="ttdoc">The central entry point and context management for the Engram Engine.</div></div>
+<div class="ttc" id="aTexture_8h_html_a6ebaf751f80f4e6e0a15ac9359b4d358"><div class="ttname"><a href="Texture_8h.html#a6ebaf751f80f4e6e0a15ac9359b4d358">texture_loader_load</a></div><div class="ttdeci">void * texture_loader_load(EngramContext *ctx, const char *physical_path, const char *vfs_path, size_t *out_size)</div><div class="ttdoc">Loader callback for the Resource Manager.</div><div class="ttdef"><b>Definition</b> Texture.c:34</div></div>
+<div class="ttc" id="aTexture_8h_html_ade2a11e5f43302f2be2c85cd4e3aa3a3"><div class="ttname"><a href="Texture_8h.html#ade2a11e5f43302f2be2c85cd4e3aa3a3">texture_loader_unload</a></div><div class="ttdeci">void texture_loader_unload(void *raw_resource)</div><div class="ttdoc">Unloader callback for the Resource Manager.</div><div class="ttdef"><b>Definition</b> Texture.c:93</div></div>
+<div class="ttc" id="astructEngramContext_html"><div class="ttname"><a href="structEngramContext.html">EngramContext</a></div><div class="ttdoc">The central hub and &quot;God Object&quot; of the engine state.</div><div class="ttdef"><b>Definition</b> Engram.h:63</div></div>
+<div class="ttc" id="astructTextureResource_html"><div class="ttname"><a href="structTextureResource.html">TextureResource</a></div><div class="ttdoc">Represents a texture asset loaded into GPU memory.</div><div class="ttdef"><b>Definition</b> Texture.h:24</div></div>
+<div class="ttc" id="astructTextureResource_html_a28ac4b2137d5297317be5dbaf42380dd"><div class="ttname"><a href="structTextureResource.html#a28ac4b2137d5297317be5dbaf42380dd">TextureResource::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> Texture.h:27</div></div>
+<div class="ttc" id="astructTextureResource_html_a7932420f7a6bc2df85ee8d7fe68f46f3"><div class="ttname"><a href="structTextureResource.html#a7932420f7a6bc2df85ee8d7fe68f46f3">TextureResource::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> Texture.h:28</div></div>
+<div class="ttc" id="astructTextureResource_html_a79dff087028f70848a0056cb42cc7f55"><div class="ttname"><a href="structTextureResource.html#a79dff087028f70848a0056cb42cc7f55">TextureResource::view</a></div><div class="ttdeci">sg_view view</div><div class="ttdef"><b>Definition</b> Texture.h:26</div></div>
+<div class="ttc" id="astructTextureResource_html_a7cf86adbfd7c48d870d9c80dabbe4441"><div class="ttname"><a href="structTextureResource.html#a7cf86adbfd7c48d870d9c80dabbe4441">TextureResource::channels</a></div><div class="ttdeci">int channels</div><div class="ttdef"><b>Definition</b> Texture.h:29</div></div>
+<div class="ttc" id="astructTextureResource_html_a8efd6e7205fa281451189aef2b0d4d1a"><div class="ttname"><a href="structTextureResource.html#a8efd6e7205fa281451189aef2b0d4d1a">TextureResource::handle</a></div><div class="ttdeci">sg_image handle</div><div class="ttdef"><b>Definition</b> Texture.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

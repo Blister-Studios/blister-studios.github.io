@@ -88,15 +88,15 @@ Directory dependency graph for Components:</div>
 <area shape="rect" href="dir_c40a9d3e3ddde1626087fbcd79d82ce5.html" title="Hierarchy" alt="" coords="401,125,487,151"/>
 <area shape="rect" href="dir_20fed347225a3c8b6cc71abd8fd77b4d.html" title="Components" alt="" coords="200,52,304,77"/>
 <area shape="poly" href="dir_000000_000002.html" alt="" coords="221,80,93,125,91,120,219,75"/>
-<area shape="rect" href="dir_000000_000002.html" title="4" alt="" coords="95,122,104,137"/>
+<area shape="rect" href="dir_000000_000002.html" title="5" alt="" coords="95,122,104,137"/>
 <area shape="poly" href="dir_000000_000007.html" alt="" coords="236,80,174,120,171,115,233,75"/>
-<area shape="rect" href="dir_000000_000007.html" title="2" alt="" coords="176,115,185,130"/>
+<area shape="rect" href="dir_000000_000007.html" title="5" alt="" coords="176,115,185,130"/>
 <area shape="poly" href="dir_000000_000001.html" alt="" coords="255,78,255,112,249,112,249,78"/>
-<area shape="rect" href="dir_000000_000001.html" title="3" alt="" coords="256,100,265,114"/>
+<area shape="rect" href="dir_000000_000001.html" title="4" alt="" coords="256,100,265,114"/>
 <area shape="poly" href="dir_000000_000006.html" alt="" coords="269,75,324,115,321,119,266,80"/>
-<area shape="rect" href="dir_000000_000006.html" title="5" alt="" coords="319,100,328,115"/>
+<area shape="rect" href="dir_000000_000006.html" title="6" alt="" coords="319,100,328,115"/>
 <area shape="poly" href="dir_000000_000005.html" alt="" coords="284,75,401,118,399,123,282,80"/>
-<area shape="rect" href="dir_000000_000005.html" title="2" alt="" coords="394,104,403,118"/>
+<area shape="rect" href="dir_000000_000005.html" title="4" alt="" coords="394,104,403,118"/>
 <area shape="rect" href="dir_2a4352deaa3a824d2996622ed94308c6.html" title="engram" alt="" coords="16,16,497,161"/>
 </map>
 </div>
@@ -107,20 +107,22 @@ Files</h2></td></tr>
 <tr class="memdesc:AudioListener_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="structAudioListener.html" title="Component defining the ear position of the player.">AudioListener</a> component. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="AudioListener_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioListener_8h.html">AudioListener.h</a></td></tr>
-<tr class="memdesc:AudioListener_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> representing the point where audio is heard. <br /></td></tr>
+<tr class="memdesc:AudioListener_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> representing the point where 3D spatial audio is mixed and heard. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioSource_8c.html">AudioSource.c</a></td></tr>
-<tr class="memdesc:AudioSource_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="structAudioSource.html" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors.">AudioSource</a> component. <br /></td></tr>
+<tr class="memdesc:AudioSource_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a> component with dual FMOD Studio and fallback backends. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="AudioSource_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioSource_8h.html">AudioSource.h</a></td></tr>
+<tr class="memdesc:AudioSource_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> layout for audio emitter states supporting FMOD Studio events and custom fallback pipelines. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Camera_8c.html">Camera.c</a></td></tr>
-<tr class="memdesc:Camera_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of camera view and projection logic. <br /></td></tr>
+<tr class="memdesc:Camera_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of cross-platform 2D Orthographic and 3D Perspective camera view/projection logic. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="Camera_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Camera_8h.html">Camera.h</a></td></tr>
-<tr class="memdesc:Camera_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> for defining the view and projection parameters. <br /></td></tr>
+<tr class="memdesc:Camera_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> for defining 2D Orthographic and 3D Perspective view and projection parameters. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="Collider_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>Collider.h</b></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="Collider_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Collider_8h.html">Collider.h</a></td></tr>
+<tr class="memdesc:Collider_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> for physical intersection testing and spatial registration. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Component_8c.html">Component.c</a></td></tr>
 <tr class="memdesc:Component_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the base component initialization. <br /></td></tr>
@@ -133,6 +135,11 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="Light_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Light_8h.html">Light.h</a></td></tr>
 <tr class="memdesc:Light_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unified lighting component for 2D forward rendering. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MeshRenderer_8c.html">MeshRenderer.c</a></td></tr>
+<tr class="memdesc:MeshRenderer_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="structMeshRenderer.html">MeshRenderer</a> component handling sub-meshes and material overrides. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="MeshRenderer_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>MeshRenderer.h</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="Script_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Script_8h.html">Script.h</a></td></tr>
 <tr class="memdesc:Script_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> that binds a Lua script file to a <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> with property reflection. <br /></td></tr>
@@ -147,7 +154,7 @@ Files</h2></td></tr>
 <tr class="memdesc:Transform_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the hierarchical transformation system with world-space preservation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="Transform_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Transform_8h.html">Transform.h</a></td></tr>
-<tr class="memdesc:Transform_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core component for spatial positioning, rotation, and scaling. <br /></td></tr>
+<tr class="memdesc:Transform_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core component for hierarchical spatial positioning, rotation, and scaling. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

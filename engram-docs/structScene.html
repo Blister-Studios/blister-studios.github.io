@@ -75,71 +75,177 @@ $(function() {
   <div class="headertitle"><div class="title">Scene Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Container for a complete game world state.  
+ <a href="structScene.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Scene_8h_source.html">Scene.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="structScene__coll__graph.png" border="0" usemap="#aScene_coll__map" alt="Collaboration graph"/></div>
 <map name="aScene_coll__map" id="aScene_coll__map">
-<area shape="rect" title=" " alt="" coords="470,271,531,297"/>
-<area shape="rect" href="structEngramContext.html" title="The heart of the engine state, encapsulating all sub&#45;systems." alt="" coords="398,376,521,401"/>
-<area shape="poly" title=" " alt="" coords="500,311,488,353,472,377,468,374,484,351,495,310"/>
-<area shape="rect" href="structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="181,181,247,207"/>
-<area shape="poly" title=" " alt="" coords="261,197,329,208,402,228,427,243,478,269,476,274,425,248,400,233,327,213,261,202"/>
-<area shape="poly" title=" " alt="" coords="167,204,107,216,48,236,26,248,12,263,9,278,17,297,42,317,80,334,128,348,183,359,298,374,398,382,398,387,298,379,182,364,127,353,78,339,39,321,13,300,3,279,8,260,23,244,46,231,106,211,166,199"/>
-<area shape="rect" href="structAssetRegistry.html" title="Container for all cached assets using a dynamic array of records." alt="" coords="139,271,251,297"/>
-<area shape="poly" title=" " alt="" coords="169,207,149,217,134,232,131,243,137,252,164,269,161,273,133,256,126,243,129,229,146,213,166,202"/>
-<area shape="rect" href="structEventBus.html" title="The central hub for event subscription and dispatch." alt="" coords="275,271,358,297"/>
-<area shape="poly" title=" " alt="" coords="212,220,213,233,217,244,240,258,276,270,274,275,238,263,213,247,208,234,207,220"/>
-<area shape="rect" href="structVFS.html" title="Opaque structure representing the Virtual File System context." alt="" coords="383,271,429,297"/>
-<area shape="poly" title=" " alt="" coords="247,211,308,243,383,271,381,276,306,248,244,216"/>
-<area shape="poly" title=" " alt="" coords="453,362,453,342,458,322,468,307,481,295,484,299,472,310,463,324,458,343,458,362"/>
-<area shape="poly" title=" " alt="" coords="219,304,249,328,286,350,342,368,398,379,397,384,341,374,284,354,246,332,215,308"/>
-<area shape="poly" title=" " alt="" coords="329,308,343,330,361,350,383,364,408,373,406,378,381,368,358,354,338,333,325,311"/>
-<area shape="poly" title=" " alt="" coords="412,309,418,330,427,351,447,374,443,378,422,353,413,332,407,311"/>
-<area shape="rect" href="structInputSystem.html" title="Container for the state of all registered input actions and raw keys." alt="" coords="583,271,687,297"/>
-<area shape="poly" title=" " alt="" coords="627,311,612,334,592,354,558,372,522,382,520,377,556,367,588,350,608,330,622,308"/>
-<area shape="rect" href="structInputAction.html" title="Internal state tracking for a single input action." alt="" coords="569,181,665,207"/>
-<area shape="poly" title=" " alt="" coords="618,221,621,245,631,270,626,272,615,246,613,221"/>
-<area shape="rect" href="structRawKeyState.html" title="Internal state tracking for raw hardware keys." alt="" coords="689,181,797,207"/>
-<area shape="poly" title=" " alt="" coords="720,218,651,273,648,269,717,213"/>
-<area shape="rect" href="structRenderBackend.html" title=" " alt="" coords="827,181,950,207"/>
-<area shape="poly" title=" " alt="" coords="858,216,769,272,739,295,716,316,693,336,659,354,589,376,521,386,521,381,588,371,657,350,690,331,713,312,735,291,766,267,855,211"/>
-<area shape="rect" href="structEngramConfig.html" title="Startup configuration and lifecycle callbacks for the engine." alt="" coords="839,271,952,297"/>
-<area shape="poly" title=" " alt="" coords="893,220,897,271,892,271,888,221"/>
-<area shape="poly" title=" " alt="" coords="869,307,825,332,773,355,707,371,639,382,521,390,521,385,639,376,706,366,772,349,823,327,866,302"/>
-<area shape="rect" href="structBVH.html" title=" " alt="" coords="494,181,545,207"/>
-<area shape="poly" title=" " alt="" coords="530,220,530,246,514,273,509,270,525,245,525,220"/>
-<area shape="rect" href="structBVHNode.html" title=" " alt="" coords="477,93,561,119"/>
-<area shape="poly" title=" " alt="" coords="522,133,522,181,517,181,517,133"/>
-<area shape="rect" href="structAABB.html" title=" " alt="" coords="490,5,549,31"/>
-<area shape="poly" title=" " alt="" coords="522,45,522,93,517,93,517,45"/>
+<area shape="rect" title="Container for a complete game world state." alt="" coords="462,286,524,311"/>
+<area shape="rect" href="structEngramContext.html" title="The central hub and &quot;God Object&quot; of the engine state." alt="" coords="397,391,520,416"/>
+<area shape="poly" title=" " alt="" coords="496,326,493,346,487,368,472,392,467,389,483,366,488,345,490,325"/>
+<area shape="rect" href="structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="126,181,193,207"/>
+<area shape="poly" title=" " alt="" coords="207,193,276,203,313,213,348,228,362,243,375,258,412,273,463,287,461,292,411,278,372,262,358,247,345,233,311,218,275,208,207,199"/>
+<area shape="poly" title=" " alt="" coords="114,213,71,231,32,255,18,268,10,282,9,296,16,312,41,331,79,348,127,362,182,373,297,389,397,397,397,402,297,394,181,379,126,367,77,353,38,336,12,315,4,298,5,281,14,265,29,251,69,226,112,208"/>
+<area shape="rect" href="structAssetRegistry.html" title="Container for all cached assets using a dynamic array of records." alt="" coords="138,286,250,311"/>
+<area shape="poly" title=" " alt="" coords="115,207,95,217,79,232,74,245,79,258,102,272,139,283,137,289,99,277,75,262,69,245,75,229,92,213,112,202"/>
+<area shape="rect" href="structEventBus.html" title="The central hub for event subscription and dispatch." alt="" coords="274,286,357,311"/>
+<area shape="poly" title=" " alt="" coords="156,220,156,240,163,258,184,275,206,279,232,278,263,281,274,284,273,289,262,287,232,283,206,284,182,280,159,262,151,241,151,220"/>
+<area shape="rect" href="structVFS.html" title="The Virtual File System manager context." alt="" coords="382,286,428,311"/>
+<area shape="poly" title=" " alt="" coords="197,211,224,229,239,244,254,258,284,269,310,273,336,275,370,281,382,286,381,291,368,287,336,280,309,278,283,275,252,262,235,248,221,233,194,216"/>
+<area shape="poly" title=" " alt="" coords="452,377,453,357,457,336,466,322,477,310,481,313,470,325,462,338,458,358,458,377"/>
+<area shape="poly" title=" " alt="" coords="218,318,248,343,285,364,341,383,397,394,396,399,340,388,283,369,245,347,214,323"/>
+<area shape="poly" title=" " alt="" coords="329,322,343,345,361,365,384,378,409,388,407,393,381,383,358,369,338,348,324,325"/>
+<area shape="poly" title=" " alt="" coords="412,324,427,365,446,388,442,392,423,368,407,326"/>
+<area shape="rect" href="structInputSystem.html" title="Container for the state of all registered input actions and raw keys." alt="" coords="582,286,686,311"/>
+<area shape="poly" title=" " alt="" coords="625,325,609,348,588,369,555,386,521,396,519,391,553,381,585,365,605,345,620,322"/>
+<area shape="rect" href="structInputAction.html" title="Logic&#45;level state representation of a rebindable control action." alt="" coords="514,181,610,207"/>
+<area shape="poly" title=" " alt="" coords="567,220,572,240,581,258,594,273,611,284,608,288,591,277,576,262,567,242,562,221"/>
+<area shape="rect" href="structRawInputState.html" title="Raw hardware&#45;level state tracking for a single key or button." alt="" coords="634,181,752,207"/>
+<area shape="poly" title=" " alt="" coords="663,216,649,232,639,260,637,286,631,285,634,259,644,229,659,213"/>
+<area shape="rect" href="structRenderBackend.html" title="Interface for hardware&#45;specific rendering implementations." alt="" coords="810,181,933,207"/>
+<area shape="poly" title=" " alt="" coords="851,218,753,301,699,343,657,369,623,382,587,391,520,401,519,396,586,386,621,377,655,364,696,339,749,297,847,214"/>
+<area shape="rect" href="structEngramConfig.html" title="Startup configuration parameters and lifecycle callback hooks." alt="" coords="851,286,964,311"/>
+<area shape="poly" title=" " alt="" coords="883,219,906,285,901,287,878,221"/>
+<area shape="poly" title=" " alt="" coords="882,321,838,347,786,369,716,386,644,397,520,405,520,400,644,392,715,381,784,364,836,342,879,317"/>
+<area shape="rect" href="structBVH.html" title="The top&#45;level Bounding Volume Hierarchy tree manager." alt="" coords="440,181,490,207"/>
+<area shape="poly" title=" " alt="" coords="474,219,492,285,487,286,469,221"/>
+<area shape="rect" href="structBVHNode.html" title="A single node within the Bounding Volume Hierarchy tree." alt="" coords="423,93,507,119"/>
+<area shape="poly" title=" " alt="" coords="468,133,468,181,462,181,462,133"/>
+<area shape="rect" href="structAABB.html" title="An Axis&#45;Aligned Bounding Box representing a 3D rectangular volume." alt="" coords="436,5,494,31"/>
+<area shape="poly" title=" " alt="" coords="468,45,468,93,462,93,462,45"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acb05170999c58d4197fcba658d530bcc" id="r_acb05170999c58d4197fcba658d530bcc"><td class="memItemLeft" align="right" valign="top"><a id="acb05170999c58d4197fcba658d530bcc" name="acb05170999c58d4197fcba658d530bcc"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:acb05170999c58d4197fcba658d530bcc" id="r_acb05170999c58d4197fcba658d530bcc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#acb05170999c58d4197fcba658d530bcc">id</a></td></tr>
 <tr class="separator:acb05170999c58d4197fcba658d530bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0514f622f95af1501eb5f95c3f3e9f82" id="r_a0514f622f95af1501eb5f95c3f3e9f82"><td class="memItemLeft" align="right" valign="top"><a id="a0514f622f95af1501eb5f95c3f3e9f82" name="a0514f622f95af1501eb5f95c3f3e9f82"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memitem:a0514f622f95af1501eb5f95c3f3e9f82" id="r_a0514f622f95af1501eb5f95c3f3e9f82"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#a0514f622f95af1501eb5f95c3f3e9f82">name</a></td></tr>
 <tr class="separator:a0514f622f95af1501eb5f95c3f3e9f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a628ac3ef44854bea7f0d5d7089c0dab4" id="r_a628ac3ef44854bea7f0d5d7089c0dab4"><td class="memItemLeft" align="right" valign="top"><a id="a628ac3ef44854bea7f0d5d7089c0dab4" name="a628ac3ef44854bea7f0d5d7089c0dab4"></a>
-<a class="el" href="structDArray.html">DArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>game_objects</b></td></tr>
+<tr class="memitem:a628ac3ef44854bea7f0d5d7089c0dab4" id="r_a628ac3ef44854bea7f0d5d7089c0dab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDArray.html">DArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#a628ac3ef44854bea7f0d5d7089c0dab4">game_objects</a></td></tr>
 <tr class="separator:a628ac3ef44854bea7f0d5d7089c0dab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2201f2490b165481b3994b32a0ff98f7" id="r_a2201f2490b165481b3994b32a0ff98f7"><td class="memItemLeft" align="right" valign="top"><a id="a2201f2490b165481b3994b32a0ff98f7" name="a2201f2490b165481b3994b32a0ff98f7"></a>
-struct <a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctx</b></td></tr>
+<tr class="memitem:a2201f2490b165481b3994b32a0ff98f7" id="r_a2201f2490b165481b3994b32a0ff98f7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structEngramContext.html">EngramContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#a2201f2490b165481b3994b32a0ff98f7">ctx</a></td></tr>
 <tr class="separator:a2201f2490b165481b3994b32a0ff98f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca7cfdb2b02e9247ab12c1e05a6fd56" id="r_a0ca7cfdb2b02e9247ab12c1e05a6fd56"><td class="memItemLeft" align="right" valign="top"><a id="a0ca7cfdb2b02e9247ab12c1e05a6fd56" name="a0ca7cfdb2b02e9247ab12c1e05a6fd56"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_awake</b></td></tr>
+<tr class="memitem:a0ca7cfdb2b02e9247ab12c1e05a6fd56" id="r_a0ca7cfdb2b02e9247ab12c1e05a6fd56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#a0ca7cfdb2b02e9247ab12c1e05a6fd56">is_awake</a></td></tr>
 <tr class="separator:a0ca7cfdb2b02e9247ab12c1e05a6fd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b8655cf456ce0383290db41f2b7c0b" id="r_a45b8655cf456ce0383290db41f2b7c0b"><td class="memItemLeft" align="right" valign="top"><a id="a45b8655cf456ce0383290db41f2b7c0b" name="a45b8655cf456ce0383290db41f2b7c0b"></a>
-<a class="el" href="structBVH.html">BVH</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bvh</b></td></tr>
+<tr class="memitem:a45b8655cf456ce0383290db41f2b7c0b" id="r_a45b8655cf456ce0383290db41f2b7c0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBVH.html">BVH</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#a45b8655cf456ce0383290db41f2b7c0b">bvh</a></td></tr>
 <tr class="separator:a45b8655cf456ce0383290db41f2b7c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6357df6560e19811adc192f8be9a584e" id="r_a6357df6560e19811adc192f8be9a584e"><td class="memItemLeft" align="right" valign="top"><a id="a6357df6560e19811adc192f8be9a584e" name="a6357df6560e19811adc192f8be9a584e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bvh_dirty</b></td></tr>
+<tr class="memitem:a6357df6560e19811adc192f8be9a584e" id="r_a6357df6560e19811adc192f8be9a584e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html#a6357df6560e19811adc192f8be9a584e">bvh_dirty</a></td></tr>
 <tr class="separator:a6357df6560e19811adc192f8be9a584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Container for a complete game world state. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a45b8655cf456ce0383290db41f2b7c0b" name="a45b8655cf456ce0383290db41f2b7c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b8655cf456ce0383290db41f2b7c0b">&#9670;&#160;</a></span>bvh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBVH.html">BVH</a> Scene::bvh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Spatial partitioning tree for collision optimization. </p>
+
+</div>
+</div>
+<a id="a6357df6560e19811adc192f8be9a584e" name="a6357df6560e19811adc192f8be9a584e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6357df6560e19811adc192f8be9a584e">&#9670;&#160;</a></span>bvh_dirty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene::bvh_dirty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag indicating if spatial partitioning needs a rebuild. </p>
+
+</div>
+</div>
+<a id="a2201f2490b165481b3994b32a0ff98f7" name="a2201f2490b165481b3994b32a0ff98f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2201f2490b165481b3994b32a0ff98f7">&#9670;&#160;</a></span>ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structEngramContext.html">EngramContext</a>* Scene::ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reference to the global engine context. </p>
+
+</div>
+</div>
+<a id="a628ac3ef44854bea7f0d5d7089c0dab4" name="a628ac3ef44854bea7f0d5d7089c0dab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628ac3ef44854bea7f0d5d7089c0dab4">&#9670;&#160;</a></span>game_objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDArray.html">DArray</a>* Scene::game_objects</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dynamic array of all active GameObjects. </p>
+
+</div>
+</div>
+<a id="acb05170999c58d4197fcba658d530bcc" name="acb05170999c58d4197fcba658d530bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb05170999c58d4197fcba658d530bcc">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Scene::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unique ID for the scene. </p>
+
+</div>
+</div>
+<a id="a0ca7cfdb2b02e9247ab12c1e05a6fd56" name="a0ca7cfdb2b02e9247ab12c1e05a6fd56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca7cfdb2b02e9247ab12c1e05a6fd56">&#9670;&#160;</a></span>is_awake</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene::is_awake</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag indicating if scene has been initialized. </p>
+
+</div>
+</div>
+<a id="a0514f622f95af1501eb5f95c3f3e9f82" name="a0514f622f95af1501eb5f95c3f3e9f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0514f622f95af1501eb5f95c3f3e9f82">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* Scene::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Human-readable name (e.g., "Level1"). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Hierarchy/<a class="el" href="Scene_8h_source.html">Scene.h</a></li>
 </ul>

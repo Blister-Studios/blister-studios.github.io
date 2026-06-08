@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Internal state tracking for a single input action.  
+<p>Logic-level state representation of a rebindable control action.  
  <a href="structInputAction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Input_8h_source.html">Input.h</a>&gt;</code></p>
@@ -93,7 +93,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9fdde81acb830f6656186d1771963b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Internal state tracking for a single input action. </p>
+<div class="textblock"><p>Logic-level state representation of a rebindable control action. </p>
+<ul>
+<li>This struct abstracts the physical hardware away from the game code.</li>
+<li>Instead of checking for "Spacebar", your systems check for "Jump". </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="acdfc1a931444cc709129f56cdd2a4117" name="acdfc1a931444cc709129f56cdd2a4117"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdfc1a931444cc709129f56cdd2a4117">&#9670;&#160;</a></span>is_pressed</h2>
@@ -106,7 +110,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Current state of the action. </p>
+<p>Current frame state (true if active now). </p>
 
 </div>
 </div>
@@ -121,7 +125,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The physical SAPP_KEYCODE associated with this action. </p>
+<p>The raw SAPP_KEYCODE or MOUSE_BUTTON_OFFSET bound to this action. </p>
 
 </div>
 </div>
@@ -136,7 +140,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Analog value (0.0 to 1.0). </p>
+<p>Normalized analog value (0.0 to 1.0) for sticks/triggers. </p>
 
 </div>
 </div>
@@ -151,7 +155,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>State in the previous frame. </p>
+<p>Previous frame state (used for edge detection/toggles). </p>
 
 </div>
 </div>

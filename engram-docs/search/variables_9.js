@@ -1,8 +1,25 @@
 var searchData=
 [
-  ['layer_0',['layer',['../structSprite.html#ab04506437c509f6b7b83815a6eac3541',1,'Sprite']]],
-  ['listeners_1',['listeners',['../structEventBus.html#a1cf59b27245a385dcd7459b344cf2dbc',1,'EventBus']]],
-  ['load_2',['load',['../structResourceLoader.html#a5c137be57e3ee467359e449f84a4c3e0',1,'ResourceLoader']]],
-  ['lua_3',['lua',['../structEngramContext.html#aa0dab9175b102b71273d09c8d5f5e84a',1,'EngramContext']]],
-  ['lua_5fref_4',['lua_ref',['../structScript.html#aa758d9ef8ffde2db09679b57f74aa8e8',1,'Script']]]
+  ['i_0',['i',['../structScriptProperty.html#acf16529358660668a50de599194a1da4',1,'ScriptProperty']]],
+  ['ibuf_1',['ibuf',['../structSubMesh.html#aa774354f73a4abeb6de73ec88997c4c8',1,'SubMesh']]],
+  ['id_2',['id',['../structGameObject.html#a1c90e22051cad9f69d29130bd882b44c',1,'GameObject::id'],['../structScene.html#acb05170999c58d4197fcba658d530bcc',1,'Scene::id']]],
+  ['imgui_5ftex_5fid_3',['imgui_tex_id',['../structRenderTarget.html#a4850b25c3f7acc574b1bea03f00da8c1',1,'RenderTarget']]],
+  ['index_5fcount_4',['index_count',['../structSubMesh.html#a88a25dc5e5c0a7947ef54e929e265650',1,'SubMesh']]],
+  ['init_5',['init',['../structRenderBackend.html#a268ab8c8c95e270606326493a10ccd41',1,'RenderBackend']]],
+  ['input_6',['input',['../structEngramContext.html#ad6ba6b4d6bc6fbac00a793e82489f62f',1,'EngramContext']]],
+  ['intensity_7',['intensity',['../structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220',1,'Light']]],
+  ['internal_5fstate_8',['internal_state',['../structRenderBackend.html#a86183eba2a45d5c9271e6847ce036c24',1,'RenderBackend']]],
+  ['inv_5fdir_9',['inv_dir',['../structRay.html#ad60eebbb23431e8a12bff70f5d5fdb3d',1,'Ray']]],
+  ['is_5factive_10',['is_active',['../structDelayedTask.html#afcacc9294e697f49e5ca836fe4a98929',1,'DelayedTask::is_active'],['../structGameObject.html#a755bcc148206cac21b7f654a65b4e701',1,'GameObject::is_active']]],
+  ['is_5fawake_11',['is_awake',['../structScene.html#a0ca7cfdb2b02e9247ab12c1e05a6fd56',1,'Scene']]],
+  ['is_5fdirty_12',['is_dirty',['../structTransform.html#a20ba7e3b5f374f3fd230c584a09e5c7a',1,'Transform']]],
+  ['is_5finitialized_13',['is_initialized',['../structScript.html#a90768bf62d50c57a51695c1b034beeb9',1,'Script']]],
+  ['is_5fmain_14',['is_main',['../structCamera.html#a37833e9292e55cdee3a1485724474d23',1,'Camera']]],
+  ['is_5fpaused_15',['is_paused',['../structEditorState.html#a3f6d27a72d684f0b56e45d7ce46ad62a',1,'EditorState']]],
+  ['is_5fpending_5fkill_16',['is_pending_kill',['../structGameObject.html#ad8c22f37bfbb0ccb380b43ec717f4f27',1,'GameObject']]],
+  ['is_5fplaying_17',['is_playing',['../structAudioSource.html#a5fd7546354c59d5a18fe103792668245',1,'AudioSource::is_playing'],['../structEditorState.html#ab226947b06a2bee81537ab463320c934',1,'EditorState::is_playing']]],
+  ['is_5fpressed_18',['is_pressed',['../structInputAction.html#acdfc1a931444cc709129f56cdd2a4117',1,'InputAction::is_pressed'],['../structRawInputState.html#afb7834c8df8d2ad8e4066125a291091b',1,'RawInputState::is_pressed']]],
+  ['is_5frunning_19',['is_running',['../structEngramContext.html#a264f44cbddd058d511fb01cd7863088d',1,'EngramContext']]],
+  ['is_5fstatic_20',['is_static',['../structCollider.html#a676c4b445eba77802b609d6e0860fbe2',1,'Collider']]],
+  ['is_5ftrigger_21',['is_trigger',['../structCollider.html#a5dd7c9eff3100ca9c9af45f99da02c22',1,'Collider']]]
 ];

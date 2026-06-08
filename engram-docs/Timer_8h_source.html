@@ -89,7 +89,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span><a class="code hl_struct" href="structEngramContext.html">EngramContext</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="Timer_8h.html#a8d286a745d1db1199380df6752bf959b">   14</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="Timer_8h.html#a8d286a745d1db1199380df6752bf959b">TimerCallback</a>)(<span class="keywordtype">void</span> *user_data);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="Timer_8h.html#a8d286a745d1db1199380df6752bf959b">   14</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="Timer_8h.html#a8d286a745d1db1199380df6752bf959b">TimerCallback</a>)(<span class="keywordtype">void</span> *<a class="code hl_variable" href="structEngramContext.html#aabc6dc00f4aae5cbd4ce235d00666727">user_data</a>);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structDelayedTask.html">   19</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
@@ -114,7 +114,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructDelayedTask_html_a46abd2c03d34e8ad5b8837ccddf89914"><div class="ttname"><a href="structDelayedTask.html#a46abd2c03d34e8ad5b8837ccddf89914">DelayedTask::user_data</a></div><div class="ttdeci">void * user_data</div><div class="ttdef"><b>Definition</b> Timer.h:23</div></div>
 <div class="ttc" id="astructDelayedTask_html_ac781e542dc845a969369001361c91eee"><div class="ttname"><a href="structDelayedTask.html#ac781e542dc845a969369001361c91eee">DelayedTask::callback</a></div><div class="ttdeci">TimerCallback callback</div><div class="ttdef"><b>Definition</b> Timer.h:22</div></div>
 <div class="ttc" id="astructDelayedTask_html_afcacc9294e697f49e5ca836fe4a98929"><div class="ttname"><a href="structDelayedTask.html#afcacc9294e697f49e5ca836fe4a98929">DelayedTask::is_active</a></div><div class="ttdeci">bool is_active</div><div class="ttdef"><b>Definition</b> Timer.h:24</div></div>
-<div class="ttc" id="astructEngramContext_html"><div class="ttname"><a href="structEngramContext.html">EngramContext</a></div><div class="ttdoc">The heart of the engine state, encapsulating all sub-systems.</div><div class="ttdef"><b>Definition</b> Engram.h:49</div></div>
+<div class="ttc" id="astructEngramContext_html"><div class="ttname"><a href="structEngramContext.html">EngramContext</a></div><div class="ttdoc">The central hub and &quot;God Object&quot; of the engine state.</div><div class="ttdef"><b>Definition</b> Engram.h:63</div></div>
+<div class="ttc" id="astructEngramContext_html_aabc6dc00f4aae5cbd4ce235d00666727"><div class="ttname"><a href="structEngramContext.html#aabc6dc00f4aae5cbd4ce235d00666727">EngramContext::user_data</a></div><div class="ttdeci">void * user_data</div><div class="ttdef"><b>Definition</b> Engram.h:87</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

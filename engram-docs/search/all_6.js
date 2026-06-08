@@ -1,17 +1,14 @@
 var searchData=
 [
-  ['g_5fengram_5fctx_0',['g_engram_ctx',['../Transform_8c.html#a890990c04af8c74311cbbeb4da5f7fc0',1,'g_engram_ctx:&#160;Engram.c'],['../SceneLoader_8c.html#a890990c04af8c74311cbbeb4da5f7fc0',1,'g_engram_ctx:&#160;Engram.c']]],
-  ['gameobject_1',['GameObject',['../structGameObject.html',1,'']]],
-  ['gameobject_2ec_2',['GameObject.c',['../GameObject_8c.html',1,'']]],
-  ['gameobject_2eh_3',['GameObject.h',['../GameObject_8h.html',1,'']]],
-  ['go_5fadd_5fcomponent_4',['go_add_component',['../GameObject_8c.html#a47407abf9e675a9736632c3e7f90ff15',1,'go_add_component(GameObject *go, Component *comp):&#160;GameObject.c'],['../GameObject_8h.html#a47407abf9e675a9736632c3e7f90ff15',1,'go_add_component(GameObject *go, Component *comp):&#160;GameObject.c']]],
-  ['go_5fawake_5',['go_awake',['../GameObject_8c.html#ada941ab7df5a86d019087a68a7590770',1,'go_awake(GameObject *go):&#160;GameObject.c'],['../GameObject_8h.html#ada941ab7df5a86d019087a68a7590770',1,'go_awake(GameObject *go):&#160;GameObject.c']]],
-  ['go_5fcreate_6',['go_create',['../GameObject_8c.html#ac6285e009faaf46e467542094cbe22ca',1,'go_create(unsigned int id, const char *name):&#160;GameObject.c'],['../GameObject_8h.html#ac6285e009faaf46e467542094cbe22ca',1,'go_create(unsigned int id, const char *name):&#160;GameObject.c']]],
-  ['go_5fdestroy_7',['go_destroy',['../GameObject_8h.html#a325d4be7b1bc4823b4e1cd020ed7a690',1,'go_destroy(GameObject *go):&#160;GameObject.c'],['../GameObject_8c.html#a325d4be7b1bc4823b4e1cd020ed7a690',1,'go_destroy(GameObject *go):&#160;GameObject.c']]],
-  ['go_5fget_5fcomponent_8',['go_get_component',['../GameObject_8c.html#af1bf5fecfda504818807f24400531e5a',1,'go_get_component(GameObject *go, ComponentTypeID type):&#160;GameObject.c'],['../GameObject_8h.html#af1bf5fecfda504818807f24400531e5a',1,'go_get_component(GameObject *go, ComponentTypeID type):&#160;GameObject.c']]],
-  ['go_5fget_5fparent_9',['go_get_parent',['../GameObject_8c.html#a04156f1e19563288cfff3c4cd3e0afc4',1,'go_get_parent(GameObject *go):&#160;GameObject.c'],['../GameObject_8h.html#a04156f1e19563288cfff3c4cd3e0afc4',1,'go_get_parent(GameObject *go):&#160;GameObject.c']]],
-  ['go_5fmark_5ffor_5fdestruction_10',['go_mark_for_destruction',['../GameObject_8c.html#abaa2335a2e00696ccb7f86c3942635e4',1,'go_mark_for_destruction(GameObject *go):&#160;GameObject.c'],['../GameObject_8h.html#abaa2335a2e00696ccb7f86c3942635e4',1,'go_mark_for_destruction(GameObject *go):&#160;GameObject.c']]],
-  ['go_5fremove_5fcomponent_11',['go_remove_component',['../GameObject_8c.html#aa927141ce73684164709add366d25b0d',1,'go_remove_component(GameObject *go, ComponentTypeID type):&#160;GameObject.c'],['../GameObject_8h.html#aa927141ce73684164709add366d25b0d',1,'go_remove_component(GameObject *go, ComponentTypeID type):&#160;GameObject.c']]],
-  ['go_5fset_5fparent_12',['go_set_parent',['../GameObject_8c.html#a4d1dbc3af42841f3aae5a09e8cf93ed7',1,'go_set_parent(GameObject *go, GameObject *new_parent):&#160;GameObject.c'],['../GameObject_8h.html#a4d1dbc3af42841f3aae5a09e8cf93ed7',1,'go_set_parent(GameObject *go, GameObject *new_parent):&#160;GameObject.c']]],
-  ['go_5fupdate_13',['go_update',['../GameObject_8c.html#a765905560a509d03c9383f36087eec19',1,'go_update(GameObject *go, float delta_time):&#160;GameObject.c'],['../GameObject_8h.html#a765905560a509d03c9383f36087eec19',1,'go_update(GameObject *go, float delta_time):&#160;GameObject.c']]]
+  ['f_0',['f',['../structScriptProperty.html#ae4fc42f23afbbcd211a60c7f1d8d893e',1,'ScriptProperty']]],
+  ['far_5fclip_1',['far_clip',['../structCamera.html#af93067b3c46c4525dfdf1d192457c277',1,'Camera']]],
+  ['fatal_2',['FATAL',['../Log_8h.html#a0d093cb749cfc7ab5993726392df681f',1,'Log.h']]],
+  ['filesystem_2eh_3',['FileSystem.h',['../FileSystem_8h.html',1,'']]],
+  ['find_5fmain_5fcamera_4',['find_main_camera',['../Scene_8h.html#a72350b32d2b3a7e1cf29c771121e80f7',1,'Scene.c']]],
+  ['find_5fmain_5fcamera_5fobject_5',['find_main_camera_object',['../Scene_8h.html#af938d6cc3e77aa2bc7ead3a7f822cf4b',1,'Scene.c']]],
+  ['fixed_5fstep_6',['fixed_step',['../structEngramContext.html#ab687a67989b62d5166da27f147ff431c',1,'EngramContext']]],
+  ['flip_5fx_7',['flip_x',['../structSprite.html#a90dc4da27b787ab149aaea8a219cc5b3',1,'Sprite::flip_x'],['../structRenderPacket.html#a9067146f20d3890bcf7747d815b42865',1,'RenderPacket::flip_x']]],
+  ['flip_5fy_8',['flip_y',['../structSprite.html#a30f9b5369dc8d34c14d8745cb53ad3c5',1,'Sprite::flip_y'],['../structRenderPacket.html#ac76926445d2d0238d26695a88de2c6f2',1,'RenderPacket::flip_y']]],
+  ['fov_9',['fov',['../structCamera.html#aff7393c9cfbccd7e369091f00008da93',1,'Camera']]],
+  ['frame_5fcount_10',['frame_count',['../structAudioSource.html#a6bf6db0dffbc3860e3cb6019623338cc',1,'AudioSource::frame_count'],['../structAudioClip.html#a24fff48e87d4cc6b10f3253b933aa07d',1,'AudioClip::frame_count']]]
 ];

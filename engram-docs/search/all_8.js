@@ -1,27 +1,8 @@
 var searchData=
 [
-  ['id_0',['id',['../structGameObject.html#a1c90e22051cad9f69d29130bd882b44c',1,'GameObject']]],
-  ['input_2ec_1',['Input.c',['../Input_8c.html',1,'']]],
-  ['input_2eh_2',['Input.h',['../Input_8h.html',1,'']]],
-  ['input_5fcreate_3',['input_create',['../Input_8h.html#a28ec42e6ed636c1414c974f2d2a4a202',1,'input_create(void):&#160;Input.c'],['../Input_8c.html#a28ec42e6ed636c1414c974f2d2a4a202',1,'input_create(void):&#160;Input.c']]],
-  ['input_5fdestroy_4',['input_destroy',['../Input_8h.html#a1554b7f1a4ca4852b1eb8ba8b3a1e586',1,'input_destroy(InputSystem *input):&#160;Input.c'],['../Input_8c.html#a1554b7f1a4ca4852b1eb8ba8b3a1e586',1,'input_destroy(InputSystem *input):&#160;Input.c']]],
-  ['input_5fget_5faction_5',['input_get_action',['../Input_8c.html#a55221b674f82821df41238f6fc5dead3',1,'input_get_action(InputSystem *input, int action_id):&#160;Input.c'],['../Input_8h.html#a55221b674f82821df41238f6fc5dead3',1,'input_get_action(InputSystem *input, int action_id):&#160;Input.c']]],
-  ['input_5fget_5faction_5fdown_6',['input_get_action_down',['../Input_8h.html#ad53c181cb6d1b03da4cbc88582172bc8',1,'input_get_action_down(InputSystem *input, int action_id):&#160;Input.c'],['../Input_8c.html#ad53c181cb6d1b03da4cbc88582172bc8',1,'input_get_action_down(InputSystem *input, int action_id):&#160;Input.c']]],
-  ['input_5fget_5fanalog_7',['input_get_analog',['../Input_8c.html#a469cba1197821574a132c21256c27529',1,'input_get_analog(InputSystem *input, int action_id):&#160;Input.c'],['../Input_8h.html#a469cba1197821574a132c21256c27529',1,'input_get_analog(InputSystem *input, int action_id):&#160;Input.c']]],
-  ['input_5fget_5fkey_8',['input_get_key',['../Input_8c.html#aadf0dd28abd96f9a44453e8031c59653',1,'input_get_key(InputSystem *input, int sapp_keycode):&#160;Input.c'],['../Input_8h.html#aadf0dd28abd96f9a44453e8031c59653',1,'input_get_key(InputSystem *input, int sapp_keycode):&#160;Input.c']]],
-  ['input_5fget_5fkey_5fdown_9',['input_get_key_down',['../Input_8c.html#af05e9a32452f692e8f464fd3f82c3203',1,'input_get_key_down(InputSystem *input, int sapp_keycode):&#160;Input.c'],['../Input_8h.html#af05e9a32452f692e8f464fd3f82c3203',1,'input_get_key_down(InputSystem *input, int sapp_keycode):&#160;Input.c']]],
-  ['input_5fhandle_5fsokol_5fevent_10',['input_handle_sokol_event',['../Input_8c.html#ac95c81e7cda4b0eec08e7ca19a824bee',1,'input_handle_sokol_event(InputSystem *input, const sapp_event *e):&#160;Input.c'],['../Input_8h.html#ac95c81e7cda4b0eec08e7ca19a824bee',1,'input_handle_sokol_event(InputSystem *input, const sapp_event *e):&#160;Input.c']]],
-  ['input_5fmap_5faction_11',['input_map_action',['../Input_8c.html#a26cd6b4757d938c63c4f42c6ffb92f86',1,'input_map_action(InputSystem *input, int action_id, int sapp_keycode):&#160;Input.c'],['../Input_8h.html#a26cd6b4757d938c63c4f42c6ffb92f86',1,'input_map_action(InputSystem *input, int action_id, int sapp_keycode):&#160;Input.c']]],
-  ['input_5fpost_5fupdate_12',['input_post_update',['../Engram_8h.html#a91b814fda7324b11826d9d5654f32a5d',1,'input_post_update(InputSystem *input):&#160;Input.c'],['../Input_8c.html#a91b814fda7324b11826d9d5654f32a5d',1,'input_post_update(InputSystem *input):&#160;Input.c'],['../Input_8h.html#a91b814fda7324b11826d9d5654f32a5d',1,'input_post_update(InputSystem *input):&#160;Input.c']]],
-  ['input_5fpurge_5fall_13',['input_purge_all',['../Input_8c.html#af6a349eafbaa3983ea74bb668651f6ec',1,'input_purge_all(InputSystem *input):&#160;Input.c'],['../Input_8h.html#af6a349eafbaa3983ea74bb668651f6ec',1,'input_purge_all(InputSystem *input):&#160;Input.c']]],
-  ['input_5fupdate_14',['input_update',['../Engram_8h.html#ad0b687ae0f9c197a8fa8e8dd7816a165',1,'input_update(InputSystem *input):&#160;Input.c'],['../Input_8c.html#ad0b687ae0f9c197a8fa8e8dd7816a165',1,'input_update(InputSystem *input):&#160;Input.c']]],
-  ['inputaction_15',['InputAction',['../structInputAction.html',1,'']]],
-  ['inputsystem_16',['InputSystem',['../structInputSystem.html',1,'']]],
-  ['intensity_17',['intensity',['../structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220',1,'Light']]],
-  ['is_5factive_18',['is_active',['../structGameObject.html#a755bcc148206cac21b7f654a65b4e701',1,'GameObject::is_active'],['../structDelayedTask.html#afcacc9294e697f49e5ca836fe4a98929',1,'DelayedTask::is_active']]],
-  ['is_5fdirty_19',['is_dirty',['../structTransform.html#a20ba7e3b5f374f3fd230c584a09e5c7a',1,'Transform']]],
-  ['is_5finitialized_20',['is_initialized',['../structScript.html#a90768bf62d50c57a51695c1b034beeb9',1,'Script']]],
-  ['is_5fmain_21',['is_main',['../structCamera.html#a37833e9292e55cdee3a1485724474d23',1,'Camera']]],
-  ['is_5fpending_5fkill_22',['is_pending_kill',['../structGameObject.html#ad8c22f37bfbb0ccb380b43ec717f4f27',1,'GameObject']]],
-  ['is_5fpressed_23',['is_pressed',['../structInputAction.html#acdfc1a931444cc709129f56cdd2a4117',1,'InputAction']]]
+  ['handle_0',['handle',['../structTextureResource.html#a8efd6e7205fa281451189aef2b0d4d1a',1,'TextureResource']]],
+  ['has_5fatomics_1',['HAS_ATOMICS',['../ReferenceCounting_8c.html#a1257453fc254edd3d619b7fe68bb368c',1,'ReferenceCounting.c']]],
+  ['height_2',['height',['../structTextureResource.html#a7932420f7a6bc2df85ee8d7fe68f46f3',1,'TextureResource::height'],['../structRenderTarget.html#a876cc125e5fff33df258578179560db5',1,'RenderTarget::height']]],
+  ['hierarchy_3',['Hierarchy',['../group__Hierarchy.html',1,'']]],
+  ['hierarchy_2eh_4',['Hierarchy.h',['../Hierarchy_8h.html',1,'']]]
 ];

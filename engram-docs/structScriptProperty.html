@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A reflected variable captured from a Lua script.  
+<p>Represents a single reflected variable exposed from a Lua script.  
  <a href="structScriptProperty.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Script_8h_source.html">Script.h</a>&gt;</code></p>
@@ -85,7 +85,7 @@ Collaboration diagram for ScriptProperty:</div>
 <div class="dyncontent">
 <div class="center"><img src="structScriptProperty__coll__graph.png" border="0" usemap="#aScriptProperty_coll__map" alt="Collaboration graph"/></div>
 <map name="aScriptProperty_coll__map" id="aScriptProperty_coll__map">
-<area shape="rect" title="A reflected variable captured from a Lua script." alt="" coords="5,93,120,119"/>
+<area shape="rect" title="Represents a single reflected variable exposed from a Lua script." alt="" coords="5,93,120,119"/>
 <area shape="rect" href="structVec3.html" title="A structure representing a 3D vector (x, y, z)." alt="" coords="36,5,89,31"/>
 <area shape="poly" title=" " alt="" coords="65,45,65,93,60,93,60,45"/>
 </map>
@@ -93,58 +93,94 @@ Collaboration diagram for ScriptProperty:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a74b23a101f4489eb3e5d016f0a7a01f9" id="r_a74b23a101f4489eb3e5d016f0a7a01f9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScriptProperty.html#a74b23a101f4489eb3e5d016f0a7a01f9">name</a> [64]</td></tr>
+<tr class="memitem:a74b23a101f4489eb3e5d016f0a7a01f9" id="r_a74b23a101f4489eb3e5d016f0a7a01f9"><td class="memItemLeft" align="right" valign="top"><a id="a74b23a101f4489eb3e5d016f0a7a01f9" name="a74b23a101f4489eb3e5d016f0a7a01f9"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> [64]</td></tr>
+<tr class="memdesc:a74b23a101f4489eb3e5d016f0a7a01f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier name as defined in the script's 'properties' table. <br /></td></tr>
 <tr class="separator:a74b23a101f4489eb3e5d016f0a7a01f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca1d9e692da2dd957de0f1661bfb81b" id="r_adca1d9e692da2dd957de0f1661bfb81b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Script_8h.html#a7ff5a5c54f182b86d1cd993cf4512c87">PropertyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScriptProperty.html#adca1d9e692da2dd957de0f1661bfb81b">type</a></td></tr>
+<tr class="memitem:adca1d9e692da2dd957de0f1661bfb81b" id="r_adca1d9e692da2dd957de0f1661bfb81b"><td class="memItemLeft" align="right" valign="top"><a id="adca1d9e692da2dd957de0f1661bfb81b" name="adca1d9e692da2dd957de0f1661bfb81b"></a>
+<a class="el" href="Script_8h.html#a7ff5a5c54f182b86d1cd993cf4512c87">PropertyType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memdesc:adca1d9e692da2dd957de0f1661bfb81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type discriminator used to access the correct union member. <br /></td></tr>
 <tr class="separator:adca1d9e692da2dd957de0f1661bfb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a033487715292f1cd833d8cd390151f0d" id="r_a033487715292f1cd833d8cd390151f0d"><td class="memItemLeft" ><a id="a033487715292f1cd833d8cd390151f0d" name="a033487715292f1cd833d8cd390151f0d"></a>
 union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44abd2d6f1e0693ce61b45497f10aa3b" id="r_a44abd2d6f1e0693ce61b45497f10aa3b"><td class="memItemLeft" >
-&#160;&#160;&#160;float&#160;&#160;&#160;<b>f</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a44abd2d6f1e0693ce61b45497f10aa3b" id="r_a44abd2d6f1e0693ce61b45497f10aa3b"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structScriptProperty.html#ae4fc42f23afbbcd211a60c7f1d8d893e">f</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a44abd2d6f1e0693ce61b45497f10aa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e28e691e7148fbc0b5cae8fb00c409" id="r_ac7e28e691e7148fbc0b5cae8fb00c409"><td class="memItemLeft" >
-&#160;&#160;&#160;int&#160;&#160;&#160;<b>i</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:ac7e28e691e7148fbc0b5cae8fb00c409" id="r_ac7e28e691e7148fbc0b5cae8fb00c409"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structScriptProperty.html#acf16529358660668a50de599194a1da4">i</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:ac7e28e691e7148fbc0b5cae8fb00c409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405428f0f10b5413577e7e0ae2862c04" id="r_a405428f0f10b5413577e7e0ae2862c04"><td class="memItemLeft" >
-&#160;&#160;&#160;bool&#160;&#160;&#160;<b>b</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a405428f0f10b5413577e7e0ae2862c04" id="r_a405428f0f10b5413577e7e0ae2862c04"><td class="memItemLeft" >&#160;&#160;&#160;bool&#160;&#160;&#160;<a class="el" href="structScriptProperty.html#adb36cc82af294c030552ebb4d40761c4">b</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a405428f0f10b5413577e7e0ae2862c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7596cd7e197a04d779e149a98a143c7" id="r_aa7596cd7e197a04d779e149a98a143c7"><td class="memItemLeft" >
-&#160;&#160;&#160;<a class="el" href="structVec3.html">Vec3</a>&#160;&#160;&#160;<b>v3</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:aa7596cd7e197a04d779e149a98a143c7" id="r_aa7596cd7e197a04d779e149a98a143c7"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structVec3.html">Vec3</a>&#160;&#160;&#160;<a class="el" href="structScriptProperty.html#a4aecce8e40290de6327de300ab552df8">v3</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:aa7596cd7e197a04d779e149a98a143c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a033487715292f1cd833d8cd390151f0d" id="r_a033487715292f1cd833d8cd390151f0d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>value</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a033487715292f1cd833d8cd390151f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stored value, type-erased via a union for memory efficiency. <br /></td></tr>
 <tr class="separator:a033487715292f1cd833d8cd390151f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A reflected variable captured from a Lua script. </p>
+<div class="textblock"><p>Represents a single reflected variable exposed from a Lua script. </p>
+<ul>
+<li>This structure acts as a bridge between Lua and C. When the engine</li>
+<li>parses a script, it extracts these properties, allowing them to be</li>
+<li>displayed and edited in the Engine's Inspector window. </li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a74b23a101f4489eb3e5d016f0a7a01f9" name="a74b23a101f4489eb3e5d016f0a7a01f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b23a101f4489eb3e5d016f0a7a01f9">&#9670;&#160;</a></span>name</h2>
+<a id="adb36cc82af294c030552ebb4d40761c4" name="adb36cc82af294c030552ebb4d40761c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb36cc82af294c030552ebb4d40761c4">&#9670;&#160;</a></span>b</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char ScriptProperty::name[64]</td>
+          <td class="memname">bool ScriptProperty::b</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The variable name as defined in the Lua 'properties' table. </p>
+<p>Boolean state (e.g., enabled/disabled). </p>
 
 </div>
 </div>
-<a id="adca1d9e692da2dd957de0f1661bfb81b" name="adca1d9e692da2dd957de0f1661bfb81b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adca1d9e692da2dd957de0f1661bfb81b">&#9670;&#160;</a></span>type</h2>
+<a id="ae4fc42f23afbbcd211a60c7f1d8d893e" name="ae4fc42f23afbbcd211a60c7f1d8d893e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4fc42f23afbbcd211a60c7f1d8d893e">&#9670;&#160;</a></span>f</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Script_8h.html#a7ff5a5c54f182b86d1cd993cf4512c87">PropertyType</a> ScriptProperty::type</td>
+          <td class="memname">float ScriptProperty::f</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The inferred or explicit type of the variable. </p>
+<p>Floating-point value (e.g., speed, health). </p>
+
+</div>
+</div>
+<a id="acf16529358660668a50de599194a1da4" name="acf16529358660668a50de599194a1da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf16529358660668a50de599194a1da4">&#9670;&#160;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ScriptProperty::i</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Integer value (e.g., ammo count, level index). </p>
+
+</div>
+</div>
+<a id="a4aecce8e40290de6327de300ab552df8" name="a4aecce8e40290de6327de300ab552df8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aecce8e40290de6327de300ab552df8">&#9670;&#160;</a></span>v3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVec3.html">Vec3</a> ScriptProperty::v3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vector3 value (e.g., local position or color offsets). </p>
 
 </div>
 </div>

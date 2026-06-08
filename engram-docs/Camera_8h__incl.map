@@ -1,5 +1,5 @@
 <map id="engram/Components/Camera.h" name="engram/Components/Camera.h">
-<area shape="rect" id="Node000001" title="Component for defining the view and projection parameters." alt="" coords="83,5,309,31"/>
+<area shape="rect" id="Node000001" title="Component for defining 2D Orthographic and 3D Perspective view and projection parameters." alt="" coords="83,5,309,31"/>
 <area shape="rect" id="Node000002" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="5,79,115,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,33,95,75,93,70,173,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="23,152,97,177"/>

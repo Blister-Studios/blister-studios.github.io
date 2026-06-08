@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Core Sokol implementation hub.  
+<p>Core Sokol implementation hub and platform-specific backend selection.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;cimgui.h&quot;</code><br />
 <code>#include &quot;sokol_app.h&quot;</code><br />
@@ -94,7 +94,7 @@ Include dependency graph for Sokol.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="Sokol_8c__incl.png" border="0" usemap="#aengram_2Platform_2Sokol_8c" alt=""/></div>
 <map name="aengram_2Platform_2Sokol_8c" id="aengram_2Platform_2Sokol_8c">
-<area shape="rect" title="Core Sokol implementation hub." alt="" coords="379,5,561,31"/>
+<area shape="rect" title="Core Sokol implementation hub and platform&#45;specific backend selection." alt="" coords="379,5,561,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,84,104"/>
 <area shape="poly" title=" " alt="" coords="390,33,98,81,97,76,390,28"/>
 <area shape="rect" title=" " alt="" coords="109,79,207,104"/>
@@ -116,28 +116,107 @@ Include dependency graph for Sokol.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9b7aea92aa445a63e3234181f53e20f7" id="r_a9b7aea92aa445a63e3234181f53e20f7"><td class="memItemLeft" align="right" valign="top"><a id="a9b7aea92aa445a63e3234181f53e20f7" name="a9b7aea92aa445a63e3234181f53e20f7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOKOL_GLCORE33</b></td></tr>
+<tr class="memitem:a9b7aea92aa445a63e3234181f53e20f7" id="r_a9b7aea92aa445a63e3234181f53e20f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sokol_8c.html#a9b7aea92aa445a63e3234181f53e20f7">SOKOL_GLCORE33</a></td></tr>
 <tr class="separator:a9b7aea92aa445a63e3234181f53e20f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5c021c703156ae83b11e3f44db01f6" id="r_a4f5c021c703156ae83b11e3f44db01f6"><td class="memItemLeft" align="right" valign="top"><a id="a4f5c021c703156ae83b11e3f44db01f6" name="a4f5c021c703156ae83b11e3f44db01f6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOKOL_IMPL</b></td></tr>
+<tr class="memitem:a4f5c021c703156ae83b11e3f44db01f6" id="r_a4f5c021c703156ae83b11e3f44db01f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sokol_8c.html#a4f5c021c703156ae83b11e3f44db01f6">SOKOL_IMPL</a></td></tr>
 <tr class="separator:a4f5c021c703156ae83b11e3f44db01f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad9936f8fa8cc21335050c0216482f7" id="r_a2ad9936f8fa8cc21335050c0216482f7"><td class="memItemLeft" align="right" valign="top"><a id="a2ad9936f8fa8cc21335050c0216482f7" name="a2ad9936f8fa8cc21335050c0216482f7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOKOL_GLUE_IMPL</b></td></tr>
+<tr class="memitem:a2ad9936f8fa8cc21335050c0216482f7" id="r_a2ad9936f8fa8cc21335050c0216482f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sokol_8c.html#a2ad9936f8fa8cc21335050c0216482f7">SOKOL_GLUE_IMPL</a></td></tr>
 <tr class="separator:a2ad9936f8fa8cc21335050c0216482f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af469b59e7576f02bed0ec5856ef31b25" id="r_af469b59e7576f02bed0ec5856ef31b25"><td class="memItemLeft" align="right" valign="top"><a id="af469b59e7576f02bed0ec5856ef31b25" name="af469b59e7576f02bed0ec5856ef31b25"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOKOL_IMGUI_IMPL</b></td></tr>
+<tr class="memitem:af469b59e7576f02bed0ec5856ef31b25" id="r_af469b59e7576f02bed0ec5856ef31b25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sokol_8c.html#af469b59e7576f02bed0ec5856ef31b25">SOKOL_IMGUI_IMPL</a></td></tr>
 <tr class="separator:af469b59e7576f02bed0ec5856ef31b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3384811ea4939104d12b6915d13f011f" id="r_a3384811ea4939104d12b6915d13f011f"><td class="memItemLeft" align="right" valign="top"><a id="a3384811ea4939104d12b6915d13f011f" name="a3384811ea4939104d12b6915d13f011f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ImDrawCallback_ResetRenderState</b>&#160;&#160;&#160;(ImDrawCallback)(-8)</td></tr>
-<tr class="separator:a3384811ea4939104d12b6915d13f011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3384811ea4939104d12b6915d13f011f" id="r_a3384811ea4939104d12b6915d13f011f"><td class="memItemLeft" align="right" valign="top"><a id="a3384811ea4939104d12b6915d13f011f" name="a3384811ea4939104d12b6915d13f011f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ImDrawCallback_ResetRenderState</b>&#160;&#160;&#160;(ImDrawCallback)(-8)</td></tr>
+<tr class="memitem:a3384811ea4939104d12b6915d13f011f" id="r_a3384811ea4939104d12b6915d13f011f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sokol_8c.html#a3384811ea4939104d12b6915d13f011f">ImDrawCallback_ResetRenderState</a>&#160;&#160;&#160;(ImDrawCallback)(-8)</td></tr>
+<tr class="memdesc:a3384811ea4939104d12b6915d13f011f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Workaround for state-resetting in the Dear ImGui/Sokol integration.  <br /></td></tr>
 <tr class="separator:a3384811ea4939104d12b6915d13f011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Core Sokol implementation hub. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Core Sokol implementation hub and platform-specific backend selection. </p>
+<ul>
+<li>This file centralizes the inclusion of <code>sokol</code> headers and the definition of implementation macros. It acts as the single translation unit for the graphics and platform backend. </li>
+</ul>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3384811ea4939104d12b6915d13f011f" name="a3384811ea4939104d12b6915d13f011f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3384811ea4939104d12b6915d13f011f">&#9670;&#160;</a></span>ImDrawCallback_ResetRenderState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ImDrawCallback_ResetRenderState&#160;&#160;&#160;(ImDrawCallback)(-8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Workaround for state-resetting in the Dear ImGui/Sokol integration. </p>
+<ul>
+<li></li>
+<li>This constant informs the ImGui renderer to force-reset the pipeline</li>
+<li>state to the default, preventing state leakage between ImGui and</li>
+<li>game-world rendering passes. </li>
+</ul>
+
+</div>
+</div>
+<a id="a9b7aea92aa445a63e3234181f53e20f7" name="a9b7aea92aa445a63e3234181f53e20f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7aea92aa445a63e3234181f53e20f7">&#9670;&#160;</a></span>SOKOL_GLCORE33</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOKOL_GLCORE33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Linux/Other: OpenGL 3.3 Core Profile </p>
+
+</div>
+</div>
+<a id="a2ad9936f8fa8cc21335050c0216482f7" name="a2ad9936f8fa8cc21335050c0216482f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad9936f8fa8cc21335050c0216482f7">&#9670;&#160;</a></span>SOKOL_GLUE_IMPL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOKOL_GLUE_IMPL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate Sokol-glue implementation. </p>
+
+</div>
+</div>
+<a id="af469b59e7576f02bed0ec5856ef31b25" name="af469b59e7576f02bed0ec5856ef31b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af469b59e7576f02bed0ec5856ef31b25">&#9670;&#160;</a></span>SOKOL_IMGUI_IMPL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOKOL_IMGUI_IMPL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate Sokol-ImGui integration code. </p>
+
+</div>
+</div>
+<a id="a4f5c021c703156ae83b11e3f44db01f6" name="a4f5c021c703156ae83b11e3f44db01f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5c021c703156ae83b11e3f44db01f6">&#9670;&#160;</a></span>SOKOL_IMPL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOKOL_IMPL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate core Sokol implementation. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8

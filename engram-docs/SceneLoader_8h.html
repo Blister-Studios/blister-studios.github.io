@@ -79,22 +79,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Logic for loading and saving full <a class="el" href="structScene.html">Scene</a> hierarchies.  
+<p>Logic for loading and saving full <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> hierarchies.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;Hierarchy/Scene.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="Scene_8h_source.html">Hierarchy/Scene.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for SceneLoader.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="SceneLoader_8h__incl.png" border="0" usemap="#aengram_2Platform_2SceneLoader_8h" alt=""/></div>
 <map name="aengram_2Platform_2SceneLoader_8h" id="aengram_2Platform_2SceneLoader_8h">
 <area shape="rect" title="Logic for loading and saving full Scene hierarchies." alt="" coords="375,5,605,31"/>
-<area shape="rect" href="Scene_8h_source.html" title=" " alt="" coords="420,79,560,104"/>
+<area shape="rect" href="Scene_8h.html" title="The primary memory arena and management system for the game world." alt="" coords="420,79,560,104"/>
 <area shape="poly" title=" " alt="" coords="493,31,493,65,487,65,487,31"/>
 <area shape="rect" href="GameObject_8h.html" title="The fundamental entity container in the Engram Engine&#39;s ECS architecture." alt="" coords="266,152,381,177"/>
 <area shape="poly" title=" " alt="" coords="464,106,364,149,362,144,462,102"/>
 <area shape="rect" href="DynamicArray_8h.html" title="A generic, growable array of void pointers." alt="" coords="5,225,204,251"/>
 <area shape="poly" title=" " alt="" coords="426,107,343,126,255,154,189,187,134,220,131,215,186,182,253,150,342,121,425,101"/>
-<area shape="rect" href="Camera_8h.html" title="Component for defining the view and projection parameters." alt="" coords="405,152,575,177"/>
+<area shape="rect" href="Camera_8h.html" title="Component for defining 2D Orthographic and 3D Perspective view and projection parameters." alt="" coords="405,152,575,177"/>
 <area shape="poly" title=" " alt="" coords="493,104,493,138,487,138,487,104"/>
 <area shape="rect" href="Renderer_8h_source.html" title=" " alt="" coords="687,152,850,177"/>
 <area shape="poly" title=" " alt="" coords="535,101,711,146,710,151,534,107"/>
@@ -133,8 +133,8 @@ Include dependency graph for SceneLoader.h:</div>
 <area shape="poly" title=" " alt="" coords="771,178,771,212,766,212,766,178"/>
 <area shape="rect" title=" " alt="" coords="829,225,925,251"/>
 <area shape="poly" title=" " alt="" coords="787,175,849,215,846,220,785,180"/>
-<area shape="rect" title=" " alt="" coords="949,225,1103,251"/>
-<area shape="poly" title=" " alt="" coords="811,175,972,219,971,224,809,180"/>
+<area shape="rect" title=" " alt="" coords="949,225,1119,251"/>
+<area shape="poly" title=" " alt="" coords="812,175,978,219,977,224,811,180"/>
 <area shape="poly" title=" " alt="" coords="618,179,567,219,563,215,615,175"/>
 <area shape="poly" title=" " alt="" coords="655,175,735,217,733,221,652,180"/>
 </map>
@@ -144,9 +144,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="SceneLoader_8h__dep__incl.png" border="0" usemap="#aengram_2Platform_2SceneLoader_8hdep" alt=""/></div>
 <map name="aengram_2Platform_2SceneLoader_8hdep" id="aengram_2Platform_2SceneLoader_8hdep">
-<area shape="rect" title="Logic for loading and saving full Scene hierarchies." alt="" coords="5,5,236,31"/>
-<area shape="rect" href="SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="6,79,235,104"/>
-<area shape="poly" title=" " alt="" coords="123,44,123,79,118,79,118,44"/>
+<area shape="rect" title="Logic for loading and saving full Scene hierarchies." alt="" coords="39,5,270,31"/>
+<area shape="rect" href="editor_2Main_8c.html" title="Main editor execution loop configuration." alt="" coords="5,79,112,104"/>
+<area shape="poly" title=" " alt="" coords="130,41,76,81,73,76,127,37"/>
+<area shape="rect" href="SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="136,79,365,104"/>
+<area shape="poly" title=" " alt="" coords="183,37,237,76,233,81,180,41"/>
 </map>
 </div>
 </div>
@@ -157,12 +159,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a368667b7d78946c9c83ddcae1b4d767a" id="r_a368667b7d78946c9c83ddcae1b4d767a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SceneLoader_8h.html#a368667b7d78946c9c83ddcae1b4d767a">scene_load</a> (const char *vfs_path)</td></tr>
 <tr class="memdesc:a368667b7d78946c9c83ddcae1b4d767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy.  <br /></td></tr>
 <tr class="separator:a368667b7d78946c9c83ddcae1b4d767a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2de301c05f735b0d7a21b03074fda2f" id="r_af2de301c05f735b0d7a21b03074fda2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SceneLoader_8h.html#af2de301c05f735b0d7a21b03074fda2f">scene_load_physical</a> (const char *physical_path)</td></tr>
+<tr class="memdesc:af2de301c05f735b0d7a21b03074fda2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy.  <br /></td></tr>
+<tr class="separator:af2de301c05f735b0d7a21b03074fda2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1182f8f9a52ee623d2162422f158c2" id="r_a0a1182f8f9a52ee623d2162422f158c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SceneLoader_8h.html#a0a1182f8f9a52ee623d2162422f158c2">scene_save</a> (const char *vfs_path, <a class="el" href="structScene.html">Scene</a> *scene)</td></tr>
 <tr class="memdesc:a0a1182f8f9a52ee623d2162422f158c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the current active scene into a JSON file.  <br /></td></tr>
 <tr class="separator:a0a1182f8f9a52ee623d2162422f158c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Logic for loading and saving full <a class="el" href="structScene.html">Scene</a> hierarchies. </p>
+<div class="textblock"><p>Logic for loading and saving full <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> hierarchies. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a368667b7d78946c9c83ddcae1b4d767a" name="a368667b7d78946c9c83ddcae1b4d767a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a368667b7d78946c9c83ddcae1b4d767a">&#9670;&#160;</a></span>scene_load()</h2>
@@ -181,16 +186,41 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy. </p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vfs_path</td><td>The virtual file system path to the .json scene file. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Scene* A pointer to the populated <a class="el" href="structScene.html">Scene</a>, or NULL on failure.</dd></dl>
-Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy. </li>
-</ul>
+<dl class="section return"><dt>Returns</dt><dd>Scene* A pointer to the populated <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a>, or NULL on failure.</dd></dl>
+<p>Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy. </p>
+
+</div>
+</div>
+<a id="af2de301c05f735b0d7a21b03074fda2f" name="af2de301c05f735b0d7a21b03074fda2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2de301c05f735b0d7a21b03074fda2f">&#9670;&#160;</a></span>scene_load_physical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structScene.html">Scene</a> * scene_load_physical </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>physical_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a JSON scene file and reconstructs the <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> hierarchy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">physical_path</td><td>The physical file system path to the .json scene file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Scene* A pointer to the populated <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a>, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -221,8 +251,7 @@ Parses a JSON scene file and reconstructs the <a class="el" href="structGameObje
 </div><div class="memdoc">
 
 <p>Serializes the current active scene into a JSON file. </p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vfs_path</td><td>The destination path. </td></tr>
     <tr><td class="paramname">scene</td><td>The scene instance to save. </td></tr>
@@ -230,8 +259,7 @@ Parses a JSON scene file and reconstructs the <a class="el" href="structGameObje
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful.</dd></dl>
-Serializes the current active scene into a JSON file. </li>
-</ul>
+<p>Serializes the current active scene into a JSON file. </p>
 
 </div>
 </div>

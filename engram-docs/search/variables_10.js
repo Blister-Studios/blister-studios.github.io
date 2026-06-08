@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['texture_0',['texture',['../structSprite.html#ac0c49d790cbb57f2e0ee21be48d92d71',1,'Sprite']]],
-  ['texture_5fpath_1',['texture_path',['../structSprite.html#ac0b71e62ec1f9239abd606e3f299fb08',1,'Sprite']]],
-  ['time_2',['time',['../structEngineTime.html#ac30fd3747b7afe463701d30685efca81',1,'EngineTime::time'],['../Time_8c.html#a430105d70f15c8187015577c21275ca4',1,'Time:&#160;Time.c'],['../Time_8h.html#a430105d70f15c8187015577c21275ca4',1,'Time:&#160;Time.c']]],
-  ['time_5fremaining_3',['time_remaining',['../structDelayedTask.html#a3a7b8f8ae221c5632068673d3aeeea64',1,'DelayedTask']]],
-  ['time_5fscale_4',['time_scale',['../structEngineTime.html#a405823265d2d1e76da314fbd9b7a5424',1,'EngineTime']]],
-  ['to_5fjson_5',['to_json',['../structComponent.html#a650ee30aa08e1553d1ef4958fc4a9c7d',1,'Component']]],
-  ['type_6',['type',['../structComponent.html#a88b094f4b3a20952cf5ed7f311e10fd6',1,'Component::type'],['../structLight.html#a86e648b4a80a5c1e194c97ef52f9efc6',1,'Light::type'],['../structScriptProperty.html#adca1d9e692da2dd957de0f1661bfb81b',1,'ScriptProperty::type'],['../structEvent.html#af1948a46b63313ef53447023ad9a9a52',1,'Event::type']]]
+  ['radius_0',['radius',['../structLight.html#ab9a87981b02f4612c872c49efa6b6e53',1,'Light']]],
+  ['raw_5fhandle_1',['raw_handle',['../structRenderTarget.html#a94455d7f4b4a8bf838eb2298cf97527f',1,'RenderTarget']]],
+  ['rc_5fdata_2',['rc_data',['../structAssetRecord.html#a18eb7647d9d5cea05e4ac366df9e061a',1,'AssetRecord']]],
+  ['records_3',['records',['../structAssetRegistry.html#aac45f8c567028bb2f9825d58b04d5d24',1,'AssetRegistry']]],
+  ['renderer_4',['renderer',['../structEngramConfig.html#aa3f51f3f66a55c877a3985936bbd4f04',1,'EngramConfig::renderer'],['../structEngramContext.html#a9330d7d4e7da06c05926716f856706d2',1,'EngramContext::renderer']]],
+  ['resource_5fcache_5',['resource_cache',['../structEngramContext.html#afa3015446153e386838b4904f189a6fe',1,'EngramContext']]],
+  ['resource_5floaders_6',['resource_loaders',['../structEngramContext.html#a082891aac7b0be3c38eadb8fe5b9efea',1,'EngramContext']]],
+  ['rotation_7',['rotation',['../structTransform.html#a7221c0c6c18eabfd1e25a52684aad039',1,'Transform']]]
 ];

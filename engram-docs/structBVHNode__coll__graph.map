@@ -1,5 +1,5 @@
 <map id="BVHNode" name="BVHNode">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,89,119"/>
-<area shape="rect" id="Node000002" href="$structAABB.html" title=" " alt="" coords="18,5,77,31"/>
+<area shape="rect" id="Node000001" title="A single node within the Bounding Volume Hierarchy tree." alt="" coords="5,93,89,119"/>
+<area shape="rect" id="Node000002" href="$structAABB.html" title="An Axis&#45;Aligned Bounding Box representing a 3D rectangular volume." alt="" coords="18,5,77,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,45,50,93,45,93,45,45"/>
 </map>

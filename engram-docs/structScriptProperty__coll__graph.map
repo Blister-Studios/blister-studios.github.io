@@ -1,5 +1,5 @@
 <map id="ScriptProperty" name="ScriptProperty">
-<area shape="rect" id="Node000001" title="A reflected variable captured from a Lua script." alt="" coords="5,93,120,119"/>
+<area shape="rect" id="Node000001" title="Represents a single reflected variable exposed from a Lua script." alt="" coords="5,93,120,119"/>
 <area shape="rect" id="Node000002" href="$structVec3.html" title="A structure representing a 3D vector (x, y, z)." alt="" coords="36,5,89,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,45,65,93,60,93,60,45"/>
 </map>

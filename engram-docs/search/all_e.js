@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['parent_0',['parent',['../structTransform.html#a9dd816c1137e009ba8cf9b4f2cd8b0cd',1,'Transform::parent'],['../structGameObject.html#ab7502fce7b6a8e5c5bf8626874ac8ee4',1,'GameObject::parent']]],
-  ['path_1',['path',['../structCachedResource.html#ac4c23959589774de54c0b156ef055513',1,'CachedResource']]],
-  ['payload_2',['payload',['../structEvent.html#a7e60e7baa168393a98a4cf166dbb98e7',1,'Event']]],
-  ['platform_3',['Platform',['../group__Platform.html',1,'']]],
-  ['platform_2eh_4',['Platform.h',['../Platform_8h.html',1,'']]],
-  ['position_5',['position',['../structTransform.html#a3f12eae7dfcf490884dd781b1234557a',1,'Transform']]],
-  ['prefab_5fload_6',['prefab_load',['../PrefabLoader_8h.html#ac3ca880ca3b7ef181c95bd492afb510c',1,'PrefabLoader.c']]],
-  ['prefabloader_2eh_7',['PrefabLoader.h',['../PrefabLoader_8h.html',1,'']]],
-  ['printf_5fformat_8',['PRINTF_FORMAT',['../Log_8h.html#a4bccce60f1490892797a39740f66425e',1,'Log.h']]],
-  ['propertytype_9',['PropertyType',['../Script_8h.html#a7ff5a5c54f182b86d1cd993cf4512c87',1,'Script.h']]]
+  ['offset_0',['offset',['../structCollider.html#aa21f4290ebc53e765e513f09dc7f6771',1,'Collider']]],
+  ['on_5fevent_1',['on_event',['../structEngramConfig.html#a469ea28ffb4f5ae72d07e2029e148587',1,'EngramConfig']]],
+  ['on_5finit_2',['on_init',['../structEngramConfig.html#a80795fb8a515a09a086a38e2ac1ec8db',1,'EngramConfig']]],
+  ['on_5frender_3',['on_render',['../structEngramConfig.html#ad2bf9abb55ba4587cb60f7919e23e342',1,'EngramConfig']]],
+  ['on_5fshutdown_4',['on_shutdown',['../structEngramConfig.html#ae427072ef3911aa393f75feafbb74710',1,'EngramConfig']]],
+  ['on_5fupdate_5',['on_update',['../structEngramConfig.html#a8520d6c24b22a6c4772e40b5b686067b',1,'EngramConfig']]],
+  ['origin_6',['origin',['../structRay.html#a50cbb872ade2a0b403fa44a92df40409',1,'Ray']]],
+  ['owner_7',['owner',['../structComponent.html#a275617e1ae5999867283f399d6120040',1,'Component']]]
 ];

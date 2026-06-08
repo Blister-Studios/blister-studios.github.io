@@ -1,5 +1,5 @@
 <map id="EngramConfig" name="EngramConfig">
-<area shape="rect" id="Node000001" title="Startup configuration and lifecycle callbacks for the engine." alt="" coords="10,93,123,119"/>
-<area shape="rect" id="Node000002" href="$structRenderBackend.html" title=" " alt="" coords="5,5,128,31"/>
+<area shape="rect" id="Node000001" title="Startup configuration parameters and lifecycle callback hooks." alt="" coords="10,93,123,119"/>
+<area shape="rect" id="Node000002" href="$structRenderBackend.html" title="Interface for hardware&#45;specific rendering implementations." alt="" coords="5,5,128,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,45,69,93,64,93,64,45"/>
 </map>

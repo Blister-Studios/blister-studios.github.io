@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Defines the editor state.  
+<p>Global persistent state for the Engram Engine Editor interface.  
  <a href="structEditorState.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="EditorState_8h_source.html">EditorState.h</a>&gt;</code></p>
@@ -85,13 +85,13 @@ Collaboration diagram for EditorState:</div>
 <div class="dyncontent">
 <div class="center"><img src="structEditorState__coll__graph.png" border="0" usemap="#aEditorState_coll__map" alt="Collaboration graph"/></div>
 <map name="aEditorState_coll__map" id="aEditorState_coll__map">
-<area shape="rect" title="Defines the editor state." alt="" coords="152,196,247,221"/>
+<area shape="rect" title="Global persistent state for the Engram Engine Editor interface." alt="" coords="152,196,247,221"/>
 <area shape="rect" href="structGameObject.html" title="Represents an entity within a scene." alt="" coords="5,108,108,133"/>
 <area shape="poly" title=" " alt="" coords="87,139,137,170,179,194,177,198,134,174,84,143"/>
 <area shape="poly" title=" " alt="" coords="123,112,135,120,126,129,108,131,108,126,124,124,129,121,120,116"/>
 <area shape="rect" href="structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="23,5,90,31"/>
 <area shape="poly" title=" " alt="" coords="59,45,59,108,54,108,54,45"/>
-<area shape="rect" href="structRenderTarget.html" title=" " alt="" coords="203,108,311,133"/>
+<area shape="rect" href="structRenderTarget.html" title="Represents an off&#45;screen rendering buffer or a frame&#45;buffer object." alt="" coords="203,108,311,133"/>
 <area shape="poly" title=" " alt="" coords="244,146,210,197,205,194,239,143"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -100,37 +100,52 @@ Collaboration diagram for EditorState:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aaf288a00c4a91dca072287e209c6cfa6" id="r_aaf288a00c4a91dca072287e209c6cfa6"><td class="memItemLeft" align="right" valign="top"><a id="aaf288a00c4a91dca072287e209c6cfa6" name="aaf288a00c4a91dca072287e209c6cfa6"></a>
 <a class="el" href="structGameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selected_go</b></td></tr>
+<tr class="memdesc:aaf288a00c4a91dca072287e209c6cfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> in the <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> Graph (ImGui Inspector target). <br /></td></tr>
 <tr class="separator:aaf288a00c4a91dca072287e209c6cfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b78a65b6b7b43b74749cf279ad07cc1" id="r_a2b78a65b6b7b43b74749cf279ad07cc1"><td class="memItemLeft" align="right" valign="top"><a id="a2b78a65b6b7b43b74749cf279ad07cc1" name="a2b78a65b6b7b43b74749cf279ad07cc1"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>name_edit_buf</b> [128]</td></tr>
+<tr class="memdesc:a2b78a65b6b7b43b74749cf279ad07cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary input buffer for renaming GameObjects. <br /></td></tr>
 <tr class="separator:a2b78a65b6b7b43b74749cf279ad07cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb3f248287bf31d140da398782200bc3" id="r_adb3f248287bf31d140da398782200bc3"><td class="memItemLeft" align="right" valign="top"><a id="adb3f248287bf31d140da398782200bc3" name="adb3f248287bf31d140da398782200bc3"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>vfs_path_buf</b> [256]</td></tr>
+<tr class="memdesc:adb3f248287bf31d140da398782200bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary buffer for file system path inputs. <br /></td></tr>
 <tr class="separator:adb3f248287bf31d140da398782200bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4bafecc40c93bb6464dff5179bee820" id="r_aa4bafecc40c93bb6464dff5179bee820"><td class="memItemLeft" align="right" valign="top"><a id="aa4bafecc40c93bb6464dff5179bee820" name="aa4bafecc40c93bb6464dff5179bee820"></a>
 <a class="el" href="structRenderTarget.html">RenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scene_rt</b></td></tr>
+<tr class="memdesc:aa4bafecc40c93bb6464dff5179bee820"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dedicated <a class="el" href="structRenderTarget.html" title="Represents an off-screen rendering buffer or a frame-buffer object.">RenderTarget</a> used to draw the <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> Viewport. <br /></td></tr>
 <tr class="separator:aa4bafecc40c93bb6464dff5179bee820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306407a0c475ea06e6d903bbbc95550f" id="r_a306407a0c475ea06e6d903bbbc95550f"><td class="memItemLeft" align="right" valign="top"><a id="a306407a0c475ea06e6d903bbbc95550f" name="a306407a0c475ea06e6d903bbbc95550f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>viewport_w</b></td></tr>
+<tr class="memdesc:a306407a0c475ea06e6d903bbbc95550f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current pixel width of the <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> Viewport. <br /></td></tr>
 <tr class="separator:a306407a0c475ea06e6d903bbbc95550f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8604e745f86b10a862577dde3f7551ba" id="r_a8604e745f86b10a862577dde3f7551ba"><td class="memItemLeft" align="right" valign="top"><a id="a8604e745f86b10a862577dde3f7551ba" name="a8604e745f86b10a862577dde3f7551ba"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>viewport_h</b></td></tr>
+<tr class="memdesc:a8604e745f86b10a862577dde3f7551ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current pixel height of the <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> Viewport. <br /></td></tr>
 <tr class="separator:a8604e745f86b10a862577dde3f7551ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab226947b06a2bee81537ab463320c934" id="r_ab226947b06a2bee81537ab463320c934"><td class="memItemLeft" align="right" valign="top"><a id="ab226947b06a2bee81537ab463320c934" name="ab226947b06a2bee81537ab463320c934"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_playing</b></td></tr>
+<tr class="memdesc:ab226947b06a2bee81537ab463320c934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulation state playing flag. <br /></td></tr>
 <tr class="separator:ab226947b06a2bee81537ab463320c934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6d27a72d684f0b56e45d7ce46ad62a" id="r_a3f6d27a72d684f0b56e45d7ce46ad62a"><td class="memItemLeft" align="right" valign="top"><a id="a3f6d27a72d684f0b56e45d7ce46ad62a" name="a3f6d27a72d684f0b56e45d7ce46ad62a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_paused</b></td></tr>
+<tr class="memdesc:a3f6d27a72d684f0b56e45d7ce46ad62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulation state paused flag. <br /></td></tr>
 <tr class="separator:a3f6d27a72d684f0b56e45d7ce46ad62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e99fb0f2a622e716cc224d7e26bf596" id="r_a2e99fb0f2a622e716cc224d7e26bf596"><td class="memItemLeft" align="right" valign="top"><a id="a2e99fb0f2a622e716cc224d7e26bf596" name="a2e99fb0f2a622e716cc224d7e26bf596"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>current_scene_path</b> [256]</td></tr>
+<tr class="memdesc:a2e99fb0f2a622e716cc224d7e26bf596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filesystem path to the currently loaded scene asset. <br /></td></tr>
 <tr class="separator:a2e99fb0f2a622e716cc224d7e26bf596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b8ac924e67eebd675b52e6d449e7c5" id="r_a71b8ac924e67eebd675b52e6d449e7c5"><td class="memItemLeft" align="right" valign="top"><a id="a71b8ac924e67eebd675b52e6d449e7c5" name="a71b8ac924e67eebd675b52e6d449e7c5"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>browser_dir</b> [256]</td></tr>
+<tr class="memdesc:a71b8ac924e67eebd675b52e6d449e7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current directory being navigated in the Asset Browser window. <br /></td></tr>
 <tr class="separator:a71b8ac924e67eebd675b52e6d449e7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines the editor state. </p>
+<div class="textblock"><p>Global persistent state for the Engram Engine Editor interface. </p>
+<ul>
+<li>This structure tracks the user's current interaction state, selected entities,</li>
+<li>and simulation playback settings. It is typically owned by the Editor</li>
+<li>subsystem and persists for the duration of the editor's lifecycle. </li>
+</ul>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>editor/<a class="el" href="EditorState_8h_source.html">EditorState.h</a></li>
 </ul>

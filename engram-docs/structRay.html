@@ -75,19 +75,72 @@ $(function() {
   <div class="headertitle"><div class="title">Ray Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A mathematical ray used for line-of-sight and intersection queries.  
+ <a href="structRay.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BVH_8h_source.html">BVH.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a50cbb872ade2a0b403fa44a92df40409" id="r_a50cbb872ade2a0b403fa44a92df40409"><td class="memItemLeft" align="right" valign="top"><a id="a50cbb872ade2a0b403fa44a92df40409" name="a50cbb872ade2a0b403fa44a92df40409"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>origin</b> [3]</td></tr>
+<tr class="memitem:a50cbb872ade2a0b403fa44a92df40409" id="r_a50cbb872ade2a0b403fa44a92df40409"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRay.html#a50cbb872ade2a0b403fa44a92df40409">origin</a> [3]</td></tr>
 <tr class="separator:a50cbb872ade2a0b403fa44a92df40409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c55b024d6786acd7dea29a41f304d04" id="r_a4c55b024d6786acd7dea29a41f304d04"><td class="memItemLeft" align="right" valign="top"><a id="a4c55b024d6786acd7dea29a41f304d04" name="a4c55b024d6786acd7dea29a41f304d04"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>dir</b> [3]</td></tr>
+<tr class="memitem:a4c55b024d6786acd7dea29a41f304d04" id="r_a4c55b024d6786acd7dea29a41f304d04"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRay.html#a4c55b024d6786acd7dea29a41f304d04">dir</a> [3]</td></tr>
 <tr class="separator:a4c55b024d6786acd7dea29a41f304d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad60eebbb23431e8a12bff70f5d5fdb3d" id="r_ad60eebbb23431e8a12bff70f5d5fdb3d"><td class="memItemLeft" align="right" valign="top"><a id="ad60eebbb23431e8a12bff70f5d5fdb3d" name="ad60eebbb23431e8a12bff70f5d5fdb3d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>inv_dir</b> [3]</td></tr>
+<tr class="memitem:ad60eebbb23431e8a12bff70f5d5fdb3d" id="r_ad60eebbb23431e8a12bff70f5d5fdb3d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRay.html#ad60eebbb23431e8a12bff70f5d5fdb3d">inv_dir</a> [3]</td></tr>
 <tr class="separator:ad60eebbb23431e8a12bff70f5d5fdb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A mathematical ray used for line-of-sight and intersection queries. </p>
+<ul>
+<li>Includes precalculated inverse direction values. This optimizes the "Slab Method" algorithm used for fast Ray-to-AABB intersection tests, replacing expensive division operations with faster multiplications inside the loop. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4c55b024d6786acd7dea29a41f304d04" name="a4c55b024d6786acd7dea29a41f304d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c55b024d6786acd7dea29a41f304d04">&#9670;&#160;</a></span>dir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Ray::dir[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The normalized 3D directional vector of the ray. </p>
+
+</div>
+</div>
+<a id="ad60eebbb23431e8a12bff70f5d5fdb3d" name="ad60eebbb23431e8a12bff70f5d5fdb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60eebbb23431e8a12bff70f5d5fdb3d">&#9670;&#160;</a></span>inv_dir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Ray::inv_dir[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Precalculated inverse direction (1.0f / dir) to optimize intersection math. </p>
+
+</div>
+</div>
+<a id="a50cbb872ade2a0b403fa44a92df40409" name="a50cbb872ade2a0b403fa44a92df40409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50cbb872ade2a0b403fa44a92df40409">&#9670;&#160;</a></span>origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Ray::origin[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The starting 3D coordinate point of the ray. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Hierarchy/<a class="el" href="BVH_8h_source.html">BVH.h</a></li>
 </ul>

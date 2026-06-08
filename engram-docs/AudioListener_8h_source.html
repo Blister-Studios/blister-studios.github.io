@@ -90,22 +90,27 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="AudioListener_8h.html#aa81b67524a148c4cc7e2c19dabbb2c1d">   13</a></span><span class="preprocessor">#define COMP_AUDIO_LISTENER 7</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structAudioListener.html">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structComponent.html">Component</a> base;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <a class="code hl_struct" href="structAudioListener.html">AudioListener</a>;</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structAudioListener.html">   22</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structAudioListener.html">AudioListener</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structAudioListener.html#a64fc570c0ce934ddf7d6595deb3ce006">   24</a></span>    <a class="code hl_struct" href="structComponent.html">Component</a> <a class="code hl_variable" href="structAudioListener.html#a64fc570c0ce934ddf7d6595deb3ce006">base</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef USE_FMOD</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">int</span> fmod_listener_index;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="AudioListener_8h.html#a319884e9fb2ec7e9ecc5aca18cbafba7">   31</a></span>} <a class="code hl_struct" href="structAudioListener.html">AudioListener</a>;</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><a class="code hl_struct" href="structAudioListener.html">AudioListener</a> *<a class="code hl_function" href="AudioListener_8h.html#a649f45b15b8e3442e71aed93fc99447f">audio_listener_create</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="AudioListener_8h.html#a0ba2f0cda75b0cf53efaf73600d1cdc6">audio_listener_to_json</a>(<a class="code hl_struct" href="structComponent.html">Component</a> *self, <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> buf_size, <span class="keywordtype">size_t</span> *offset);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">// AUDIO_LISTENER_H_</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_struct" href="structAudioListener.html">AudioListener</a> *<a class="code hl_function" href="AudioListener_8h.html#a649f45b15b8e3442e71aed93fc99447f">audio_listener_create</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> <a class="code hl_function" href="AudioListener_8h.html#a0ba2f0cda75b0cf53efaf73600d1cdc6">audio_listener_to_json</a>(<a class="code hl_struct" href="structComponent.html">Component</a> *self, <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> buf_size, <span class="keywordtype">size_t</span> *offset);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">// AUDIO_LISTENER_H_</span></div>
 <div class="ttc" id="aAudioListener_8h_html_a0ba2f0cda75b0cf53efaf73600d1cdc6"><div class="ttname"><a href="AudioListener_8h.html#a0ba2f0cda75b0cf53efaf73600d1cdc6">audio_listener_to_json</a></div><div class="ttdeci">void audio_listener_to_json(Component *self, char *buffer, size_t buf_size, size_t *offset)</div><div class="ttdoc">Internal serialization hook for the AudioListener component. Matches the signature required by Compon...</div><div class="ttdef"><b>Definition</b> AudioListener.c:13</div></div>
-<div class="ttc" id="aAudioListener_8h_html_a649f45b15b8e3442e71aed93fc99447f"><div class="ttname"><a href="AudioListener_8h.html#a649f45b15b8e3442e71aed93fc99447f">audio_listener_create</a></div><div class="ttdeci">AudioListener * audio_listener_create(void)</div><div class="ttdoc">Allocates and initializes a new AudioListener component.</div><div class="ttdef"><b>Definition</b> AudioListener.c:32</div></div>
+<div class="ttc" id="aAudioListener_8h_html_a649f45b15b8e3442e71aed93fc99447f"><div class="ttname"><a href="AudioListener_8h.html#a649f45b15b8e3442e71aed93fc99447f">audio_listener_create</a></div><div class="ttdeci">AudioListener * audio_listener_create(void)</div><div class="ttdoc">Allocates and initializes a new AudioListener component.</div><div class="ttdef"><b>Definition</b> AudioListener.c:37</div></div>
 <div class="ttc" id="aComponent_8h_html"><div class="ttname"><a href="Component_8h.html">Component.h</a></div><div class="ttdoc">Base structure for the Entity-Component-System (ECS) architecture.</div></div>
-<div class="ttc" id="astructAudioListener_html"><div class="ttname"><a href="structAudioListener.html">AudioListener</a></div><div class="ttdoc">Component defining the ear position of the player.</div><div class="ttdef"><b>Definition</b> AudioListener.h:22</div></div>
+<div class="ttc" id="astructAudioListener_html"><div class="ttname"><a href="structAudioListener.html">AudioListener</a></div><div class="ttdoc">Component defining the ear position of the player.</div><div class="ttdef"><b>Definition</b> AudioListener.h:23</div></div>
+<div class="ttc" id="astructAudioListener_html_a64fc570c0ce934ddf7d6595deb3ce006"><div class="ttname"><a href="structAudioListener.html#a64fc570c0ce934ddf7d6595deb3ce006">AudioListener::base</a></div><div class="ttdeci">Component base</div><div class="ttdef"><b>Definition</b> AudioListener.h:24</div></div>
 <div class="ttc" id="astructComponent_html"><div class="ttname"><a href="structComponent.html">Component</a></div><div class="ttdoc">The base structure for all components.</div><div class="ttdef"><b>Definition</b> Component.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

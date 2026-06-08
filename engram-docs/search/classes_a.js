@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rawkeystate_0',['RawKeyState',['../structRawKeyState.html',1,'']]],
+  ['rawinputstate_0',['RawInputState',['../structRawInputState.html',1,'']]],
   ['ray_1',['Ray',['../structRay.html',1,'']]],
   ['rcheader_2',['RcHeader',['../structRcHeader.html',1,'']]],
   ['renderbackend_3',['RenderBackend',['../structRenderBackend.html',1,'']]],

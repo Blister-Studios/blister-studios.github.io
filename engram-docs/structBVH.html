@@ -75,34 +75,101 @@ $(function() {
   <div class="headertitle"><div class="title">BVH Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The top-level Bounding Volume Hierarchy tree manager.  
+ <a href="structBVH.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BVH_8h_source.html">BVH.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for BVH:</div>
 <div class="dyncontent">
 <div class="center"><img src="structBVH__coll__graph.png" border="0" usemap="#aBVH_coll__map" alt="Collaboration graph"/></div>
 <map name="aBVH_coll__map" id="aBVH_coll__map">
-<area shape="rect" title=" " alt="" coords="22,181,73,207"/>
-<area shape="rect" href="structBVHNode.html" title=" " alt="" coords="5,93,89,119"/>
+<area shape="rect" title="The top&#45;level Bounding Volume Hierarchy tree manager." alt="" coords="22,181,73,207"/>
+<area shape="rect" href="structBVHNode.html" title="A single node within the Bounding Volume Hierarchy tree." alt="" coords="5,93,89,119"/>
 <area shape="poly" title=" " alt="" coords="50,133,50,181,45,181,45,133"/>
-<area shape="rect" href="structAABB.html" title=" " alt="" coords="18,5,77,31"/>
+<area shape="rect" href="structAABB.html" title="An Axis&#45;Aligned Bounding Box representing a 3D rectangular volume." alt="" coords="18,5,77,31"/>
 <area shape="poly" title=" " alt="" coords="50,45,50,93,45,93,45,45"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa074f0e4fb1e51f558e3a9da7cb395cf" id="r_aa074f0e4fb1e51f558e3a9da7cb395cf"><td class="memItemLeft" align="right" valign="top"><a id="aa074f0e4fb1e51f558e3a9da7cb395cf" name="aa074f0e4fb1e51f558e3a9da7cb395cf"></a>
-<a class="el" href="structBVHNode.html">BVHNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>nodes</b></td></tr>
+<tr class="memitem:aa074f0e4fb1e51f558e3a9da7cb395cf" id="r_aa074f0e4fb1e51f558e3a9da7cb395cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBVHNode.html">BVHNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVH.html#aa074f0e4fb1e51f558e3a9da7cb395cf">nodes</a></td></tr>
 <tr class="separator:aa074f0e4fb1e51f558e3a9da7cb395cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b298906aa8944f481de646932dccfa" id="r_ad6b298906aa8944f481de646932dccfa"><td class="memItemLeft" align="right" valign="top"><a id="ad6b298906aa8944f481de646932dccfa" name="ad6b298906aa8944f481de646932dccfa"></a>
-uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>prim_indices</b></td></tr>
+<tr class="memitem:ad6b298906aa8944f481de646932dccfa" id="r_ad6b298906aa8944f481de646932dccfa"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVH.html#ad6b298906aa8944f481de646932dccfa">prim_indices</a></td></tr>
 <tr class="separator:ad6b298906aa8944f481de646932dccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef15a646bdc58546e23623eb10667a84" id="r_aef15a646bdc58546e23623eb10667a84"><td class="memItemLeft" align="right" valign="top"><a id="aef15a646bdc58546e23623eb10667a84" name="aef15a646bdc58546e23623eb10667a84"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>node_count</b></td></tr>
+<tr class="memitem:aef15a646bdc58546e23623eb10667a84" id="r_aef15a646bdc58546e23623eb10667a84"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVH.html#aef15a646bdc58546e23623eb10667a84">node_count</a></td></tr>
 <tr class="separator:aef15a646bdc58546e23623eb10667a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d48ad8dc5d0be95d37eaaef566b04f6" id="r_a2d48ad8dc5d0be95d37eaaef566b04f6"><td class="memItemLeft" align="right" valign="top"><a id="a2d48ad8dc5d0be95d37eaaef566b04f6" name="a2d48ad8dc5d0be95d37eaaef566b04f6"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>leaf_count</b></td></tr>
+<tr class="memitem:a2d48ad8dc5d0be95d37eaaef566b04f6" id="r_a2d48ad8dc5d0be95d37eaaef566b04f6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBVH.html#a2d48ad8dc5d0be95d37eaaef566b04f6">leaf_count</a></td></tr>
 <tr class="separator:a2d48ad8dc5d0be95d37eaaef566b04f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The top-level Bounding Volume Hierarchy tree manager. </p>
+<ul>
+<li>The <a class="el" href="structBVH.html" title="The top-level Bounding Volume Hierarchy tree manager.">BVH</a> tree organizes AABBs spatially to reduce O(N^2) collision checks down to O(log N). It uses a contiguous array of nodes to avoid cache misses caused by fragmented heap pointers. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2d48ad8dc5d0be95d37eaaef566b04f6" name="a2d48ad8dc5d0be95d37eaaef566b04f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d48ad8dc5d0be95d37eaaef566b04f6">&#9670;&#160;</a></span>leaf_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BVH::leaf_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The total number of terminal leaf nodes. </p>
+
+</div>
+</div>
+<a id="aef15a646bdc58546e23623eb10667a84" name="aef15a646bdc58546e23623eb10667a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef15a646bdc58546e23623eb10667a84">&#9670;&#160;</a></span>node_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BVH::node_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The total number of nodes currently allocated and active in the tree. </p>
+
+</div>
+</div>
+<a id="aa074f0e4fb1e51f558e3a9da7cb395cf" name="aa074f0e4fb1e51f558e3a9da7cb395cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa074f0e4fb1e51f558e3a9da7cb395cf">&#9670;&#160;</a></span>nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBVHNode.html">BVHNode</a>* BVH::nodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contiguous memory array of all nodes in the tree. </p>
+
+</div>
+</div>
+<a id="ad6b298906aa8944f481de646932dccfa" name="ad6b298906aa8944f481de646932dccfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b298906aa8944f481de646932dccfa">&#9670;&#160;</a></span>prim_indices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t* BVH::prim_indices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indirection array pointing to the actual GameObjects/Colliders. Prevents moving heavy structs in memory. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Hierarchy/<a class="el" href="BVH_8h_source.html">BVH.h</a></li>
 </ul>

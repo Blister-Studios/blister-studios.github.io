@@ -85,76 +85,41 @@ $(function() {
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Log.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="Log_8c__incl.png" border="0" usemap="#aengram_2Core_2Log_8c" alt=""/></div>
 <map name="aengram_2Core_2Log_8c" id="aengram_2Core_2Log_8c">
-<area shape="rect" title="Implementation of the leveled logging system with ANSI color support." alt="" coords="95,5,239,31"/>
+<area shape="rect" title="Implementation of the leveled logging system with ANSI color support." alt="" coords="190,5,334,31"/>
 <area shape="rect" href="Log_8h.html" title="Centralized logging system for the Engram Engine." alt="" coords="5,79,63,104"/>
-<area shape="poly" title=" " alt="" coords="147,33,69,74,67,70,145,28"/>
+<area shape="poly" title=" " alt="" coords="226,33,77,80,75,74,225,28"/>
 <area shape="rect" title=" " alt="" coords="87,79,154,104"/>
-<area shape="poly" title=" " alt="" coords="162,32,138,69,134,66,157,30"/>
+<area shape="poly" title=" " alt="" coords="240,33,157,75,155,70,238,28"/>
 <area shape="rect" title=" " alt="" coords="178,79,253,104"/>
-<area shape="poly" title=" " alt="" coords="177,30,202,66,198,69,173,33"/>
+<area shape="poly" title=" " alt="" coords="257,32,233,69,228,66,252,30"/>
 <area shape="rect" title=" " alt="" coords="277,79,341,104"/>
-<area shape="poly" title=" " alt="" coords="191,28,275,70,272,75,189,33"/>
+<area shape="poly" title=" " alt="" coords="272,30,296,66,291,69,267,32"/>
+<area shape="rect" title=" " alt="" coords="365,79,436,104"/>
+<area shape="poly" title=" " alt="" coords="285,28,367,70,365,75,283,33"/>
+<area shape="rect" title=" " alt="" coords="460,79,531,104"/>
+<area shape="poly" title=" " alt="" coords="300,28,448,73,446,78,299,33"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8e815fa690ad3bff4668fccdf5a93ec0" id="r_a8e815fa690ad3bff4668fccdf5a93ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8c.html#a8e815fa690ad3bff4668fccdf5a93ec0">en_log</a> (<a class="el" href="Log_8h.html#aca1fd1d8935433e6ba2e3918214e07f9">LogLevel</a> level, const char *tag, const char *format,...)</td></tr>
-<tr class="memdesc:a8e815fa690ad3bff4668fccdf5a93ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a formatted log message to the standard output.  <br /></td></tr>
+<tr class="memitem:a8e815fa690ad3bff4668fccdf5a93ec0" id="r_a8e815fa690ad3bff4668fccdf5a93ec0"><td class="memItemLeft" align="right" valign="top"><a id="a8e815fa690ad3bff4668fccdf5a93ec0" name="a8e815fa690ad3bff4668fccdf5a93ec0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>en_log</b> (<a class="el" href="Log_8h.html#aca1fd1d8935433e6ba2e3918214e07f9">LogLevel</a> level, const char *tag, const char *format,...)</td></tr>
 <tr class="separator:a8e815fa690ad3bff4668fccdf5a93ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6815d2cbf867aee2c84c9e95ea8fb80a" id="r_a6815d2cbf867aee2c84c9e95ea8fb80a"><td class="memItemLeft" align="right" valign="top"><a id="a6815d2cbf867aee2c84c9e95ea8fb80a" name="a6815d2cbf867aee2c84c9e95ea8fb80a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>en_log_from_file</b> (<a class="el" href="Log_8h.html#aca1fd1d8935433e6ba2e3918214e07f9">LogLevel</a> level, const char *file, const char *format,...)</td></tr>
+<tr class="separator:a6815d2cbf867aee2c84c9e95ea8fb80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the leveled logging system with ANSI color support. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a8e815fa690ad3bff4668fccdf5a93ec0" name="a8e815fa690ad3bff4668fccdf5a93ec0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e815fa690ad3bff4668fccdf5a93ec0">&#9670;&#160;</a></span>en_log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void en_log </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="Log_8h.html#aca1fd1d8935433e6ba2e3918214e07f9">LogLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>tag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Outputs a formatted log message to the standard output. </p>
-<p>This implementation prefixes messages with a timestamp, a color-coded severity level, and a subsystem tag. It uses ANSI escape codes for terminal coloring. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8

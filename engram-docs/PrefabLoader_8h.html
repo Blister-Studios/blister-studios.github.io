@@ -101,6 +101,16 @@ Include dependency graph for PrefabLoader.h:</div>
 <area shape="poly" title=" " alt="" coords="308,180,245,220,242,215,305,175"/>
 </map>
 </div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="PrefabLoader_8h__dep__incl.png" border="0" usemap="#aengram_2Platform_2PrefabLoader_8hdep" alt=""/></div>
+<map name="aengram_2Platform_2PrefabLoader_8hdep" id="aengram_2Platform_2PrefabLoader_8hdep">
+<area shape="rect" title="Data&#45;driven GameObject instantiation from JSON files." alt="" coords="5,5,239,31"/>
+<area shape="rect" href="PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="6,79,238,104"/>
+<area shape="poly" title=" " alt="" coords="125,44,125,79,119,79,119,44"/>
+</map>
+</div>
 </div>
 <p><a href="PrefabLoader_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,8 +119,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3ca880ca3b7ef181c95bd492afb510c" id="r_ac3ca880ca3b7ef181c95bd492afb510c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PrefabLoader_8h.html#ac3ca880ca3b7ef181c95bd492afb510c">prefab_load</a> (const char *vfs_path)</td></tr>
 <tr class="memdesc:ac3ca880ca3b7ef181c95bd492afb510c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> based on a JSON prefab file.  <br /></td></tr>
 <tr class="separator:ac3ca880ca3b7ef181c95bd492afb510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a483fcc0e9eb9c7c4f74679075f60e6d0" id="r_a483fcc0e9eb9c7c4f74679075f60e6d0"><td class="memItemLeft" align="right" valign="top"><a id="a483fcc0e9eb9c7c4f74679075f60e6d0" name="a483fcc0e9eb9c7c4f74679075f60e6d0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>prefab_save</b> (const char *vfs_path, <a class="el" href="structGameObject.html">GameObject</a> *go)</td></tr>
+<tr class="memitem:a483fcc0e9eb9c7c4f74679075f60e6d0" id="r_a483fcc0e9eb9c7c4f74679075f60e6d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PrefabLoader_8h.html#a483fcc0e9eb9c7c4f74679075f60e6d0">prefab_save</a> (const char *vfs_path, <a class="el" href="structGameObject.html">GameObject</a> *go)</td></tr>
+<tr class="memdesc:a483fcc0e9eb9c7c4f74679075f60e6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> as a JSON prefab file.  <br /></td></tr>
 <tr class="separator:a483fcc0e9eb9c7c4f74679075f60e6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -133,16 +143,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>prefab_save</b> (cons
 </div><div class="memdoc">
 
 <p>Creates a new <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> based on a JSON prefab file. </p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vfs_path</td><td>The path to the .json prefab file. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GameObject* A pointer to the newly created and populated <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a>, or NULL on failure.</dd></dl>
-Creates a new <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> based on a JSON prefab file. </li>
-</ul>
+<p>Creates a new <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> based on a JSON prefab file. </p>
+
+</div>
+</div>
+<a id="a483fcc0e9eb9c7c4f74679075f60e6d0" name="a483fcc0e9eb9c7c4f74679075f60e6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483fcc0e9eb9c7c4f74679075f60e6d0">&#9670;&#160;</a></span>prefab_save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool prefab_save </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>vfs_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structGameObject.html">GameObject</a> *&#160;</td>
+          <td class="paramname"><em>go</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves a <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> as a JSON prefab file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vfs_path</td><td>The path to the .json prefab file. </td></tr>
+    <tr><td class="paramname">go*</td><td>The <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> to save as a prefab file. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

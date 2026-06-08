@@ -1,24 +1,26 @@
 <map id="engram/Components/Camera.c" name="engram/Components/Camera.c">
-<area shape="rect" id="Node000001" title="Implementation of camera view and projection logic." alt="" coords="535,5,759,31"/>
-<area shape="rect" id="Node000002" href="$Camera_8h.html" title="Component for defining the view and projection parameters." alt="" coords="236,79,321,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="585,33,335,81,334,76,584,28"/>
-<area shape="rect" id="Node000012" href="$Transform_8h.html" title="Core component for spatial positioning, rotation, and scaling." alt="" coords="346,79,531,104"/>
-<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="614,33,486,77,485,72,612,28"/>
-<area shape="rect" id="Node000014" href="$GameObject_8h.html" title="The fundamental entity container in the Engram Engine&#39;s ECS architecture." alt="" coords="555,79,738,104"/>
-<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="649,31,649,65,644,65,644,31"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="762,79,833,104"/>
-<area shape="poly" id="edge27_Node000001_Node000015" title=" " alt="" coords="672,28,761,70,759,75,670,33"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="857,79,924,104"/>
-<area shape="poly" id="edge28_Node000001_Node000016" title=" " alt="" coords="687,28,845,74,843,79,685,33"/>
-<area shape="rect" id="Node000003" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="489,152,599,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="322,101,488,146,487,151,321,107"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="453,225,528,251"/>
-<area shape="poly" id="edge15_Node000002_Node000004" title=" " alt="" coords="290,103,320,138,363,175,404,199,446,218,443,223,402,204,360,179,316,141,286,106"/>
+<area shape="rect" id="Node000001" title="Implementation of cross&#45;platform 2D Orthographic and 3D Perspective camera view/projection logic." alt="" coords="651,5,875,31"/>
+<area shape="rect" id="Node000002" href="$Camera_8h.html" title="Component for defining 2D Orthographic and 3D Perspective view and projection parameters." alt="" coords="277,79,363,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="680,33,377,81,376,76,680,28"/>
+<area shape="rect" id="Node000012" href="$Transform_8h.html" title="Core component for hierarchical spatial positioning, rotation, and scaling." alt="" coords="387,79,573,104"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="718,33,539,78,538,73,717,28"/>
+<area shape="rect" id="Node000014" href="$GameObject_8h.html" title="The fundamental entity container in the Engram Engine&#39;s ECS architecture." alt="" coords="597,79,779,104"/>
+<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="753,33,712,71,708,67,749,29"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="803,79,874,104"/>
+<area shape="poly" id="edge27_Node000001_Node000015" title=" " alt="" coords="777,29,818,67,814,71,773,33"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="899,79,965,104"/>
+<area shape="poly" id="edge28_Node000001_Node000016" title=" " alt="" coords="791,28,893,71,891,76,789,33"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="990,79,1061,104"/>
+<area shape="poly" id="edge29_Node000001_Node000017" title=" " alt="" coords="806,28,977,74,976,80,804,33"/>
+<area shape="rect" id="Node000003" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="332,152,441,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,103,368,140,365,144,329,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="475,225,549,251"/>
+<area shape="poly" id="edge15_Node000002_Node000004" title=" " alt="" coords="319,105,313,140,315,159,322,176,351,202,387,220,425,230,462,234,461,239,424,235,385,225,348,207,318,179,309,160,307,139,313,104"/>
 <area shape="rect" id="Node000005" href="$Math_8h.html" title="Central header for the Engram Math library." alt="" coords="153,152,257,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="268,106,229,144,225,140,265,102"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="383,152,465,177"/>
-<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="303,102,389,144,387,148,301,106"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="537,179,510,216,505,213,533,176"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="303,106,237,147,234,142,300,102"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="465,152,548,177"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="351,102,464,145,463,149,349,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,175,481,216,478,221,405,180"/>
 <area shape="rect" id="Node000006" href="$Vector2_8h.html" title="2&#45;component vector math for 2D coordinate systems." alt="" coords="243,225,325,251"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="220,175,263,214,259,218,216,179"/>
 <area shape="rect" id="Node000007" href="$Vector3_8h.html" title="3&#45;component vector math for 3D coordinate systems." alt="" coords="175,372,257,397"/>
@@ -33,14 +35,14 @@
 <area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="129,251,137,284,153,323,170,344,190,361,186,365,166,347,148,325,132,286,124,252"/>
 <area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="114,253,71,291,68,288,111,249"/>
 <area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="142,249,192,288,189,292,138,253"/>
-<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="457,102,517,142,514,147,454,106"/>
-<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="419,106,399,120,380,138,370,157,369,166,373,176,386,192,403,205,441,223,439,228,400,210,383,196,368,179,364,167,364,155,376,134,395,116,416,102"/>
-<area shape="poly" id="edge20_Node000012_Node000005" title=" " alt="" coords="402,107,257,151,255,145,400,101"/>
-<area shape="poly" id="edge17_Node000012_Node000011" title=" " alt="" coords="439,105,432,139,427,138,434,104"/>
-<area shape="rect" id="Node000013" href="$DynamicArray_8h.html" title="A generic, growable array of void pointers." alt="" coords="623,152,822,177"/>
-<area shape="poly" id="edge21_Node000012_Node000013" title=" " alt="" coords="485,101,664,146,663,151,484,107"/>
-<area shape="poly" id="edge22_Node000013_Node000004" title=" " alt="" coords="686,180,542,224,540,219,685,175"/>
-<area shape="poly" id="edge24_Node000014_Node000003" title=" " alt="" coords="632,106,574,146,571,142,629,102"/>
-<area shape="poly" id="edge26_Node000014_Node000011" title=" " alt="" coords="612,107,474,150,472,145,610,101"/>
-<area shape="poly" id="edge25_Node000014_Node000013" title=" " alt="" coords="661,102,702,141,698,144,657,106"/>
+<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="467,106,414,146,411,141,463,102"/>
+<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="508,102,538,121,552,135,562,151,566,169,561,187,539,217,535,214,557,184,561,169,558,153,547,138,534,125,505,106"/>
+<area shape="poly" id="edge20_Node000012_Node000005" title=" " alt="" coords="437,107,264,151,262,146,435,101"/>
+<area shape="poly" id="edge17_Node000012_Node000011" title=" " alt="" coords="487,103,500,138,495,140,482,105"/>
+<area shape="rect" id="Node000013" href="$DynamicArray_8h.html" title="A generic, growable array of void pointers." alt="" coords="622,152,821,177"/>
+<area shape="poly" id="edge21_Node000012_Node000013" title=" " alt="" coords="520,101,670,145,668,151,518,107"/>
+<area shape="poly" id="edge22_Node000013_Node000004" title=" " alt="" coords="689,180,560,223,558,218,687,175"/>
+<area shape="poly" id="edge24_Node000014_Node000003" title=" " alt="" coords="640,107,449,151,448,146,639,101"/>
+<area shape="poly" id="edge26_Node000014_Node000011" title=" " alt="" coords="660,107,550,149,548,144,658,102"/>
+<area shape="poly" id="edge25_Node000014_Node000013" title=" " alt="" coords="696,103,713,139,708,141,691,105"/>
 </map>

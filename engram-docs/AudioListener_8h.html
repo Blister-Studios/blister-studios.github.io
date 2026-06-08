@@ -76,12 +76,13 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">AudioListener.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> representing the point where audio is heard.  
+<p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> representing the point where 3D spatial audio is mixed and heard.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Component_8h_source.html">Component.h</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -90,7 +91,7 @@ Include dependency graph for AudioListener.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="AudioListener_8h__incl.png" border="0" usemap="#aengram_2Components_2AudioListener_8h" alt=""/></div>
 <map name="aengram_2Components_2AudioListener_8h" id="aengram_2Components_2AudioListener_8h">
-<area shape="rect" title="Component representing the point where audio is heard." alt="" coords="5,5,268,31"/>
+<area shape="rect" title="Component representing the point where 3D spatial audio is mixed and heard." alt="" coords="5,5,268,31"/>
 <area shape="rect" href="Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="37,79,146,104"/>
 <area shape="poly" title=" " alt="" coords="131,32,108,69,104,66,127,30"/>
 <area shape="rect" title=" " alt="" coords="99,152,174,177"/>
@@ -103,13 +104,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="AudioListener_8h__dep__incl.png" border="0" usemap="#aengram_2Components_2AudioListener_8hdep" alt=""/></div>
 <map name="aengram_2Components_2AudioListener_8hdep" id="aengram_2Components_2AudioListener_8hdep">
-<area shape="rect" title="Component representing the point where audio is heard." alt="" coords="287,5,550,31"/>
+<area shape="rect" title="Component representing the point where 3D spatial audio is mixed and heard." alt="" coords="519,5,782,31"/>
 <area shape="rect" href="AudioListener_8c.html" title="Implementation of the AudioListener component." alt="" coords="5,79,267,104"/>
-<area shape="poly" title=" " alt="" coords="361,37,182,81,181,76,359,31"/>
+<area shape="poly" title=" " alt="" coords="555,35,219,81,219,76,554,30"/>
 <area shape="rect" href="Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="291,79,547,104"/>
-<area shape="poly" title=" " alt="" coords="421,44,421,79,416,79,416,44"/>
-<area shape="rect" href="Audio_8c.html" title="Logic for spatial mixing, pitch shifting, and time&#45;scaled playback." alt="" coords="571,79,730,104"/>
-<area shape="poly" title=" " alt="" coords="470,32,614,76,612,81,468,37"/>
+<area shape="poly" title=" " alt="" coords="601,37,457,81,455,76,600,32"/>
+<area shape="rect" href="Audio_8c.html" title="Dual&#45;backend audio logic supporting FMOD Studio Live&#45;Update and legacy Sokol fallback pipelines." alt="" coords="571,79,730,104"/>
+<area shape="poly" title=" " alt="" coords="653,44,653,79,648,79,648,44"/>
+<area shape="rect" href="PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="755,79,987,104"/>
+<area shape="poly" title=" " alt="" coords="700,32,836,76,834,81,698,37"/>
+<area shape="rect" href="SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="1011,79,1240,104"/>
+<area shape="poly" title=" " alt="" coords="741,30,1049,76,1048,81,740,35"/>
 </map>
 </div>
 </div>
@@ -128,6 +133,12 @@ Macros</h2></td></tr>
 <tr class="memdesc:aa81b67524a148c4cc7e2c19dabbb2c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique component type identifier for AudioListeners. <br /></td></tr>
 <tr class="separator:aa81b67524a148c4cc7e2c19dabbb2c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a319884e9fb2ec7e9ecc5aca18cbafba7" id="r_a319884e9fb2ec7e9ecc5aca18cbafba7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structAudioListener.html">AudioListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioListener_8h.html#a319884e9fb2ec7e9ecc5aca18cbafba7">AudioListener</a></td></tr>
+<tr class="memdesc:a319884e9fb2ec7e9ecc5aca18cbafba7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> defining the ear position of the player.  <br /></td></tr>
+<tr class="separator:a319884e9fb2ec7e9ecc5aca18cbafba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a649f45b15b8e3442e71aed93fc99447f" id="r_a649f45b15b8e3442e71aed93fc99447f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioListener.html">AudioListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioListener_8h.html#a649f45b15b8e3442e71aed93fc99447f">audio_listener_create</a> (void)</td></tr>
@@ -138,8 +149,26 @@ Functions</h2></td></tr>
 <tr class="separator:a0ba2f0cda75b0cf53efaf73600d1cdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> representing the point where audio is heard. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<div class="textblock"><p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> representing the point where 3D spatial audio is mixed and heard. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a319884e9fb2ec7e9ecc5aca18cbafba7" name="a319884e9fb2ec7e9ecc5aca18cbafba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319884e9fb2ec7e9ecc5aca18cbafba7">&#9670;&#160;</a></span>AudioListener</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structAudioListener.html">AudioListener</a> <a class="el" href="structAudioListener.html">AudioListener</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> defining the ear position of the player. </p>
+<p>Usually attached to the Main <a class="el" href="structCamera.html" title="Viewport properties component.">Camera</a>. The AudioSystem reads this component's <a class="el" href="structTransform.html" title="Represents the spatial state and hierarchy of an entity.">Transform</a> to feed spatial matrices to either FMOD or the fallback stereo-panning mixer. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a649f45b15b8e3442e71aed93fc99447f" name="a649f45b15b8e3442e71aed93fc99447f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a649f45b15b8e3442e71aed93fc99447f">&#9670;&#160;</a></span>audio_listener_create()</h2>
 

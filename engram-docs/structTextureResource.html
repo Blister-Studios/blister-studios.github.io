@@ -83,26 +83,102 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8efd6e7205fa281451189aef2b0d4d1a" id="r_a8efd6e7205fa281451189aef2b0d4d1a"><td class="memItemLeft" align="right" valign="top"><a id="a8efd6e7205fa281451189aef2b0d4d1a" name="a8efd6e7205fa281451189aef2b0d4d1a"></a>
-sg_image&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b></td></tr>
+<tr class="memitem:a8efd6e7205fa281451189aef2b0d4d1a" id="r_a8efd6e7205fa281451189aef2b0d4d1a"><td class="memItemLeft" align="right" valign="top">sg_image&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTextureResource.html#a8efd6e7205fa281451189aef2b0d4d1a">handle</a></td></tr>
 <tr class="separator:a8efd6e7205fa281451189aef2b0d4d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79dff087028f70848a0056cb42cc7f55" id="r_a79dff087028f70848a0056cb42cc7f55"><td class="memItemLeft" align="right" valign="top"><a id="a79dff087028f70848a0056cb42cc7f55" name="a79dff087028f70848a0056cb42cc7f55"></a>
-sg_view&#160;</td><td class="memItemRight" valign="bottom"><b>view</b></td></tr>
+<tr class="memitem:a79dff087028f70848a0056cb42cc7f55" id="r_a79dff087028f70848a0056cb42cc7f55"><td class="memItemLeft" align="right" valign="top">sg_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTextureResource.html#a79dff087028f70848a0056cb42cc7f55">view</a></td></tr>
 <tr class="separator:a79dff087028f70848a0056cb42cc7f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28ac4b2137d5297317be5dbaf42380dd" id="r_a28ac4b2137d5297317be5dbaf42380dd"><td class="memItemLeft" align="right" valign="top"><a id="a28ac4b2137d5297317be5dbaf42380dd" name="a28ac4b2137d5297317be5dbaf42380dd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="memitem:a28ac4b2137d5297317be5dbaf42380dd" id="r_a28ac4b2137d5297317be5dbaf42380dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTextureResource.html#a28ac4b2137d5297317be5dbaf42380dd">width</a></td></tr>
 <tr class="separator:a28ac4b2137d5297317be5dbaf42380dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7932420f7a6bc2df85ee8d7fe68f46f3" id="r_a7932420f7a6bc2df85ee8d7fe68f46f3"><td class="memItemLeft" align="right" valign="top"><a id="a7932420f7a6bc2df85ee8d7fe68f46f3" name="a7932420f7a6bc2df85ee8d7fe68f46f3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="memitem:a7932420f7a6bc2df85ee8d7fe68f46f3" id="r_a7932420f7a6bc2df85ee8d7fe68f46f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTextureResource.html#a7932420f7a6bc2df85ee8d7fe68f46f3">height</a></td></tr>
 <tr class="separator:a7932420f7a6bc2df85ee8d7fe68f46f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf86adbfd7c48d870d9c80dabbe4441" id="r_a7cf86adbfd7c48d870d9c80dabbe4441"><td class="memItemLeft" align="right" valign="top"><a id="a7cf86adbfd7c48d870d9c80dabbe4441" name="a7cf86adbfd7c48d870d9c80dabbe4441"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b></td></tr>
+<tr class="memitem:a7cf86adbfd7c48d870d9c80dabbe4441" id="r_a7cf86adbfd7c48d870d9c80dabbe4441"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTextureResource.html#a7cf86adbfd7c48d870d9c80dabbe4441">channels</a></td></tr>
 <tr class="separator:a7cf86adbfd7c48d870d9c80dabbe4441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a texture asset loaded into GPU memory. </p>
-<p>Includes the persistent sg_view to prevent resource pool exhaustion during high-frequency draw calls. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<ul>
+<li>A <code><a class="el" href="structTextureResource.html" title="Represents a texture asset loaded into GPU memory.">TextureResource</a></code> acts as a managed handle to a GPU-resident image.</li>
+<li>It stores both the primary <code>sg_image</code> and a persistent <code>sg_view</code>,</li>
+<li>allowing the renderer to bind and sample the texture instantly during</li>
+<li>a draw call without needing to perform resource pool lookups. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7cf86adbfd7c48d870d9c80dabbe4441" name="a7cf86adbfd7c48d870d9c80dabbe4441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf86adbfd7c48d870d9c80dabbe4441">&#9670;&#160;</a></span>channels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TextureResource::channels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of color channels (e.g., 3 for RGB, 4 for RGBA). </p>
+
+</div>
+</div>
+<a id="a8efd6e7205fa281451189aef2b0d4d1a" name="a8efd6e7205fa281451189aef2b0d4d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efd6e7205fa281451189aef2b0d4d1a">&#9670;&#160;</a></span>handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sg_image TextureResource::handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The core Sokol image resource handle. </p>
+
+</div>
+</div>
+<a id="a7932420f7a6bc2df85ee8d7fe68f46f3" name="a7932420f7a6bc2df85ee8d7fe68f46f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7932420f7a6bc2df85ee8d7fe68f46f3">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TextureResource::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Image height in pixels. </p>
+
+</div>
+</div>
+<a id="a79dff087028f70848a0056cb42cc7f55" name="a79dff087028f70848a0056cb42cc7f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79dff087028f70848a0056cb42cc7f55">&#9670;&#160;</a></span>view</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sg_view TextureResource::view</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The persistent view resource for sampling operations. </p>
+
+</div>
+</div>
+<a id="a28ac4b2137d5297317be5dbaf42380dd" name="a28ac4b2137d5297317be5dbaf42380dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ac4b2137d5297317be5dbaf42380dd">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TextureResource::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Image width in pixels. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Platform/<a class="el" href="Texture_8h_source.html">Texture.h</a></li>
 </ul>
 </div><!-- contents -->

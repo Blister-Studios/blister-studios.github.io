@@ -1,0 +1,37 @@
+<map id="ResourceLoader" name="ResourceLoader">
+<area shape="rect" id="Node000001" title="Mapping between a file extension and the logic required to handle it." alt="" coords="371,303,498,328"/>
+<area shape="rect" id="Node000002" href="$structEngramContext.html" title="The central hub and &quot;God Object&quot; of the engine state." alt="" coords="400,200,523,225"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,238,439,250,434,278,436,302,430,302,429,277,433,249,440,235"/>
+<area shape="rect" id="Node000003" href="$structScene.html" title="Container for a complete game world state." alt="" coords="579,303,640,328"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="471,237,481,258,496,277,516,289,537,298,579,308,578,314,535,303,513,294,493,281,477,261,466,240"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="577,297,554,281,524,251,484,228,487,223,527,247,558,277,580,293"/>
+<area shape="rect" id="Node000004" href="$structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="239,5,305,31"/>
+<area shape="poly" id="edge17_Node000002_Node000004" title=" " alt="" coords="270,44,270,90,275,114,286,136,310,160,338,178,370,191,400,199,399,205,368,196,336,182,306,164,282,139,270,116,265,91,265,44"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="320,18,382,28,415,38,447,52,471,73,484,95,497,116,520,135,536,142,551,144,580,142,608,142,623,148,637,160,657,188,664,216,660,246,648,280,639,294,628,304,624,301,635,290,643,277,655,245,658,217,652,190,633,163,620,153,607,148,580,147,551,149,535,147,517,140,493,119,480,97,467,76,444,57,413,43,381,33,319,24"/>
+<area shape="rect" id="Node000008" href="$structAssetRegistry.html" title="Container for all cached assets using a dynamic array of records." alt="" coords="112,110,224,135"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="227,38,202,57,184,84,174,111,169,109,179,81,198,53,224,34"/>
+<area shape="rect" id="Node000009" href="$structEventBus.html" title="The central hub for event subscription and dispatch." alt="" coords="5,110,88,135"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="225,26,171,36,116,57,81,84,57,112,53,108,78,80,113,52,169,31,224,21"/>
+<area shape="rect" id="Node000010" href="$structVFS.html" title="The Virtual File System manager context." alt="" coords="409,110,455,135"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="296,38,353,82,410,110,407,115,351,86,293,42"/>
+<area shape="rect" id="Node000005" href="$structBVH.html" title="The top&#45;level Bounding Volume Hierarchy tree manager." alt="" coords="772,200,823,225"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="768,235,684,281,635,305,633,300,681,276,765,230"/>
+<area shape="rect" id="Node000006" href="$structBVHNode.html" title="A single node within the Bounding Volume Hierarchy tree." alt="" coords="905,110,989,135"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="917,145,818,202,816,198,914,140"/>
+<area shape="rect" id="Node000007" href="$structAABB.html" title="An Axis&#45;Aligned Bounding Box representing a 3D rectangular volume." alt="" coords="917,5,976,31"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="949,45,949,110,944,110,944,45"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="182,146,193,161,208,174,242,186,291,195,400,206,399,211,290,200,240,191,205,178,190,165,178,149"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="75,141,105,159,138,173,207,191,277,202,400,209,399,215,276,207,206,196,136,179,102,164,72,146"/>
+<area shape="poly" id="edge12_Node000002_Node000010" title=" " alt="" coords="432,149,436,175,451,198,447,201,431,177,427,149"/>
+<area shape="rect" id="Node000011" href="$structInputSystem.html" title="Container for the state of all registered input actions and raw keys." alt="" coords="531,110,635,135"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="526,142,491,163,477,182,468,201,463,199,472,179,488,159,523,138"/>
+<area shape="rect" id="Node000012" href="$structInputAction.html" title="Logic&#45;level state representation of a rebindable control action." alt="" coords="427,5,523,31"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="493,40,531,82,566,108,562,112,528,86,489,44"/>
+<area shape="rect" id="Node000013" href="$structRawInputState.html" title="Raw hardware&#45;level state tracking for a single key or button." alt="" coords="547,5,664,31"/>
+<area shape="poly" id="edge16_Node000011_Node000013" title=" " alt="" coords="598,44,595,55,586,110,581,109,589,54,593,43"/>
+<area shape="rect" id="Node000014" href="$structRenderBackend.html" title="Interface for hardware&#45;specific rendering implementations." alt="" coords="696,5,819,31"/>
+<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="744,44,704,92,678,118,648,140,626,150,607,154,588,157,565,164,483,202,481,198,563,159,587,152,606,149,624,145,645,135,674,114,700,89,740,41"/>
+<area shape="rect" id="Node000015" href="$structEngramConfig.html" title="Startup configuration parameters and lifecycle callback hooks." alt="" coords="767,110,881,135"/>
+<area shape="poly" id="edge20_Node000015_Node000014" title=" " alt="" coords="775,41,819,108,814,111,770,44"/>
+<area shape="poly" id="edge19_Node000002_Node000015" title=" " alt="" coords="754,139,748,140,669,148,634,153,592,164,561,178,497,202,495,197,559,174,590,159,633,148,668,143,748,135,753,134"/>
+</map>

@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['vec2_0',['VEC2',['../Vector2_8h.html#af2f7f93c7269b56cee9d570d33e299a8',1,'Vector2.h']]],
-  ['vec2_5fdown_1',['VEC2_DOWN',['../Vector2_8h.html#a4bebacc60724963803272fa0ecd9a674',1,'Vector2.h']]],
-  ['vec2_5fleft_2',['VEC2_LEFT',['../Vector2_8h.html#adf5e962e6c2050e74915008c5487ea62',1,'Vector2.h']]],
-  ['vec2_5fone_3',['VEC2_ONE',['../Vector2_8h.html#ad24e1b2ff50f00cbcc7933be329e6257',1,'Vector2.h']]],
-  ['vec2_5fright_4',['VEC2_RIGHT',['../Vector2_8h.html#a4aa707a8f23aad1108bc29b5efad84a4',1,'Vector2.h']]],
-  ['vec2_5fup_5',['VEC2_UP',['../Vector2_8h.html#a0064b5c9da66dcbe53c493e08b964843',1,'Vector2.h']]],
-  ['vec2_5fzero_6',['VEC2_ZERO',['../Vector2_8h.html#a5cede25e2256e3673ef406d0597d70e3',1,'Vector2.h']]],
-  ['vec3_7',['VEC3',['../Vector3_8h.html#aef24c6b34ff198c008c2388b120a22c7',1,'Vector3.h']]],
-  ['vec3_5fback_8',['VEC3_BACK',['../Vector3_8h.html#a8ad655a0011b7e7187af17f656d0860d',1,'Vector3.h']]],
-  ['vec3_5fdown_9',['VEC3_DOWN',['../Vector3_8h.html#a4d0d77dda8413db5526a83e4f2a744bd',1,'Vector3.h']]],
-  ['vec3_5fforward_10',['VEC3_FORWARD',['../Vector3_8h.html#afcc9cd3d55b90e6523e2c160b41603ce',1,'Vector3.h']]],
-  ['vec3_5fleft_11',['VEC3_LEFT',['../Vector3_8h.html#a76aeff4640176b5471cca711447774b2',1,'Vector3.h']]],
-  ['vec3_5fone_12',['VEC3_ONE',['../Vector3_8h.html#a870e2b86288c6c791fcc8c1e73f80560',1,'Vector3.h']]],
-  ['vec3_5fright_13',['VEC3_RIGHT',['../Vector3_8h.html#a8125bbde397210b3c77bcd8cc2ebeb94',1,'Vector3.h']]],
-  ['vec3_5fup_14',['VEC3_UP',['../Vector3_8h.html#a7212ac89b18b5973dc64622e92942cee',1,'Vector3.h']]],
-  ['vec3_5fzero_15',['VEC3_ZERO',['../Vector3_8h.html#a8351929e72e0b532e54384381fa69f97',1,'Vector3.h']]],
-  ['vec4_16',['VEC4',['../Vector4_8h.html#acfa249dcd1066961aa3b1dd49a77c0d0',1,'Vector4.h']]],
-  ['vec4_5fone_17',['VEC4_ONE',['../Vector4_8h.html#a99878969251eb96b30be97558879ec69',1,'Vector4.h']]],
-  ['vec4_5fzero_18',['VEC4_ZERO',['../Vector4_8h.html#a498dc8347b8be284a9413ddea01d00ff',1,'Vector4.h']]]
+  ['printf_5fformat_0',['PRINTF_FORMAT',['../Log_8h.html#a4bccce60f1490892797a39740f66425e',1,'Log.h']]]
 ];

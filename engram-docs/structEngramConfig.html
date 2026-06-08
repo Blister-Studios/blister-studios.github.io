@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Startup configuration and lifecycle callbacks for the engine.  
+<p>Startup configuration parameters and lifecycle callback hooks.  
  <a href="structEngramConfig.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Engram_8h_source.html">Engram.h</a>&gt;</code></p>
@@ -85,19 +85,17 @@ Collaboration diagram for EngramConfig:</div>
 <div class="dyncontent">
 <div class="center"><img src="structEngramConfig__coll__graph.png" border="0" usemap="#aEngramConfig_coll__map" alt="Collaboration graph"/></div>
 <map name="aEngramConfig_coll__map" id="aEngramConfig_coll__map">
-<area shape="rect" title="Startup configuration and lifecycle callbacks for the engine." alt="" coords="10,93,123,119"/>
-<area shape="rect" href="structRenderBackend.html" title=" " alt="" coords="5,5,128,31"/>
+<area shape="rect" title="Startup configuration parameters and lifecycle callback hooks." alt="" coords="10,93,123,119"/>
+<area shape="rect" href="structRenderBackend.html" title="Interface for hardware&#45;specific rendering implementations." alt="" coords="5,5,128,31"/>
 <area shape="poly" title=" " alt="" coords="69,45,69,93,64,93,64,45"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9159e9e0cbb3a8c985143b537a636abd" id="r_a9159e9e0cbb3a8c985143b537a636abd"><td class="memItemLeft" align="right" valign="top"><a id="a9159e9e0cbb3a8c985143b537a636abd" name="a9159e9e0cbb3a8c985143b537a636abd"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>window_title</b></td></tr>
+<tr class="memitem:a9159e9e0cbb3a8c985143b537a636abd" id="r_a9159e9e0cbb3a8c985143b537a636abd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEngramConfig.html#a9159e9e0cbb3a8c985143b537a636abd">window_title</a></td></tr>
 <tr class="separator:a9159e9e0cbb3a8c985143b537a636abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f51f3f66a55c877a3985936bbd4f04" id="r_aa3f51f3f66a55c877a3985936bbd4f04"><td class="memItemLeft" align="right" valign="top"><a id="aa3f51f3f66a55c877a3985936bbd4f04" name="aa3f51f3f66a55c877a3985936bbd4f04"></a>
-<a class="el" href="structRenderBackend.html">RenderBackend</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></tr>
+<tr class="memitem:aa3f51f3f66a55c877a3985936bbd4f04" id="r_aa3f51f3f66a55c877a3985936bbd4f04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRenderBackend.html">RenderBackend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEngramConfig.html#aa3f51f3f66a55c877a3985936bbd4f04">renderer</a></td></tr>
 <tr class="separator:aa3f51f3f66a55c877a3985936bbd4f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5872d626daf340ee56c21389c1a7a88f" id="r_a5872d626daf340ee56c21389c1a7a88f"><td class="memItemLeft" align="right" valign="top"><a id="a5872d626daf340ee56c21389c1a7a88f" name="a5872d626daf340ee56c21389c1a7a88f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>enable_imgui</b></td></tr>
@@ -105,23 +103,63 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>enable_imgui</b></td>
 <tr class="separator:a5872d626daf340ee56c21389c1a7a88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80795fb8a515a09a086a38e2ac1ec8db" id="r_a80795fb8a515a09a086a38e2ac1ec8db"><td class="memItemLeft" align="right" valign="top"><a id="a80795fb8a515a09a086a38e2ac1ec8db" name="a80795fb8a515a09a086a38e2ac1ec8db"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>on_init</b> )(<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:a80795fb8a515a09a086a38e2ac1ec8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback: executed once after engine subsystems are initialized. <br /></td></tr>
 <tr class="separator:a80795fb8a515a09a086a38e2ac1ec8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8520d6c24b22a6c4772e40b5b686067b" id="r_a8520d6c24b22a6c4772e40b5b686067b"><td class="memItemLeft" align="right" valign="top"><a id="a8520d6c24b22a6c4772e40b5b686067b" name="a8520d6c24b22a6c4772e40b5b686067b"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>on_update</b> )(<a class="el" href="structEngramContext.html">EngramContext</a> *ctx, float delta_time)</td></tr>
+<tr class="memdesc:a8520d6c24b22a6c4772e40b5b686067b"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback: executed every frame before rendering. <br /></td></tr>
 <tr class="separator:a8520d6c24b22a6c4772e40b5b686067b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2bf9abb55ba4587cb60f7919e23e342" id="r_ad2bf9abb55ba4587cb60f7919e23e342"><td class="memItemLeft" align="right" valign="top"><a id="ad2bf9abb55ba4587cb60f7919e23e342" name="ad2bf9abb55ba4587cb60f7919e23e342"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>on_render</b> )(<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:ad2bf9abb55ba4587cb60f7919e23e342"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback: executed every frame for custom drawing logic. <br /></td></tr>
 <tr class="separator:ad2bf9abb55ba4587cb60f7919e23e342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469ea28ffb4f5ae72d07e2029e148587" id="r_a469ea28ffb4f5ae72d07e2029e148587"><td class="memItemLeft" align="right" valign="top"><a id="a469ea28ffb4f5ae72d07e2029e148587" name="a469ea28ffb4f5ae72d07e2029e148587"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>on_event</b> )(const sapp_event *ev)</td></tr>
+<tr class="memdesc:a469ea28ffb4f5ae72d07e2029e148587"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback: executed whenever a hardware event (key/mouse/resize) occurs. <br /></td></tr>
 <tr class="separator:a469ea28ffb4f5ae72d07e2029e148587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae427072ef3911aa393f75feafbb74710" id="r_ae427072ef3911aa393f75feafbb74710"><td class="memItemLeft" align="right" valign="top"><a id="ae427072ef3911aa393f75feafbb74710" name="ae427072ef3911aa393f75feafbb74710"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>on_shutdown</b> )(<a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:ae427072ef3911aa393f75feafbb74710"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback: executed once during the teardown sequence. <br /></td></tr>
 <tr class="separator:ae427072ef3911aa393f75feafbb74710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Startup configuration and lifecycle callbacks for the engine. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Startup configuration parameters and lifecycle callback hooks. </p>
+<ul>
+<li>Use this structure to configure the engine window, select the rendering backend,</li>
+<li>and inject custom game logic into the engine's main execution loop. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa3f51f3f66a55c877a3985936bbd4f04" name="aa3f51f3f66a55c877a3985936bbd4f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f51f3f66a55c877a3985936bbd4f04">&#9670;&#160;</a></span>renderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRenderBackend.html">RenderBackend</a> EngramConfig::renderer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The selected rendering backend (e.g., Sokol OpenGL/Metal). </p>
+
+</div>
+</div>
+<a id="a9159e9e0cbb3a8c985143b537a636abd" name="a9159e9e0cbb3a8c985143b537a636abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9159e9e0cbb3a8c985143b537a636abd">&#9670;&#160;</a></span>window_title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* EngramConfig::window_title</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The string displayed in the OS window title bar. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Core/<a class="el" href="Engram_8h_source.html">Engram.h</a></li>
 </ul>
 </div><!-- contents -->

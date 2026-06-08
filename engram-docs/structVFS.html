@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Opaque structure representing the Virtual File System context.  
+<p>The Virtual File System manager context.  
  <a href="structVFS.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="FileSystem_8h_source.html">FileSystem.h</a>&gt;</code></p>
@@ -85,7 +85,7 @@ Collaboration diagram for VFS:</div>
 <div class="dyncontent">
 <div class="center"><img src="structVFS__coll__graph.png" border="0" usemap="#aVFS_coll__map" alt="Collaboration graph"/></div>
 <map name="aVFS_coll__map" id="aVFS_coll__map">
-<area shape="rect" title="Opaque structure representing the Virtual File System context." alt="" coords="15,93,62,119"/>
+<area shape="rect" title="The Virtual File System manager context." alt="" coords="15,93,62,119"/>
 <area shape="rect" href="structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="5,5,72,31"/>
 <area shape="poly" title=" " alt="" coords="41,45,41,93,36,93,36,45"/>
 </map>
@@ -93,13 +93,32 @@ Collaboration diagram for VFS:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8dcab038f3ef3022721039151b066338" id="r_a8dcab038f3ef3022721039151b066338"><td class="memItemLeft" align="right" valign="top"><a id="a8dcab038f3ef3022721039151b066338" name="a8dcab038f3ef3022721039151b066338"></a>
-<a class="el" href="structDArray.html">DArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mount_points</b></td></tr>
+<tr class="memitem:a8dcab038f3ef3022721039151b066338" id="r_a8dcab038f3ef3022721039151b066338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDArray.html">DArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVFS.html#a8dcab038f3ef3022721039151b066338">mount_points</a></td></tr>
 <tr class="separator:a8dcab038f3ef3022721039151b066338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Opaque structure representing the Virtual File System context. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>The Virtual File System manager context. </p>
+<p>Opaque structure representing the Virtual File System context.</p>
+<ul>
+<li>This structure acts as the central registry for all mounted file locations. It uses a DynamicArray to support runtime mounting of new asset packs or directory structures. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8dcab038f3ef3022721039151b066338" name="a8dcab038f3ef3022721039151b066338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcab038f3ef3022721039151b066338">&#9670;&#160;</a></span>mount_points</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDArray.html">DArray</a>* VFS::mount_points</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dynamic array of pointers to registered <a class="el" href="structMountPoint.html" title="Maps a virtual URL prefix to a physical directory on the disk.">MountPoint</a> structs. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Platform/<b>FileSystem.c</b></li>
 </ul>
 </div><!-- contents -->

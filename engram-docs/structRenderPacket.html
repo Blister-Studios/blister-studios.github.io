@@ -75,43 +75,181 @@ $(function() {
   <div class="headertitle"><div class="title">RenderPacket Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A unified, high-level draw command sent to the rendering backend.  
+ <a href="structRenderPacket.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Renderer_8h_source.html">Renderer.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for RenderPacket:</div>
 <div class="dyncontent">
 <div class="center"><img src="structRenderPacket__coll__graph.png" border="0" usemap="#aRenderPacket_coll__map" alt="Collaboration graph"/></div>
 <map name="aRenderPacket_coll__map" id="aRenderPacket_coll__map">
-<area shape="rect" title=" " alt="" coords="27,93,137,119"/>
-<area shape="rect" href="structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="5,5,60,31"/>
-<area shape="poly" title=" " alt="" coords="32,44,36,68,46,81,60,91,57,95,43,85,32,70,26,45"/>
-<area shape="rect" href="structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="106,5,159,31"/>
-<area shape="poly" title=" " alt="" coords="121,44,106,71,91,94,87,92,101,68,117,41"/>
+<area shape="rect" title="A unified, high&#45;level draw command sent to the rendering backend." alt="" coords="67,240,177,265"/>
+<area shape="rect" href="structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="5,152,60,177"/>
+<area shape="poly" title=" " alt="" coords="31,191,32,203,36,215,50,228,68,238,65,242,47,232,32,217,26,205,25,191"/>
+<area shape="rect" href="structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="113,5,166,31"/>
+<area shape="poly" title=" " alt="" coords="140,45,126,240,120,240,135,44"/>
+<area shape="rect" href="structMaterial.html" title="Material state for PBR and traditional rendering." alt="" coords="173,152,249,177"/>
+<area shape="poly" title=" " alt="" coords="142,44,148,85,154,107,164,126,176,139,190,150,187,154,172,143,160,130,149,109,142,86,137,45"/>
+<area shape="poly" title=" " alt="" coords="191,189,136,241,133,238,188,185"/>
+<area shape="rect" href="structTextureResource.html" title="Represents a texture asset loaded into GPU memory." alt="" coords="206,5,337,31"/>
+<area shape="poly" title=" " alt="" coords="270,45,261,86,244,129,226,154,221,150,240,127,256,84,265,44"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:adb0f81f066a96c5804d28dbf6c5031ea" id="r_adb0f81f066a96c5804d28dbf6c5031ea"><td class="memItemLeft" align="right" valign="top"><a id="adb0f81f066a96c5804d28dbf6c5031ea" name="adb0f81f066a96c5804d28dbf6c5031ea"></a>
-RenderItemType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memitem:adb0f81f066a96c5804d28dbf6c5031ea" id="r_adb0f81f066a96c5804d28dbf6c5031ea"><td class="memItemLeft" align="right" valign="top">RenderItemType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#adb0f81f066a96c5804d28dbf6c5031ea">type</a></td></tr>
 <tr class="separator:adb0f81f066a96c5804d28dbf6c5031ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e8a00098e44b98817fd0c9c5460403" id="r_aa3e8a00098e44b98817fd0c9c5460403"><td class="memItemLeft" align="right" valign="top"><a id="aa3e8a00098e44b98817fd0c9c5460403" name="aa3e8a00098e44b98817fd0c9c5460403"></a>
-<a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transform</b></td></tr>
+<tr class="memitem:aa3e8a00098e44b98817fd0c9c5460403" id="r_aa3e8a00098e44b98817fd0c9c5460403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#aa3e8a00098e44b98817fd0c9c5460403">transform</a></td></tr>
 <tr class="separator:aa3e8a00098e44b98817fd0c9c5460403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8abf991d3cdf77c70ea316fc5b3405c8" id="r_a8abf991d3cdf77c70ea316fc5b3405c8"><td class="memItemLeft" align="right" valign="top"><a id="a8abf991d3cdf77c70ea316fc5b3405c8" name="a8abf991d3cdf77c70ea316fc5b3405c8"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>asset</b></td></tr>
+<tr class="memitem:a8abf991d3cdf77c70ea316fc5b3405c8" id="r_a8abf991d3cdf77c70ea316fc5b3405c8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#a8abf991d3cdf77c70ea316fc5b3405c8">asset</a></td></tr>
+<tr class="memdesc:a8abf991d3cdf77c70ea316fc5b3405c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-erased pointer to the GPU asset.  <br /></td></tr>
 <tr class="separator:a8abf991d3cdf77c70ea316fc5b3405c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f49d51279b781a42f463ff12e1ad6c3" id="r_a4f49d51279b781a42f463ff12e1ad6c3"><td class="memItemLeft" align="right" valign="top"><a id="a4f49d51279b781a42f463ff12e1ad6c3" name="a4f49d51279b781a42f463ff12e1ad6c3"></a>
-<a class="el" href="structVec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tint</b></td></tr>
+<tr class="memitem:a4f49d51279b781a42f463ff12e1ad6c3" id="r_a4f49d51279b781a42f463ff12e1ad6c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#a4f49d51279b781a42f463ff12e1ad6c3">tint</a></td></tr>
 <tr class="separator:a4f49d51279b781a42f463ff12e1ad6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e58d777293957df1f2d0c4b5ab9772e" id="r_a4e58d777293957df1f2d0c4b5ab9772e"><td class="memItemLeft" align="right" valign="top"><a id="a4e58d777293957df1f2d0c4b5ab9772e" name="a4e58d777293957df1f2d0c4b5ab9772e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b></td></tr>
+<tr class="memitem:a4e58d777293957df1f2d0c4b5ab9772e" id="r_a4e58d777293957df1f2d0c4b5ab9772e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#a4e58d777293957df1f2d0c4b5ab9772e">layer</a></td></tr>
 <tr class="separator:a4e58d777293957df1f2d0c4b5ab9772e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9067146f20d3890bcf7747d815b42865" id="r_a9067146f20d3890bcf7747d815b42865"><td class="memItemLeft" align="right" valign="top"><a id="a9067146f20d3890bcf7747d815b42865" name="a9067146f20d3890bcf7747d815b42865"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>flip_x</b></td></tr>
+<tr class="memitem:a9067146f20d3890bcf7747d815b42865" id="r_a9067146f20d3890bcf7747d815b42865"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#a9067146f20d3890bcf7747d815b42865">flip_x</a></td></tr>
 <tr class="separator:a9067146f20d3890bcf7747d815b42865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76926445d2d0238d26695a88de2c6f2" id="r_ac76926445d2d0238d26695a88de2c6f2"><td class="memItemLeft" align="right" valign="top"><a id="ac76926445d2d0238d26695a88de2c6f2" name="ac76926445d2d0238d26695a88de2c6f2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>flip_y</b></td></tr>
+<tr class="memitem:ac76926445d2d0238d26695a88de2c6f2" id="r_ac76926445d2d0238d26695a88de2c6f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#ac76926445d2d0238d26695a88de2c6f2">flip_y</a></td></tr>
 <tr class="separator:ac76926445d2d0238d26695a88de2c6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2945c9d0116a002f75072c3a5f065f" id="r_aea2945c9d0116a002f75072c3a5f065f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structMaterial.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderPacket.html#aea2945c9d0116a002f75072c3a5f065f">material</a></td></tr>
+<tr class="separator:aea2945c9d0116a002f75072c3a5f065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A unified, high-level draw command sent to the rendering backend. </p>
+<ul>
+<li>Engine systems (like SpriteRenderer or <a class="el" href="structMeshRenderer.html">MeshRenderer</a> components) build a</li>
+<li>list of these packets every frame. They are type-erased to allow the</li>
+<li>backend to sort and batch them efficiently before hitting the GPU. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8abf991d3cdf77c70ea316fc5b3405c8" name="a8abf991d3cdf77c70ea316fc5b3405c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abf991d3cdf77c70ea316fc5b3405c8">&#9670;&#160;</a></span>asset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* RenderPacket::asset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type-erased pointer to the GPU asset. </p>
+<p>** If type == RENDER_ITEM_SPRITE: Casts to <code>TextureResource*</code>.</p><ul>
+<li>If type == RENDER_ITEM_MESH: Casts to <code>MeshResource*</code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="a9067146f20d3890bcf7747d815b42865" name="a9067146f20d3890bcf7747d815b42865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9067146f20d3890bcf7747d815b42865">&#9670;&#160;</a></span>flip_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RenderPacket::flip_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>2D Only: Horizontal reflection flag. </p>
+
+</div>
+</div>
+<a id="ac76926445d2d0238d26695a88de2c6f2" name="ac76926445d2d0238d26695a88de2c6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76926445d2d0238d26695a88de2c6f2">&#9670;&#160;</a></span>flip_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RenderPacket::flip_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>2D Only: Vertical reflection flag. </p>
+
+</div>
+</div>
+<a id="a4e58d777293957df1f2d0c4b5ab9772e" name="a4e58d777293957df1f2d0c4b5ab9772e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e58d777293957df1f2d0c4b5ab9772e">&#9670;&#160;</a></span>layer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RenderPacket::layer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Z-sorting depth (primarily used for 2D <a class="el" href="structSprite.html" title="Data structure for rendering a 2D texture.">Sprite</a> overlap). </p>
+
+</div>
+</div>
+<a id="aea2945c9d0116a002f75072c3a5f065f" name="aea2945c9d0116a002f75072c3a5f065f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2945c9d0116a002f75072c3a5f065f">&#9670;&#160;</a></span>material</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structMaterial.html">Material</a>* RenderPacket::material</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used for PBR/Standard shading to bind textures and material uniforms. </p>
+
+</div>
+</div>
+<a id="a4f49d51279b781a42f463ff12e1ad6c3" name="a4f49d51279b781a42f463ff12e1ad6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f49d51279b781a42f463ff12e1ad6c3">&#9670;&#160;</a></span>tint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVec4.html">Vec4</a> RenderPacket::tint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RGBA modulation color applied in the shader. </p>
+
+</div>
+</div>
+<a id="aa3e8a00098e44b98817fd0c9c5460403" name="aa3e8a00098e44b98817fd0c9c5460403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e8a00098e44b98817fd0c9c5460403">&#9670;&#160;</a></span>transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMat4.html">Mat4</a> RenderPacket::transform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The world-space transform matrix (Model Matrix). </p>
+
+</div>
+</div>
+<a id="adb0f81f066a96c5804d28dbf6c5031ea" name="adb0f81f066a96c5804d28dbf6c5031ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0f81f066a96c5804d28dbf6c5031ea">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderItemType RenderPacket::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type discriminator triggering the correct Sokol pipeline. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Rendering/<a class="el" href="Renderer_8h_source.html">Renderer.h</a></li>
 </ul>

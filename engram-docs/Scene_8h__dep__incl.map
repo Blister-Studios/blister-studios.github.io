@@ -1,0 +1,77 @@
+<map id="engram/Hierarchy/Scene.h" name="engram/Hierarchy/Scene.h">
+<area shape="rect" id="Node000001" title="The primary memory arena and management system for the game world." alt="" coords="1723,5,1917,31"/>
+<area shape="rect" id="Node000002" href="$EditorState_8h_source.html" title=" " alt="" coords="1690,255,1838,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1817,45,1769,255,1764,254,1812,44"/>
+<area shape="rect" id="Node000004" href="$editor_2Main_8c.html" title="Main editor execution loop configuration." alt="" coords="1549,335,1656,361"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="1835,42,1856,90,1873,153,1877,187,1876,220,1868,252,1851,282,1832,302,1812,315,1792,321,1771,323,1724,323,1698,325,1670,331,1644,338,1642,333,1669,325,1698,320,1724,318,1770,318,1791,316,1810,310,1829,298,1847,278,1863,250,1871,219,1872,187,1868,154,1851,92,1830,44"/>
+<area shape="rect" id="Node000005" href="$Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="461,174,699,199"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1709,26,1411,43,1232,59,1052,81,929,103,807,130,622,176,621,171,806,124,928,98,1052,76,1231,53,1411,37,1709,20"/>
+<area shape="rect" id="Node000006" href="$Audio_8c.html" title="Dual&#45;backend audio logic supporting FMOD Studio Live&#45;Update and legacy Sokol fallback pipelines." alt="" coords="278,174,437,199"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1709,23,1542,28,1329,38,1091,55,852,81,722,103,595,129,401,176,399,171,594,124,721,98,852,76,1090,50,1328,32,1542,23,1709,18"/>
+<area shape="rect" id="Node000007" href="$Audio_8h.html" title="Global audio subsystem interface managing listener metrics and emitter mixing." alt="" coords="278,86,437,111"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="1709,26,1219,47,582,81,437,93,437,87,581,76,1219,41,1708,21"/>
+<area shape="rect" id="Node000008" href="$Engram_8h.html" title="The central entry point and context management for the Engram Engine." alt="" coords="1065,86,1237,111"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="1710,35,1237,90,1237,85,1709,30"/>
+<area shape="rect" id="Node000025" href="$Hierarchy_8h.html" title="Umbrella header for the scene graph and entity management." alt="" coords="1908,86,2124,111"/>
+<area shape="poly" id="edge42_Node000001_Node000025" title=" " alt="" coords="1862,33,1988,84,1986,88,1860,38"/>
+<area shape="rect" id="Node000026" href="$SceneLoader_8h.html" title="Logic for loading and saving full Scene hierarchies." alt="" coords="1914,255,2145,280"/>
+<area shape="poly" id="edge43_Node000001_Node000026" title=" " alt="" coords="1931,23,1994,30,2055,40,2105,56,2125,65,2138,77,2151,101,2151,127,2142,154,2126,179,2085,224,2047,257,2043,253,2081,221,2122,176,2137,151,2146,127,2145,103,2134,80,2122,70,2103,61,2053,46,1993,35,1931,28"/>
+<area shape="rect" id="Node000027" href="$ScriptingInternal_8h_source.html" title=" " alt="" coords="2199,79,2393,119"/>
+<area shape="poly" id="edge46_Node000001_Node000027" title=" " alt="" coords="1903,30,2199,79,2198,84,1902,35"/>
+<area shape="rect" id="Node000003" href="$EditorConsole_8c.html" title="Implementation of the Editor Console UI element." alt="" coords="1681,335,1847,361"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1767,294,1767,335,1761,335,1761,294"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1730,288,1627,338,1625,333,1727,283"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="324,120,296,139,272,161,260,184,261,194,267,205,282,214,309,222,389,233,494,239,612,242,840,244,926,246,977,252,1003,265,1028,278,1100,295,1162,306,1269,311,1378,312,1442,316,1516,325,1555,333,1554,338,1516,331,1441,321,1378,317,1269,317,1161,311,1099,301,1026,282,1000,270,975,257,926,252,840,249,612,247,494,244,388,238,308,227,280,219,263,209,256,196,255,183,268,158,293,135,321,116"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="360,125,360,173,355,173,355,125"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="1251,102,1390,111,1544,124,1675,142,1720,152,1746,165,1761,186,1768,211,1768,254,1763,254,1762,212,1756,188,1742,169,1718,158,1674,147,1544,129,1390,116,1251,108"/>
+<area shape="poly" id="edge15_Node000008_Node000004" title=" " alt="" coords="1251,103,1333,111,1418,123,1492,140,1521,152,1542,165,1560,184,1574,206,1593,255,1602,301,1605,335,1600,335,1597,302,1588,256,1569,209,1556,187,1538,169,1518,156,1490,146,1417,128,1332,116,1251,108"/>
+<area shape="poly" id="edge20_Node000008_Node000005" title=" " alt="" coords="1061,116,656,177,656,171,1061,111"/>
+<area shape="poly" id="edge21_Node000008_Node000006" title=" " alt="" coords="1051,109,778,130,613,148,448,169,408,177,407,171,448,164,613,142,778,125,1050,103"/>
+<area shape="rect" id="Node000009" href="$EditorUI_8h_source.html" title=" " alt="" coords="1604,174,1732,199"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="1250,111,1408,134,1586,164,1621,171,1619,177,1585,169,1407,139,1249,116"/>
+<area shape="rect" id="Node000010" href="$MeshRenderer_8h_source.html" title=" " alt="" coords="184,335,451,361"/>
+<area shape="poly" id="edge16_Node000008_Node000010" title=" " alt="" coords="1107,119,1054,141,997,169,970,190,958,200,940,209,871,230,811,238,756,239,705,236,653,232,599,232,539,239,470,257,429,275,391,297,333,337,330,333,388,292,427,270,468,252,538,234,599,227,653,227,705,230,756,234,810,233,870,224,938,204,955,196,966,186,995,164,1052,136,1105,114"/>
+<area shape="rect" id="Node000012" href="$PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="5,416,237,441"/>
+<area shape="poly" id="edge23_Node000008_Node000012" title=" " alt="" coords="1052,114,890,138,816,153,764,169,749,178,739,189,728,199,712,209,667,225,625,236,544,245,469,242,398,236,331,234,298,237,266,244,234,256,202,273,170,298,138,330,126,350,121,374,122,416,117,416,116,373,121,348,134,326,167,294,199,269,232,251,265,239,298,232,331,229,399,230,469,236,544,239,624,231,666,220,710,204,725,195,735,185,745,174,762,164,815,148,889,133,1051,109"/>
+<area shape="rect" id="Node000013" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="745,416,975,441"/>
+<area shape="poly" id="edge25_Node000008_Node000013" title=" " alt="" coords="1120,121,1042,169,1016,191,1005,200,988,209,941,219,881,222,739,218,667,218,603,222,550,234,529,244,514,257,500,272,489,295,488,309,491,325,499,344,515,366,530,378,550,388,607,404,676,414,745,420,745,426,675,419,606,409,549,393,527,382,511,370,495,347,486,327,482,309,484,294,496,270,510,253,527,239,548,229,602,217,667,212,739,213,881,217,940,214,986,204,1002,196,1013,187,1038,165,1117,116"/>
+<area shape="rect" id="Node000014" href="$Core_8h.html" title="Umbrella header for central engine systems." alt="" coords="775,174,927,199"/>
+<area shape="poly" id="edge22_Node000008_Node000014" title=" " alt="" coords="1098,118,892,176,890,171,1096,113"/>
+<area shape="rect" id="Node000015" href="$ResourceManager_8c.html" title="Implementation of the resource loading, caching, and unloading logic." alt="" coords="1333,167,1529,207"/>
+<area shape="poly" id="edge24_Node000008_Node000015" title=" " alt="" coords="1202,113,1370,164,1368,169,1201,118"/>
+<area shape="rect" id="Node000016" href="$Texture_8h.html" title="Resource container for GPU&#45;resident textures." alt="" coords="1053,174,1249,199"/>
+<area shape="poly" id="edge26_Node000008_Node000016" title=" " alt="" coords="1153,125,1153,173,1148,173,1148,125"/>
+<area shape="rect" id="Node000022" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting both 2D Sprites and 3D Meshes." alt="" coords="1299,328,1504,368"/>
+<area shape="poly" id="edge41_Node000008_Node000022" title=" " alt="" coords="1183,116,1261,164,1291,186,1321,204,1351,214,1380,217,1432,215,1457,215,1481,219,1504,231,1526,253,1533,265,1533,278,1520,299,1494,316,1463,330,1460,325,1491,312,1516,295,1528,276,1527,267,1522,256,1501,235,1479,224,1456,220,1432,220,1380,222,1350,219,1319,209,1288,191,1259,169,1181,121"/>
+<area shape="poly" id="edge13_Node000009_Node000002" title=" " alt="" coords="1694,206,1751,252,1748,257,1691,210"/>
+<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="1661,213,1610,336,1605,334,1656,211"/>
+<area shape="rect" id="Node000011" href="$MeshRenderer_8c.html" title="Implementation of the MeshRenderer component handling sub&#45;meshes and material overrides." alt="" coords="261,416,528,441"/>
+<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="340,369,385,414,381,418,336,372"/>
+<area shape="poly" id="edge18_Node000010_Node000012" title=" " alt="" coords="277,368,151,418,149,414,275,363"/>
+<area shape="poly" id="edge19_Node000010_Node000013" title=" " alt="" coords="410,360,781,413,781,419,410,365"/>
+<area shape="rect" id="Node000017" href="$Sprite_8h.html" title="Component for 2D visual representation of GameObjects." alt="" coords="525,255,737,280"/>
+<area shape="poly" id="edge27_Node000016_Node000017" title=" " alt="" coords="1067,204,1034,209,710,257,709,252,1033,204,1066,199"/>
+<area shape="rect" id="Node000020" href="$Material_8h.html" title="Manages shader parameters, textures, and properties for rendering." alt="" coords="761,255,964,280"/>
+<area shape="poly" id="edge33_Node000016_Node000020" title=" " alt="" coords="1096,205,905,257,904,252,1095,200"/>
+<area shape="poly" id="edge40_Node000016_Node000022" title=" " alt="" coords="1182,205,1373,326,1370,330,1179,209"/>
+<area shape="rect" id="Node000023" href="$Platform_8h.html" title="Umbrella header for platform&#45;specific abstractions and asset management." alt="" coords="1309,255,1513,280"/>
+<area shape="poly" id="edge38_Node000016_Node000023" title=" " alt="" coords="1202,201,1374,252,1372,257,1201,206"/>
+<area shape="rect" id="Node000024" href="$Texture_8c.html" title="Implementation of the image loading pipeline using stb_image and Sokol GFX." alt="" coords="1039,255,1233,280"/>
+<area shape="poly" id="edge39_Node000016_Node000024" title=" " alt="" coords="1149,213,1141,255,1136,254,1143,212"/>
+<area shape="poly" id="edge28_Node000017_Node000004" title=" " alt="" coords="750,277,967,289,1136,294,1304,302,1516,325,1557,333,1556,338,1516,331,1303,307,1136,299,967,295,750,283"/>
+<area shape="poly" id="edge31_Node000017_Node000012" title=" " alt="" coords="511,274,416,280,318,290,231,307,198,318,174,330,154,349,141,373,126,417,121,415,136,371,150,346,170,326,196,313,230,302,317,285,416,275,511,269"/>
+<area shape="poly" id="edge32_Node000017_Node000013" title=" " alt="" coords="742,279,925,303,996,316,1030,326,1039,343,1038,359,1028,373,1011,385,967,404,918,418,917,413,965,399,1009,380,1024,369,1033,357,1034,344,1026,330,995,321,924,309,741,284"/>
+<area shape="rect" id="Node000018" href="$Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="525,335,781,361"/>
+<area shape="poly" id="edge29_Node000017_Node000018" title=" " alt="" coords="640,293,653,334,647,336,635,294"/>
+<area shape="rect" id="Node000019" href="$Sprite_8c.html" title="Implementation of the Sprite component lifecycle and serialization." alt="" coords="805,335,1016,361"/>
+<area shape="poly" id="edge30_Node000017_Node000019" title=" " alt="" coords="685,281,871,333,869,338,684,286"/>
+<area shape="poly" id="edge34_Node000020_Node000004" title=" " alt="" coords="978,277,983,277,1250,296,1367,306,1516,325,1555,333,1554,338,1516,331,1366,311,1250,301,982,283,977,282"/>
+<area shape="poly" id="edge35_Node000020_Node000010" title=" " alt="" coords="770,285,397,338,396,333,769,279"/>
+<area shape="rect" id="Node000021" href="$Mesh_8c.html" title="Robust implementation of glTF loading logic using reference counting, sub&#45;meshes, and static transfor..." alt="" coords="1091,335,1274,361"/>
+<area shape="poly" id="edge36_Node000020_Node000021" title=" " alt="" coords="923,281,1137,333,1135,338,922,286"/>
+<area shape="poly" id="edge37_Node000020_Node000022" title=" " alt="" coords="961,279,1286,325,1299,327,1298,333,1285,331,960,285"/>
+<area shape="poly" id="edge44_Node000026_Node000004" title=" " alt="" coords="1931,285,1806,304,1670,331,1641,338,1640,333,1669,325,1805,299,1930,279"/>
+<area shape="poly" id="edge45_Node000026_Node000013" title=" " alt="" coords="2005,291,1942,333,1902,354,1859,371,1784,387,1684,400,1441,418,1186,427,975,430,975,425,1186,422,1441,413,1684,395,1783,382,1858,365,1899,349,1939,329,2003,286"/>
+<area shape="rect" id="Node000028" href="$BindingsAudio_8c.html" title="Lua script bindings for the AudioSource component." alt="" coords="2199,167,2393,207"/>
+<area shape="poly" id="edge47_Node000027_Node000028" title=" " alt="" coords="2299,133,2299,166,2293,166,2293,133"/>
+</map>

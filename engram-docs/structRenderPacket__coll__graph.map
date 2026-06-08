@@ -1,7 +1,12 @@
 <map id="RenderPacket" name="RenderPacket">
-<area shape="rect" id="Node000001" title=" " alt="" coords="27,93,137,119"/>
-<area shape="rect" id="Node000002" href="$structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,44,36,68,46,81,60,91,57,95,43,85,32,70,26,45"/>
-<area shape="rect" id="Node000003" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="106,5,159,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,44,106,71,91,94,87,92,101,68,117,41"/>
+<area shape="rect" id="Node000001" title="A unified, high&#45;level draw command sent to the rendering backend." alt="" coords="67,240,177,265"/>
+<area shape="rect" id="Node000002" href="$structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="5,152,60,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,191,32,203,36,215,50,228,68,238,65,242,47,232,32,217,26,205,25,191"/>
+<area shape="rect" id="Node000003" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="113,5,166,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,45,126,240,120,240,135,44"/>
+<area shape="rect" id="Node000004" href="$structMaterial.html" title="Material state for PBR and traditional rendering." alt="" coords="173,152,249,177"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="142,44,148,85,154,107,164,126,176,139,190,150,187,154,172,143,160,130,149,109,142,86,137,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,189,136,241,133,238,188,185"/>
+<area shape="rect" id="Node000005" href="$structTextureResource.html" title="Represents a texture asset loaded into GPU memory." alt="" coords="206,5,337,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="270,45,261,86,244,129,226,154,221,150,240,127,256,84,265,44"/>
 </map>

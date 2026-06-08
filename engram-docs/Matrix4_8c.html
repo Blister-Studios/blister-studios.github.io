@@ -120,16 +120,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3b56939ad6087dbb022825f83d8a1ad" id="r_ac3b56939ad6087dbb022825f83d8a1ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrix4_8c.html#ac3b56939ad6087dbb022825f83d8a1ad">mat4_ortho</a> (float left, float right, float bottom, float top, float near, float far)</td></tr>
 <tr class="memdesc:ac3b56939ad6087dbb022825f83d8a1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the orthographical projection matrix.  <br /></td></tr>
 <tr class="separator:ac3b56939ad6087dbb022825f83d8a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e47484dcc2b9bff8f40fd735cb0369" id="r_a25e47484dcc2b9bff8f40fd735cb0369"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrix4_8c.html#a25e47484dcc2b9bff8f40fd735cb0369">mat4_perspective</a> (float fov_radians, float aspect_ratio, float near, float far)</td></tr>
+<tr class="memdesc:a25e47484dcc2b9bff8f40fd735cb0369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3D perspective projection matrix. Matches standard column-major clip layouts (OpenGL/Sokol native convention).  <br /></td></tr>
+<tr class="separator:a25e47484dcc2b9bff8f40fd735cb0369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbefa3a7db2762d94795abe4082bcada" id="r_adbefa3a7db2762d94795abe4082bcada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrix4_8c.html#adbefa3a7db2762d94795abe4082bcada">mat4_inverse</a> (<a class="el" href="structMat4.html">Mat4</a> m)</td></tr>
 <tr class="memdesc:adbefa3a7db2762d94795abe4082bcada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of a matrix.  <br /></td></tr>
 <tr class="separator:adbefa3a7db2762d94795abe4082bcada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf97667ca16884fd5418979a3fbb075b" id="r_abf97667ca16884fd5418979a3fbb075b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrix4_8c.html#abf97667ca16884fd5418979a3fbb075b">mat4_decompose</a> (<a class="el" href="structMat4.html">Mat4</a> m, <a class="el" href="structVec3.html">Vec3</a> *out_pos, <a class="el" href="structQuat.html">Quat</a> *out_rot, <a class="el" href="structVec3.html">Vec3</a> *out_scale)</td></tr>
 <tr class="memdesc:abf97667ca16884fd5418979a3fbb075b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decomposes a matrix.  <br /></td></tr>
 <tr class="separator:abf97667ca16884fd5418979a3fbb075b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7fb2184aacd5f6448ad37587701a8a" id="r_a0d7fb2184aacd5f6448ad37587701a8a"><td class="memItemLeft" align="right" valign="top"><a id="a0d7fb2184aacd5f6448ad37587701a8a" name="a0d7fb2184aacd5f6448ad37587701a8a"></a>
-<a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mat4_inverse_trs</b> (<a class="el" href="structMat4.html">Mat4</a> m)</td></tr>
-<tr class="memdesc:a0d7fb2184aacd5f6448ad37587701a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the translation, rotation and scale matrix. <br /></td></tr>
+<tr class="memitem:a0d7fb2184aacd5f6448ad37587701a8a" id="r_a0d7fb2184aacd5f6448ad37587701a8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrix4_8c.html#a0d7fb2184aacd5f6448ad37587701a8a">mat4_inverse_trs</a> (<a class="el" href="structMat4.html">Mat4</a> m)</td></tr>
+<tr class="memdesc:a0d7fb2184aacd5f6448ad37587701a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the translation, rotation and scale matrix.  <br /></td></tr>
 <tr class="separator:a0d7fb2184aacd5f6448ad37587701a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151cb611823bd564267ead491e91833d" id="r_a151cb611823bd564267ead491e91833d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrix4_8c.html#a151cb611823bd564267ead491e91833d">mat4_determinant</a> (<a class="el" href="structMat4.html">Mat4</a> m)</td></tr>
+<tr class="memdesc:a151cb611823bd564267ead491e91833d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of a 4x4 matrix.  <br /></td></tr>
+<tr class="separator:a151cb611823bd564267ead491e91833d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fixed implementation of 4x4 matrix mathematical operations. </p>
@@ -173,7 +178,35 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Decomposes a matrix. </p>
+<p>Decomposes a matrix into components.</p>
 <p>Decomposes a matrix into translation, rotation, and scale. Expected to be implemented in your Math library. </p>
+
+</div>
+</div>
+<a id="a151cb611823bd564267ead491e91833d" name="a151cb611823bd564267ead491e91833d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151cb611823bd564267ead491e91833d">&#9670;&#160;</a></span>mat4_determinant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mat4_determinant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMat4.html">Mat4</a>&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the determinant of a 4x4 matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The matrix to calculate the determinant of. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated determinant. </dd></dl>
 
 </div>
 </div>
@@ -215,7 +248,29 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the inverse of a matrix. </p>
+<p>Inverts a 4x4 matrix using general matrix inversion.</p>
 <p>Inverts a 4x4 matrix. Expected to be implemented in your Math library. </p>
+
+</div>
+</div>
+<a id="a0d7fb2184aacd5f6448ad37587701a8a" name="a0d7fb2184aacd5f6448ad37587701a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7fb2184aacd5f6448ad37587701a8a">&#9670;&#160;</a></span>mat4_inverse_trs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMat4.html">Mat4</a> mat4_inverse_trs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMat4.html">Mat4</a>&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the inverse of the translation, rotation and scale matrix. </p>
+<p>Special fast-path inversion for Translation-Rotation-Scale matrices. </p>
 
 </div>
 </div>
@@ -302,6 +357,49 @@ Functions</h2></td></tr>
 
 <p>Creates the orthographical projection matrix. </p>
 <p>Creates an orthographic projection matrix. </p>
+
+</div>
+</div>
+<a id="a25e47484dcc2b9bff8f40fd735cb0369" name="a25e47484dcc2b9bff8f40fd735cb0369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e47484dcc2b9bff8f40fd735cb0369">&#9670;&#160;</a></span>mat4_perspective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMat4.html">Mat4</a> mat4_perspective </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fov_radians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aspect_ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>far</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a 3D perspective projection matrix. Matches standard column-major clip layouts (OpenGL/Sokol native convention). </p>
+<p>Creates a 3D perspective projection matrix. </p>
 
 </div>
 </div>

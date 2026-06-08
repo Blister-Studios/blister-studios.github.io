@@ -1,5 +1,5 @@
 <map id="engram/Platform/Sokol.c" name="engram/Platform/Sokol.c">
-<area shape="rect" id="Node000001" title="Core Sokol implementation hub." alt="" coords="379,5,561,31"/>
+<area shape="rect" id="Node000001" title="Core Sokol implementation hub and platform&#45;specific backend selection." alt="" coords="379,5,561,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,84,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="390,33,98,81,97,76,390,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="109,79,207,104"/>

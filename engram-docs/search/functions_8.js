@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['prefab_5fload_0',['prefab_load',['../PrefabLoader_8h.html#ac3ca880ca3b7ef181c95bd492afb510c',1,'PrefabLoader.c']]]
+  ['main_0',['main',['../editor_2Main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'Main.c']]],
+  ['mat4_5fdecompose_1',['mat4_decompose',['../Transform_8h.html#abf97667ca16884fd5418979a3fbb075b',1,'mat4_decompose(Mat4 m, Vec3 *out_pos, Quat *out_rot, Vec3 *out_scale):&#160;Matrix4.c'],['../Matrix4_8h.html#abf97667ca16884fd5418979a3fbb075b',1,'mat4_decompose(Mat4 m, Vec3 *out_pos, Quat *out_rot, Vec3 *out_scale):&#160;Matrix4.c'],['../Matrix4_8c.html#abf97667ca16884fd5418979a3fbb075b',1,'mat4_decompose(Mat4 m, Vec3 *out_pos, Quat *out_rot, Vec3 *out_scale):&#160;Matrix4.c']]],
+  ['mat4_5fdeterminant_2',['mat4_determinant',['../Matrix4_8c.html#a151cb611823bd564267ead491e91833d',1,'mat4_determinant(Mat4 m):&#160;Matrix4.c'],['../Matrix4_8h.html#a151cb611823bd564267ead491e91833d',1,'mat4_determinant(Mat4 m):&#160;Matrix4.c']]],
+  ['mat4_5fidentity_3',['mat4_identity',['../Matrix4_8c.html#a039e2328a0403e089b559c0e238d3cc4',1,'mat4_identity(void):&#160;Matrix4.c'],['../Matrix4_8h.html#a039e2328a0403e089b559c0e238d3cc4',1,'mat4_identity(void):&#160;Matrix4.c']]],
+  ['mat4_5finverse_4',['mat4_inverse',['../Transform_8h.html#adbefa3a7db2762d94795abe4082bcada',1,'mat4_inverse(Mat4 m):&#160;Matrix4.c'],['../Matrix4_8c.html#adbefa3a7db2762d94795abe4082bcada',1,'mat4_inverse(Mat4 m):&#160;Matrix4.c'],['../Matrix4_8h.html#adbefa3a7db2762d94795abe4082bcada',1,'mat4_inverse(Mat4 m):&#160;Matrix4.c']]],
+  ['mat4_5finverse_5ftrs_5',['mat4_inverse_trs',['../Matrix4_8c.html#a0d7fb2184aacd5f6448ad37587701a8a',1,'mat4_inverse_trs(Mat4 m):&#160;Matrix4.c'],['../Matrix4_8h.html#a0d7fb2184aacd5f6448ad37587701a8a',1,'mat4_inverse_trs(Mat4 m):&#160;Matrix4.c']]],
+  ['mat4_5fmul_5fvec4_6',['mat4_mul_vec4',['../Matrix4_8h.html#a1dba97bce4d8be862daada89c862829c',1,'Matrix4.h']]],
+  ['mat4_5fmultiply_7',['mat4_multiply',['../Matrix4_8c.html#ae151266f3110afdfba22d91a8df3c6e1',1,'mat4_multiply(Mat4 a, Mat4 b):&#160;Matrix4.c'],['../Matrix4_8h.html#ae151266f3110afdfba22d91a8df3c6e1',1,'mat4_multiply(Mat4 a, Mat4 b):&#160;Matrix4.c']]],
+  ['mat4_5fortho_8',['mat4_ortho',['../Matrix4_8c.html#ac3b56939ad6087dbb022825f83d8a1ad',1,'mat4_ortho(float left, float right, float bottom, float top, float near, float far):&#160;Matrix4.c'],['../Matrix4_8h.html#ac3b56939ad6087dbb022825f83d8a1ad',1,'mat4_ortho(float left, float right, float bottom, float top, float near, float far):&#160;Matrix4.c']]],
+  ['mat4_5fperspective_9',['mat4_perspective',['../Matrix4_8c.html#a25e47484dcc2b9bff8f40fd735cb0369',1,'mat4_perspective(float fov_radians, float aspect_ratio, float near, float far):&#160;Matrix4.c'],['../Matrix4_8h.html#a25e47484dcc2b9bff8f40fd735cb0369',1,'mat4_perspective(float fov_radians, float aspect_ratio, float near, float far):&#160;Matrix4.c']]],
+  ['mat4_5ftransformation_10',['mat4_transformation',['../Matrix4_8c.html#a4e1935f8938356d997cabe5175986fa5',1,'mat4_transformation(Vec3 pos, Quat q, Vec3 s):&#160;Matrix4.c'],['../Matrix4_8h.html#a4e1935f8938356d997cabe5175986fa5',1,'mat4_transformation(Vec3 pos, Quat q, Vec3 s):&#160;Matrix4.c']]],
+  ['material_5fbind_11',['material_bind',['../Material_8h.html#a9558a2ea9ec6ae92366c16c82bdaec68',1,'Material.c']]],
+  ['material_5fcreate_12',['material_create',['../Material_8h.html#af79d7d806fad39ad3db6f64c3fc5a4f8',1,'Material.c']]],
+  ['material_5fdestroy_13',['material_destroy',['../Material_8h.html#a27a41a1fe75690a9f7f7a3d3c783cfa9',1,'Material.c']]],
+  ['mesh_5floader_5fload_14',['mesh_loader_load',['../Mesh_8c.html#af84fdc03c100587281a92bdcbf3a6a85',1,'mesh_loader_load(EngramContext *ctx, const char *physical_path, const char *vfs_path, size_t *out_size):&#160;Mesh.c'],['../Mesh_8h.html#af84fdc03c100587281a92bdcbf3a6a85',1,'mesh_loader_load(EngramContext *ctx, const char *physical_path, const char *vfs_path, size_t *out_size):&#160;Mesh.c']]],
+  ['mesh_5floader_5funload_15',['mesh_loader_unload',['../Mesh_8c.html#a974f89b5988ec2ac5a5a20a5aee4729c',1,'mesh_loader_unload(void *raw_resource):&#160;Mesh.c'],['../Mesh_8h.html#a974f89b5988ec2ac5a5a20a5aee4729c',1,'mesh_loader_unload(void *raw_resource):&#160;Mesh.c']]],
+  ['mesh_5frenderer_5fclear_5fmaterials_16',['mesh_renderer_clear_materials',['../MeshRenderer_8c.html#a73b22d96d9c8969257fbf9844a1da0f9',1,'MeshRenderer.c']]],
+  ['mesh_5frenderer_5fcreate_17',['mesh_renderer_create',['../MeshRenderer_8c.html#aa7e892b010e9dc55519e89674805b163',1,'MeshRenderer.c']]],
+  ['mesh_5frenderer_5fset_5fmaterial_18',['mesh_renderer_set_material',['../MeshRenderer_8c.html#ab29abf4dcfe7f9dbacf35e928ce456db',1,'MeshRenderer.c']]]
 ];

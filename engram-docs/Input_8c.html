@@ -127,39 +127,55 @@ Functions</h2></td></tr>
 <tr class="memitem:a1554b7f1a4ca4852b1eb8ba8b3a1e586" id="r_a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a1554b7f1a4ca4852b1eb8ba8b3a1e586">input_destroy</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
 <tr class="memdesc:a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an input system.  <br /></td></tr>
 <tr class="separator:a1554b7f1a4ca4852b1eb8ba8b3a1e586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a349eafbaa3983ea74bb668651f6ec" id="r_af6a349eafbaa3983ea74bb668651f6ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#af6a349eafbaa3983ea74bb668651f6ec">input_purge_all</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:af6a349eafbaa3983ea74bb668651f6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purges all events in an input system.  <br /></td></tr>
+<tr class="memitem:af6a349eafbaa3983ea74bb668651f6ec" id="r_af6a349eafbaa3983ea74bb668651f6ec"><td class="memItemLeft" align="right" valign="top"><a id="af6a349eafbaa3983ea74bb668651f6ec" name="af6a349eafbaa3983ea74bb668651f6ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>input_purge_all</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
+<tr class="memdesc:af6a349eafbaa3983ea74bb668651f6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces a total reset of all input states. <br /></td></tr>
 <tr class="separator:af6a349eafbaa3983ea74bb668651f6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26cd6b4757d938c63c4f42c6ffb92f86" id="r_a26cd6b4757d938c63c4f42c6ffb92f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a26cd6b4757d938c63c4f42c6ffb92f86">input_map_action</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id, int sapp_keycode)</td></tr>
-<tr class="memdesc:a26cd6b4757d938c63c4f42c6ffb92f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps an action in an input system.  <br /></td></tr>
+<tr class="memitem:a26cd6b4757d938c63c4f42c6ffb92f86" id="r_a26cd6b4757d938c63c4f42c6ffb92f86"><td class="memItemLeft" align="right" valign="top"><a id="a26cd6b4757d938c63c4f42c6ffb92f86" name="a26cd6b4757d938c63c4f42c6ffb92f86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>input_map_action</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id, int sapp_keycode)</td></tr>
+<tr class="memdesc:a26cd6b4757d938c63c4f42c6ffb92f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a physical Sokol key or virtual mouse button to an abstract action ID. <br /></td></tr>
 <tr class="separator:a26cd6b4757d938c63c4f42c6ffb92f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95c81e7cda4b0eec08e7ca19a824bee" id="r_ac95c81e7cda4b0eec08e7ca19a824bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#ac95c81e7cda4b0eec08e7ca19a824bee">input_handle_sokol_event</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, const sapp_event *e)</td></tr>
-<tr class="memdesc:ac95c81e7cda4b0eec08e7ca19a824bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles input in a Sokol event.  <br /></td></tr>
+<tr class="memitem:ac95c81e7cda4b0eec08e7ca19a824bee" id="r_ac95c81e7cda4b0eec08e7ca19a824bee"><td class="memItemLeft" align="right" valign="top"><a id="ac95c81e7cda4b0eec08e7ca19a824bee" name="ac95c81e7cda4b0eec08e7ca19a824bee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>input_handle_sokol_event</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, const sapp_event *e)</td></tr>
+<tr class="memdesc:ac95c81e7cda4b0eec08e7ca19a824bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the raw buffers with hardware events (Keyboard and Mouse). <br /></td></tr>
 <tr class="separator:ac95c81e7cda4b0eec08e7ca19a824bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b687ae0f9c197a8fa8e8dd7816a165" id="r_ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#ad0b687ae0f9c197a8fa8e8dd7816a165">input_update</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an input system.  <br /></td></tr>
+<tr class="memdesc:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes raw key/mouse data into high-level Actions.  <br /></td></tr>
 <tr class="separator:ad0b687ae0f9c197a8fa8e8dd7816a165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b814fda7324b11826d9d5654f32a5d" id="r_a91b814fda7324b11826d9d5654f32a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a91b814fda7324b11826d9d5654f32a5d">input_post_update</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input)</td></tr>
-<tr class="memdesc:a91b814fda7324b11826d9d5654f32a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-updates an input system.  <br /></td></tr>
+<tr class="memdesc:a91b814fda7324b11826d9d5654f32a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs frame states (was_pressed updates). Call at the very end of your frame loop.  <br /></td></tr>
 <tr class="separator:a91b814fda7324b11826d9d5654f32a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55221b674f82821df41238f6fc5dead3" id="r_a55221b674f82821df41238f6fc5dead3"><td class="memItemLeft" align="right" valign="top"><a id="a55221b674f82821df41238f6fc5dead3" name="a55221b674f82821df41238f6fc5dead3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_action</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
-<tr class="memdesc:a55221b674f82821df41238f6fc5dead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action from an input system. <br /></td></tr>
+<tr class="memdesc:a55221b674f82821df41238f6fc5dead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether an action is performed this frame. <br /></td></tr>
 <tr class="separator:a55221b674f82821df41238f6fc5dead3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53c181cb6d1b03da4cbc88582172bc8" id="r_ad53c181cb6d1b03da4cbc88582172bc8"><td class="memItemLeft" align="right" valign="top"><a id="ad53c181cb6d1b03da4cbc88582172bc8" name="ad53c181cb6d1b03da4cbc88582172bc8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_action_down</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
-<tr class="memdesc:ad53c181cb6d1b03da4cbc88582172bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an action down from an input system. <br /></td></tr>
+<tr class="memdesc:ad53c181cb6d1b03da4cbc88582172bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the action is performed this frame and also was the last. <br /></td></tr>
 <tr class="separator:ad53c181cb6d1b03da4cbc88582172bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf0dd28abd96f9a44453e8031c59653" id="r_aadf0dd28abd96f9a44453e8031c59653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#aadf0dd28abd96f9a44453e8031c59653">input_get_key</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
-<tr class="memdesc:aadf0dd28abd96f9a44453e8031c59653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a key from an input system.  <br /></td></tr>
-<tr class="separator:aadf0dd28abd96f9a44453e8031c59653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af05e9a32452f692e8f464fd3f82c3203" id="r_af05e9a32452f692e8f464fd3f82c3203"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#af05e9a32452f692e8f464fd3f82c3203">input_get_key_down</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
-<tr class="memdesc:af05e9a32452f692e8f464fd3f82c3203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a key down from an input system.  <br /></td></tr>
-<tr class="separator:af05e9a32452f692e8f464fd3f82c3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343ca7ac6475f5c7fd0a18eddb2f6130" id="r_a343ca7ac6475f5c7fd0a18eddb2f6130"><td class="memItemLeft" align="right" valign="top"><a id="a343ca7ac6475f5c7fd0a18eddb2f6130" name="a343ca7ac6475f5c7fd0a18eddb2f6130"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_action_up</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
+<tr class="memdesc:a343ca7ac6475f5c7fd0a18eddb2f6130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the action is not performed this frame which was the last (whether it stopped being performed). <br /></td></tr>
+<tr class="separator:a343ca7ac6475f5c7fd0a18eddb2f6130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469cba1197821574a132c21256c27529" id="r_a469cba1197821574a132c21256c27529"><td class="memItemLeft" align="right" valign="top"><a id="a469cba1197821574a132c21256c27529" name="a469cba1197821574a132c21256c27529"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int action_id)</td></tr>
-<tr class="memdesc:a469cba1197821574a132c21256c27529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets analogue input from an input system. <br /></td></tr>
+<tr class="memdesc:a469cba1197821574a132c21256c27529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of an analog action this frame. <br /></td></tr>
 <tr class="separator:a469cba1197821574a132c21256c27529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf0dd28abd96f9a44453e8031c59653" id="r_aadf0dd28abd96f9a44453e8031c59653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#aadf0dd28abd96f9a44453e8031c59653">input_get_key</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
+<tr class="memdesc:aadf0dd28abd96f9a44453e8031c59653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether a key is pressed this frame.  <br /></td></tr>
+<tr class="separator:aadf0dd28abd96f9a44453e8031c59653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05e9a32452f692e8f464fd3f82c3203" id="r_af05e9a32452f692e8f464fd3f82c3203"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#af05e9a32452f692e8f464fd3f82c3203">input_get_key_down</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int sapp_keycode)</td></tr>
+<tr class="memdesc:af05e9a32452f692e8f464fd3f82c3203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether a key is pressed this frame and was also pressed the last.  <br /></td></tr>
+<tr class="separator:af05e9a32452f692e8f464fd3f82c3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3432f8ffaf20fdad298659456d7991ea" id="r_a3432f8ffaf20fdad298659456d7991ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a3432f8ffaf20fdad298659456d7991ea">input_get_mouse_position</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, float *out_x, float *out_y)</td></tr>
+<tr class="memdesc:a3432f8ffaf20fdad298659456d7991ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the mouse position this frame.  <br /></td></tr>
+<tr class="separator:a3432f8ffaf20fdad298659456d7991ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97e08f39ade71edfdb6c31011d8e911" id="r_af97e08f39ade71edfdb6c31011d8e911"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#af97e08f39ade71edfdb6c31011d8e911">input_get_mouse_button</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int button)</td></tr>
+<tr class="memdesc:af97e08f39ade71edfdb6c31011d8e911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether a mouse button is pressed this frame.  <br /></td></tr>
+<tr class="separator:af97e08f39ade71edfdb6c31011d8e911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9f16f6aced927c4df8017008780855" id="r_a6c9f16f6aced927c4df8017008780855"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Input_8c.html#a6c9f16f6aced927c4df8017008780855">input_get_mouse_button_down</a> (<a class="el" href="structInputSystem.html">InputSystem</a> *input, int button)</td></tr>
+<tr class="memdesc:a6c9f16f6aced927c4df8017008780855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether a mouse button is pressed this frame and was also pressed in the last one.  <br /></td></tr>
+<tr class="separator:a6c9f16f6aced927c4df8017008780855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the action-based input system. </p>
@@ -232,7 +248,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
-<p>Gets a key from an input system. </p>
+<p>Gets whether a key is pressed this frame. </p>
 <p>Returns true while the key is held. </p>
 
 </div>
@@ -263,19 +279,19 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
-<p>Gets a key down from an input system. </p>
+<p>Gets whether a key is pressed this frame and was also pressed the last. </p>
 <p>Returns true only on the frame the key was first pressed. </p>
 
 </div>
 </div>
-<a id="ac95c81e7cda4b0eec08e7ca19a824bee" name="ac95c81e7cda4b0eec08e7ca19a824bee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac95c81e7cda4b0eec08e7ca19a824bee">&#9670;&#160;</a></span>input_handle_sokol_event()</h2>
+<a id="af97e08f39ade71edfdb6c31011d8e911" name="af97e08f39ade71edfdb6c31011d8e911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97e08f39ade71edfdb6c31011d8e911">&#9670;&#160;</a></span>input_get_mouse_button()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void input_handle_sokol_event </td>
+          <td class="memname">bool input_get_mouse_button </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -283,8 +299,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const sapp_event *&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>button</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -294,19 +310,19 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
-<p>Handles input in a Sokol event. </p>
-<p>Updates the raw 'keys' buffer with hardware events. </p>
+<p>Gets whether a mouse button is pressed this frame. </p>
+<p>Returns true while the mouse button is held (0 = Left, 1 = Right, 2 = Middle). </p>
 
 </div>
 </div>
-<a id="a26cd6b4757d938c63c4f42c6ffb92f86" name="a26cd6b4757d938c63c4f42c6ffb92f86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26cd6b4757d938c63c4f42c6ffb92f86">&#9670;&#160;</a></span>input_map_action()</h2>
+<a id="a6c9f16f6aced927c4df8017008780855" name="a6c9f16f6aced927c4df8017008780855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9f16f6aced927c4df8017008780855">&#9670;&#160;</a></span>input_get_mouse_button_down()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void input_map_action </td>
+          <td class="memname">bool input_get_mouse_button_down </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -315,13 +331,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>action_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sapp_keycode</em>&#160;</td>
+          <td class="paramname"><em>button</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -331,8 +341,45 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
-<p>Maps an action in an input system. </p>
-<p>Maps a physical Sokol key to an abstract action ID. </p>
+<p>Gets whether a mouse button is pressed this frame and was also pressed in the last one. </p>
+<p>Returns true only on the frame the mouse button was first pressed. </p>
+
+</div>
+</div>
+<a id="a3432f8ffaf20fdad298659456d7991ea" name="a3432f8ffaf20fdad298659456d7991ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3432f8ffaf20fdad298659456d7991ea">&#9670;&#160;</a></span>input_get_mouse_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_get_mouse_position </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>out_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>out_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets whether the mouse position this frame. </p>
+<p>Fetches current window-space mouse coordinates. </p>
 
 </div>
 </div>
@@ -352,30 +399,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
-<p>Post-updates an input system. </p>
-<p>Processes raw key data into high-level Actions and syncs frame states.</p>
+<p>Syncs frame states (was_pressed updates). Call at the very end of your frame loop. </p>
+<p>Syncs frame states (was_pressed updates). Call at the very end of your frame.</p>
 <p>Syncs frame states (was_pressed = is_pressed). Call this at the END of the frame. </p>
-
-</div>
-</div>
-<a id="af6a349eafbaa3983ea74bb668651f6ec" name="af6a349eafbaa3983ea74bb668651f6ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6a349eafbaa3983ea74bb668651f6ec">&#9670;&#160;</a></span>input_purge_all()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void input_purge_all </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structInputSystem.html">InputSystem</a> *&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Purges all events in an input system. </p>
-<p>Forces a total reset of all input states. </p>
 
 </div>
 </div>
@@ -395,7 +421,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>input_get_analog</b>
       </table>
 </div><div class="memdoc">
 
-<p>Updates an input system. </p>
+<p>Processes raw key/mouse data into high-level Actions. </p>
 <p>Processes raw key data into high-level Actions. Call this at the START of engram_update. </p>
 
 </div>

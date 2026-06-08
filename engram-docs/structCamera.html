@@ -102,8 +102,12 @@ Collaboration diagram for Camera:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa17326c4d00fb0648ece70cc09636658" id="r_aa17326c4d00fb0648ece70cc09636658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComponent.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCamera.html#aa17326c4d00fb0648ece70cc09636658">base</a></td></tr>
 <tr class="separator:aa17326c4d00fb0648ece70cc09636658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0887d61ba89d4844c0840afadccac1f" id="r_aa0887d61ba89d4844c0840afadccac1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Camera_8h.html#addbdeb0c4a9113fece681e37faca81d3">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCamera.html#aa0887d61ba89d4844c0840afadccac1f">projection_type</a></td></tr>
+<tr class="separator:aa0887d61ba89d4844c0840afadccac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa2ba07777e210a38835f66ea97cc4c" id="r_adaa2ba07777e210a38835f66ea97cc4c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCamera.html#adaa2ba07777e210a38835f66ea97cc4c">size</a></td></tr>
 <tr class="separator:adaa2ba07777e210a38835f66ea97cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7393c9cfbccd7e369091f00008da93" id="r_aff7393c9cfbccd7e369091f00008da93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCamera.html#aff7393c9cfbccd7e369091f00008da93">fov</a></td></tr>
+<tr class="separator:aff7393c9cfbccd7e369091f00008da93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1001125f472d5aff8ca9b27c04675c" id="r_a1a1001125f472d5aff8ca9b27c04675c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCamera.html#a1a1001125f472d5aff8ca9b27c04675c">near_clip</a></td></tr>
 <tr class="separator:a1a1001125f472d5aff8ca9b27c04675c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af93067b3c46c4525dfdf1d192457c277" id="r_af93067b3c46c4525dfdf1d192457c277"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCamera.html#af93067b3c46c4525dfdf1d192457c277">far_clip</a></td></tr>
@@ -115,7 +119,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Viewport properties component. </p>
-<p>Defines how a <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> views the scene. In 2D, this uses orthographic projection where 'size' represents half the vertical height of the viewable area. </p>
+<p>Defines how a <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> views the scene. Supports standard orthographic viewing spaces for 2D alongside full field-of-view depth projection structures for 3D. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa17326c4d00fb0648ece70cc09636658" name="aa17326c4d00fb0648ece70cc09636658"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa17326c4d00fb0648ece70cc09636658">&#9670;&#160;</a></span>base</h2>
@@ -162,6 +166,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aff7393c9cfbccd7e369091f00008da93" name="aff7393c9cfbccd7e369091f00008da93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7393c9cfbccd7e369091f00008da93">&#9670;&#160;</a></span>fov</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::fov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perspective Field of View in degrees. </p>
+
+</div>
+</div>
 <a id="a37833e9292e55cdee3a1485724474d23" name="a37833e9292e55cdee3a1485724474d23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37833e9292e55cdee3a1485724474d23">&#9670;&#160;</a></span>is_main</h2>
 
@@ -192,6 +211,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa0887d61ba89d4844c0840afadccac1f" name="aa0887d61ba89d4844c0840afadccac1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0887d61ba89d4844c0840afadccac1f">&#9670;&#160;</a></span>projection_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Camera_8h.html#addbdeb0c4a9113fece681e37faca81d3">ProjectionType</a> Camera::projection_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Active mathematical view mapping profile (2D vs 3D). </p>
+
+</div>
+</div>
 <a id="adaa2ba07777e210a38835f66ea97cc4c" name="adaa2ba07777e210a38835f66ea97cc4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaa2ba07777e210a38835f66ea97cc4c">&#9670;&#160;</a></span>size</h2>
 
@@ -203,7 +237,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Orthographic size (half-height of the view). </p>
+<p>Orthographic size (half-height of the view space context). </p>
 
 </div>
 </div>

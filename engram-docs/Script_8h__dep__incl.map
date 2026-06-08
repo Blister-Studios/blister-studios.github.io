@@ -1,7 +1,9 @@
 <map id="engram/Components/Script.h" name="engram/Components/Script.h">
-<area shape="rect" id="Node000001" title="Component that binds a Lua script file to a GameObject with property reflection." alt="" coords="161,5,372,31"/>
+<area shape="rect" id="Node000001" title="Component that binds a Lua script file to a GameObject with property reflection." alt="" coords="296,5,507,31"/>
 <area shape="rect" id="Node000002" href="$Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="5,79,261,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,39,156,81,154,76,232,35"/>
-<area shape="rect" id="Node000003" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction." alt="" coords="285,79,515,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,35,379,76,377,81,299,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,37,177,81,176,76,344,32"/>
+<area shape="rect" id="Node000003" href="$PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="285,79,517,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="404,44,404,79,399,79,399,44"/>
+<area shape="rect" id="Node000004" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="541,79,771,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="456,32,615,76,614,81,455,37"/>
 </map>

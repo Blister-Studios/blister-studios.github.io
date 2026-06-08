@@ -1,11 +1,15 @@
 <map id="engram/Core/Log.c" name="engram/Core/Log.c">
-<area shape="rect" id="Node000001" title="Implementation of the leveled logging system with ANSI color support." alt="" coords="95,5,239,31"/>
+<area shape="rect" id="Node000001" title="Implementation of the leveled logging system with ANSI color support." alt="" coords="190,5,334,31"/>
 <area shape="rect" id="Node000002" href="$Log_8h.html" title="Centralized logging system for the Engram Engine." alt="" coords="5,79,63,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,33,69,74,67,70,145,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,33,77,80,75,74,225,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="87,79,154,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,32,138,69,134,66,157,30"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,33,157,75,155,70,238,28"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="178,79,253,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,30,202,66,198,69,173,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="257,32,233,69,228,66,252,30"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="277,79,341,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="191,28,275,70,272,75,189,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="272,30,296,66,291,69,267,32"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="365,79,436,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="285,28,367,70,365,75,283,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="460,79,531,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="300,28,448,73,446,78,299,33"/>
 </map>

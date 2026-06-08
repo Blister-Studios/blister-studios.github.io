@@ -81,6 +81,9 @@ $(function() {
   <div class="headertitle"><div class="title">AudioSource.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> layout for audio emitter states supporting FMOD Studio events and custom fallback pipelines.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Component_8h_source.html">Component.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -89,7 +92,7 @@ Include dependency graph for AudioSource.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="AudioSource_8h__incl.png" border="0" usemap="#aengram_2Components_2AudioSource_8h" alt=""/></div>
 <map name="aengram_2Components_2AudioSource_8h" id="aengram_2Components_2AudioSource_8h">
-<area shape="rect" title=" " alt="" coords="25,5,279,31"/>
+<area shape="rect" title="Component layout for audio emitter states supporting FMOD Studio events and custom fallback pipelines..." alt="" coords="25,5,279,31"/>
 <area shape="rect" href="Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="5,79,115,104"/>
 <area shape="poly" title=" " alt="" coords="139,33,87,72,84,68,136,29"/>
 <area shape="rect" title=" " alt="" coords="68,152,143,177"/>
@@ -104,13 +107,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="AudioSource_8h__dep__incl.png" border="0" usemap="#aengram_2Components_2AudioSource_8hdep" alt=""/></div>
 <map name="aengram_2Components_2AudioSource_8hdep" id="aengram_2Components_2AudioSource_8hdep">
-<area shape="rect" title=" " alt="" coords="285,5,540,31"/>
-<area shape="rect" href="AudioSource_8c.html" title="Implementation of the AudioSource component." alt="" coords="5,79,260,104"/>
-<area shape="poly" title=" " alt="" coords="355,37,179,81,177,76,354,31"/>
-<area shape="rect" href="Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="285,79,541,104"/>
-<area shape="poly" title=" " alt="" coords="415,44,415,79,410,79,410,44"/>
-<area shape="rect" href="Audio_8c.html" title="Logic for spatial mixing, pitch shifting, and time&#45;scaled playback." alt="" coords="565,79,724,104"/>
-<area shape="poly" title=" " alt="" coords="464,32,608,76,606,81,462,37"/>
+<area shape="rect" title="Component layout for audio emitter states supporting FMOD Studio events and custom fallback pipelines..." alt="" coords="627,5,881,31"/>
+<area shape="rect" href="AudioSource_8c.html" title="Implementation of the AudioSource component with dual FMOD Studio and fallback backends." alt="" coords="5,86,260,111"/>
+<area shape="poly" title=" " alt="" coords="646,35,273,81,217,89,216,83,272,76,646,30"/>
+<area shape="rect" href="Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="285,86,541,111"/>
+<area shape="poly" title=" " alt="" coords="692,36,463,89,462,83,691,31"/>
+<area shape="rect" href="Audio_8c.html" title="Dual&#45;backend audio logic supporting FMOD Studio Live&#45;Update and legacy Sokol fallback pipelines." alt="" coords="565,86,724,111"/>
+<area shape="poly" title=" " alt="" coords="728,41,662,88,659,84,725,37"/>
+<area shape="rect" href="PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="749,86,981,111"/>
+<area shape="poly" title=" " alt="" coords="783,37,850,84,847,88,780,41"/>
+<area shape="rect" href="SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="1005,86,1234,111"/>
+<area shape="poly" title=" " alt="" coords="821,31,1067,83,1066,89,820,36"/>
+<area shape="rect" href="BindingsAudio_8c.html" title="Lua script bindings for the AudioSource component." alt="" coords="1259,79,1452,119"/>
+<area shape="poly" title=" " alt="" coords="875,30,1246,76,1259,78,1258,83,1246,81,874,35"/>
 </map>
 </div>
 </div>
@@ -119,40 +128,78 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioSource.html">AudioSource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Added the '<a class="el" href="structAudioSource.html" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors.">AudioSource</a>' tag to the struct definition to prevent unnamed struct errors.  <a href="structAudioSource.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> managing the playback of audio assets within the game world.  <a href="structAudioSource.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a01e2d1ec2d4259315bb71ffb7b4aac75" id="r_a01e2d1ec2d4259315bb71ffb7b4aac75"><td class="memItemLeft" align="right" valign="top"><a id="a01e2d1ec2d4259315bb71ffb7b4aac75" name="a01e2d1ec2d4259315bb71ffb7b4aac75"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMP_AUDIO_SOURCE</b>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:a01e2d1ec2d4259315bb71ffb7b4aac75" id="r_a01e2d1ec2d4259315bb71ffb7b4aac75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioSource_8h.html#a01e2d1ec2d4259315bb71ffb7b4aac75">COMP_AUDIO_SOURCE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:a01e2d1ec2d4259315bb71ffb7b4aac75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ECS identifier for the <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a> component.  <br /></td></tr>
 <tr class="separator:a01e2d1ec2d4259315bb71ffb7b4aac75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a78bcf09942fa07f784aa837b52181844" id="r_a78bcf09942fa07f784aa837b52181844"><td class="memItemLeft" align="right" valign="top"><a id="a78bcf09942fa07f784aa837b52181844" name="a78bcf09942fa07f784aa837b52181844"></a>
-typedef struct <a class="el" href="structAudioSource.html">AudioSource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AudioSource</b></td></tr>
+<tr class="memitem:a78bcf09942fa07f784aa837b52181844" id="r_a78bcf09942fa07f784aa837b52181844"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structAudioSource.html">AudioSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AudioSource_8h.html#a78bcf09942fa07f784aa837b52181844">AudioSource</a></td></tr>
 <tr class="separator:a78bcf09942fa07f784aa837b52181844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0f0df0941a635b0bd1daaee44688f6ca" id="r_a0f0df0941a635b0bd1daaee44688f6ca"><td class="memItemLeft" align="right" valign="top"><a id="a0f0df0941a635b0bd1daaee44688f6ca" name="a0f0df0941a635b0bd1daaee44688f6ca"></a>
 <a class="el" href="structAudioSource.html">AudioSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>audio_source_create</b> (void)</td></tr>
-<tr class="memdesc:a0f0df0941a635b0bd1daaee44688f6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes a new <a class="el" href="structAudioSource.html" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors.">AudioSource</a>. <br /></td></tr>
+<tr class="memdesc:a0f0df0941a635b0bd1daaee44688f6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes a new <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a>. <br /></td></tr>
 <tr class="separator:a0f0df0941a635b0bd1daaee44688f6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88252275e3f2949d9073e8371d425547" id="r_a88252275e3f2949d9073e8371d425547"><td class="memItemLeft" align="right" valign="top"><a id="a88252275e3f2949d9073e8371d425547" name="a88252275e3f2949d9073e8371d425547"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>audio_source_play</b> (<a class="el" href="structAudioSource.html">AudioSource</a> *source)</td></tr>
-<tr class="memdesc:a88252275e3f2949d9073e8371d425547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers an <a class="el" href="structAudioSource.html" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors.">AudioSource</a> to play. <br /></td></tr>
+<tr class="memdesc:a88252275e3f2949d9073e8371d425547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers an <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a> to play. <br /></td></tr>
 <tr class="separator:a88252275e3f2949d9073e8371d425547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7ccaa3e9cab00a0bb142a37bbd5533" id="r_aef7ccaa3e9cab00a0bb142a37bbd5533"><td class="memItemLeft" align="right" valign="top"><a id="aef7ccaa3e9cab00a0bb142a37bbd5533" name="aef7ccaa3e9cab00a0bb142a37bbd5533"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>audio_source_stop</b> (<a class="el" href="structAudioSource.html">AudioSource</a> *source)</td></tr>
-<tr class="memdesc:aef7ccaa3e9cab00a0bb142a37bbd5533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers an <a class="el" href="structAudioSource.html" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors.">AudioSource</a> to stop. <br /></td></tr>
+<tr class="memdesc:aef7ccaa3e9cab00a0bb142a37bbd5533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers an <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a> to stop. <br /></td></tr>
 <tr class="separator:aef7ccaa3e9cab00a0bb142a37bbd5533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade808a663c557ae7c51828178f05fbb0" id="r_ade808a663c557ae7c51828178f05fbb0"><td class="memItemLeft" align="right" valign="top"><a id="ade808a663c557ae7c51828178f05fbb0" name="ade808a663c557ae7c51828178f05fbb0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>audio_source_to_json</b> (<a class="el" href="structComponent.html">Component</a> *self, char *buffer, size_t buf_size, size_t *offset)</td></tr>
-<tr class="memdesc:ade808a663c557ae7c51828178f05fbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialization hook for <a class="el" href="structAudioSource.html" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors.">AudioSource</a>. <br /></td></tr>
+<tr class="memdesc:ade808a663c557ae7c51828178f05fbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialization hook for <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a>. <br /></td></tr>
 <tr class="separator:ade808a663c557ae7c51828178f05fbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> layout for audio emitter states supporting FMOD Studio events and custom fallback pipelines. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a01e2d1ec2d4259315bb71ffb7b4aac75" name="a01e2d1ec2d4259315bb71ffb7b4aac75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e2d1ec2d4259315bb71ffb7b4aac75">&#9670;&#160;</a></span>COMP_AUDIO_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMP_AUDIO_SOURCE&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unique ECS identifier for the <a class="el" href="structAudioSource.html" title="Component managing the playback of audio assets within the game world.">AudioSource</a> component. </p>
+<p>** This constant is used by <code>GameObject::GetComponent()</code> and the</p><ul>
+<li>internal <code>ScriptingInternal</code> bridge to retrieve the correct component</li>
+<li>memory block from a <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a>'s component array. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a78bcf09942fa07f784aa837b52181844" name="a78bcf09942fa07f784aa837b52181844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bcf09942fa07f784aa837b52181844">&#9670;&#160;</a></span>AudioSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structAudioSource.html">AudioSource</a> <a class="el" href="structAudioSource.html">AudioSource</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Represents an audio source. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

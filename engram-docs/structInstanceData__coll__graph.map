@@ -1,0 +1,7 @@
+<map id="InstanceData" name="InstanceData">
+<area shape="rect" id="Node000001" title="Per&#45;instance data for hardware instanced rendering." alt="" coords="41,93,149,119"/>
+<area shape="rect" id="Node000002" href="$structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,45,32,57,36,68,48,81,63,91,60,95,44,85,32,71,27,58,26,45"/>
+<area shape="rect" id="Node000003" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="133,5,186,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,45,132,71,110,95,106,91,128,68,145,42"/>
+</map>

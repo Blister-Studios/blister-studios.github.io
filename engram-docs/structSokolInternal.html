@@ -75,12 +75,15 @@ $(function() {
   <div class="headertitle"><div class="title">SokolInternal Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Private backend state for the dual-pipeline Sokol implementation.  
+ <a href="structSokolInternal.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for SokolInternal:</div>
 <div class="dyncontent">
 <div class="center"><img src="structSokolInternal__coll__graph.png" border="0" usemap="#aSokolInternal_coll__map" alt="Collaboration graph"/></div>
 <map name="aSokolInternal_coll__map" id="aSokolInternal_coll__map">
-<area shape="rect" title=" " alt="" coords="5,108,112,133"/>
+<area shape="rect" title="Private backend state for the dual&#45;pipeline Sokol implementation." alt="" coords="5,108,112,133"/>
 <area shape="rect" href="structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="31,5,86,31"/>
 <area shape="poly" title=" " alt="" coords="61,45,61,108,56,108,56,45"/>
 </map>
@@ -88,21 +91,51 @@ Collaboration diagram for SokolInternal:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af4f90f161e8bef5fce955a83481194e8" id="r_af4f90f161e8bef5fce955a83481194e8"><td class="memItemLeft" align="right" valign="top"><a id="af4f90f161e8bef5fce955a83481194e8" name="af4f90f161e8bef5fce955a83481194e8"></a>
-sg_pipeline&#160;</td><td class="memItemRight" valign="bottom"><b>pip_default</b></td></tr>
-<tr class="separator:af4f90f161e8bef5fce955a83481194e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c5b7e62826c99c0b1519d1373f51905" id="r_a9c5b7e62826c99c0b1519d1373f51905"><td class="memItemLeft" align="right" valign="top"><a id="a9c5b7e62826c99c0b1519d1373f51905" name="a9c5b7e62826c99c0b1519d1373f51905"></a>
-sg_pipeline&#160;</td><td class="memItemRight" valign="bottom"><b>pip_offscreen</b></td></tr>
-<tr class="separator:a9c5b7e62826c99c0b1519d1373f51905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872149164deaa9f18ce0a7a3461ab465" id="r_a872149164deaa9f18ce0a7a3461ab465"><td class="memItemLeft" align="right" valign="top"><a id="a872149164deaa9f18ce0a7a3461ab465" name="a872149164deaa9f18ce0a7a3461ab465"></a>
-sg_buffer&#160;</td><td class="memItemRight" valign="bottom"><b>vbuf</b></td></tr>
-<tr class="separator:a872149164deaa9f18ce0a7a3461ab465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af883bbc16952d4ea855b3d5eeff6b09c" id="r_af883bbc16952d4ea855b3d5eeff6b09c"><td class="memItemLeft" align="right" valign="top"><a id="af883bbc16952d4ea855b3d5eeff6b09c" name="af883bbc16952d4ea855b3d5eeff6b09c"></a>
+sg_pipeline&#160;</td><td class="memItemRight" valign="bottom"><b>pip_sprite_default</b></td></tr>
+<tr class="separator:af883bbc16952d4ea855b3d5eeff6b09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f2bf34c3a10cf15a6c11843aef3370" id="r_a72f2bf34c3a10cf15a6c11843aef3370"><td class="memItemLeft" align="right" valign="top"><a id="a72f2bf34c3a10cf15a6c11843aef3370" name="a72f2bf34c3a10cf15a6c11843aef3370"></a>
+sg_pipeline&#160;</td><td class="memItemRight" valign="bottom"><b>pip_sprite_offscreen</b></td></tr>
+<tr class="separator:a72f2bf34c3a10cf15a6c11843aef3370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1258d6be24ce046b36a10bf13a2047" id="r_a0a1258d6be24ce046b36a10bf13a2047"><td class="memItemLeft" align="right" valign="top"><a id="a0a1258d6be24ce046b36a10bf13a2047" name="a0a1258d6be24ce046b36a10bf13a2047"></a>
+sg_buffer&#160;</td><td class="memItemRight" valign="bottom"><b>default_quad_vbuf</b></td></tr>
+<tr class="separator:a0a1258d6be24ce046b36a10bf13a2047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c032b87b8d50dcea2fbeabb45c27ad" id="r_a42c032b87b8d50dcea2fbeabb45c27ad"><td class="memItemLeft" align="right" valign="top"><a id="a42c032b87b8d50dcea2fbeabb45c27ad" name="a42c032b87b8d50dcea2fbeabb45c27ad"></a>
+sg_pipeline&#160;</td><td class="memItemRight" valign="bottom"><b>pip_mesh_default</b></td></tr>
+<tr class="separator:a42c032b87b8d50dcea2fbeabb45c27ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24da4fe5cf838b18848a9239f537fdc5" id="r_a24da4fe5cf838b18848a9239f537fdc5"><td class="memItemLeft" align="right" valign="top"><a id="a24da4fe5cf838b18848a9239f537fdc5" name="a24da4fe5cf838b18848a9239f537fdc5"></a>
+sg_pipeline&#160;</td><td class="memItemRight" valign="bottom"><b>pip_mesh_offscreen</b></td></tr>
+<tr class="separator:a24da4fe5cf838b18848a9239f537fdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0add5e39d9aca747451f3bd4c332e5" id="r_a4f0add5e39d9aca747451f3bd4c332e5"><td class="memItemLeft" align="right" valign="top"><a id="a4f0add5e39d9aca747451f3bd4c332e5" name="a4f0add5e39d9aca747451f3bd4c332e5"></a>
+sg_buffer&#160;</td><td class="memItemRight" valign="bottom"><b>default_cube_vbuf</b></td></tr>
+<tr class="separator:a4f0add5e39d9aca747451f3bd4c332e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1e2ff7c07940364021ceaf3fbc541a" id="r_a1d1e2ff7c07940364021ceaf3fbc541a"><td class="memItemLeft" align="right" valign="top"><a id="a1d1e2ff7c07940364021ceaf3fbc541a" name="a1d1e2ff7c07940364021ceaf3fbc541a"></a>
+sg_buffer&#160;</td><td class="memItemRight" valign="bottom"><b>default_cube_ibuf</b></td></tr>
+<tr class="separator:a1d1e2ff7c07940364021ceaf3fbc541a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94ec310ce438634f454a7f4ba67c600b" id="r_a94ec310ce438634f454a7f4ba67c600b"><td class="memItemLeft" align="right" valign="top"><a id="a94ec310ce438634f454a7f4ba67c600b" name="a94ec310ce438634f454a7f4ba67c600b"></a>
 sg_image&#160;</td><td class="memItemRight" valign="bottom"><b>default_white_tex</b></td></tr>
 <tr class="separator:a94ec310ce438634f454a7f4ba67c600b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532096f587c658fa95750f4c31094248" id="r_a532096f587c658fa95750f4c31094248"><td class="memItemLeft" align="right" valign="top"><a id="a532096f587c658fa95750f4c31094248" name="a532096f587c658fa95750f4c31094248"></a>
 sg_view&#160;</td><td class="memItemRight" valign="bottom"><b>default_white_view</b></td></tr>
 <tr class="separator:a532096f587c658fa95750f4c31094248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c65dbce6aad068b28ec70f0fa5835f" id="r_ae3c65dbce6aad068b28ec70f0fa5835f"><td class="memItemLeft" align="right" valign="top"><a id="ae3c65dbce6aad068b28ec70f0fa5835f" name="ae3c65dbce6aad068b28ec70f0fa5835f"></a>
+sg_image&#160;</td><td class="memItemRight" valign="bottom"><b>default_normal_tex</b></td></tr>
+<tr class="separator:ae3c65dbce6aad068b28ec70f0fa5835f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86a6f429a21673555d62e3328d815c4" id="r_ab86a6f429a21673555d62e3328d815c4"><td class="memItemLeft" align="right" valign="top"><a id="ab86a6f429a21673555d62e3328d815c4" name="ab86a6f429a21673555d62e3328d815c4"></a>
+sg_view&#160;</td><td class="memItemRight" valign="bottom"><b>default_normal_view</b></td></tr>
+<tr class="separator:ab86a6f429a21673555d62e3328d815c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6992adc01df69d44e8364b342ce102c" id="r_aa6992adc01df69d44e8364b342ce102c"><td class="memItemLeft" align="right" valign="top"><a id="aa6992adc01df69d44e8364b342ce102c" name="aa6992adc01df69d44e8364b342ce102c"></a>
+sg_image&#160;</td><td class="memItemRight" valign="bottom"><b>default_met_rough_tex</b></td></tr>
+<tr class="separator:aa6992adc01df69d44e8364b342ce102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62657248135b14bf11bc63a75c11ecf6" id="r_a62657248135b14bf11bc63a75c11ecf6"><td class="memItemLeft" align="right" valign="top"><a id="a62657248135b14bf11bc63a75c11ecf6" name="a62657248135b14bf11bc63a75c11ecf6"></a>
+sg_view&#160;</td><td class="memItemRight" valign="bottom"><b>default_met_rough_view</b></td></tr>
+<tr class="separator:a62657248135b14bf11bc63a75c11ecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47e344255dcce9dc695769b872e27b7" id="r_aa47e344255dcce9dc695769b872e27b7"><td class="memItemLeft" align="right" valign="top"><a id="aa47e344255dcce9dc695769b872e27b7" name="aa47e344255dcce9dc695769b872e27b7"></a>
+sg_image&#160;</td><td class="memItemRight" valign="bottom"><b>default_ao_tex</b></td></tr>
+<tr class="separator:aa47e344255dcce9dc695769b872e27b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43566801954087819d96db4f83b16efc" id="r_a43566801954087819d96db4f83b16efc"><td class="memItemLeft" align="right" valign="top"><a id="a43566801954087819d96db4f83b16efc" name="a43566801954087819d96db4f83b16efc"></a>
+sg_view&#160;</td><td class="memItemRight" valign="bottom"><b>default_ao_view</b></td></tr>
+<tr class="separator:a43566801954087819d96db4f83b16efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee9ef382ff6c908fcd6edb778090940" id="r_a6ee9ef382ff6c908fcd6edb778090940"><td class="memItemLeft" align="right" valign="top"><a id="a6ee9ef382ff6c908fcd6edb778090940" name="a6ee9ef382ff6c908fcd6edb778090940"></a>
 sg_sampler&#160;</td><td class="memItemRight" valign="bottom"><b>smp</b></td></tr>
 <tr class="separator:a6ee9ef382ff6c908fcd6edb778090940"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +158,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_frame_draw_c
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_offscreen</b></td></tr>
 <tr class="separator:ae796fae590b0c7c1628ebf00d5906f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Private backend state for the dual-pipeline Sokol implementation. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Rendering/<a class="el" href="RendererBackend_8c.html">RendererBackend.c</a></li>
 </ul>
 </div><!-- contents -->

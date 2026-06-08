@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Internal metadata prefixing the user data allocation.  
+<p>Intrusive metadata header for reference-counted allocations.  
  <a href="structRcHeader.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -84,21 +84,76 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5b2e168770f6ac9da59f7905b282dcbb" id="r_a5b2e168770f6ac9da59f7905b282dcbb"><td class="memItemLeft" ><a id="a5b2e168770f6ac9da59f7905b282dcbb" name="a5b2e168770f6ac9da59f7905b282dcbb"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7803704a83712bdc3b5ccfcd732e6cc" id="r_aa7803704a83712bdc3b5ccfcd732e6cc"><td class="memItemLeft" >
-&#160;&#160;&#160;rc_count_t&#160;&#160;&#160;<b>count</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:aa7803704a83712bdc3b5ccfcd732e6cc" id="r_aa7803704a83712bdc3b5ccfcd732e6cc"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="ReferenceCounting_8c.html#acb0a0d248e8b52870d65636412e5415f">rc_count_t</a>&#160;&#160;&#160;<a class="el" href="structRcHeader.html#ac91346d3a267b06e2852aa4e6bd1674e">count</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:aa7803704a83712bdc3b5ccfcd732e6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40bd521998f37927a0b36d625f0d78c1" id="r_a40bd521998f37927a0b36d625f0d78c1"><td class="memItemLeft" >
-&#160;&#160;&#160;void(*&#160;&#160;&#160;<b>destroy</b> )(void *data)&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a40bd521998f37927a0b36d625f0d78c1" id="r_a40bd521998f37927a0b36d625f0d78c1"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structRcHeader.html#ae6013fc999f4a32bcff000362d74f7eb">destroy</a> )(void *data)&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a40bd521998f37927a0b36d625f0d78c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2e168770f6ac9da59f7905b282dcbb" id="r_a5b2e168770f6ac9da59f7905b282dcbb"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>control</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a5b2e168770f6ac9da59f7905b282dcbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control block for resource lifecycle. <br /></td></tr>
 <tr class="separator:a5b2e168770f6ac9da59f7905b282dcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd2c178122a40664073b431eb4a1e91a" id="r_acd2c178122a40664073b431eb4a1e91a"><td class="memItemLeft" align="right" valign="top"><a id="acd2c178122a40664073b431eb4a1e91a" name="acd2c178122a40664073b431eb4a1e91a"></a>
-max_align_t&#160;</td><td class="memItemRight" valign="bottom"><b>_alignment</b></td></tr>
+<tr class="memitem:acd2c178122a40664073b431eb4a1e91a" id="r_acd2c178122a40664073b431eb4a1e91a"><td class="memItemLeft" align="right" valign="top">max_align_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRcHeader.html#acd2c178122a40664073b431eb4a1e91a">_alignment</a></td></tr>
+<tr class="memdesc:acd2c178122a40664073b431eb4a1e91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forced alignment for user data.  <br /></td></tr>
 <tr class="separator:acd2c178122a40664073b431eb4a1e91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Internal metadata prefixing the user data allocation. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Intrusive metadata header for reference-counted allocations. </p>
+<ul>
+<li>This header is placed in memory immediately preceding a user's data block.</li>
+<li>It allows the engine to track usage counts and define custom cleanup logic</li>
+<li>for any resource while maintaining strict platform alignment requirements. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="acd2c178122a40664073b431eb4a1e91a" name="acd2c178122a40664073b431eb4a1e91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2c178122a40664073b431eb4a1e91a">&#9670;&#160;</a></span>_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">max_align_t RcHeader::_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forced alignment for user data. </p>
+<p>** Using <code>max_align_t</code> ensures the memory immediately following this struct</p><ul>
+<li>satisfies the strictest alignment requirements for any type on this</li>
+<li>platform (e.g., SIMD, pointers, or double-precision floats). </li>
+</ul>
+
+</div>
+</div>
+<a id="ac91346d3a267b06e2852aa4e6bd1674e" name="ac91346d3a267b06e2852aa4e6bd1674e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91346d3a267b06e2852aa4e6bd1674e">&#9670;&#160;</a></span>count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ReferenceCounting_8c.html#acb0a0d248e8b52870d65636412e5415f">rc_count_t</a> RcHeader::count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The current reference count. </p>
+
+</div>
+</div>
+<a id="ae6013fc999f4a32bcff000362d74f7eb" name="ae6013fc999f4a32bcff000362d74f7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6013fc999f4a32bcff000362d74f7eb">&#9670;&#160;</a></span>destroy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* RcHeader::destroy) (void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function pointer to free internal resource members. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Containers/<a class="el" href="ReferenceCounting_8c.html">ReferenceCounting.c</a></li>
 </ul>
 </div><!-- contents -->

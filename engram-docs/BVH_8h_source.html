@@ -87,51 +87,62 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structAABB.html">    7</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">float</span> min[3];</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">float</span> max[3];</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>} <a class="code hl_struct" href="structAABB.html">AABB</a>;</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structAABB.html">   13</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structAABB.html#a092c9bc5d33566252643136bc10d2913">   15</a></span>    <span class="keywordtype">float</span> min[3]; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structAABB.html#a71aaefbd282ecd6de338e7460ee815ba">   16</a></span>    <span class="keywordtype">float</span> max[3]; </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <a class="code hl_struct" href="structAABB.html">AABB</a>;</div>
 </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structBVHNode.html">   12</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_struct" href="structAABB.html">AABB</a> bounds;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    uint32_t left_or_first;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    uint32_t count;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>} <a class="code hl_struct" href="structBVHNode.html">BVHNode</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structBVHNode.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structBVHNode.html#a88930647f06e26632b2ea90945d772b5">   28</a></span>    <a class="code hl_struct" href="structAABB.html">AABB</a> <a class="code hl_variable" href="structBVHNode.html#a88930647f06e26632b2ea90945d772b5">bounds</a>;            </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structBVHNode.html#a60a9a78469badab6eee5f0b3b57159b6">   29</a></span>    uint32_t <a class="code hl_variable" href="structBVHNode.html#a60a9a78469badab6eee5f0b3b57159b6">left_or_first</a>; </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structBVHNode.html#a64a89d46c800ec843086d9e28b5f223f">   30</a></span>    uint32_t <a class="code hl_variable" href="structBVHNode.html#a64a89d46c800ec843086d9e28b5f223f">count</a>;         </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <a class="code hl_struct" href="structBVHNode.html">BVHNode</a>;</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structBVH.html">   18</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="structBVHNode.html">BVHNode</a>* nodes;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    uint32_t* prim_indices;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    uint32_t node_count;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    uint32_t leaf_count;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} <a class="code hl_struct" href="structBVH.html">BVH</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structBVH.html">   40</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structBVH.html#aa074f0e4fb1e51f558e3a9da7cb395cf">   42</a></span>    <a class="code hl_struct" href="structBVHNode.html">BVHNode</a> *<a class="code hl_variable" href="structBVH.html#aa074f0e4fb1e51f558e3a9da7cb395cf">nodes</a>;         </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structBVH.html#ad6b298906aa8944f481de646932dccfa">   43</a></span>    uint32_t *<a class="code hl_variable" href="structBVH.html#ad6b298906aa8944f481de646932dccfa">prim_indices</a>; </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structBVH.html#aef15a646bdc58546e23623eb10667a84">   44</a></span>    uint32_t <a class="code hl_variable" href="structBVH.html#aef15a646bdc58546e23623eb10667a84">node_count</a>;    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structBVH.html#a2d48ad8dc5d0be95d37eaaef566b04f6">   45</a></span>    uint32_t <a class="code hl_variable" href="structBVH.html#a2d48ad8dc5d0be95d37eaaef566b04f6">leaf_count</a>;    </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <a class="code hl_struct" href="structBVH.html">BVH</a>;</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structRay.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">float</span> origin[3];</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">float</span> dir[3];</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">float</span> inv_dir[3];</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <a class="code hl_struct" href="structRay.html">Ray</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structRay.html">   55</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structRay.html#a50cbb872ade2a0b403fa44a92df40409">   57</a></span>    <span class="keywordtype">float</span> origin[3];  </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structRay.html#a4c55b024d6786acd7dea29a41f304d04">   58</a></span>    <span class="keywordtype">float</span> dir[3];     </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structRay.html#ad60eebbb23431e8a12bff70f5d5fdb3d">   59</a></span>    <span class="keywordtype">float</span> inv_dir[3]; </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <a class="code hl_struct" href="structRay.html">Ray</a>;</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_struct" href="structRay.html">Ray</a> ray_create(<span class="keyword">const</span> <span class="keywordtype">float</span> origin[3], <span class="keyword">const</span> <span class="keywordtype">float</span> dir[3]);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">bool</span> bvh_intersect_ray(<span class="keyword">const</span> <a class="code hl_struct" href="structBVH.html">BVH</a> *bvh, <span class="keyword">const</span> <a class="code hl_struct" href="structRay.html">Ray</a> *ray, uint32_t *hit_idx, <span class="keywordtype">float</span> *out_distance);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> bvh_build(<a class="code hl_struct" href="structBVH.html">BVH</a>* bvh, <span class="keyword">const</span> <a class="code hl_struct" href="structAABB.html">AABB</a>* prim_bounds, uint32_t num_prims);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>uint32_t bvh_query_aabb(<span class="keyword">const</span> <a class="code hl_struct" href="structBVH.html">BVH</a>* bvh, <span class="keyword">const</span> <a class="code hl_struct" href="structAABB.html">AABB</a>* query_box, uint32_t* results, uint32_t max_results);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructAABB_html"><div class="ttname"><a href="structAABB.html">AABB</a></div><div class="ttdef"><b>Definition</b> BVH.h:7</div></div>
-<div class="ttc" id="astructBVHNode_html"><div class="ttname"><a href="structBVHNode.html">BVHNode</a></div><div class="ttdef"><b>Definition</b> BVH.h:12</div></div>
-<div class="ttc" id="astructBVH_html"><div class="ttname"><a href="structBVH.html">BVH</a></div><div class="ttdef"><b>Definition</b> BVH.h:18</div></div>
-<div class="ttc" id="astructRay_html"><div class="ttname"><a href="structRay.html">Ray</a></div><div class="ttdef"><b>Definition</b> BVH.h:25</div></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><a class="code hl_struct" href="structRay.html">Ray</a> ray_create(<span class="keyword">const</span> <span class="keywordtype">float</span> origin[3], <span class="keyword">const</span> <span class="keywordtype">float</span> dir[3]);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">bool</span> bvh_intersect_ray(<span class="keyword">const</span> <a class="code hl_struct" href="structBVH.html">BVH</a> *bvh, <span class="keyword">const</span> <a class="code hl_struct" href="structRay.html">Ray</a> *ray, uint32_t *hit_idx, <span class="keywordtype">float</span> *out_distance);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">void</span> bvh_build(<a class="code hl_struct" href="structBVH.html">BVH</a> *bvh, <span class="keyword">const</span> <a class="code hl_struct" href="structAABB.html">AABB</a> *prim_bounds, uint32_t num_prims);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>uint32_t bvh_query_aabb(<span class="keyword">const</span> <a class="code hl_struct" href="structBVH.html">BVH</a> *bvh, <span class="keyword">const</span> <a class="code hl_struct" href="structAABB.html">AABB</a> *query_box, uint32_t *results, uint32_t max_results);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructAABB_html"><div class="ttname"><a href="structAABB.html">AABB</a></div><div class="ttdoc">An Axis-Aligned Bounding Box representing a 3D rectangular volume.</div><div class="ttdef"><b>Definition</b> BVH.h:14</div></div>
+<div class="ttc" id="astructBVHNode_html"><div class="ttname"><a href="structBVHNode.html">BVHNode</a></div><div class="ttdoc">A single node within the Bounding Volume Hierarchy tree.</div><div class="ttdef"><b>Definition</b> BVH.h:27</div></div>
+<div class="ttc" id="astructBVHNode_html_a60a9a78469badab6eee5f0b3b57159b6"><div class="ttname"><a href="structBVHNode.html#a60a9a78469badab6eee5f0b3b57159b6">BVHNode::left_or_first</a></div><div class="ttdeci">uint32_t left_or_first</div><div class="ttdef"><b>Definition</b> BVH.h:29</div></div>
+<div class="ttc" id="astructBVHNode_html_a64a89d46c800ec843086d9e28b5f223f"><div class="ttname"><a href="structBVHNode.html#a64a89d46c800ec843086d9e28b5f223f">BVHNode::count</a></div><div class="ttdeci">uint32_t count</div><div class="ttdef"><b>Definition</b> BVH.h:30</div></div>
+<div class="ttc" id="astructBVHNode_html_a88930647f06e26632b2ea90945d772b5"><div class="ttname"><a href="structBVHNode.html#a88930647f06e26632b2ea90945d772b5">BVHNode::bounds</a></div><div class="ttdeci">AABB bounds</div><div class="ttdef"><b>Definition</b> BVH.h:28</div></div>
+<div class="ttc" id="astructBVH_html"><div class="ttname"><a href="structBVH.html">BVH</a></div><div class="ttdoc">The top-level Bounding Volume Hierarchy tree manager.</div><div class="ttdef"><b>Definition</b> BVH.h:41</div></div>
+<div class="ttc" id="astructBVH_html_a2d48ad8dc5d0be95d37eaaef566b04f6"><div class="ttname"><a href="structBVH.html#a2d48ad8dc5d0be95d37eaaef566b04f6">BVH::leaf_count</a></div><div class="ttdeci">uint32_t leaf_count</div><div class="ttdef"><b>Definition</b> BVH.h:45</div></div>
+<div class="ttc" id="astructBVH_html_aa074f0e4fb1e51f558e3a9da7cb395cf"><div class="ttname"><a href="structBVH.html#aa074f0e4fb1e51f558e3a9da7cb395cf">BVH::nodes</a></div><div class="ttdeci">BVHNode * nodes</div><div class="ttdef"><b>Definition</b> BVH.h:42</div></div>
+<div class="ttc" id="astructBVH_html_ad6b298906aa8944f481de646932dccfa"><div class="ttname"><a href="structBVH.html#ad6b298906aa8944f481de646932dccfa">BVH::prim_indices</a></div><div class="ttdeci">uint32_t * prim_indices</div><div class="ttdef"><b>Definition</b> BVH.h:43</div></div>
+<div class="ttc" id="astructBVH_html_aef15a646bdc58546e23623eb10667a84"><div class="ttname"><a href="structBVH.html#aef15a646bdc58546e23623eb10667a84">BVH::node_count</a></div><div class="ttdeci">uint32_t node_count</div><div class="ttdef"><b>Definition</b> BVH.h:44</div></div>
+<div class="ttc" id="astructRay_html"><div class="ttname"><a href="structRay.html">Ray</a></div><div class="ttdoc">A mathematical ray used for line-of-sight and intersection queries.</div><div class="ttdef"><b>Definition</b> BVH.h:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -98,14 +98,29 @@ Collaboration diagram for AudioListener:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a64fc570c0ce934ddf7d6595deb3ce006" id="r_a64fc570c0ce934ddf7d6595deb3ce006"><td class="memItemLeft" align="right" valign="top"><a id="a64fc570c0ce934ddf7d6595deb3ce006" name="a64fc570c0ce934ddf7d6595deb3ce006"></a>
-<a class="el" href="structComponent.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><b>base</b></td></tr>
+<tr class="memitem:a64fc570c0ce934ddf7d6595deb3ce006" id="r_a64fc570c0ce934ddf7d6595deb3ce006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComponent.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioListener.html#a64fc570c0ce934ddf7d6595deb3ce006">base</a></td></tr>
 <tr class="separator:a64fc570c0ce934ddf7d6595deb3ce006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> defining the ear position of the player. </p>
-<p>Usually attached to the Main <a class="el" href="structCamera.html" title="Viewport properties component.">Camera</a>. The AudioSystem uses this component's <a class="el" href="structTransform.html" title="Represents the spatial state and hierarchy of an entity.">Transform</a> to calculate spatial panning and attenuation. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<p>Usually attached to the Main <a class="el" href="structCamera.html" title="Viewport properties component.">Camera</a>. The AudioSystem reads this component's <a class="el" href="structTransform.html" title="Represents the spatial state and hierarchy of an entity.">Transform</a> to feed spatial matrices to either FMOD or the fallback stereo-panning mixer. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a64fc570c0ce934ddf7d6595deb3ce006" name="a64fc570c0ce934ddf7d6595deb3ce006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64fc570c0ce934ddf7d6595deb3ce006">&#9670;&#160;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComponent.html">Component</a> AudioListener::base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inherits standard ECS <a class="el" href="structComponent.html" title="The base structure for all components.">Component</a> lifecycle members. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Components/<a class="el" href="AudioListener_8h_source.html">AudioListener.h</a></li>
 </ul>
 </div><!-- contents -->

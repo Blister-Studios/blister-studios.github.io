@@ -85,7 +85,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="Transform_8h_source.html">Transform.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Log_8h_source.html">Core/Log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engram_8h_source.html">Core/Engram.h</a>&quot;</code><br />
-<code>#include &quot;Hierarchy/Scene.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="Scene_8h_source.html">Hierarchy/Scene.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -95,16 +95,16 @@ Include dependency graph for Transform.c:</div>
 <div class="center"><img src="Transform_8c__incl.png" border="0" usemap="#aengram_2Components_2Transform_8c" alt=""/></div>
 <map name="aengram_2Components_2Transform_8c" id="aengram_2Components_2Transform_8c">
 <area shape="rect" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="1019,5,1258,31"/>
-<area shape="rect" href="Transform_8h.html" title="Core component for spatial positioning, rotation, and scaling." alt="" coords="272,225,371,251"/>
+<area shape="rect" href="Transform_8h.html" title="Core component for hierarchical spatial positioning, rotation, and scaling." alt="" coords="272,225,371,251"/>
 <area shape="poly" title=" " alt="" coords="1040,33,925,50,785,75,633,110,485,155,412,187,352,221,349,216,410,182,483,149,632,104,784,70,924,45,1039,28"/>
 <area shape="rect" href="Log_8h.html" title="Centralized logging system for the Engram Engine." alt="" coords="913,79,1004,104"/>
 <area shape="poly" title=" " alt="" coords="1111,33,1002,76,1000,71,1109,28"/>
 <area shape="rect" href="Engram_8h.html" title="The central entry point and context management for the Engram Engine." alt="" coords="1079,79,1198,104"/>
 <area shape="poly" title=" " alt="" coords="1141,31,1141,65,1136,65,1136,31"/>
-<area shape="rect" href="Scene_8h_source.html" title=" " alt="" coords="657,152,797,177"/>
+<area shape="rect" href="Scene_8h.html" title="The primary memory arena and management system for the game world." alt="" coords="657,152,797,177"/>
 <area shape="poly" title=" " alt="" coords="1127,33,1081,70,1050,90,1017,106,979,119,927,131,811,153,810,147,926,126,978,113,1015,102,1047,85,1078,65,1124,29"/>
-<area shape="rect" title=" " alt="" coords="1699,299,1770,324"/>
-<area shape="poly" title=" " alt="" coords="1203,28,1341,57,1509,100,1590,127,1661,157,1718,189,1739,206,1754,224,1760,239,1761,256,1751,287,1746,285,1755,255,1755,240,1750,227,1735,210,1715,193,1659,161,1588,132,1507,106,1340,62,1202,33"/>
+<area shape="rect" title=" " alt="" coords="1702,299,1773,324"/>
+<area shape="poly" title=" " alt="" coords="1203,28,1341,57,1509,100,1590,127,1661,157,1718,189,1739,206,1754,224,1760,239,1761,256,1753,287,1747,286,1756,255,1755,240,1750,227,1735,210,1715,193,1659,161,1588,132,1507,106,1340,62,1202,33"/>
 <area shape="rect" title=" " alt="" coords="1815,79,1883,104"/>
 <area shape="poly" title=" " alt="" coords="1259,23,1507,42,1652,57,1796,76,1802,77,1801,82,1796,81,1652,62,1507,47,1258,29"/>
 <area shape="rect" title=" " alt="" coords="1908,79,1975,104"/>
@@ -117,8 +117,8 @@ Include dependency graph for Transform.c:</div>
 <area shape="poly" title=" " alt="" coords="320,252,307,287,302,285,315,250"/>
 <area shape="rect" href="Math_8h.html" title="Central header for the Engram Math library." alt="" coords="568,299,672,324"/>
 <area shape="poly" title=" " alt="" coords="370,248,559,293,558,298,369,253"/>
-<area shape="rect" href="DynamicArray_8h.html" title="A generic, growable array of void pointers." alt="" coords="1091,299,1290,324"/>
-<area shape="poly" title=" " alt="" coords="371,242,434,248,754,272,1078,296,1078,301,753,277,433,253,371,247"/>
+<area shape="rect" href="DynamicArray_8h.html" title="A generic, growable array of void pointers." alt="" coords="1106,299,1305,324"/>
+<area shape="poly" title=" " alt="" coords="371,242,434,248,761,272,1092,296,1092,301,761,277,433,253,371,247"/>
 <area shape="poly" title=" " alt="" coords="309,323,344,360,341,364,305,326"/>
 <area shape="rect" href="Vector2_8h.html" title="2&#45;component vector math for 2D coordinate systems." alt="" coords="657,372,740,397"/>
 <area shape="poly" title=" " alt="" coords="634,322,678,361,674,365,631,326"/>
@@ -134,10 +134,10 @@ Include dependency graph for Transform.c:</div>
 <area shape="poly" title=" " alt="" coords="543,398,546,505,541,505,538,398"/>
 <area shape="poly" title=" " alt="" coords="555,395,600,434,597,438,552,399"/>
 <area shape="poly" title=" " alt="" coords="528,399,480,439,476,434,524,395"/>
-<area shape="poly" title=" " alt="" coords="1091,325,1079,327,486,375,414,381,414,376,485,369,1078,321,1091,320"/>
+<area shape="poly" title=" " alt="" coords="1106,326,1095,327,790,351,486,375,414,381,414,376,485,369,790,346,1094,321,1106,320"/>
 <area shape="poly" title=" " alt="" coords="1079,101,850,125,731,140,644,155,579,164,524,169,501,175,478,185,457,202,436,227,431,243,438,259,453,275,471,289,468,293,449,279,434,262,426,243,431,224,453,198,476,181,499,170,524,164,578,159,644,149,730,135,850,119,1079,96"/>
 <area shape="poly" title=" " alt="" coords="1199,93,1266,99,1339,109,1404,126,1428,137,1445,150,1461,176,1467,202,1462,228,1445,253,1428,263,1400,272,1319,285,1213,292,1092,296,851,299,686,302,686,296,851,293,1092,291,1213,287,1319,279,1399,267,1425,258,1441,249,1457,225,1462,202,1456,178,1441,154,1425,141,1402,131,1338,115,1266,104,1198,98"/>
-<area shape="poly" title=" " alt="" coords="1198,91,1276,96,1363,105,1440,123,1469,135,1489,150,1505,176,1510,201,1505,227,1489,253,1460,272,1415,287,1361,297,1304,305,1304,299,1360,292,1413,281,1457,267,1485,249,1500,225,1505,201,1500,178,1485,154,1466,140,1438,128,1362,111,1276,101,1198,97"/>
+<area shape="poly" title=" " alt="" coords="1198,91,1276,96,1363,105,1440,123,1469,135,1489,150,1505,176,1510,201,1505,227,1489,253,1462,271,1421,285,1319,303,1318,298,1420,280,1460,266,1485,249,1500,225,1505,201,1500,178,1485,154,1466,140,1438,128,1362,111,1276,101,1198,97"/>
 <area shape="rect" title=" " alt="" coords="1011,225,1109,251"/>
 <area shape="poly" title=" " alt="" coords="1116,106,1088,126,1075,138,1065,153,1057,182,1058,211,1053,211,1052,182,1060,151,1071,135,1084,122,1113,102"/>
 <area shape="poly" title=" " alt="" coords="1080,105,807,152,806,147,1079,100"/>
@@ -155,17 +155,17 @@ Include dependency graph for Transform.c:</div>
 <area shape="poly" title=" " alt="" coords="1098,107,939,151,937,146,1097,101"/>
 <area shape="rect" href="Scripting_8h_source.html" title=" " alt="" coords="1279,152,1431,177"/>
 <area shape="poly" title=" " alt="" coords="1174,101,1308,145,1306,150,1173,107"/>
-<area shape="poly" title=" " alt="" coords="782,175,862,195,949,223,1000,248,1069,273,1134,292,1133,298,1067,278,998,253,947,228,860,200,781,180"/>
+<area shape="poly" title=" " alt="" coords="782,175,862,195,949,223,1000,248,1074,273,1144,293,1142,298,1072,279,998,253,947,228,860,200,781,180"/>
 <area shape="rect" href="GameObject_8h.html" title="The fundamental entity container in the Engram Engine&#39;s ECS architecture." alt="" coords="445,225,560,251"/>
 <area shape="poly" title=" " alt="" coords="691,180,553,224,551,219,690,175"/>
-<area shape="rect" href="Camera_8h.html" title="Component for defining the view and projection parameters." alt="" coords="77,225,248,251"/>
+<area shape="rect" href="Camera_8h.html" title="Component for defining 2D Orthographic and 3D Perspective view and projection parameters." alt="" coords="77,225,248,251"/>
 <area shape="poly" title=" " alt="" coords="657,177,262,227,261,222,656,172"/>
 <area shape="poly" title=" " alt="" coords="749,175,823,216,820,221,746,180"/>
 <area shape="rect" href="BVH_8h_source.html" title=" " alt="" coords="635,225,698,251"/>
 <area shape="poly" title=" " alt="" coords="719,179,687,217,683,213,715,176"/>
 <area shape="poly" title=" " alt="" coords="505,251,505,285,500,285,500,251"/>
 <area shape="poly" title=" " alt="" coords="470,253,343,297,342,292,469,248"/>
-<area shape="poly" title=" " alt="" coords="560,243,1077,296,1077,301,560,248"/>
+<area shape="poly" title=" " alt="" coords="561,242,1093,296,1092,301,560,248"/>
 <area shape="poly" title=" " alt="" coords="218,248,448,296,447,301,217,253"/>
 <area shape="poly" title=" " alt="" coords="172,250,195,285,231,322,271,347,313,365,311,370,269,352,228,326,191,288,167,253"/>
 <area shape="poly" title=" " alt="" coords="185,248,263,290,261,294,183,253"/>
@@ -176,18 +176,18 @@ Include dependency graph for Transform.c:</div>
 <area shape="poly" title=" " alt="" coords="836,253,765,294,762,289,834,248"/>
 <area shape="rect" title=" " alt="" coords="792,299,888,324"/>
 <area shape="poly" title=" " alt="" coords="855,252,848,286,843,285,850,250"/>
-<area shape="rect" title=" " alt="" coords="912,299,1067,324"/>
-<area shape="poly" title=" " alt="" coords="878,248,956,290,954,294,875,253"/>
+<area shape="rect" title=" " alt="" coords="913,299,1082,324"/>
+<area shape="poly" title=" " alt="" coords="879,248,963,290,961,295,876,253"/>
 <area shape="poly" title=" " alt="" coords="641,253,543,296,541,291,639,248"/>
 <area shape="poly" title=" " alt="" coords="679,249,714,287,710,290,675,253"/>
-<area shape="poly" title=" " alt="" coords="1575,253,1278,299,1277,294,1574,248"/>
-<area shape="rect" href="ReferenceCounting_8h.html" title="Thread&#45;safe (if implemented with atomics) manual memory management." alt="" coords="1400,299,1632,324"/>
-<area shape="poly" title=" " alt="" coords="1628,253,1551,294,1548,290,1626,248"/>
-<area shape="poly" title=" " alt="" coords="1400,322,922,348,486,375,414,381,414,376,485,369,921,342,1400,316"/>
-<area shape="poly" title=" " alt="" coords="1145,177,1184,285,1179,287,1140,179"/>
+<area shape="poly" title=" " alt="" coords="1577,253,1291,299,1290,294,1576,248"/>
+<area shape="rect" href="ReferenceCounting_8h.html" title="Thread&#45;safe (if implemented with atomics) manual memory management." alt="" coords="1407,299,1639,324"/>
+<area shape="poly" title=" " alt="" coords="1629,253,1556,294,1554,289,1627,248"/>
+<area shape="poly" title=" " alt="" coords="1407,322,486,375,414,381,414,376,485,369,1406,316"/>
+<area shape="poly" title=" " alt="" coords="1145,177,1176,250,1194,285,1190,288,1171,252,1141,179"/>
 <area shape="poly" title=" " alt="" coords="1185,249,558,302,558,296,1184,243"/>
-<area shape="poly" title=" " alt="" coords="1257,253,1215,291,1212,287,1254,249"/>
-<area shape="poly" title=" " alt="" coords="1343,248,1686,300,1685,305,1343,253"/>
+<area shape="poly" title=" " alt="" coords="1260,253,1227,290,1223,286,1256,249"/>
+<area shape="poly" title=" " alt="" coords="1344,248,1689,300,1688,305,1343,253"/>
 <area shape="poly" title=" " alt="" coords="98,180,84,194,71,212,64,231,68,250,90,279,117,304,149,324,182,341,251,363,312,375,311,381,250,369,180,346,146,329,114,308,86,282,63,252,59,231,66,210,80,191,95,176"/>
 <area shape="poly" title=" " alt="" coords="822,180,711,203,624,228,571,258,528,291,525,287,568,254,622,223,710,198,821,175"/>
 <area shape="poly" title=" " alt="" coords="860,180,763,228,651,294,648,289,760,223,858,175"/>
@@ -202,7 +202,7 @@ Include dependency graph for Transform.c:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ad56c5fcf7e2eefe79a4388e8aec665f6" id="r_ad56c5fcf7e2eefe79a4388e8aec665f6"><td class="memItemLeft" align="right" valign="top"><a id="ad56c5fcf7e2eefe79a4388e8aec665f6" name="ad56c5fcf7e2eefe79a4388e8aec665f6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>scene_mark_bvh_dirty</b> (<a class="el" href="structScene.html">Scene</a> *scene)</td></tr>
-<tr class="memdesc:ad56c5fcf7e2eefe79a4388e8aec665f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the scene's <a class="el" href="structBVH.html">BVH</a> as dirty. <br /></td></tr>
+<tr class="memdesc:ad56c5fcf7e2eefe79a4388e8aec665f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the scene's <a class="el" href="structBVH.html" title="The top-level Bounding Volume Hierarchy tree manager.">BVH</a> as dirty. <br /></td></tr>
 <tr class="separator:ad56c5fcf7e2eefe79a4388e8aec665f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e693ac3ce18d55d76981e724fa2bbf" id="r_ae8e693ac3ce18d55d76981e724fa2bbf"><td class="memItemLeft" align="right" valign="top"><a id="ae8e693ac3ce18d55d76981e724fa2bbf" name="ae8e693ac3ce18d55d76981e724fa2bbf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_mark_dirty</b> (<a class="el" href="structTransform.html">Transform</a> *t)</td></tr>
@@ -226,6 +226,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_mark_dirty<
 <tr class="memitem:a6b57cc65a626680b4c5327aa2a773622" id="r_a6b57cc65a626680b4c5327aa2a773622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Transform_8c.html#a6b57cc65a626680b4c5327aa2a773622">transform_get_world_position</a> (<a class="el" href="structTransform.html">Transform</a> *t)</td></tr>
 <tr class="memdesc:a6b57cc65a626680b4c5327aa2a773622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the world position of a transform.  <br /></td></tr>
 <tr class="separator:a6b57cc65a626680b4c5327aa2a773622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b93664165077a6d73adbc611cdd9c85" id="r_a9b93664165077a6d73adbc611cdd9c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structQuat.html">Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Transform_8c.html#a9b93664165077a6d73adbc611cdd9c85">transform_get_world_rotation</a> (<a class="el" href="structTransform.html">Transform</a> *t)</td></tr>
+<tr class="memdesc:a9b93664165077a6d73adbc611cdd9c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the world rotation quaternion of a transform. Evaluates recursively up the scene graph tree nodes.  <br /></td></tr>
+<tr class="separator:a9b93664165077a6d73adbc611cdd9c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c7e4c292f13bd7dfc71da0c7024d3d" id="r_a03c7e4c292f13bd7dfc71da0c7024d3d"><td class="memItemLeft" align="right" valign="top"><a id="a03c7e4c292f13bd7dfc71da0c7024d3d" name="a03c7e4c292f13bd7dfc71da0c7024d3d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_set_world_position</b> (<a class="el" href="structTransform.html">Transform</a> *t, <a class="el" href="structVec3.html">Vec3</a> world_pos)</td></tr>
 <tr class="memdesc:a03c7e4c292f13bd7dfc71da0c7024d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the world position of a transform. <br /></td></tr>
@@ -260,6 +263,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_set_world_p
 <tr class="memitem:a8324851ceb6cc86926bc2f2a382e71ab" id="r_a8324851ceb6cc86926bc2f2a382e71ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Transform_8c.html#a8324851ceb6cc86926bc2f2a382e71ab">transform_get_rotation_euler</a> (<a class="el" href="structTransform.html">Transform</a> *t)</td></tr>
 <tr class="memdesc:a8324851ceb6cc86926bc2f2a382e71ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Euler rotation of a transform in 2D.  <br /></td></tr>
 <tr class="separator:a8324851ceb6cc86926bc2f2a382e71ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a81864d7072f3a72fcbfac6db8a7026" id="r_a1a81864d7072f3a72fcbfac6db8a7026"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Transform_8c.html#a1a81864d7072f3a72fcbfac6db8a7026">transform_get_forward</a> (<a class="el" href="structTransform.html">Transform</a> *t)</td></tr>
+<tr class="memdesc:a1a81864d7072f3a72fcbfac6db8a7026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the world-space forward vector (Z-axis) of a transform.  <br /></td></tr>
+<tr class="separator:a1a81864d7072f3a72fcbfac6db8a7026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c9789bdf91aab549ff6a0028c20664" id="r_a68c9789bdf91aab549ff6a0028c20664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Transform_8c.html#a68c9789bdf91aab549ff6a0028c20664">transform_get_up</a> (<a class="el" href="structTransform.html">Transform</a> *t)</td></tr>
+<tr class="memdesc:a68c9789bdf91aab549ff6a0028c20664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the world-space up vector (Y-axis) of a transform.  <br /></td></tr>
+<tr class="separator:a68c9789bdf91aab549ff6a0028c20664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -323,6 +332,27 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a1a81864d7072f3a72fcbfac6db8a7026" name="a1a81864d7072f3a72fcbfac6db8a7026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a81864d7072f3a72fcbfac6db8a7026">&#9670;&#160;</a></span>transform_get_forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVec3.html">Vec3</a> transform_get_forward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTransform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the world-space forward vector (Z-axis) of a transform. </p>
+<p>Gets the absolute world-space forward vector (Z-axis). </p>
+
+</div>
+</div>
 <a id="a8324851ceb6cc86926bc2f2a382e71ab" name="a8324851ceb6cc86926bc2f2a382e71ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8324851ceb6cc86926bc2f2a382e71ab">&#9670;&#160;</a></span>transform_get_rotation_euler()</h2>
 
@@ -341,6 +371,27 @@ Variables</h2></td></tr>
 
 <p>Gets the Euler rotation of a transform in 2D. </p>
 <p>Gets local rotation as Euler angles (degrees). </p>
+
+</div>
+</div>
+<a id="a68c9789bdf91aab549ff6a0028c20664" name="a68c9789bdf91aab549ff6a0028c20664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c9789bdf91aab549ff6a0028c20664">&#9670;&#160;</a></span>transform_get_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVec3.html">Vec3</a> transform_get_up </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTransform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the world-space up vector (Y-axis) of a transform. </p>
+<p>Gets the absolute world-space up vector (Y-axis). </p>
 
 </div>
 </div>
@@ -383,6 +434,27 @@ Variables</h2></td></tr>
 
 <p>Gets the world position of a transform. </p>
 <p>Gets the absolute world-space position. </p>
+
+</div>
+</div>
+<a id="a9b93664165077a6d73adbc611cdd9c85" name="a9b93664165077a6d73adbc611cdd9c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b93664165077a6d73adbc611cdd9c85">&#9670;&#160;</a></span>transform_get_world_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structQuat.html">Quat</a> transform_get_world_rotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTransform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the world rotation quaternion of a transform. Evaluates recursively up the scene graph tree nodes. </p>
+<p>Gets the absolute world-space rotation quaternion. </p>
 
 </div>
 </div>

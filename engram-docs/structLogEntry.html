@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a log entry.  
+<p>Represents a single diagnostic message within the logging system.  
  <a href="structLogEntry.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="EditorState_8h_source.html">EditorState.h</a>&gt;</code></p>
@@ -85,13 +85,19 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2e3ef26a3ac6c9f2258e1d69d226966b" id="r_a2e3ef26a3ac6c9f2258e1d69d226966b"><td class="memItemLeft" align="right" valign="top"><a id="a2e3ef26a3ac6c9f2258e1d69d226966b" name="a2e3ef26a3ac6c9f2258e1d69d226966b"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>message</b> [MAX_LOG_STR_LEN]</td></tr>
+<tr class="memdesc:a2e3ef26a3ac6c9f2258e1d69d226966b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pre-formatted message text (capped at MAX_LOG_STR_LEN). <br /></td></tr>
 <tr class="separator:a2e3ef26a3ac6c9f2258e1d69d226966b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be0787cb12fb1c801fe23a4eea3f769" id="r_a0be0787cb12fb1c801fe23a4eea3f769"><td class="memItemLeft" align="right" valign="top"><a id="a0be0787cb12fb1c801fe23a4eea3f769" name="a0be0787cb12fb1c801fe23a4eea3f769"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>level</b></td></tr>
+<tr class="memdesc:a0be0787cb12fb1c801fe23a4eea3f769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Severity classification (e.g., INFO, WARN, ERROR). <br /></td></tr>
 <tr class="separator:a0be0787cb12fb1c801fe23a4eea3f769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a log entry. </p>
+<div class="textblock"><p>Represents a single diagnostic message within the logging system. </p>
+<ul>
+<li>Each log entry pairs a formatted message string with a severity level,</li>
+<li>allowing the engine to categorize and handle output dynamically. </li>
+</ul>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>editor/<a class="el" href="EditorState_8h_source.html">EditorState.h</a></li>
 </ul>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['math_2eh_0',['Math.h',['../Math_8h.html',1,'']]],
-  ['matrix4_2ec_1',['Matrix4.c',['../Matrix4_8c.html',1,'']]],
-  ['matrix4_2eh_2',['Matrix4.h',['../Matrix4_8h.html',1,'']]]
+  ['light_2eh_0',['Light.h',['../Light_8h.html',1,'']]],
+  ['log_2ec_1',['Log.c',['../Log_8c.html',1,'']]],
+  ['log_2eh_2',['Log.h',['../Log_8h.html',1,'']]]
 ];

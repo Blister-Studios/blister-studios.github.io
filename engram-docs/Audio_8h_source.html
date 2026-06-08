@@ -81,22 +81,32 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">Audio.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CORE_AUDIO_H_</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CORE_AUDIO_H_</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Hierarchy/Scene.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> <a class="code hl_function" href="Audio_8c.html#a780026a09284372732eeca5c1bdeda0b">audio_init</a>(<span class="keywordtype">void</span>);</div>
+<a href="Audio_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CORE_AUDIO_H_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CORE_AUDIO_H_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Scene_8h.html">Hierarchy/Scene.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> <a class="code hl_function" href="Audio_8c.html#a7ecba2d7b88ff44b24d128c86c9b2c3a">audio_update</a>(<a class="code hl_struct" href="structScene.html">Scene</a> *scene);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="Audio_8c.html#a68cf76bc8220d90b69e012a66fef3c2a">audio_shutdown</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aAudio_8c_html_a68cf76bc8220d90b69e012a66fef3c2a"><div class="ttname"><a href="Audio_8c.html#a68cf76bc8220d90b69e012a66fef3c2a">audio_shutdown</a></div><div class="ttdeci">void audio_shutdown(void)</div><div class="ttdoc">Destroys the audio system.</div><div class="ttdef"><b>Definition</b> Audio.c:135</div></div>
-<div class="ttc" id="aAudio_8c_html_a780026a09284372732eeca5c1bdeda0b"><div class="ttname"><a href="Audio_8c.html#a780026a09284372732eeca5c1bdeda0b">audio_init</a></div><div class="ttdeci">void audio_init(void)</div><div class="ttdoc">Initializes the audio system.</div><div class="ttdef"><b>Definition</b> Audio.c:20</div></div>
-<div class="ttc" id="aAudio_8c_html_a7ecba2d7b88ff44b24d128c86c9b2c3a"><div class="ttname"><a href="Audio_8c.html#a7ecba2d7b88ff44b24d128c86c9b2c3a">audio_update</a></div><div class="ttdeci">void audio_update(Scene *scene)</div><div class="ttdoc">Updates the audio system.</div><div class="ttdef"><b>Definition</b> Audio.c:31</div></div>
-<div class="ttc" id="astructScene_html"><div class="ttname"><a href="structScene.html">Scene</a></div><div class="ttdef"><b>Definition</b> Scene.h:18</div></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifdef USE_FMOD</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;fmod_studio.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="Audio_8h.html#a780026a09284372732eeca5c1bdeda0b">audio_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> <a class="code hl_function" href="Audio_8h.html#a7ecba2d7b88ff44b24d128c86c9b2c3a">audio_update</a>(<a class="code hl_struct" href="structScene.html">Scene</a> *scene);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="Audio_8h.html#a68cf76bc8220d90b69e012a66fef3c2a">audio_shutdown</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#ifdef USE_FMOD</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>FMOD_STUDIO_EVENTINSTANCE* audio_create_event_instance(<span class="keyword">const</span> <span class="keywordtype">char</span>* event_path);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">// CORE_AUDIO_H_</span></div>
+<div class="ttc" id="aAudio_8h_html_a68cf76bc8220d90b69e012a66fef3c2a"><div class="ttname"><a href="Audio_8h.html#a68cf76bc8220d90b69e012a66fef3c2a">audio_shutdown</a></div><div class="ttdeci">void audio_shutdown(void)</div><div class="ttdoc">Shuts down the active audio hardware mixer and releases subsystem contexts.</div><div class="ttdef"><b>Definition</b> Audio.c:327</div></div>
+<div class="ttc" id="aAudio_8h_html_a780026a09284372732eeca5c1bdeda0b"><div class="ttname"><a href="Audio_8h.html#a780026a09284372732eeca5c1bdeda0b">audio_init</a></div><div class="ttdeci">void audio_init(void)</div><div class="ttdoc">Initializes the active audio backend (FMOD Studio or legacy Sokol Audio fallback).</div><div class="ttdef"><b>Definition</b> Audio.c:46</div></div>
+<div class="ttc" id="aAudio_8h_html_a7ecba2d7b88ff44b24d128c86c9b2c3a"><div class="ttname"><a href="Audio_8h.html#a7ecba2d7b88ff44b24d128c86c9b2c3a">audio_update</a></div><div class="ttdeci">void audio_update(Scene *scene)</div><div class="ttdoc">Called every frame to synchronize transforms and update the audio mixer thread.</div><div class="ttdef"><b>Definition</b> Audio.c:118</div></div>
+<div class="ttc" id="aScene_8h_html"><div class="ttname"><a href="Scene_8h.html">Scene.h</a></div><div class="ttdoc">The primary memory arena and management system for the game world.</div></div>
+<div class="ttc" id="astructScene_html"><div class="ttname"><a href="structScene.html">Scene</a></div><div class="ttdoc">Container for a complete game world state.</div><div class="ttdef"><b>Definition</b> Scene.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

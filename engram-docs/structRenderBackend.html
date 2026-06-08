@@ -75,31 +75,64 @@ $(function() {
   <div class="headertitle"><div class="title">RenderBackend Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface for hardware-specific rendering implementations.  
+ <a href="structRenderBackend.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Renderer_8h_source.html">Renderer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a86183eba2a45d5c9271e6847ce036c24" id="r_a86183eba2a45d5c9271e6847ce036c24"><td class="memItemLeft" align="right" valign="top"><a id="a86183eba2a45d5c9271e6847ce036c24" name="a86183eba2a45d5c9271e6847ce036c24"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_state</b></td></tr>
+<tr class="memitem:a86183eba2a45d5c9271e6847ce036c24" id="r_a86183eba2a45d5c9271e6847ce036c24"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderBackend.html#a86183eba2a45d5c9271e6847ce036c24">internal_state</a></td></tr>
 <tr class="separator:a86183eba2a45d5c9271e6847ce036c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268ab8c8c95e270606326493a10ccd41" id="r_a268ab8c8c95e270606326493a10ccd41"><td class="memItemLeft" align="right" valign="top"><a id="a268ab8c8c95e270606326493a10ccd41" name="a268ab8c8c95e270606326493a10ccd41"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:a268ab8c8c95e270606326493a10ccd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the rendering API and graphics hardware. <br /></td></tr>
 <tr class="separator:a268ab8c8c95e270606326493a10ccd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a735a10253e20e439c38c08576285d507" id="r_a735a10253e20e439c38c08576285d507"><td class="memItemLeft" align="right" valign="top"><a id="a735a10253e20e439c38c08576285d507" name="a735a10253e20e439c38c08576285d507"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>begin_frame</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, <a class="el" href="structMat4.html">Mat4</a> view, <a class="el" href="structMat4.html">Mat4</a> projection, <a class="el" href="structRenderTarget.html">RenderTarget</a> *target)</td></tr>
+<tr class="memdesc:a735a10253e20e439c38c08576285d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up viewport, scissor, and camera transformation matrices. <br /></td></tr>
 <tr class="separator:a735a10253e20e439c38c08576285d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab11e9dd15eccd75d62c1d4004786afb0" id="r_ab11e9dd15eccd75d62c1d4004786afb0"><td class="memItemLeft" align="right" valign="top"><a id="ab11e9dd15eccd75d62c1d4004786afb0" name="ab11e9dd15eccd75d62c1d4004786afb0"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_lighting</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, fs_lighting_t *lighting)</td></tr>
+<tr class="memdesc:ab11e9dd15eccd75d62c1d4004786afb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the global lighting uniform buffer for shader programs. <br /></td></tr>
 <tr class="separator:ab11e9dd15eccd75d62c1d4004786afb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3501bcc8319c521aae468dddd2f3f386" id="r_a3501bcc8319c521aae468dddd2f3f386"><td class="memItemLeft" align="right" valign="top"><a id="a3501bcc8319c521aae468dddd2f3f386" name="a3501bcc8319c521aae468dddd2f3f386"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>submit</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, <a class="el" href="structRenderPacket.html">RenderPacket</a> packet)</td></tr>
+<tr class="memdesc:a3501bcc8319c521aae468dddd2f3f386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a <a class="el" href="structRenderPacket.html" title="A unified, high-level draw command sent to the rendering backend.">RenderPacket</a> to the internal render queue. <br /></td></tr>
 <tr class="separator:a3501bcc8319c521aae468dddd2f3f386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af507121e84a55fe739c18421699d310a" id="r_af507121e84a55fe739c18421699d310a"><td class="memItemLeft" align="right" valign="top"><a id="af507121e84a55fe739c18421699d310a" name="af507121e84a55fe739c18421699d310a"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>end_frame</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:af507121e84a55fe739c18421699d310a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes all queued commands and triggers the final draw command. <br /></td></tr>
 <tr class="separator:af507121e84a55fe739c18421699d310a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9102a96fb3ff78e3e274176d5678f136" id="r_a9102a96fb3ff78e3e274176d5678f136"><td class="memItemLeft" align="right" valign="top"><a id="a9102a96fb3ff78e3e274176d5678f136" name="a9102a96fb3ff78e3e274176d5678f136"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx)</td></tr>
+<tr class="memdesc:a9102a96fb3ff78e3e274176d5678f136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tears down the backend and frees all associated GPU handles. <br /></td></tr>
 <tr class="separator:a9102a96fb3ff78e3e274176d5678f136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for hardware-specific rendering implementations. </p>
+<ul>
+<li>By defining this interface, the engine can swap graphics APIs</li>
+<li>(e.g., modern Sokol vs a legacy headless backend) by simply routing</li>
+<li>the function pointers. </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a86183eba2a45d5c9271e6847ce036c24" name="a86183eba2a45d5c9271e6847ce036c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86183eba2a45d5c9271e6847ce036c24">&#9670;&#160;</a></span>internal_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* RenderBackend::internal_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opaque backend data (e.g., <a class="el" href="structSokolInternal.html" title="Private backend state for the dual-pipeline Sokol implementation.">SokolInternal</a> struct). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>engram/Rendering/<a class="el" href="Renderer_8h_source.html">Renderer.h</a></li>
 </ul>

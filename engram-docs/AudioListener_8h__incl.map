@@ -1,5 +1,5 @@
 <map id="engram/Components/AudioListener.h" name="engram/Components/AudioListener.h">
-<area shape="rect" id="Node000001" title="Component representing the point where audio is heard." alt="" coords="5,5,268,31"/>
+<area shape="rect" id="Node000001" title="Component representing the point where 3D spatial audio is mixed and heard." alt="" coords="5,5,268,31"/>
 <area shape="rect" id="Node000002" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="37,79,146,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,32,108,69,104,66,127,30"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="99,152,174,177"/>

@@ -85,11 +85,11 @@ Collaboration diagram for InputSystem:</div>
 <div class="dyncontent">
 <div class="center"><img src="structInputSystem__coll__graph.png" border="0" usemap="#aInputSystem_coll__map" alt="Collaboration graph"/></div>
 <map name="aInputSystem_coll__map" id="aInputSystem_coll__map">
-<area shape="rect" title="Container for the state of all registered input actions and raw keys." alt="" coords="64,93,168,119"/>
-<area shape="rect" href="structInputAction.html" title="Internal state tracking for a single input action." alt="" coords="5,5,101,31"/>
-<area shape="poly" title=" " alt="" coords="72,40,109,91,105,94,68,43"/>
-<area shape="rect" href="structRawKeyState.html" title="Internal state tracking for raw hardware keys." alt="" coords="126,5,234,31"/>
-<area shape="poly" title=" " alt="" coords="168,44,149,71,129,95,125,91,145,68,163,41"/>
+<area shape="rect" title="Container for the state of all registered input actions and raw keys." alt="" coords="67,108,171,133"/>
+<area shape="rect" href="structInputAction.html" title="Logic&#45;level state representation of a rebindable control action." alt="" coords="5,5,101,31"/>
+<area shape="poly" title=" " alt="" coords="71,41,113,107,109,109,66,44"/>
+<area shape="rect" href="structRawInputState.html" title="Raw hardware&#45;level state tracking for a single key or button." alt="" coords="125,5,243,31"/>
+<area shape="poly" title=" " alt="" coords="177,44,154,86,133,109,129,106,150,82,172,42"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -99,10 +99,22 @@ Public Attributes</h2></td></tr>
 <a class="el" href="structInputAction.html">InputAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>actions</b> [<a class="el" href="Input_8h.html#ab56cf18122765da33d6c5c2519a3fb30">MAX_INPUT_ACTIONS</a>]</td></tr>
 <tr class="memdesc:ae7c23feef687c86bac11facac3abc053"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-level gameplay actions. <br /></td></tr>
 <tr class="separator:ae7c23feef687c86bac11facac3abc053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3524124d7696933bcebf250f4c5ffe71" id="r_a3524124d7696933bcebf250f4c5ffe71"><td class="memItemLeft" align="right" valign="top"><a id="a3524124d7696933bcebf250f4c5ffe71" name="a3524124d7696933bcebf250f4c5ffe71"></a>
-<a class="el" href="structRawKeyState.html">RawKeyState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>keys</b> [SAPP_MAX_KEYCODES]</td></tr>
-<tr class="memdesc:a3524124d7696933bcebf250f4c5ffe71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical keyboard state tracker. <br /></td></tr>
-<tr class="separator:a3524124d7696933bcebf250f4c5ffe71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8f0e847e0efe99fecb76a7ae6d5b62" id="r_a4b8f0e847e0efe99fecb76a7ae6d5b62"><td class="memItemLeft" align="right" valign="top"><a id="a4b8f0e847e0efe99fecb76a7ae6d5b62" name="a4b8f0e847e0efe99fecb76a7ae6d5b62"></a>
+<a class="el" href="structRawInputState.html">RawInputState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>keys</b> [SAPP_MAX_KEYCODES]</td></tr>
+<tr class="memdesc:a4b8f0e847e0efe99fecb76a7ae6d5b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical keyboard state tracker. <br /></td></tr>
+<tr class="separator:a4b8f0e847e0efe99fecb76a7ae6d5b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee958c613600aa8ce390878c85b7d28" id="r_a0ee958c613600aa8ce390878c85b7d28"><td class="memItemLeft" align="right" valign="top"><a id="a0ee958c613600aa8ce390878c85b7d28" name="a0ee958c613600aa8ce390878c85b7d28"></a>
+<a class="el" href="structRawInputState.html">RawInputState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mouse_buttons</b> [<a class="el" href="Input_8h.html#a173153d4c3637d9f869cebb630e8fecd">MAX_MOUSE_BUTTONS</a>]</td></tr>
+<tr class="memdesc:a0ee958c613600aa8ce390878c85b7d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw mouse buttons tracker. <br /></td></tr>
+<tr class="separator:a0ee958c613600aa8ce390878c85b7d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1b59a8930b416b67f19413b9eb7ba0" id="r_adc1b59a8930b416b67f19413b9eb7ba0"><td class="memItemLeft" align="right" valign="top"><a id="adc1b59a8930b416b67f19413b9eb7ba0" name="adc1b59a8930b416b67f19413b9eb7ba0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mouse_x</b></td></tr>
+<tr class="memdesc:adc1b59a8930b416b67f19413b9eb7ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current absolute window X-coordinate of the mouse. <br /></td></tr>
+<tr class="separator:adc1b59a8930b416b67f19413b9eb7ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2f4bf68540df5409f40ce958c6155e" id="r_a5e2f4bf68540df5409f40ce958c6155e"><td class="memItemLeft" align="right" valign="top"><a id="a5e2f4bf68540df5409f40ce958c6155e" name="a5e2f4bf68540df5409f40ce958c6155e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mouse_y</b></td></tr>
+<tr class="memdesc:a5e2f4bf68540df5409f40ce958c6155e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current absolute window Y-coordinate of the mouse. <br /></td></tr>
+<tr class="separator:a5e2f4bf68540df5409f40ce958c6155e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for the state of all registered input actions and raw keys. </p>

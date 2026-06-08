@@ -1,6 +1,6 @@
 <map id="engram/Components/AudioListener.c" name="engram/Components/AudioListener.c">
 <area shape="rect" id="Node000001" title="Implementation of the AudioListener component." alt="" coords="96,5,357,31"/>
-<area shape="rect" id="Node000002" href="$AudioListener_8h.html" title="Component representing the point where audio is heard." alt="" coords="44,79,167,104"/>
+<area shape="rect" id="Node000002" href="$AudioListener_8h.html" title="Component representing the point where 3D spatial audio is mixed and heard." alt="" coords="44,79,167,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,33,138,74,135,69,206,28"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="191,79,262,104"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="229,31,229,65,224,65,224,31"/>

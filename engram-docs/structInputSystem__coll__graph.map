@@ -1,7 +1,7 @@
 <map id="InputSystem" name="InputSystem">
-<area shape="rect" id="Node000001" title="Container for the state of all registered input actions and raw keys." alt="" coords="64,93,168,119"/>
-<area shape="rect" id="Node000002" href="$structInputAction.html" title="Internal state tracking for a single input action." alt="" coords="5,5,101,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,40,109,91,105,94,68,43"/>
-<area shape="rect" id="Node000003" href="$structRawKeyState.html" title="Internal state tracking for raw hardware keys." alt="" coords="126,5,234,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,44,149,71,129,95,125,91,145,68,163,41"/>
+<area shape="rect" id="Node000001" title="Container for the state of all registered input actions and raw keys." alt="" coords="67,108,171,133"/>
+<area shape="rect" id="Node000002" href="$structInputAction.html" title="Logic&#45;level state representation of a rebindable control action." alt="" coords="5,5,101,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,41,113,107,109,109,66,44"/>
+<area shape="rect" id="Node000003" href="$structRawInputState.html" title="Raw hardware&#45;level state tracking for a single key or button." alt="" coords="125,5,243,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,44,154,86,133,109,129,106,150,82,172,42"/>
 </map>

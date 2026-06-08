@@ -85,14 +85,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef CIMGUI_DEFINE_ENUMS_AND_STRUCTS</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define CIMGUI_DEFINE_ENUMS_AND_STRUCTS</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;cimgui.h&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;cimguizmo.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Engram_8h.html">Core/Engram.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">Core/Time.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="Log_8h.html">Core/Log.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;Hierarchy/Scene.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="Scene_8h.html">Hierarchy/Scene.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;Rendering/Renderer.h&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="DynamicArray_8h.html">Containers/DynamicArray.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;EditorUI.h&quot;</span></div>
@@ -105,53 +105,68 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define MAX_LOG_STR_LEN 512</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structLogEntry.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">char</span> message[MAX_LOG_STR_LEN];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">int</span> level;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <a class="code hl_struct" href="structLogEntry.html">LogEntry</a>;</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structLogEntry.html">   40</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structLogEntry.html#a2e3ef26a3ac6c9f2258e1d69d226966b">   43</a></span>    <span class="keywordtype">char</span> message[MAX_LOG_STR_LEN];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structLogEntry.html#a0be0787cb12fb1c801fe23a4eea3f769">   46</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structLogEntry.html#a0be0787cb12fb1c801fe23a4eea3f769">level</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <a class="code hl_struct" href="structLogEntry.html">LogEntry</a>;</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structEditorState.html">   46</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_struct" href="structGameObject.html">GameObject</a> *selected_go;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">char</span> name_edit_buf[128];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">char</span> vfs_path_buf[256];</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_struct" href="structRenderTarget.html">RenderTarget</a> scene_rt;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span> viewport_w;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> viewport_h;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> is_playing;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> is_paused;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">char</span> current_scene_path[256];</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">char</span> browser_dir[256];</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <a class="code hl_struct" href="structEditorState.html">EditorState</a>;</div>
-</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structEditorState.html">   56</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structEditorState.html#aaf288a00c4a91dca072287e209c6cfa6">   59</a></span>    <a class="code hl_struct" href="structGameObject.html">GameObject</a> *<a class="code hl_variable" href="structEditorState.html#aaf288a00c4a91dca072287e209c6cfa6">selected_go</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structEditorState.html#a2b78a65b6b7b43b74749cf279ad07cc1">   62</a></span>    <span class="keywordtype">char</span> name_edit_buf[128];</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> draw_editor_ui(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> <a class="code hl_function" href="EditorConsole_8c.html#aa289d765da87802efa1cd71ca1de8e0d">editor_log_push</a>(<span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);  </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> <a class="code hl_function" href="EditorConsole_8c.html#af5a4b2ea36096606c71b0a2c717a5d2e">draw_console</a>(<a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> editor_draw_gizmos(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structGameObject.html">GameObject</a> *selected);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span> draw_scene_view(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span> draw_content_browser(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> draw_inspector(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span> draw_hierarchy(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structEditorState.html#adb3f248287bf31d140da398782200bc3">   65</a></span>    <span class="keywordtype">char</span> vfs_path_buf[256];</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structEditorState.html#aa4bafecc40c93bb6464dff5179bee820">   68</a></span>    <a class="code hl_struct" href="structRenderTarget.html">RenderTarget</a> <a class="code hl_variable" href="structEditorState.html#aa4bafecc40c93bb6464dff5179bee820">scene_rt</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structEditorState.html#a306407a0c475ea06e6d903bbbc95550f">   71</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structEditorState.html#a306407a0c475ea06e6d903bbbc95550f">viewport_w</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structEditorState.html#a8604e745f86b10a862577dde3f7551ba">   74</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structEditorState.html#a8604e745f86b10a862577dde3f7551ba">viewport_h</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structEditorState.html#ab226947b06a2bee81537ab463320c934">   77</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structEditorState.html#ab226947b06a2bee81537ab463320c934">is_playing</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structEditorState.html#a3f6d27a72d684f0b56e45d7ce46ad62a">   80</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structEditorState.html#a3f6d27a72d684f0b56e45d7ce46ad62a">is_paused</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structEditorState.html#a2e99fb0f2a622e716cc224d7e26bf596">   83</a></span>    <span class="keywordtype">char</span> current_scene_path[256];</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structEditorState.html#a71b8ac924e67eebd675b52e6d449e7c5">   86</a></span>    <span class="keywordtype">char</span> browser_dir[256];</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <a class="code hl_struct" href="structEditorState.html">EditorState</a>;</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keywordtype">void</span> draw_editor_ui(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="EditorConsole_8c.html#aa289d765da87802efa1cd71ca1de8e0d">editor_log_push</a>(<span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">void</span> <a class="code hl_function" href="EditorConsole_8c.html#af5a4b2ea36096606c71b0a2c717a5d2e">draw_console</a>(<a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> editor_draw_gizmos(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structGameObject.html">GameObject</a> *selected);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">void</span> draw_scene_view(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> draw_content_browser(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> draw_inspector(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keywordtype">void</span> draw_hierarchy(<a class="code hl_struct" href="structEngramContext.html">EngramContext</a> *ctx, <a class="code hl_struct" href="structEditorState.html">EditorState</a> *state);</div>
 <div class="ttc" id="aDynamicArray_8h_html"><div class="ttname"><a href="DynamicArray_8h.html">DynamicArray.h</a></div><div class="ttdoc">A generic, growable array of void pointers.</div></div>
 <div class="ttc" id="aEditorConsole_8c_html_aa289d765da87802efa1cd71ca1de8e0d"><div class="ttname"><a href="EditorConsole_8c.html#aa289d765da87802efa1cd71ca1de8e0d">editor_log_push</a></div><div class="ttdeci">void editor_log_push(int level, const char *fmt,...)</div><div class="ttdoc">Pushes a log entry of a specified level and format to the editor console.</div><div class="ttdef"><b>Definition</b> EditorConsole.c:28</div></div>
 <div class="ttc" id="aEditorConsole_8c_html_af5a4b2ea36096606c71b0a2c717a5d2e"><div class="ttname"><a href="EditorConsole_8c.html#af5a4b2ea36096606c71b0a2c717a5d2e">draw_console</a></div><div class="ttdeci">void draw_console(EditorState *state)</div><div class="ttdoc">Draws the editor console, provided the state of the editor.</div><div class="ttdef"><b>Definition</b> EditorConsole.c:47</div></div>
 <div class="ttc" id="aEngram_8h_html"><div class="ttname"><a href="Engram_8h.html">Engram.h</a></div><div class="ttdoc">The central entry point and context management for the Engram Engine.</div></div>
 <div class="ttc" id="aLog_8h_html"><div class="ttname"><a href="Log_8h.html">Log.h</a></div><div class="ttdoc">Centralized logging system for the Engram Engine.</div></div>
+<div class="ttc" id="aScene_8h_html"><div class="ttname"><a href="Scene_8h.html">Scene.h</a></div><div class="ttdoc">The primary memory arena and management system for the game world.</div></div>
 <div class="ttc" id="aTime_8h_html"><div class="ttname"><a href="Time_8h.html">Time.h</a></div><div class="ttdoc">Global engine timing state and frame delta calculations.</div></div>
-<div class="ttc" id="astructEditorState_html"><div class="ttname"><a href="structEditorState.html">EditorState</a></div><div class="ttdoc">Defines the editor state.</div><div class="ttdef"><b>Definition</b> EditorState.h:47</div></div>
-<div class="ttc" id="astructEngramContext_html"><div class="ttname"><a href="structEngramContext.html">EngramContext</a></div><div class="ttdoc">The heart of the engine state, encapsulating all sub-systems.</div><div class="ttdef"><b>Definition</b> Engram.h:49</div></div>
+<div class="ttc" id="astructEditorState_html"><div class="ttname"><a href="structEditorState.html">EditorState</a></div><div class="ttdoc">Global persistent state for the Engram Engine Editor interface.</div><div class="ttdef"><b>Definition</b> EditorState.h:57</div></div>
+<div class="ttc" id="astructEditorState_html_a306407a0c475ea06e6d903bbbc95550f"><div class="ttname"><a href="structEditorState.html#a306407a0c475ea06e6d903bbbc95550f">EditorState::viewport_w</a></div><div class="ttdeci">int viewport_w</div><div class="ttdoc">Current pixel width of the Scene Viewport.</div><div class="ttdef"><b>Definition</b> EditorState.h:71</div></div>
+<div class="ttc" id="astructEditorState_html_a3f6d27a72d684f0b56e45d7ce46ad62a"><div class="ttname"><a href="structEditorState.html#a3f6d27a72d684f0b56e45d7ce46ad62a">EditorState::is_paused</a></div><div class="ttdeci">bool is_paused</div><div class="ttdoc">Simulation state paused flag.</div><div class="ttdef"><b>Definition</b> EditorState.h:80</div></div>
+<div class="ttc" id="astructEditorState_html_a8604e745f86b10a862577dde3f7551ba"><div class="ttname"><a href="structEditorState.html#a8604e745f86b10a862577dde3f7551ba">EditorState::viewport_h</a></div><div class="ttdeci">int viewport_h</div><div class="ttdoc">Current pixel height of the Scene Viewport.</div><div class="ttdef"><b>Definition</b> EditorState.h:74</div></div>
+<div class="ttc" id="astructEditorState_html_aa4bafecc40c93bb6464dff5179bee820"><div class="ttname"><a href="structEditorState.html#aa4bafecc40c93bb6464dff5179bee820">EditorState::scene_rt</a></div><div class="ttdeci">RenderTarget scene_rt</div><div class="ttdoc">The dedicated RenderTarget used to draw the Scene Viewport.</div><div class="ttdef"><b>Definition</b> EditorState.h:68</div></div>
+<div class="ttc" id="astructEditorState_html_aaf288a00c4a91dca072287e209c6cfa6"><div class="ttname"><a href="structEditorState.html#aaf288a00c4a91dca072287e209c6cfa6">EditorState::selected_go</a></div><div class="ttdeci">GameObject * selected_go</div><div class="ttdoc">Currently selected GameObject in the Scene Graph (ImGui Inspector target).</div><div class="ttdef"><b>Definition</b> EditorState.h:59</div></div>
+<div class="ttc" id="astructEditorState_html_ab226947b06a2bee81537ab463320c934"><div class="ttname"><a href="structEditorState.html#ab226947b06a2bee81537ab463320c934">EditorState::is_playing</a></div><div class="ttdeci">bool is_playing</div><div class="ttdoc">Simulation state playing flag.</div><div class="ttdef"><b>Definition</b> EditorState.h:77</div></div>
+<div class="ttc" id="astructEngramContext_html"><div class="ttname"><a href="structEngramContext.html">EngramContext</a></div><div class="ttdoc">The central hub and &quot;God Object&quot; of the engine state.</div><div class="ttdef"><b>Definition</b> Engram.h:63</div></div>
 <div class="ttc" id="astructGameObject_html"><div class="ttname"><a href="structGameObject.html">GameObject</a></div><div class="ttdoc">Represents an entity within a scene.</div><div class="ttdef"><b>Definition</b> GameObject.h:18</div></div>
-<div class="ttc" id="astructLogEntry_html"><div class="ttname"><a href="structLogEntry.html">LogEntry</a></div><div class="ttdoc">Defines a log entry.</div><div class="ttdef"><b>Definition</b> EditorState.h:38</div></div>
-<div class="ttc" id="astructRenderTarget_html"><div class="ttname"><a href="structRenderTarget.html">RenderTarget</a></div><div class="ttdef"><b>Definition</b> Renderer.h:13</div></div>
+<div class="ttc" id="astructLogEntry_html"><div class="ttname"><a href="structLogEntry.html">LogEntry</a></div><div class="ttdoc">Represents a single diagnostic message within the logging system.</div><div class="ttdef"><b>Definition</b> EditorState.h:41</div></div>
+<div class="ttc" id="astructLogEntry_html_a0be0787cb12fb1c801fe23a4eea3f769"><div class="ttname"><a href="structLogEntry.html#a0be0787cb12fb1c801fe23a4eea3f769">LogEntry::level</a></div><div class="ttdeci">int level</div><div class="ttdoc">Severity classification (e.g., INFO, WARN, ERROR).</div><div class="ttdef"><b>Definition</b> EditorState.h:46</div></div>
+<div class="ttc" id="astructRenderTarget_html"><div class="ttname"><a href="structRenderTarget.html">RenderTarget</a></div><div class="ttdoc">Represents an off-screen rendering buffer or a frame-buffer object.</div><div class="ttdef"><b>Definition</b> Renderer.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

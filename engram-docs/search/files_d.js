@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['sceneloader_2ec_0',['SceneLoader.c',['../SceneLoader_8c.html',1,'']]],
-  ['sceneloader_2eh_1',['SceneLoader.h',['../SceneLoader_8h.html',1,'']]],
-  ['script_2eh_2',['Script.h',['../Script_8h.html',1,'']]],
-  ['sokol_2ec_3',['Sokol.c',['../Sokol_8c.html',1,'']]],
-  ['sokol_2eh_4',['Sokol.h',['../Sokol_8h.html',1,'']]],
-  ['sprite_2ec_5',['Sprite.c',['../Sprite_8c.html',1,'']]],
-  ['sprite_2eh_6',['Sprite.h',['../Sprite_8h.html',1,'']]]
+  ['referencecounting_2ec_0',['ReferenceCounting.c',['../ReferenceCounting_8c.html',1,'']]],
+  ['referencecounting_2eh_1',['ReferenceCounting.h',['../ReferenceCounting_8h.html',1,'']]],
+  ['rendererbackend_2ec_2',['RendererBackend.c',['../RendererBackend_8c.html',1,'']]],
+  ['rendering_2eh_3',['Rendering.h',['../Rendering_8h.html',1,'']]],
+  ['resourcemanager_2ec_4',['ResourceManager.c',['../ResourceManager_8c.html',1,'']]],
+  ['resourcemanager_2eh_5',['ResourceManager.h',['../ResourceManager_8h.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 <map id="AudioSource" name="AudioSource">
-<area shape="rect" id="Node000001" title="Added the &#39;AudioSource&#39; tag to the struct definition to prevent unnamed struct errors." alt="" coords="5,284,108,309"/>
+<area shape="rect" id="Node000001" title="Component managing the playback of audio assets within the game world." alt="" coords="5,284,108,309"/>
 <area shape="rect" id="Node000002" href="$structComponent.html" title="The base structure for all components." alt="" coords="8,196,105,221"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,235,59,283,54,283,54,235"/>
 <area shape="rect" id="Node000003" href="$structGameObject.html" title="Represents an entity within a scene." alt="" coords="5,108,108,133"/>

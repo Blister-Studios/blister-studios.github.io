@@ -112,20 +112,20 @@ Include dependency graph for ReferenceCounting.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRcHeader.html">RcHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal metadata prefixing the user data allocation.  <a href="structRcHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intrusive metadata header for reference-counted allocations.  <a href="structRcHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1257453fc254edd3d619b7fe68bb368c" id="r_a1257453fc254edd3d619b7fe68bb368c"><td class="memItemLeft" align="right" valign="top"><a id="a1257453fc254edd3d619b7fe68bb368c" name="a1257453fc254edd3d619b7fe68bb368c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HAS_ATOMICS</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a1257453fc254edd3d619b7fe68bb368c" id="r_a1257453fc254edd3d619b7fe68bb368c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReferenceCounting_8c.html#a1257453fc254edd3d619b7fe68bb368c">HAS_ATOMICS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a1257453fc254edd3d619b7fe68bb368c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocessor flag indicating atomic hardware support.  <br /></td></tr>
 <tr class="separator:a1257453fc254edd3d619b7fe68bb368c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:add864e284425222b157b35ce1de753aa" id="r_add864e284425222b157b35ce1de753aa"><td class="memItemLeft" align="right" valign="top"><a id="add864e284425222b157b35ce1de753aa" name="add864e284425222b157b35ce1de753aa"></a>
-typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>rc_count_t</b></td></tr>
-<tr class="separator:add864e284425222b157b35ce1de753aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0a0d248e8b52870d65636412e5415f" id="r_acb0a0d248e8b52870d65636412e5415f"><td class="memItemLeft" align="right" valign="top">typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReferenceCounting_8c.html#acb0a0d248e8b52870d65636412e5415f">rc_count_t</a></td></tr>
+<tr class="memdesc:acb0a0d248e8b52870d65636412e5415f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe counter type used for reference counting.  <br /></td></tr>
+<tr class="separator:acb0a0d248e8b52870d65636412e5415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -144,7 +144,53 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread-safe (where C11 atomics exist) reference counting implementation. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a1257453fc254edd3d619b7fe68bb368c" name="a1257453fc254edd3d619b7fe68bb368c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1257453fc254edd3d619b7fe68bb368c">&#9670;&#160;</a></span>HAS_ATOMICS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAS_ATOMICS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Preprocessor flag indicating atomic hardware support. </p>
+<ul>
+<li>1 if the current build supports thread-safe atomic operations, 0 otherwise.</li>
+<li>Use this flag in your implementation to toggle between atomic increments</li>
+<li>and standard non-thread-safe increment operations.</li>
+</ul>
+<p>Preprocessor flag indicating atomic hardware support. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="acb0a0d248e8b52870d65636412e5415f" name="acb0a0d248e8b52870d65636412e5415f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0a0d248e8b52870d65636412e5415f">&#9670;&#160;</a></span>rc_count_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ReferenceCounting_8c.html#acb0a0d248e8b52870d65636412e5415f">rc_count_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread-safe counter type used for reference counting. </p>
+<p>Thread-safe counter type used for reference counting.</p>
+<ul>
+<li>This type abstracts the underlying atomic implementation. If the compiler</li>
+<li>and architecture support C11 atomics, this resolves to <code>atomic_ptrdiff_t</code>.</li>
+<li>Otherwise, it falls back to a standard <code>ptrdiff_t</code>. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ad953c7f8ee60589fc6d05d3b88cab608" name="ad953c7f8ee60589fc6d05d3b88cab608"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad953c7f8ee60589fc6d05d3b88cab608">&#9670;&#160;</a></span>rc_acquire()</h2>
 

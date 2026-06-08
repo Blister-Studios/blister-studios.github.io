@@ -1,0 +1,11 @@
+<map id="MeshResource" name="MeshResource">
+<area shape="rect" id="Node000001" title="Represents a loaded 3D asset containing one or more SubMeshes." alt="" coords="91,328,208,353"/>
+<area shape="rect" id="Node000002" href="$structSubMesh.html" title="Represents a single primitive/draw&#45;call within a mesh, with its own geometry and material." alt="" coords="109,240,190,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,279,152,327,147,327,147,279"/>
+<area shape="rect" id="Node000003" href="$structMaterial.html" title="Material state for PBR and traditional rendering." alt="" coords="111,152,187,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,191,152,239,147,239,147,191"/>
+<area shape="rect" id="Node000004" href="$structTextureResource.html" title="Represents a texture asset loaded into GPU memory." alt="" coords="5,5,136,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="67,44,63,86,66,107,74,126,91,143,112,153,110,158,88,147,70,130,61,108,57,86,61,44"/>
+<area shape="rect" id="Node000005" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="203,5,256,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,45,222,86,214,109,202,130,189,143,174,154,171,150,186,139,198,126,209,107,217,85,225,44"/>
+</map>

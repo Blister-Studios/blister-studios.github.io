@@ -1,5 +1,5 @@
 <map id="engram/Components/AudioSource.h" name="engram/Components/AudioSource.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="25,5,279,31"/>
+<area shape="rect" id="Node000001" title="Component layout for audio emitter states supporting FMOD Studio events and custom fallback pipelines..." alt="" coords="25,5,279,31"/>
 <area shape="rect" id="Node000002" href="$Component_8h.html" title="Base structure for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="5,79,115,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,33,87,72,84,68,136,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="68,152,143,177"/>

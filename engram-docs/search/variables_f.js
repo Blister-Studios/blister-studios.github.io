@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['sample_5frate_0',['sample_rate',['../structAudioClip.html#a66ed62cd283738ca7d9e4301a5ba1b31',1,'AudioClip']]],
-  ['samples_1',['samples',['../structAudioClip.html#a9e8173b0e4e9fd4a6e5bf5cfcf2bd9d1',1,'AudioClip']]],
-  ['scale_2',['scale',['../structTransform.html#a2212569c91ac3fcf781b99a0be3e7f82',1,'Transform']]],
-  ['script_5fpath_3',['script_path',['../structScript.html#ae44ea6dbda9d6a31cdfe1de8cffd395d',1,'Script']]],
-  ['size_4',['size',['../structCamera.html#adaa2ba07777e210a38835f66ea97cc4c',1,'Camera']]],
-  ['spot_5finner_5fangle_5',['spot_inner_angle',['../structLight.html#a048482eb365e6216ccd4724cedaef763',1,'Light']]],
-  ['spot_5fouter_5fangle_6',['spot_outer_angle',['../structLight.html#a48f0e5529f387ee8fc65fed3bb9473ee',1,'Light']]]
+  ['parent_0',['parent',['../structTransform.html#a9dd816c1137e009ba8cf9b4f2cd8b0cd',1,'Transform::parent'],['../structGameObject.html#ab7502fce7b6a8e5c5bf8626874ac8ee4',1,'GameObject::parent']]],
+  ['pass_5faction_1',['pass_action',['../structRenderTarget.html#aa16ec40eca06463f8811c2af1586e490',1,'RenderTarget']]],
+  ['path_2',['path',['../structCachedResource.html#ac4c23959589774de54c0b156ef055513',1,'CachedResource']]],
+  ['payload_3',['payload',['../structEvent.html#a7e60e7baa168393a98a4cf166dbb98e7',1,'Event']]],
+  ['physical_5fbase_4',['physical_base',['../structMountPoint.html#a9bc5e63164c019a7484c5b6cfc8f30d5',1,'MountPoint']]],
+  ['pitch_5',['pitch',['../structAudioSource.html#a95d7e29780454c3b698e935fffb7347e',1,'AudioSource']]],
+  ['play_5fon_5fawake_6',['play_on_awake',['../structAudioSource.html#a08fd2f11679a5f58a8e64955d704b4e6',1,'AudioSource']]],
+  ['position_7',['position',['../structTransform.html#a3f12eae7dfcf490884dd781b1234557a',1,'Transform::position'],['../structVertex.html#a212546e4166471615cbf7517b8b5f30b',1,'Vertex::position']]],
+  ['prim_5findices_8',['prim_indices',['../structBVH.html#ad6b298906aa8944f481de646932dccfa',1,'BVH']]],
+  ['projection_5ftype_9',['projection_type',['../structCamera.html#aa0887d61ba89d4844c0840afadccac1f',1,'Camera']]]
 ];

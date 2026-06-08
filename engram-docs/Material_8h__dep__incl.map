@@ -1,0 +1,17 @@
+<map id="engram/Platform/Material.h" name="engram/Platform/Material.h">
+<area shape="rect" id="Node000001" title="Manages shader parameters, textures, and properties for rendering." alt="" coords="435,5,637,31"/>
+<area shape="rect" id="Node000002" href="$editor_2Main_8c.html" title="Main editor execution loop configuration." alt="" coords="148,86,255,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="467,36,267,81,240,89,239,83,266,76,466,31"/>
+<area shape="rect" id="Node000003" href="$MeshRenderer_8h_source.html" title=" " alt="" coords="279,86,545,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="508,40,432,88,429,84,505,36"/>
+<area shape="rect" id="Node000007" href="$Mesh_8c.html" title="Robust implementation of glTF loading logic using reference counting, sub&#45;meshes, and static transfor..." alt="" coords="570,86,753,111"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="567,36,644,84,641,88,565,40"/>
+<area shape="rect" id="Node000008" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting both 2D Sprites and 3D Meshes." alt="" coords="777,79,983,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="600,31,798,76,797,81,599,36"/>
+<area shape="rect" id="Node000004" href="$MeshRenderer_8c.html" title="Implementation of the MeshRenderer component handling sub&#45;meshes and material overrides." alt="" coords="5,167,272,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="360,118,179,169,178,164,358,113"/>
+<area shape="rect" id="Node000005" href="$PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="296,167,528,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="415,125,415,166,409,166,409,125"/>
+<area shape="rect" id="Node000006" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="552,167,781,192"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="463,113,630,164,629,169,461,118"/>
+</map>
