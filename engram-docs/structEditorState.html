@@ -85,14 +85,16 @@ Collaboration diagram for EditorState:</div>
 <div class="dyncontent">
 <div class="center"><img src="structEditorState__coll__graph.png" border="0" usemap="#aEditorState_coll__map" alt="Collaboration graph"/></div>
 <map name="aEditorState_coll__map" id="aEditorState_coll__map">
-<area shape="rect" title="Global persistent state for the Engram Engine Editor interface." alt="" coords="152,196,247,221"/>
+<area shape="rect" title="Global persistent state for the Engram Engine Editor interface." alt="" coords="232,196,327,221"/>
 <area shape="rect" href="structGameObject.html" title="Represents an entity within a scene." alt="" coords="5,108,108,133"/>
-<area shape="poly" title=" " alt="" coords="87,139,137,170,179,194,177,198,134,174,84,143"/>
+<area shape="poly" title=" " alt="" coords="101,136,250,193,248,198,99,141"/>
 <area shape="poly" title=" " alt="" coords="123,112,135,120,126,129,108,131,108,126,124,124,129,121,120,116"/>
 <area shape="rect" href="structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="23,5,90,31"/>
 <area shape="poly" title=" " alt="" coords="59,45,59,108,54,108,54,45"/>
-<area shape="rect" href="structRenderTarget.html" title="Represents an off&#45;screen rendering buffer or a frame&#45;buffer object." alt="" coords="203,108,311,133"/>
-<area shape="poly" title=" " alt="" coords="244,146,210,197,205,194,239,143"/>
+<area shape="rect" href="structLuaScriptableObject.html" title=" " alt="" coords="203,108,355,133"/>
+<area shape="poly" title=" " alt="" coords="282,147,282,195,277,195,277,147"/>
+<area shape="rect" href="structRenderTarget.html" title="Represents an off&#45;screen rendering buffer or a frame&#45;buffer object." alt="" coords="380,108,488,133"/>
+<area shape="poly" title=" " alt="" coords="412,144,367,174,314,198,312,193,365,170,409,140"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -102,6 +104,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="structGameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selected_go</b></td></tr>
 <tr class="memdesc:aaf288a00c4a91dca072287e209c6cfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected <a class="el" href="structGameObject.html" title="Represents an entity within a scene.">GameObject</a> in the <a class="el" href="structScene.html" title="Container for a complete game world state.">Scene</a> Graph (ImGui Inspector target). <br /></td></tr>
 <tr class="separator:aaf288a00c4a91dca072287e209c6cfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04669d70ab23a23687b5ce074cf43bbb" id="r_a04669d70ab23a23687b5ce074cf43bbb"><td class="memItemLeft" align="right" valign="top"><a id="a04669d70ab23a23687b5ce074cf43bbb" name="a04669d70ab23a23687b5ce074cf43bbb"></a>
+<a class="el" href="structLuaScriptableObject.html">LuaScriptableObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selected_so</b></td></tr>
+<tr class="memdesc:a04669d70ab23a23687b5ce074cf43bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently selected ScriptableObject in the Content Browser (ImGui Inspector target). <br /></td></tr>
+<tr class="separator:a04669d70ab23a23687b5ce074cf43bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b78a65b6b7b43b74749cf279ad07cc1" id="r_a2b78a65b6b7b43b74749cf279ad07cc1"><td class="memItemLeft" align="right" valign="top"><a id="a2b78a65b6b7b43b74749cf279ad07cc1" name="a2b78a65b6b7b43b74749cf279ad07cc1"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>name_edit_buf</b> [128]</td></tr>
 <tr class="memdesc:a2b78a65b6b7b43b74749cf279ad07cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary input buffer for renaming GameObjects. <br /></td></tr>
