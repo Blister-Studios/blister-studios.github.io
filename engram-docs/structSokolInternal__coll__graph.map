@@ -1,5 +1,5 @@
 <map id="SokolInternal" name="SokolInternal">
-<area shape="rect" id="Node000001" title="Private backend state for the dual&#45;pipeline Sokol implementation." alt="" coords="5,108,112,133"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,112,148"/>
 <area shape="rect" id="Node000002" href="$structMat4.html" title="A 4x4 matrix represented as a flat array of 16 floats." alt="" coords="31,5,86,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,45,61,108,56,108,56,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,44,61,123,56,123,56,44"/>
 </map>

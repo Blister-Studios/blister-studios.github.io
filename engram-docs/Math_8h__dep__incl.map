@@ -71,7 +71,7 @@
 <area shape="poly" id="edge31_Node000012_Node000020" title=" " alt="" coords="2408,260,2336,301,2333,296,2406,255"/>
 <area shape="rect" id="Node000021" href="$Texture_8h.html" title="Resource container for GPU&#45;resident textures." alt="" coords="3027,306,3223,331"/>
 <area shape="poly" id="edge34_Node000012_Node000021" title=" " alt="" coords="2540,245,2755,267,3008,296,3058,303,3057,309,3007,301,2754,272,2539,251"/>
-<area shape="rect" id="Node000026" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting both 2D Sprites and 3D Meshes." alt="" coords="2945,475,3150,515"/>
+<area shape="rect" id="Node000026" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting 2D Sprites, 3D Meshes,..." alt="" coords="2945,475,3150,515"/>
 <area shape="poly" id="edge49_Node000012_Node000026" title=" " alt="" coords="2539,238,2708,243,2909,253,3099,270,3177,282,3236,296,3284,310,3322,324,3354,346,3383,385,3391,407,3389,418,3383,429,3353,443,3295,457,3151,482,3150,477,3294,452,3351,438,3379,425,3384,416,3386,408,3378,388,3351,350,3320,329,3282,315,3235,301,3176,287,3099,276,2909,259,2708,249,2539,244"/>
 <area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="2089,342,2037,383,1974,429,1881,484,1878,480,1971,424,2034,379,2086,338"/>
 <area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="2116,345,2119,393,2113,394,2110,345"/>

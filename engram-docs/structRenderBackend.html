@@ -97,6 +97,10 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>begin_frame</b> )(s
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_lighting</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, fs_lighting_t *lighting)</td></tr>
 <tr class="memdesc:ab11e9dd15eccd75d62c1d4004786afb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the global lighting uniform buffer for shader programs. <br /></td></tr>
 <tr class="separator:ab11e9dd15eccd75d62c1d4004786afb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6243f3d0c9f6a851f18133d62dd1d1f" id="r_ac6243f3d0c9f6a851f18133d62dd1d1f"><td class="memItemLeft" align="right" valign="top"><a id="ac6243f3d0c9f6a851f18133d62dd1d1f" name="ac6243f3d0c9f6a851f18133d62dd1d1f"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_shadow_data</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, sg_view shadow_view, <a class="el" href="structMat4.html">Mat4</a> shadow_mvp)</td></tr>
+<tr class="memdesc:ac6243f3d0c9f6a851f18133d62dd1d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the shadow map and shadow matrix for the shader programs. <br /></td></tr>
+<tr class="separator:ac6243f3d0c9f6a851f18133d62dd1d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3501bcc8319c521aae468dddd2f3f386" id="r_a3501bcc8319c521aae468dddd2f3f386"><td class="memItemLeft" align="right" valign="top"><a id="a3501bcc8319c521aae468dddd2f3f386" name="a3501bcc8319c521aae468dddd2f3f386"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>submit</b> )(struct <a class="el" href="structEngramContext.html">EngramContext</a> *ctx, <a class="el" href="structRenderPacket.html">RenderPacket</a> packet)</td></tr>
 <tr class="memdesc:a3501bcc8319c521aae468dddd2f3f386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a <a class="el" href="structRenderPacket.html" title="A unified, high-level draw command sent to the rendering backend.">RenderPacket</a> to the internal render queue. <br /></td></tr>
@@ -112,11 +116,6 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown</b> )(stru
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for hardware-specific rendering implementations. </p>
-<ul>
-<li>By defining this interface, the engine can swap graphics APIs</li>
-<li>(e.g., modern Sokol vs a legacy headless backend) by simply routing</li>
-<li>the function pointers. </li>
-</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a86183eba2a45d5c9271e6847ce036c24" name="a86183eba2a45d5c9271e6847ce036c24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86183eba2a45d5c9271e6847ce036c24">&#9670;&#160;</a></span>internal_state</h2>
@@ -129,7 +128,7 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown</b> )(stru
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Opaque backend data (e.g., <a class="el" href="structSokolInternal.html" title="Private backend state for the dual-pipeline Sokol implementation.">SokolInternal</a> struct). </p>
+<p>Opaque backend data (e.g., <a class="el" href="structSokolInternal.html">SokolInternal</a> struct). </p>
 
 </div>
 </div>

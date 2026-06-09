@@ -14,7 +14,7 @@
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1053,33,1196,83,1194,88,1051,38"/>
 <area shape="rect" id="Node000008" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="1367,86,1596,111"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1090,30,1413,83,1412,89,1089,36"/>
-<area shape="rect" id="Node000009" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting both 2D Sprites and 3D Meshes." alt="" coords="1620,79,1825,119"/>
+<area shape="rect" id="Node000009" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting 2D Sprites, 3D Meshes,..." alt="" coords="1620,79,1825,119"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1140,27,1360,48,1608,76,1620,78,1619,83,1608,81,1359,53,1139,33"/>
 <area shape="rect" id="Node000010" href="$ScriptingInternal_8h_source.html" title=" " alt="" coords="1849,79,2044,119"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1140,22,1458,41,1648,56,1838,76,1849,78,1849,83,1837,81,1648,61,1458,46,1139,27"/>

@@ -1,5 +1,5 @@
 <map id="engram/Rendering/RendererBackend.c" name="engram/Rendering/RendererBackend.c">
-<area shape="rect" id="Node000001" title="Implementation of the Sokol GFX renderer backend supporting both 2D Sprites and 3D Meshes." alt="" coords="1013,5,1219,45"/>
+<area shape="rect" id="Node000001" title="Implementation of the Sokol GFX renderer backend supporting 2D Sprites, 3D Meshes,..." alt="" coords="1013,5,1219,45"/>
 <area shape="rect" id="Node000002" href="$Renderer_8h_source.html" title=" " alt="" coords="669,387,832,412"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1099,47,774,378,770,375,1095,44"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="715,460,786,485"/>
