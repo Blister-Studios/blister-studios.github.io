@@ -3,7 +3,7 @@ var searchData=
   ['parent_0',['parent',['../structTransform.html#a9dd816c1137e009ba8cf9b4f2cd8b0cd',1,'Transform::parent'],['../structGameObject.html#ab7502fce7b6a8e5c5bf8626874ac8ee4',1,'GameObject::parent']]],
   ['particle_1',['Particle',['../structParticle.html',1,'']]],
   ['particlesystem_2',['ParticleSystem',['../structParticleSystem.html',1,'']]],
-  ['particlesystem_2ec_3',['particlesystem.c',['../Components_2ParticleSystem_8c.html',1,'(Global Namespace)'],['../Particles_2ParticleSystem_8c.html',1,'(Global Namespace)']]],
+  ['particlesystem_2ec_3',['ParticleSystem.c',['../Particles_2ParticleSystem_8c.html',1,'']]],
   ['particlesystemcomponent_4',['ParticleSystemComponent',['../structParticleSystemComponent.html',1,'']]],
   ['pass_5faction_5',['pass_action',['../structRenderTarget.html#aa16ec40eca06463f8811c2af1586e490',1,'RenderTarget']]],
   ['path_6',['path',['../structCachedResource.html#ac4c23959589774de54c0b156ef055513',1,'CachedResource']]],
