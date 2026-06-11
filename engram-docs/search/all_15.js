@@ -39,7 +39,7 @@ var searchData=
   ['vec3_5fsub_36',['vec3_sub',['../Vector3_8c.html#a283159ebf2a1992dbc2cedf51c91318b',1,'vec3_sub(Vec3 a, Vec3 b):&#160;Vector3.c'],['../Vector3_8h.html#a283159ebf2a1992dbc2cedf51c91318b',1,'vec3_sub(Vec3 a, Vec3 b):&#160;Vector3.c']]],
   ['vec3_5fup_37',['VEC3_UP',['../Vector3_8h.html#a7212ac89b18b5973dc64622e92942cee',1,'Vector3.h']]],
   ['vec3_5fzero_38',['VEC3_ZERO',['../Vector3_8h.html#a8351929e72e0b532e54384381fa69f97',1,'Vector3.h']]],
-  ['vec4_39',['vec4',['../structVec4.html',1,'Vec4'],['../Vector4_8h.html#acfa249dcd1066961aa3b1dd49a77c0d0',1,'VEC4:&#160;Vector4.h'],['../Vector4_8h.html#a925b5d6e6fbe6bbe920820d93e9e4550',1,'Vec4:&#160;Vector4.h']]],
+  ['vec4_39',['vec4',['../structVec4.html',1,'Vec4'],['../Vector4_8h.html#a925b5d6e6fbe6bbe920820d93e9e4550',1,'Vec4:&#160;Vector4.h'],['../Vector4_8h.html#acfa249dcd1066961aa3b1dd49a77c0d0',1,'VEC4:&#160;Vector4.h']]],
   ['vec4_5fadd_40',['vec4_add',['../Vector4_8c.html#add00e0432831cb488014b240ffa45d13',1,'vec4_add(Vec4 a, Vec4 b):&#160;Vector4.c'],['../Vector4_8h.html#add00e0432831cb488014b240ffa45d13',1,'vec4_add(Vec4 a, Vec4 b):&#160;Vector4.c']]],
   ['vec4_5fdot_41',['vec4_dot',['../Vector4_8c.html#ad8c82083f074c5d1df2827072fb41e0b',1,'vec4_dot(Vec4 a, Vec4 b):&#160;Vector4.c'],['../Vector4_8h.html#ad8c82083f074c5d1df2827072fb41e0b',1,'vec4_dot(Vec4 a, Vec4 b):&#160;Vector4.c']]],
   ['vec4_5fmul_42',['vec4_mul',['../Vector4_8c.html#a012b167d28e3e9948cfc6351cec4a3a6',1,'vec4_mul(Vec4 v, float scalar):&#160;Vector4.c'],['../Vector4_8h.html#a012b167d28e3e9948cfc6351cec4a3a6',1,'vec4_mul(Vec4 v, float scalar):&#160;Vector4.c']]],

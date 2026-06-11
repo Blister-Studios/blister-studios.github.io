@@ -1,0 +1,10 @@
+<map id="ParticleSystem" name="ParticleSystem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="77,196,195,221"/>
+<area shape="rect" id="Node000002" href="$structParticle.html" title=" " alt="" coords="58,108,129,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,145,132,194,128,197,103,147"/>
+<area shape="rect" id="Node000003" href="$structVec3.html" title="A structure representing a 3D vector (x, y, z)." alt="" coords="5,5,59,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="36,44,39,64,48,83,59,96,73,106,70,110,55,99,43,85,34,65,30,45"/>
+<area shape="rect" id="Node000004" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="121,5,175,31"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="159,43,161,54,164,113,159,173,147,197,142,194,153,171,159,113,156,55,154,44"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="132,43,124,56,100,109,95,107,119,53,127,41"/>
+</map>

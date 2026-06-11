@@ -1,0 +1,19 @@
+<map id="ParticleSystemComponent" name="ParticleSystemComponent">
+<area shape="rect" id="Node000001" title="An ECS component wrapper for the ParticleSystem." alt="" coords="62,284,257,309"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title="The base structure for all components." alt="" coords="45,196,143,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,231,152,282,148,285,109,234"/>
+<area shape="rect" id="Node000003" href="$structGameObject.html" title="Represents an entity within a scene." alt="" coords="5,108,108,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,145,91,194,86,197,65,147"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="123,112,135,120,126,129,108,131,108,126,124,124,129,121,120,116"/>
+<area shape="rect" id="Node000004" href="$structDArray.html" title="Container for a dynamic array of pointers." alt="" coords="23,5,90,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,45,59,108,54,108,54,45"/>
+<area shape="rect" id="Node000005" href="$structParticleSystem.html" title=" " alt="" coords="179,196,297,221"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="220,233,172,285,168,282,216,230"/>
+<area shape="rect" id="Node000006" href="$structParticle.html" title=" " alt="" coords="203,108,273,133"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="241,147,241,195,235,195,235,147"/>
+<area shape="rect" id="Node000007" href="$structVec3.html" title="A structure representing a 3D vector (x, y, z)." alt="" coords="150,5,203,31"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="180,44,183,64,191,83,202,95,216,106,213,110,199,99,186,85,178,65,174,45"/>
+<area shape="rect" id="Node000008" href="$structVec4.html" title="A structure representing a 4D vector or RGBA color." alt="" coords="266,5,319,31"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="304,43,306,54,306,84,298,131,279,173,256,198,252,194,274,171,293,129,301,84,301,55,298,44"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="277,43,268,56,244,109,240,107,264,53,272,41"/>
+</map>

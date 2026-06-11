@@ -1,23 +1,25 @@
 <map id="engram/Components/Transform.h" name="engram/Components/Transform.h">
-<area shape="rect" id="Node000001" title="Core component for hierarchical spatial positioning, rotation, and scaling." alt="" coords="887,5,1126,31"/>
+<area shape="rect" id="Node000001" title="Core component for hierarchical spatial positioning, rotation, and scaling." alt="" coords="1010,5,1249,31"/>
 <area shape="rect" id="Node000002" href="$editor_2Main_8c.html" title="Main editor execution loop configuration." alt="" coords="5,86,112,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="873,22,720,26,532,35,328,53,124,81,94,89,93,83,124,76,327,48,532,30,720,21,873,17"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="996,26,534,46,297,62,124,81,94,89,93,83,124,76,296,57,534,41,996,21"/>
 <area shape="rect" id="Node000003" href="$Camera_8c.html" title="Implementation of cross&#45;platform 2D Orthographic and 3D Perspective camera view/projection logic." alt="" coords="136,86,360,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="874,32,640,53,372,81,319,89,318,83,372,76,639,47,874,27"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="996,30,709,50,372,81,318,89,317,83,372,76,709,44,996,24"/>
 <area shape="rect" id="Node000004" href="$Components_8h.html" title="Umbrella header for all standard ECS components." alt="" coords="384,86,640,111"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="922,35,584,89,584,83,921,30"/>
-<area shape="rect" id="Node000005" href="$Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="665,86,903,111"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="963,38,817,88,816,83,961,33"/>
-<area shape="rect" id="Node000006" href="$Audio_8c.html" title="Dual&#45;backend audio logic supporting FMOD Studio Live&#45;Update and legacy Sokol fallback pipelines." alt="" coords="927,86,1086,111"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1009,44,1009,86,1004,86,1004,44"/>
-<area shape="rect" id="Node000007" href="$PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="1111,86,1343,111"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1053,33,1196,83,1194,88,1051,38"/>
-<area shape="rect" id="Node000008" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="1367,86,1596,111"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1090,30,1413,83,1412,89,1089,36"/>
-<area shape="rect" id="Node000009" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting 2D Sprites, 3D Meshes,..." alt="" coords="1620,79,1825,119"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1140,27,1360,48,1608,76,1620,78,1619,83,1608,81,1359,53,1139,33"/>
-<area shape="rect" id="Node000010" href="$ScriptingInternal_8h_source.html" title=" " alt="" coords="1849,79,2044,119"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1140,22,1458,41,1648,56,1838,76,1849,78,1849,83,1837,81,1648,61,1458,46,1139,27"/>
-<area shape="rect" id="Node000011" href="$BindingsAudio_8c.html" title="Lua script bindings for the AudioSource component." alt="" coords="1850,167,2043,207"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1949,133,1949,166,1944,166,1944,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1023,35,652,81,597,89,596,83,652,76,1022,30"/>
+<area shape="rect" id="Node000005" href="$Components_2ParticleSystem_8c.html" title="ECS Component wrapper for the underlying particle engine." alt="" coords="664,79,875,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1064,36,856,81,855,76,1063,31"/>
+<area shape="rect" id="Node000006" href="$Transform_8c.html" title="Implementation of the hierarchical transformation system with world&#45;space preservation." alt="" coords="899,86,1138,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1103,41,1037,88,1034,84,1100,37"/>
+<area shape="rect" id="Node000007" href="$Audio_8c.html" title="Dual&#45;backend audio logic supporting FMOD Studio Live&#45;Update and legacy Sokol fallback pipelines." alt="" coords="1162,86,1321,111"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1159,37,1226,84,1223,88,1156,41"/>
+<area shape="rect" id="Node000008" href="$PrefabLoader_8c.html" title="Implementation of template prefab file serialization and object instantiation." alt="" coords="1345,86,1577,111"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1191,31,1414,83,1412,89,1190,36"/>
+<area shape="rect" id="Node000009" href="$SceneLoader_8c.html" title="Implementation of scene serialization and reconstruction utilizing FMOD Studio properties." alt="" coords="1601,86,1831,111"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1235,30,1590,76,1641,83,1640,89,1589,81,1234,35"/>
+<area shape="rect" id="Node000010" href="$RendererBackend_8c.html" title="Implementation of the Sokol GFX renderer backend supporting 2D Sprites, 3D Meshes,..." alt="" coords="1855,79,2060,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1263,25,1531,45,1843,76,1855,78,1854,83,1842,81,1531,50,1262,30"/>
+<area shape="rect" id="Node000011" href="$ScriptingInternal_8h_source.html" title=" " alt="" coords="2084,79,2279,119"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1262,21,1628,38,1850,54,2072,76,2084,77,2083,83,2072,81,1850,59,1628,43,1262,26"/>
+<area shape="rect" id="Node000012" href="$BindingsAudio_8c.html" title="Lua script bindings for the AudioSource component." alt="" coords="2085,167,2278,207"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="2184,133,2184,166,2179,166,2179,133"/>
 </map>
